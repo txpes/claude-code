@@ -1,0 +1,37 @@
+[
+  {
+    "id": 16,
+    "antigo": "MANTOAN, E.; CENTENO, V.; FEIJÓ, C. Why has the Brazilian economy stagnated in the 2010s? A Minskyan analysis of the behavior of non-financial companies in a financialized economy. Review of Evolutionary Political Economy, v. 2, p. 529-550, 2021.",
+    "novo": "MANTOAN, E.; CENTENO, V.; FEIJÓ, C. Why has the Brazilian economy stagnated in the 2010s? A Minskyan analysis of the behavior of non-financial companies in a financialized economy. Review of Evolutionary Political Economy, v. 2, n. 3, p. 529-550, 2021.",
+    "campo": "numero",
+    "fonte": "https://doi.org/10.1007/s43253-021-00051-6"
+  },
+  {
+    "id": 17,
+    "antigo": "McGOWAN, M. A.; ANDREWS, D.; MILLOT, V. The walking dead? Zombie firms and productivity performance in OECD countries. Economic Policy, v. 33, n. 96, p. 685-736, 2018.",
+    "novo": "ADALET McGOWAN, M.; ANDREWS, D.; MILLOT, V. The walking dead? Zombie firms and productivity performance in OECD countries. Economic Policy, v. 33, n. 96, p. 685-736, 2018.",
+    "campo": "autoria",
+    "fonte": "https://doi.org/10.1093/epolic/eiy012"
+  },
+  {
+    "id": 17,
+    "antigo": "McGowan, Andrews e Millot (2018)",
+    "novo": "Adalet McGowan, Andrews e Millot (2018)",
+    "campo": "citacao_no_texto",
+    "fonte": "https://doi.org/10.1093/epolic/eiy012"
+  },
+  {
+    "id": 29,
+    "antigo": "TYMOIGNE, É. Detecting ponzi finance: an evolutionary approach to the measure of financial fragility. Working Paper n. 605. Annandale-on-Hudson: Levy Economics Institute, 2010.",
+    "novo": "TYMOIGNE, É. Detecting Ponzi finance: an evolutionary approach to the measure of financial fragility. Working Paper n. 605. Annandale-on-Hudson: Levy Economics Institute, 2010.",
+    "campo": "titulo",
+    "fonte": "https://www.levyinstitute.org/pubs/wp_605.pdf"
+  },
+  {
+    "id": 33,
+    "antigo": "ZMIJEWSKI, M. E. Methodological issues related to the estimation of financial distress prediction models. Journal of Accounting Research, v. 22, p. 59-82, 1984.",
+    "novo": "ZMIJEWSKI, M. E. Methodological issues related to the estimation of financial distress prediction models. Journal of Accounting Research, v. 22, supl., p. 59-82, 1984.",
+    "campo": "numero",
+    "fonte": "https://doi.org/10.2307/2490859"
+  }
+]
