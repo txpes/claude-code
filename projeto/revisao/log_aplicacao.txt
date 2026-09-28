@@ -1,0 +1,78 @@
+OK     periodo do painel: 'referentes aos exercícios de 2010 a 2023' -> 'referentes aos exercícios de 2010 a 2025'
+OK     maximo da cobertura (Tabela 3): 'a cobertura varia de menos 82,0 a 583,3' -> 'a cobertura varia de menos 82,0 a 575,6'
+OK     Tabela 4: 'A correlação máxima é de 0,42' -> 'A correlação máxima é de 0,44'
+OK     Tabela 4: 'sua correlação mais alta é de 0,22 com o retorno sobre ativo' -> 'sua correlação mais alta é de 0,21 com o retorno sobre ativo'
+OK     Tabela 5: 'As 47 observações censuradas à esquerda' -> 'As 50 observações censuradas à esquerda'
+OK     Tabela 5 (3,59% era do painel 2010-2023): 'ao passo que 3,59% é a frequência do evento' -> 'ao passo que 3,01% é a frequência do evento'
+OK     serie por estado recalculada: 'a taxa cresce de forma praticamente monotônica ao longo do p' -> 'a taxa cresce de forma praticamente monotônica até 2017, de '
+OK     prevalencia (2,95% na amostra comum): 'de aproximadamente 3,5%' -> 'de aproximadamente 3%'
+OK     149 e a amostra comum: 'Das 149 entradas da amostra de estimação no horizonte de um ' -> 'Das 149 entradas da amostra comum no horizonte de um ano'
+OK     composicao da amostra de risco (609 nao eram ultimos exercicios): 'A amostra de risco de 5.695 observações resulta da exclusão,' -> 'A amostra de risco reúne as 5.695 observações cuja firma est'
+OK     2.4 contradizia a 3.4: 'com o teste de DeLong, DeLong e Clarke-Pearson (1988) e corr' -> 'com inferência por bootstrap agrupado por firma e correção p'
+OK     familia de Bonferroni do codigo tem 6: 'considerando conjuntamente as sete comparações de cada horiz' -> 'considerando conjuntamente as seis comparações de cada horiz'
+OK     nota da Tabela 10: 'p ajustado por Bonferroni para as sete comparações de cada h' -> 'p ajustado por Bonferroni para as seis comparações de cada h'
+OK     Tabela 10, p ajustado x6: Cobertura de juros[5] 0,140 -> 0,120
+OK     Tabela 10, p ajustado x6: Brito e Assaf Neto[5] 0,805 -> 0,690
+OK     Tabela 10, PLS nao ajustado (H4): Mínimos quadrados parciais[5] <0,004 -> <0,001
+OK     Tabela 10, PLS nao ajustado (H4): Mínimos quadrados parciais[5] <0,004 -> <0,001
+OK     sinal do CP2 trocava entre particoes: 'em que a soma do primeiro e do segundo componentes reduz a á' -> 'em que a combinação do primeiro com o segundo componente, co'
+OK     idem, 5.8: 'somar o segundo componente ao primeiro a reduz para 0,717' -> 'somar ou subtrair o segundo componente, cujo sinal é arbitrá'
+OK     Tabela 9, BA winsorizado: Brito e Assaf Neto[1] 0,788 -> 0,810
+OK     Tabela 9, BA winsorizado: Brito e Assaf Neto[2] 0,703 -> 0,755
+OK     Tabela 9, BA winsorizado: Brito e Assaf Neto[3] +0,085 -> +0,054
+OK     introducao, saidas recalculadas: 'entre as que saem, 32,2% estavam em situação de vulnerabilid' -> 'entre as que saem, 31,8% estavam em situação de vulnerabilid'
+OK     5.8, saidas recalculadas: 'das 143 companhias que deixam o painel antes do fim do perío' -> 'das 201 companhias cuja última observação antecede 2025, 31,'
+OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[1] 5.052 -> 5.055
+OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[2] 155 -> 158
+OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[3] 0,767 -> 0,771
+OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[4] 0,878 -> 0,880
+OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[5] 0,895 -> 0,896
+OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[6] 0,876 -> 0,877
+OK     5.9: codigo nao usa o cadastro: 'O motivo da saída foi recuperado do cadastro de companhias a' -> 'A classificação de saídas associadas a dificuldade financeir'
+OK     Brier acima da referencia contradizia "calibracao adequada": 'a calibração é adequada em todos os modelos, com inclinações' -> 'as inclinações de calibração ficam entre 0,968 e 1,016 e os '
+OK     unidade e firma-ano: 'a regra baseada no escore sintético sinaliza 44,1% das firma' -> 'a regra baseada no escore sintético sinaliza 44,1% dos firma'
+OK     nota da Tabela 17: 'Firmas sinalizadas e valor preditivo positivo referem-se' -> 'Firma-anos sinalizados e valor preditivo positivo referem-se'
+OK     cabecalho da Tabela 17: Modelo[4] Firmas sinalizadas -> Firma-anos sinalizados
+OK     nota da Tabela 15 nao correspondia ao calculo: 'As duas primeiras colunas referem-se a entradas que satisfaz' -> 'A primeira coluna refere-se às entradas que satisfazem apena'
+OK     Tabela 16, sigla: EBITDA[0] EBITDA -> MEB
+OK     convencao explicitada: 'o escore sintético fica muito atrás: 0,649 em um ano' -> 'o escore sintético fica muito atrás: na atribuição de referê'
+OK     0,816 e do subconjunto puro: 'Nas entradas por patrimônio líquido negativo, o escore alcan' -> 'Nas entradas exclusivamente por patrimônio líquido negativo,'
+OK     quantifica a sobreposicao mecanica: 'Ela não basta, porém, porque no horizonte de dois anos' -> 'Seu peso é mensurável: as 66 entradas desse tipo têm EBITDA '
+OK     5.9 afirmava um teste que nao foi feito: 'O tratamento conservador da subseção 5.8 mostra que a limita' -> 'O tratamento da subseção 5.8 cobre a antecipação por divulga'
+OK     Tabela 11 mostrava inversao nao comentada: 'No horizonte de dois anos, com 34 entradas, nenhuma diferenç' -> 'No horizonte de dois anos, com 34 entradas, nenhuma diferenç'
+OK     resumo: 'A razão é de composição:' -> 'Os dados são consistentes com uma explicação de composição:'
+OK     resumo: horizonte de dois anos e ressalva mecanica: 'Nas entradas por prejuízo operacional persistente o escore f' -> 'Nas entradas por prejuízo operacional persistente o escore f'
+OK     introducao: 'O escore não é, portanto, uniformemente inferior: ele é cego' -> 'O escore não é, portanto, uniformemente inferior: seu desemp'
+OK     introducao: 'A razão dessa cegueira é de composição, e é verificável nos ' -> 'Os dados são consistentes com uma explicação de composição.'
+OK     5.5: 'A segunda explicação é de composição, e é a que os dados sus' -> 'A segunda explicação é de composição, e os dados são consist'
+OK     5.5: 'A limitação não é de agregação em geral, e sim da composição' -> 'A limitação parece ser menos da agregação em geral do que da'
+OK     5.6: 'o ganho concentra-se inteiramente nas entradas pelo critério' -> 'o ganho concentra-se nas entradas pelo critério de EBITDA e '
+OK     conclusao: 'Retiradas as entradas por prejuízo operacional, a vantagem d' -> 'Retiradas as entradas por prejuízo operacional, a vantagem d'
+OK     conclusao: 'A explicação é de composição e está nos dados.' -> 'Os dados são consistentes com uma explicação de composição.'
+OK     conclusao: 'A limitação não é da agregação em geral, e sim da composição' -> 'A limitação parece ser menos da agregação em geral do que da'
+OK     introducao: moderacao e horizonte de dois anos: 'a desvantagem do escore concentra-se inteiramente naquelas d' -> 'a desvantagem do escore concentra-se naquelas definidas por '
+OK     5.1: 'e a qual delas o escore é cego' -> 'e em qual delas o escore tem desempenho fraco'
+OK     conclusao: 'revela se o indicador é uniformemente inferior ou apenas ceg' -> 'revela se o indicador é uniformemente inferior ou fraco em a'
+OK     conclusao: 'são, assim, o mesmo fato observado de dois ângulos' -> 'são, assim, compatíveis com um mesmo fato observado de dois '
+OK     citacao: 'pelo número de componentes retidos pelo critério de Kaiser' -> 'pelo número de componentes retidos pelo critério de Kaiser ('
+OK     Horn: 3 componentes: 'e o critério de Kaiser retém 3 componentes, que juntos expli' -> 'e o critério de Kaiser retém 3 componentes, que juntos expli'
+OK     citacoes: 'a área sob a curva de precisão e revocação, o escore de Brie' -> 'a área sob a curva de precisão e revocação (SAITO; REHMSMEIE'
+OK     citacao: 'e a decisão líquida sob diferentes razões de custo' -> 'e a decisão líquida (VICKERS; ELKIN, 2006) sob diferentes ra'
+OK     citacao: 'é conduzida por bootstrap agrupado por firma, com 2.000 ream' -> 'é conduzida por bootstrap agrupado por firma (FIELD; WELSH, '
+OK     citacao: 'A correção de Bonferroni é aplicada' -> 'A correção de Bonferroni (DUNN, 1961) é aplicada'
+OK     citacao: 'a referência usual de ao menos dez eventos por parâmetro est' -> 'a referência usual de ao menos dez eventos por parâmetro est'
+OK     citacao: 'obtido por árvores impulsionadas com gradiente sobre as mesm' -> 'obtido por árvores impulsionadas com gradiente (FRIEDMAN, 20'
+OK     grafia igual a da lista: '(HANLEY; MCNEIL, 1982)' -> '(HANLEY; McNEIL, 1982)'
+OK     NBR 6023, conferido no DOU: 'Diário Oficial da União, Brasília, DF, 20 dez. 2018.' -> 'Diário Oficial da União: seção 1, Brasília, DF, n. 244, p. 1'
+OK     referencia inserida: BRIER, G. W. Verification of forecasts expressed i
+OK     referencia inserida: COX, D. R. Two further applications of a model for
+OK     referencia inserida: DUNN, O. J. Multiple comparisons among means. Jour
+OK     referencia inserida: FIELD, C. A.; WELSH, A. H. Bootstrapping clustered
+OK     referencia inserida: FRIEDMAN, J. H. Greedy function approximation: a g
+OK     referencia inserida: HORN, J. L. A rationale and test for the number of
+OK     referencia inserida: KAISER, H. F. The application of electronic comput
+OK     referencia inserida: PEDUZZI, P.; CONCATO, J.; KEMPER, E.; HOLFORD, T. 
+OK     referencia inserida: SAITO, T.; REHMSMEIER, M. The precision-recall plo
+OK     referencia inserida: VAN CALSTER, B.; McLERNON, D. J.; VAN SMEDEN, M.; 
+OK     referencia inserida: VICKERS, A. J.; ELKIN, E. B. Decision curve analys
+OK     2.4: paragrafo "Ha ainda uma lacuna" movido para depois da sexta dimensao
