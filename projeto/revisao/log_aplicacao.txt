@@ -31,7 +31,7 @@ OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[4] 
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[5] 0,895 -> 0,896
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[6] 0,876 -> 0,877
 OK     5.9: saidas pelas duas classificacoes: 'O motivo da saída foi recuperado do cadastro de companhias a' -> 'A classificação de saídas associadas a dificuldade financeir'
-OK     Tabela 17 refeita com calibracao sobre o posto (script 14): 'a calibração é adequada em todos os modelos, com inclinações' -> 'a calibração é adequada em todos os modelos, com inclinações'
+OK     Tabela 17 refeita com calibracao sobre o posto (script 14); a tabela passa a ser citada no texto: 'A ordenação em precisão e revocação reproduz a da área sob a' -> 'Na Tabela 17, a ordenação em precisão e revocação reproduz a'
 OK     metodo de calibracao: 'Cada escore é convertido em probabilidade por calibração log' -> 'Cada escore é convertido em probabilidade por regressão logí'
 OK     especificidade, decisao liquida e horizonte de dois anos: 'com valor preditivo positivo de 0,053 contra 0,124.' -> 'com valor preditivo positivo de 0,053 contra 0,124. No mesmo'
 OK     nota da Tabela 17: 'Inclinação de calibração com valor ideal unitário.' -> 'Inclinação de calibração com valor ideal unitário. Probabili'
@@ -55,7 +55,7 @@ OK     Tabela 17, calibracao sobre o posto: Brito e Assaf Neto[2] 0,0290 -> 0,02
 OK     Tabela 17, calibracao sobre o posto: Brito e Assaf Neto[3] 0,738 -> 1,075
 OK     Tabela 17, calibracao sobre o posto: Brito e Assaf Neto[4] 54,6% -> 54,7%
 OK     unidade e firma-ano: 'a regra baseada no escore sintético sinaliza 44,1% das firma' -> 'a regra baseada no escore sintético sinaliza 44,1% dos firma'
-OK     nota da Tabela 17: 'Firmas sinalizadas e valor preditivo positivo referem-se' -> 'Firma-anos sinalizados e valor preditivo positivo referem-se'
+OK     nota da Tabela 17: 'Firmas sinalizadas e valor preditivo positivo referem-se' -> 'Firma-anos sinalizados, valor preditivo positivo e especific'
 OK     cabecalho da Tabela 17: Modelo[4] Firmas sinalizadas -> Firma-anos sinalizados
 OK     nota da Tabela 15 nao correspondia ao calculo: 'As duas primeiras colunas referem-se a entradas que satisfaz' -> 'A primeira coluna refere-se às entradas que satisfazem apena'
 OK     Tabela 16, sigla: EBITDA[0] EBITDA -> MEB
@@ -164,6 +164,8 @@ OK     literatura recente (2015-2018), conferida na fonte: 'e Mai et al. (2019) 
 OK     JEL, abstract e keywords inseridos
 OK     secao de disponibilidade de dados e codigo
 OK     2.4: paragrafo "Ha ainda uma lacuna" movido para depois da sexta dimensao
+OK     Tabela 17: colunas de especificidade e decisao liquida
+OK     larguras: Tabela 17 (soma 9071)
 OK     larguras: Tabela 13 (soma 9071)
 OK     larguras: Tabela 14 (soma 9071)
 OK     larguras: Tabela 19 (soma 9071)

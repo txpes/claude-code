@@ -129,9 +129,9 @@ sub('O motivo da saída foi recuperado do cadastro de companhias abertas, mas a 
     '5.9: saidas pelas duas classificacoes')
 
 # ------------------------------------------------------------------ 6. calibracao e metricas operacionais
-sub('a calibração é adequada em todos os modelos, com inclinações entre 0,968 e 1,016, à exceção do modelo de Brito e Assaf Neto, com 0,738.',
-    'a calibração é adequada em todos os modelos, com inclinações entre 0,988 e 1,087 e interceptos próximos de zero, e todos superam a previsão constante no escore de Brier. A conversão é feita sobre o posto do escore, e não sobre o seu valor bruto, porque a regressão logística aplicada a indicadores de caudas longas, como o retorno sobre ativos e a cobertura de juros, atribui probabilidades extremas a poucas observações e degrada o escore de Brier: sobre os valores brutos, três dos seis modelos têm escore de Brier pior que o da previsão constante.',
-    'Tabela 17 refeita com calibracao sobre o posto (script 14)')
+sub('A ordenação em precisão e revocação reproduz a da área sob a curva ROC, e a calibração é adequada em todos os modelos, com inclinações entre 0,968 e 1,016, à exceção do modelo de Brito e Assaf Neto, com 0,738.',
+    'Na Tabela 17, a ordenação em precisão e revocação reproduz a da área sob a curva ROC, e a calibração é adequada em todos os modelos, com inclinações entre 0,988 e 1,087 e interceptos próximos de zero, e todos superam a previsão constante no escore de Brier. A conversão é feita sobre o posto do escore, e não sobre o seu valor bruto, porque a regressão logística aplicada a indicadores de caudas longas, como o retorno sobre ativos e a cobertura de juros, atribui probabilidades extremas a poucas observações e degrada o escore de Brier: sobre os valores brutos, três dos seis modelos têm escore de Brier pior que o da previsão constante.',
+    'Tabela 17 refeita com calibracao sobre o posto (script 14); a tabela passa a ser citada no texto')
 sub('Cada escore é convertido em probabilidade por calibração logística estimada nas firmas de treino',
     'Cada escore é convertido em probabilidade por regressão logística sobre o seu posto na distribuição do treino (NICULESCU-MIZIL; CARUANA, 2005), estimada nas firmas de treino',
     'metodo de calibracao')
@@ -139,7 +139,7 @@ sub('com valor preditivo positivo de 0,053 contra 0,124.',
     'com valor preditivo positivo de 0,053 contra 0,124. No mesmo limiar, a especificidade é de 0,570 para o escore sintético e de 0,831 para a cobertura de juros, e a decisão líquida sob razão de custo de dez para um é positiva em todos os modelos, de 0,003 para o escore sintético a 0,011 para a referência não linear. No horizonte de dois anos, as métricas de probabilidade aproximam-se das da previsão constante e a decisão líquida é praticamente nula em todos os modelos, o que limita a utilidade operacional da previsão nesse horizonte.',
     'especificidade, decisao liquida e horizonte de dois anos')
 sub('Inclinação de calibração com valor ideal unitário.',
-    'Inclinação de calibração com valor ideal unitário. Probabilidades obtidas por regressão logística sobre o posto do escore na distribuição do treino. Modelos na ordem da área sob a curva ROC da Tabela 10.',
+    'Inclinação de calibração com valor ideal unitário. Probabilidades obtidas por regressão logística sobre o posto do escore na distribuição do treino. Decisão líquida por firma-ano, sob razão de custo de dez para um; a de não sinalizar ninguém é zero. No mesmo limiar, o valor preditivo negativo fica entre 0,988 e 0,993 em todos os modelos. Modelos na ordem da área sob a curva ROC da Tabela 10.',
     'nota da Tabela 17')
 T17 = [('Árvores impulsionadas', ['0,234','0,0265','1,016','17,2%','0,136'], ['0,230','0,0251','1,087','17,2%','0,134']),
        ('Cobertura de juros', ['0,215','0,0280','0,970','18,7%','0,124'], ['0,184','0,0256','0,988','18,7%','0,124']),
@@ -152,7 +152,7 @@ for lin, velhos, novos in T17:
         if a != b:
             celula('AUC precisão-revocação', lin, col, a, b, 'Tabela 17, calibracao sobre o posto')
 sub('a regra baseada no escore sintético sinaliza 44,1% das firmas', 'a regra baseada no escore sintético sinaliza 44,1% dos firma-anos', 'unidade e firma-ano')
-sub('Firmas sinalizadas e valor preditivo positivo referem-se', 'Firma-anos sinalizados e valor preditivo positivo referem-se', 'nota da Tabela 17')
+sub('Firmas sinalizadas e valor preditivo positivo referem-se', 'Firma-anos sinalizados, valor preditivo positivo e especificidade referem-se', 'nota da Tabela 17')
 celula('AUC precisão-revocação', 'Modelo', 4, 'Firmas sinalizadas', 'Firma-anos sinalizados', 'cabecalho da Tabela 17')
 
 # ------------------------------------------------------------------ 7. Tabela 15 e Tabela 16
@@ -411,6 +411,19 @@ def larguras(contem, novas, motivo):
             w = tc.find(_qn('w:tcPr') + '/' + _qn('w:tcW'))
             if w is not None and k < len(novas): w.set(_qn('w:w'), str(novas[k])); w.set(_qn('w:type'), 'dxa')
     log.append(f'OK     larguras: {motivo} (soma {sum(novas)})')
+# Tabela 17: especificidade e decisao liquida no mesmo limiar (pedido I.6 do orientador; valores do script 14). O VPN, quase
+# constante entre os modelos, vai na nota. As colunas sao inseridas da ultima para a primeira, sempre depois da do VPP, para herdar o formato dela.
+T17N = {'Árvores impulsionadas': ('0,846', '0,011'), 'Cobertura de juros': ('0,831', '0,009'), 'Mínimos quadrados parciais': ('0,810', '0,008'),
+        'Retorno sobre ativos': ('0,843', '0,009'), 'Componentes principais (F)': ('0,570', '0,003'), 'Brito e Assaf Neto': ('0,462', '0,001'),
+        'Referência sem informação': ('—', '—')}
+t17 = [t for t in d.tables if 'AUC precisão-revocação' in t.rows[0].cells[1].text]
+if len(t17) == 1 and len(t17[0].columns) == 6:
+    for k, cab in [(1, 'Decisão líquida 10:1'), (0, 'Especificidade')]:
+        insert_column(t17[0], 5, cab, lambda i, txt, k=k: T17N[txt.strip()][k] if txt.strip() in T17N else '', largura_twips=1000)
+    log.append('OK     Tabela 17: colunas de especificidade e decisao liquida')
+else:
+    log.append(f'FALHOU Tabela 17: {len(t17)} tabelas encontradas')
+larguras('AUC precisão-revocação', [1421, 1100, 800, 1150, 1150, 750, 1500, 1200], 'Tabela 17')
 larguras('Somente por EBITDA negativo', [2071, 1000, 1000, 1000, 1100, 1000, 1000, 900], 'Tabela 13')
 larguras('Cobertura menos F', [1771, 1000, 850, 1100, 1650, 1050, 1650], 'Tabela 14')
 larguras('Somente a primeira entrada de cada firma', [2971, 900, 1000, 1000, 1000, 1200, 1000], 'Tabela 19')

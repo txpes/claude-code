@@ -2,7 +2,7 @@
 
 Estado em 29 de setembro de 2026, após revisão integral. As versões revisadas do artigo, da nota e da planilha
 (`*_revisado*`) trazem as correções como alterações controladas e são consistentes entre si e com o
-código: um verificador automático (`revisao/verificar_artigo.py`) compara as 584 células numéricas das
+código: um verificador automático (`revisao/verificar_artigo.py`) compara as 596 células numéricas das
 tabelas do artigo com as saídas do código e não encontra divergência. Os originais foram mantidos.
 
 ## Como reproduzir
@@ -59,16 +59,30 @@ distinguível das alternativas; recuperação judicial 0,828, também sem difere
 
 A mensagem de encaminhamento ao orientador está em `CARTA_EDUARDO.md`.
 
+## Versões do artigo e numeração das tabelas
+
+Para regenerar o artigo a partir do original, rode os scripts de `revisao/` nesta ordem:
+
+    python aplicar_revisao.py valores.json                      # original -> revisado, com alterações controladas
+    python aceitar_alteracoes.py <revisado> <limpo_ordem_original>
+    python montar_apendice.py artigo <limpo_ordem_original> <limpo>
+    python verificar_artigo.py <pasta do executar.sh> <docx>     # células das tabelas contra o código
+
+As duas versões do artigo numeram as tabelas de forma diferente:
+- **Versão com alterações controladas:** mantém a ordem e a numeração originais, a mesma usada nos comentários do orientador, nos relatórios de revisão e nas abas da planilha.
+- **Versão limpa:** é a estrutura final. Tem 14 tabelas no corpo, e as antigas 8, 9, 11, 18, 19 e 20 estão no Apêndice A (A.1 a A.6).
+
+A correspondência completa está na aba `Numeracao_final` da planilha.
+
 ## O que permanece em aberto
 
 Todas as pendências de dados, código, números e referências foram resolvidas na revisão
-(ver `ESCRUTINIO_COMPLETO.md` na raiz do repositório). Restam decisões do autor:
+(ver `ESCRUTINIO_COMPLETO.md` na raiz do repositório). O enquadramento ficou com os dois horizontes
+lado a lado, e a divisão entre corpo e apêndice foi feita. As duas decisões podem ser revistas pelo
+orientador. Ficam em aberto:
 
-1. **Enquadramento do resultado central.** No horizonte de um ano, o contraste na rota operacional é
-   em boa parte mecânico; no de dois anos, a leitura de composição é a que se sustenta. O texto já
-   traz os números e a ressalva; falta decidir se a manchete passa a ser o horizonte de dois anos.
-2. **Separação entre corpo e apêndice.** São vinte tabelas; a proposta está em `CARTA_EDUARDO.md`.
-   Versão em inglês, se o periódico-alvo for internacional (o abstract já está no artigo).
+1. **Versão em inglês**, se o periódico-alvo for internacional; o abstract já está no artigo.
+2. **Paginação final**, que depende do modelo do periódico escolhido.
 3. **Itens pendentes da coorientação.** Os comentários sobre a revisão de literatura e as técnicas
    de avaliação da predição ainda não foram recebidos.
 4. **Conferência visual das páginas dos editores.** As referências com DOI foram conferidas pelo

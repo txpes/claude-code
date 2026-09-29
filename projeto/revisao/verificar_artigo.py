@@ -1,13 +1,13 @@
 """Verificacao final: compara cada celula numerica das tabelas do artigo revisado (com as alteracoes aceitas)
 com o valor recalculado pelo codigo final, na precisao exibida na celula.
-Uso: python verificar_artigo.py <diretorio onde o executar.sh rodou>"""
+Uso: python verificar_artigo.py <diretorio onde o executar.sh rodou> [docx; padrao: o revisado]"""
 import sys, os, re, zipfile, pickle
 import numpy as np, pandas as pd
 from lxml import etree
 
 R = sys.argv[1]
 AQUI = os.path.dirname(os.path.abspath(__file__))
-DOCX = os.path.join(AQUI, '..', 'artigo', 'Artigo_Fragilidade_Financeira_revisado.docx')
+DOCX = sys.argv[2] if len(sys.argv) > 2 else os.path.join(AQUI, '..', 'artigo', 'Artigo_Fragilidade_Financeira_revisado.docx')
 DADOS = os.path.join(AQUI, '..', 'dados')
 W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 L = lambda f: pickle.load(open(os.path.join(R, f), 'rb'))
@@ -177,7 +177,9 @@ t = acha('AUC precisão-revocação')
 for rot_, m in [('Árvores impulsionadas', 'GB'), ('Cobertura de juros', 'COB'), ('Mínimos quadrados parciais', 'PLS'), ('Retorno sobre ativos', 'ROA'),
                 ('Componentes principais (F)', 'F'), ('Brito e Assaf Neto', 'BA')]:
     r = G3[1][m]; o = r[80]; i = linha(t, rot_)
-    for j, v in enumerate([r['pr_auc'], r['brier'], r['incl'], o['sinalizadas'], o['vpp']], 1): confere(t, i, j, v, 'T17')
+    for j, v in enumerate([r['pr_auc'], r['brier'], r['incl'], o['sinalizadas'], o['vpp'], o['espec'], r['nb10']], 1): confere(t, i, j, v, 'T17')
+vpn = [G3[1][m][80]['vpn'] for m in ['GB', 'COB', 'PLS', 'ROA', 'F', 'BA']]
+assert f'{min(vpn):.3f}' == '0.988' and f'{max(vpn):.3f}' == '0.993', vpn   # faixa do VPN citada na nota
 i = linha(t, 'Referência sem informação'); confere(t, i, 1, G3[1]['_prev'], 'T17'); confere(t, i, 2, G3[1]['_brier_ref'], 'T17')
 t = acha('Restritiva')
 for rot_, nome in [('Definição principal', 'principal'), ('Sem as entradas exclusivas do critério de EBITDA', 'sem entradas so EBITDA'),

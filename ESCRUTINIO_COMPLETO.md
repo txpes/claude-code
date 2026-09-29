@@ -390,3 +390,39 @@ Todas estão no `aplicar_revisao.py`, com registro no `log_aplicacao.txt`. O res
   - os ajustes menores;
   - três perguntas: manchete, corpo × apêndice (com proposta) e idioma.
 - As três decisões continuam com o autor.
+
+---
+
+## 13. Decisões de estrutura (29/09/2026, com o de acordo do autor)
+
+### 13.1 O que foi decidido
+- **Manchete:** ficam os dois horizontes lado a lado, como já estavam no resumo, na introdução e na conclusão. Nenhuma mudança de texto.
+- **Corpo e apêndice:** o corpo ficou com 14 tabelas e o Apêndice A com 6 (as antigas 8, 9, 11, 18, 19 e 20).
+  - A proposta da carta listava apenas 8 tabelas no corpo e omitia as 5, 6 e 7.
+  - Ela também mandava para o apêndice as Tabelas 12 (probit de H3), 15 (perfil que sustenta a explicação de composição) e 16 (diagnóstico de H4).
+  - Essas três sustentam hipóteses ou o argumento central e ficaram no corpo, para que nenhuma subseção de resultado dependa só de tabela no apêndice.
+- **Inglês:** fica para depois do de acordo do orientador com a estrutura.
+
+### 13.2 Como foi feito
+- **Script novo (`revisao/montar_apendice.py`):** opera sobre a versão limpa e faz três coisas:
+  - move cada bloco (legenda, tabela e nota) para o Apêndice A, depois das referências, com quebra de página;
+  - renumera as 45 menções do artigo num único padrão, para que nenhum número seja trocado duas vezes;
+  - renumera as 11 menções da nota de decisões, inclusive "Tabelas 9 a 11" e "Tabelas 13 e 14".
+- **Versão com alterações controladas:** mantém a ordem e a numeração originais, para comparação com o original e com os comentários do orientador.
+- **Planilha:** a aba `Numeracao_final` traz a correspondência.
+
+### 13.3 Lacunas que a mudança revelou e foram fechadas
+- **Duas tabelas não eram citadas no texto:**
+  - a antiga Tabela 8 (validação minskyana), que agora é citada na §5.2 como Tabela A.1;
+  - a antiga Tabela 17 (métricas), que agora é citada na §5.7.
+- **Pedido I.6 do orientador:** a Tabela 17 (14 na final) mostrava só PR-AUC, Brier, inclinação, sinalizadas e VPP.
+  - Ganhou as colunas de especificidade e de decisão líquida a 10:1.
+  - O VPN, quase constante (0,988 a 0,993), foi para a nota.
+  - A carta dizia que a tabela tinha os dois horizontes e todas as métricas, o que não era verdade no artigo (a versão completa está na planilha). A carta foi corrigida.
+- **Formatação das colunas inseridas (`tracked.py`):** a busca do formato não enxergava runs dentro de `w:ins`/`w:del`, e as colunas novas saíam em fonte maior. Foi corrigida.
+
+### 13.4 Checagens
+- Alterações controladas: 172 aplicadas, 0 falhas.
+- `verificar_artigo.py`: **596 células, 0 divergências**, tanto na versão com alterações controladas quanto na final com apêndice. As 12 células a mais são as colunas novas da Tabela 14. A faixa do VPN citada na nota é conferida por asserção.
+- **Menções:** todas as 20 tabelas são citadas no texto. A primeira menção segue a ordem de numeração no corpo (1 a 14) e no apêndice (A.1 a A.6). Não sobrou menção a um número antigo.
+- **PDF:** 40 páginas, conferido nas páginas da Tabela 14, da §5.8 e do Apêndice (39 e 40), sem palavras quebradas.

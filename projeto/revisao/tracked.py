@@ -208,7 +208,7 @@ def insert_column(table, depois_de, cabecalho, valores_por_rotulo, largura_twips
         for extra in ps[1:]:
             novo.remove(extra)
         p = ps[0]
-        brun = next(iter(_runs(p)), None)
+        brun = next(p.iter(qn('w:r')), None)          # inclui runs dentro de w:ins/w:del (celulas ja alteradas)
         rpr = copy.deepcopy(brun.find(qn('w:rPr'))) if brun is not None and brun.find(qn('w:rPr')) is not None else None
         for ch in list(p):
             if ch.tag != qn('w:pPr'):

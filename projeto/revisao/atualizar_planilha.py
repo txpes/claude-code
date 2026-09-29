@@ -129,5 +129,16 @@ for aba, h in [('Estabilidade_h1', 1), ('Estabilidade_h2', 2)]:
     for k in range(10):
         for c, m in zip('BCDE', ['F', 'PLS', 'GB', 'BA']): ws[f'{c}{4 + k}'] = float(A[h]['res'][m][k])
 
+# Mapa entre a numeracao das abas (a do artigo original e da versao com alteracoes controladas) e a da versao final
+if 'Numeracao_final' in wb.sheetnames: del wb['Numeracao_final']
+ws = wb.create_sheet('Numeracao_final', 0)
+ws['A1'] = 'Numeração das tabelas: abas desta planilha e versão final do artigo (com o Apêndice A)'; ws['A1'].font = Font(bold=True)
+for j, c in enumerate(['Tabela nas abas e no original', 'Tabela na versão final', 'Local'], 1): ws.cell(3, j, c).font = Font(bold=True)
+APX = [8, 9, 11, 18, 19, 20]; CORPO = [n for n in range(1, 21) if n not in APX]
+for i, n in enumerate(range(1, 21)):
+    ws.cell(4 + i, 1, n); ws.cell(4 + i, 2, f'A.{APX.index(n) + 1}' if n in APX else str(CORPO.index(n) + 1))
+    ws.cell(4 + i, 3, 'Apêndice A' if n in APX else 'Corpo')
+ws.column_dimensions['A'].width = 30; ws.column_dimensions['B'].width = 24
+
 wb.save(DST)
 print('planilha atualizada:', DST, wb.sheetnames)
