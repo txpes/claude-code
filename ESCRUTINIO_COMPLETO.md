@@ -23,7 +23,7 @@ Encontrei, porém, **problemas que um parecerista de periódico de ponta pegaria
 | 8 | "609 observações do último exercício" descreve errado a amostra de risco. | Texto | Não |
 | 9 | O pacote não reproduz sozinho: o executor não roda 3 dos 13 scripts e usa o corte temporal errado; há caminhos fixos de outra máquina; a Figura 3 não tem código; as versões não estão fixadas. | Reprodutibilidade | Não |
 | 10 | Imagens do .docx com extensão `.undefined`, o que pode fazer o Word acusar arquivo corrompido. | Arquivo | Não |
-| 11 | A seção 5.9 afirma que a limitação da data de RJ "não afeta as conclusões" sem ter feito o teste. | Texto | Não sabemos |
+| 11 | A seção 5.9 afirma que a limitação da data de RJ "não afeta as conclusões" sem ter feito o teste. | Texto | Teste feito (seção 10): não muda a conclusão central, mas derruba um resultado secundário |
 | 12 | O mecanismo novo está escrito com a certeza que o orientador pediu para moderar. | Escrita | Não |
 
 **O que já apliquei** (seção 8): as correções dos itens 2 a 12 foram feitas no código e, como alterações controladas, numa cópia do artigo (`Artigo_Fragilidade_Financeira_revisado.docx`). O item 1 recebeu uma quantificação factual no texto, mas o **reenquadramento** do argumento é decisão sua (seção 9).
@@ -245,7 +245,7 @@ Ver 3.4. O texto dizia "calibração adequada em todos os modelos" e foi corrigi
 
 | Arquivo | O que é |
 |---|---|
-| `projeto/artigo/Artigo_Fragilidade_Financeira_revisado.docx` | O artigo com **78 alterações controladas** (revisão do Word, autor "Revisão"), para aceitar ou rejeitar uma a uma. Imagens corrigidas para .png. Validação estrutural: ids únicos, exclusões bem formadas, referências em ordem alfabética. Não consegui renderizar em PDF aqui (o LibreOffice do ambiente não abre nem um .txt); abra no Word e confira o layout. |
+| `projeto/artigo/Artigo_Fragilidade_Financeira_revisado.docx` | O artigo com **103 alterações controladas** (revisão do Word, autor "Revisão"), para aceitar ou rejeitar uma a uma. Imagens corrigidas para .png. Validação estrutural: ids únicos, exclusões bem formadas, referências em ordem alfabética. Não consegui renderizar em PDF aqui (o LibreOffice do ambiente não abre nem um .txt); abra no Word e confira o layout. |
 | `projeto/revisao/log_aplicacao.txt` | Cada alteração aplicada, com o motivo |
 | `projeto/revisao/aplicar_revisao.py`, `tracked.py` | O script que aplica as alterações, para reaplicar se o original mudar |
 | `projeto/codigo/` | Código corrigido: 04 (saídas), 05 (CP2), 11 (B&A), 12 e 13 (caminhos e Figura 3), `executar.sh` (13 scripts, corte 2021), `requirements.txt` |
@@ -259,11 +259,59 @@ O código corrigido foi reexecutado do zero, num diretório limpo, pelo `executa
 ## 9. Decisões que ficam com você, por prioridade
 
 1. **Reenquadrar o resultado central (5.1).** Tornar o horizonte de dois anos a manchete da rota operacional, tratar o de um ano como sobreposição mecânica e pôr a coluna MEB na Tabela 13. Sem isso, o parecerista escreve o parágrafo por você.
-2. **Refazer a Tabela 17 com calibração sobre o posto (3.4)**, nos dois horizontes, com as colunas prometidas na §3.4.
-3. **Rodar o teste da RJ atrasada** (antecipar as 30 entradas em um ano), para poder voltar a dizer que a limitação não afeta as conclusões.
+2. ~~Refazer a Tabela 17 com calibração sobre o posto~~ **Feito** (seção 10.1). Falta decidir se a versão completa, com os dois horizontes e todas as colunas (planilha, aba `T17_revisada`), substitui a do corpo ou vai para o apêndice.
+3. ~~Rodar o teste da RJ atrasada~~ **Feito** (seção 10.2). Atualize também a nota metodológica: são 22 firmas no painel, e não 30.
 4. **Decidir sobre as árvores (1.2):** regenerar com as versões fixadas ou declarar a versão usada.
 5. **Figura 3:** agora é reproduzível. Se você regenerar as árvores (item 4), troque também a imagem.
 6. **Assumir que a análise central é exploratória** (5.3), numa frase no resumo e na §3.5.
 7. **Sensibilidade das saídas com o motivo do cadastro** (5.5).
 8. **Seção 6.2 e nota metodológica** (seção 6).
 9. **Divisão entre corpo e apêndice** e versão em inglês, se o alvo for internacional.
+
+---
+
+## 10. Rodadas complementares (29/09/2026)
+
+### 10.1 Tabela 17 com calibração sobre o posto (novo script `14_metricas_calibradas.py`)
+
+O desenho é o do script 03. A única mudança é a calibração: regressão logística sobre o posto do escore na distribuição do treino, em vez do escore bruto. A ordenação não muda.
+
+| Um ano | PR-AUC | Brier | Inclinação | Intercepto | Especificidade* | VPP* | VPN* | Firma-anos sinalizados* | Decisão líquida 10:1 |
+|---|---|---|---|---|---|---|---|---|---|
+| Árvores | 0,230 | **0,0251** | 1,087 | −0,028 | 0,846 | 0,134 | 0,992 | 17,2% | +0,011 |
+| Cobertura | 0,184 | **0,0256** | 0,988 | −0,004 | 0,831 | 0,124 | 0,992 | 18,7% | +0,009 |
+| ROA | 0,175 | **0,0260** | 0,993 | −0,005 | 0,843 | 0,133 | 0,993 | 17,6% | +0,009 |
+| PLS | 0,172 | **0,0260** | 1,072 | +0,007 | 0,810 | 0,113 | 0,992 | 20,8% | +0,008 |
+| F | 0,111 | **0,0275** | 0,991 | −0,006 | 0,570 | 0,053 | 0,989 | 44,1% | +0,003 |
+| Brito e Assaf | 0,095 | **0,0278** | 1,075 | +0,015 | 0,462 | 0,044 | 0,988 | 54,7% | +0,001 |
+| Constante | 0,030 | 0,0287 | — | — | — | — | — | — | 0 |
+
+\* No limiar que atinge sensibilidade de 80% no treino.
+
+- **A contradição some.** Os seis modelos batem a previsão constante no Brier. As inclinações ficam entre 0,99 e 1,09, e o Brito e Assaf Neto sai de 0,738 para 1,075. A isotônica dá o mesmo Brier (checagem interna do script).
+- **Horizonte de dois anos**, que o artigo não mostrava: todos os Brier ficam entre 0,0277 e 0,0283, contra 0,0285 da constante, e a **decisão líquida é praticamente zero em todos os modelos**. Nenhum modelo tem utilidade operacional a 10:1 em dois anos. É um achado que vale uma frase no texto (já incluída) e reforça a leitura de que a vantagem dos benchmarks em um ano vem, em boa parte, da sobreposição mecânica. A inclinação negativa da cobertura (−0,67 na calibração antiga) passa a 0,948.
+- **Aplicado no artigo:** as células da Tabela 17, a nota, o método na §5.7 (com a referência Niculescu-Mizil e Caruana, 2005), a frase de calibração reescrita e especificidade, decisão líquida e horizonte de dois anos no texto. A tabela completa está na aba `T17_revisada` de `Tabelas_Artigo_revisado.xlsx`.
+- A ordem das linhas da Tabela 17 no artigo seguia a PR-AUC. Com os valores novos, ROA (0,175) passa à frente do PLS (0,172). Não reordenei; troque as duas linhas se quiser manter o critério.
+
+### 10.2 Sensibilidade à data da recuperação judicial (novo script `15_rj_antecipada.py`)
+
+- **Quantas firmas:** no painel, **22** firmas têm o primeiro documento de RJ classificado como "andamento" (`rj_detectada_2025.csv`), e não 30, como dizem o LEIAME e a nota. As 3 firmas de "encerramento/conversão" não afetam a amostra; testei com e sem elas e o resultado é idêntico.
+- **Como:** a RJ dessas firmas é antecipada em um ano, e estado, entrada e conjunto de risco são reconstruídos. A reconstrução **reproduz exatamente** os painéis originais quando nenhuma data é alterada, e o script verifica isso antes de rodar. Mudam 8 células de entrada; o total segue em 194.
+
+| Um ano | Original | RJ antecipada |
+|---|---|---|
+| Amostra comum: obs. / entradas | 5.046 / 149 | 5.042 / 150 |
+| F / COB / ROA / PLS | 0,764 / 0,894 / 0,874 / 0,875 | 0,765 / 0,887 / 0,867 / 0,872 |
+| COB − F | +0,129 [+0,080; +0,181] | +0,122 [+0,072; +0,175] |
+| Rota operacional (puras, 66): COB − F | +0,324 | +0,324 |
+| PL puras: PLS − F | **−0,066 [−0,129; −0,003]** | **−0,055 [−0,118; +0,009]** |
+| RJ puras: COB − F | +0,012 [−0,097; +0,117] (11) | −0,064 [−0,187; +0,063] (12) |
+| Dois anos: COB − F, p Bonferroni | 0,120 | **0,048** |
+
+- **Conclusão:** o resultado central não muda. Duas qualificações, ambas aplicadas no texto:
+  1. A frase "o escore supera o supervisionado nas entradas por patrimônio negativo" **não resiste**: o intervalo passa a conter o zero. A §5.5 e a conclusão agora dizem isso.
+  2. Em dois anos, a vantagem da cobertura sobre o escore **fica mais forte** e resiste ao Bonferroni.
+- A §5.9 agora descreve o teste e o resultado, em vez de dizer que a sensibilidade não foi estimada.
+
+### 10.3 Nota de execução
+O `executar.sh` agora roda 15 scripts e limita as threads do OpenMP. Rodando em paralelo, os scripts disputam os núcleos e um que leva 22 segundos passou de 45 minutos.

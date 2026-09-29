@@ -1,6 +1,6 @@
 # Código de reprodução
 
-Reproduz todos os números do artigo a partir dos painéis 2010–2025.
+Reproduz todos os números do artigo a partir dos painéis 2010–2025. Versões das bibliotecas em `requirements.txt`; o executor limita as threads do OpenMP, porque duas execuções simultâneas do scikit-learn disputam os núcleos e ficam dezenas de vezes mais lentas.
 
 ## Execução
 
@@ -28,6 +28,8 @@ Dependências: pandas, numpy, scipy, scikit-learn, statsmodels, matplotlib, open
 | 11_tabelas_e_figuras.py | Estrutura fatorial, probit, descritivas, séries e Figuras 1, 2 e 4 | 3 a 7, 12, 16 |
 | 12_concentracao.py | Concentração do poder discriminante por tipo de entrada, verificação exploratória | — |
 | 13_puros_e_perfil.py | Subconjuntos puros, amplitude dos intervalos e perfil das firmas por rota | 14, 15 e Figura 3 |
+| 14_metricas_calibradas.py | Métricas de probabilidade com calibração sobre o posto, dois horizontes | 17 |
+| 15_rj_antecipada.py | Sensibilidade à datação da recuperação judicial: RJ antecipada em um ano para as firmas cujo primeiro documento é de andamento | 5.9 |
 
 ## Princípio do desenho
 

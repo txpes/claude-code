@@ -121,8 +121,27 @@ sub('O motivo da saída foi recuperado do cadastro de companhias abertas, mas a 
 
 # ------------------------------------------------------------------ 6. calibracao e metricas operacionais
 sub('a calibração é adequada em todos os modelos, com inclinações entre 0,968 e 1,016, à exceção do modelo de Brito e Assaf Neto, com 0,738.',
-    'as inclinações de calibração ficam entre 0,968 e 1,016 e os interceptos próximos de zero, à exceção do modelo de Brito e Assaf Neto, com inclinação de 0,738. O escore de Brier não acompanha essa leitura: nos modelos por mínimos quadrados parciais, retorno sobre ativos e Brito e Assaf Neto ele fica ligeiramente acima do da previsão constante, efeito de poucas probabilidades extremas que a calibração logística produz sobre escores de caudas longas.',
-    'Brier acima da referencia contradizia "calibracao adequada"')
+    'a calibração é adequada em todos os modelos, com inclinações entre 0,988 e 1,087 e interceptos próximos de zero, e todos superam a previsão constante no escore de Brier. A conversão é feita sobre o posto do escore, e não sobre o seu valor bruto, porque a regressão logística aplicada a indicadores de caudas longas, como o retorno sobre ativos e a cobertura de juros, atribui probabilidades extremas a poucas observações e degrada o escore de Brier: sobre os valores brutos, três dos seis modelos têm escore de Brier pior que o da previsão constante.',
+    'Tabela 17 refeita com calibracao sobre o posto (script 14)')
+sub('Cada escore é convertido em probabilidade por calibração logística estimada nas firmas de treino',
+    'Cada escore é convertido em probabilidade por regressão logística sobre o seu posto na distribuição do treino (NICULESCU-MIZIL; CARUANA, 2005), estimada nas firmas de treino',
+    'metodo de calibracao')
+sub('com valor preditivo positivo de 0,053 contra 0,124.',
+    'com valor preditivo positivo de 0,053 contra 0,124. No mesmo limiar, a especificidade é de 0,570 para o escore sintético e de 0,831 para a cobertura de juros, e a decisão líquida sob razão de custo de dez para um é positiva em todos os modelos, de 0,003 para o escore sintético a 0,011 para a referência não linear. No horizonte de dois anos, as métricas de probabilidade aproximam-se das da previsão constante e a decisão líquida é praticamente nula em todos os modelos, o que limita a utilidade operacional da previsão nesse horizonte.',
+    'especificidade, decisao liquida e horizonte de dois anos')
+sub('Inclinação de calibração com valor ideal unitário.',
+    'Inclinação de calibração com valor ideal unitário. Probabilidades obtidas por regressão logística sobre o posto do escore na distribuição do treino.',
+    'nota da Tabela 17')
+T17 = [('Árvores impulsionadas', ['0,234','0,0265','1,016','17,2%','0,136'], ['0,230','0,0251','1,087','17,2%','0,134']),
+       ('Cobertura de juros', ['0,215','0,0280','0,970','18,7%','0,124'], ['0,184','0,0256','0,988','18,7%','0,124']),
+       ('Mínimos quadrados parciais', ['0,172','0,0288','1,005','20,8%','0,113'], ['0,172','0,0260','1,072','20,8%','0,113']),
+       ('Retorno sobre ativos', ['0,171','0,0289','0,968','17,6%','0,133'], ['0,175','0,0260','0,993','17,6%','0,133']),
+       ('Componentes principais (F)', ['0,110','0,0285','0,973','44,1%','0,053'], ['0,111','0,0275','0,991','44,1%','0,053']),
+       ('Brito e Assaf Neto', ['0,077','0,0290','0,738','54,6%','0,044'], ['0,095','0,0278','1,075','54,7%','0,044'])]
+for lin, velhos, novos in T17:
+    for col, (a, b) in enumerate(zip(velhos, novos), start=1):
+        if a != b:
+            celula('AUC precisão-revocação', lin, col, a, b, 'Tabela 17, calibracao sobre o posto')
 sub('a regra baseada no escore sintético sinaliza 44,1% das firmas', 'a regra baseada no escore sintético sinaliza 44,1% dos firma-anos', 'unidade e firma-ano')
 sub('Firmas sinalizadas e valor preditivo positivo referem-se', 'Firma-anos sinalizados e valor preditivo positivo referem-se', 'nota da Tabela 17')
 celula('AUC precisão-revocação', 'Modelo', 4, 'Firmas sinalizadas', 'Firma-anos sinalizados', 'cabecalho da Tabela 17')
@@ -142,8 +161,14 @@ sub('Ela não basta, porém, porque no horizonte de dois anos',
 
 # ------------------------------------------------------------------ 9. calendario: RJ atrasada nao foi testada
 sub('O tratamento conservador da subseção 5.8 mostra que a limitação não afeta as conclusões.',
-    'O tratamento da subseção 5.8 cobre a antecipação por divulgação anterior às demonstrações de t, mas não o eventual atraso da data registrada em relação ao ajuizamento, cuja sensibilidade não foi estimada.',
-    '5.9 afirmava um teste que nao foi feito')
+    'O tratamento da subseção 5.8 cobre a antecipação por divulgação anterior às demonstrações de t. Para o eventual atraso da data registrada em relação ao ajuizamento, a recuperação judicial das 22 firmas do painel cujo primeiro documento trata do andamento do processo foi antecipada em um ano e os modelos foram reestimados. A área sob a curva passa a 0,765 para o escore sintético e a 0,887 para a cobertura de juros, e as conclusões agregadas e por rota de deterioração se mantêm, com duas qualificações: nas entradas exclusivamente por patrimônio líquido negativo, a vantagem do escore sintético sobre o supervisionado deixa de ser distinguível, e no horizonte de dois anos a diferença entre a cobertura de juros e o escore sintético passa a resistir à correção de Bonferroni.',
+    '5.9: teste da RJ atrasada (script 15)')
+sub('A única diferença significativa nesse tipo de entrada é contra o escore supervisionado, que o escore sintético supera por 0,066 ponto.',
+    'A única diferença significativa nesse tipo de entrada é contra o escore supervisionado, que o escore sintético supera por 0,066 ponto, resultado que não resiste à antecipação das datas de recuperação judicial examinada na subseção 5.9.',
+    '5.5: resultado fragil')
+sub('e o escore supera o escore supervisionado nas primeiras.',
+    'e o escore supera nominalmente o escore supervisionado nas primeiras, com diferença sensível à datação da recuperação judicial.',
+    'conclusao: resultado fragil')
 
 # ------------------------------------------------------------------ 10. esquema temporal: Brito e Assaf
 sub('No horizonte de dois anos, com 34 entradas, nenhuma diferença alcança significância, e o esquema temporal é informativo apenas quanto à direção.',
@@ -200,6 +225,7 @@ NOVAS = [
  ('FIELD', 'FRIEDMAN, J. H. Greedy function approximation: a gradient boosting machine. The Annals of Statistics, v. 29, n. 5, p. 1189-1232, 2001.'),
  ('HANLEY', 'HORN, J. L. A rationale and test for the number of factors in factor analysis. Psychometrika, v. 30, n. 2, p. 179-185, 1965.'),
  ('JOLLIFFE', 'KAISER, H. F. The application of electronic computers to factor analysis. Educational and Psychological Measurement, v. 20, n. 1, p. 141-151, 1960.'),
+ ('MULLIGAN', 'NICULESCU-MIZIL, A.; CARUANA, R. Predicting good probabilities with supervised learning. In: INTERNATIONAL CONFERENCE ON MACHINE LEARNING, 22., 2005, Bonn. Proceedings [...]. New York: ACM, 2005. p. 625-632.'),
  ('OHLSON', 'PEDUZZI, P.; CONCATO, J.; KEMPER, E.; HOLFORD, T. R.; FEINSTEIN, A. R. A simulation study of the number of events per variable in logistic regression analysis. Journal of Clinical Epidemiology, v. 49, n. 12, p. 1373-1379, 1996.'),
  ('PEDUZZI', 'SAITO, T.; REHMSMEIER, M. The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. PLOS ONE, v. 10, n. 3, e0118432, 2015.'),
  ('TYMOIGNE, É. Measuring', 'VAN CALSTER, B.; McLERNON, D. J.; VAN SMEDEN, M.; WYNANTS, L.; STEYERBERG, E. W. Calibration: the Achilles heel of predictive analytics. BMC Medicine, v. 17, art. 230, 2019.'),

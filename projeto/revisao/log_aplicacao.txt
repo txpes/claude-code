@@ -29,7 +29,29 @@ OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[4] 
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[5] 0,895 -> 0,896
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[6] 0,876 -> 0,877
 OK     5.9: codigo nao usa o cadastro: 'O motivo da saída foi recuperado do cadastro de companhias a' -> 'A classificação de saídas associadas a dificuldade financeir'
-OK     Brier acima da referencia contradizia "calibracao adequada": 'a calibração é adequada em todos os modelos, com inclinações' -> 'as inclinações de calibração ficam entre 0,968 e 1,016 e os '
+OK     Tabela 17 refeita com calibracao sobre o posto (script 14): 'a calibração é adequada em todos os modelos, com inclinações' -> 'a calibração é adequada em todos os modelos, com inclinações'
+OK     metodo de calibracao: 'Cada escore é convertido em probabilidade por calibração log' -> 'Cada escore é convertido em probabilidade por regressão logí'
+OK     especificidade, decisao liquida e horizonte de dois anos: 'com valor preditivo positivo de 0,053 contra 0,124.' -> 'com valor preditivo positivo de 0,053 contra 0,124. No mesmo'
+OK     nota da Tabela 17: 'Inclinação de calibração com valor ideal unitário.' -> 'Inclinação de calibração com valor ideal unitário. Probabili'
+OK     Tabela 17, calibracao sobre o posto: Árvores impulsionadas[1] 0,234 -> 0,230
+OK     Tabela 17, calibracao sobre o posto: Árvores impulsionadas[2] 0,0265 -> 0,0251
+OK     Tabela 17, calibracao sobre o posto: Árvores impulsionadas[3] 1,016 -> 1,087
+OK     Tabela 17, calibracao sobre o posto: Árvores impulsionadas[5] 0,136 -> 0,134
+OK     Tabela 17, calibracao sobre o posto: Cobertura de juros[1] 0,215 -> 0,184
+OK     Tabela 17, calibracao sobre o posto: Cobertura de juros[2] 0,0280 -> 0,0256
+OK     Tabela 17, calibracao sobre o posto: Cobertura de juros[3] 0,970 -> 0,988
+OK     Tabela 17, calibracao sobre o posto: Mínimos quadrados parciais[2] 0,0288 -> 0,0260
+OK     Tabela 17, calibracao sobre o posto: Mínimos quadrados parciais[3] 1,005 -> 1,072
+OK     Tabela 17, calibracao sobre o posto: Retorno sobre ativos[1] 0,171 -> 0,175
+OK     Tabela 17, calibracao sobre o posto: Retorno sobre ativos[2] 0,0289 -> 0,0260
+OK     Tabela 17, calibracao sobre o posto: Retorno sobre ativos[3] 0,968 -> 0,993
+OK     Tabela 17, calibracao sobre o posto: Componentes principais (F)[1] 0,110 -> 0,111
+OK     Tabela 17, calibracao sobre o posto: Componentes principais (F)[2] 0,0285 -> 0,0275
+OK     Tabela 17, calibracao sobre o posto: Componentes principais (F)[3] 0,973 -> 0,991
+OK     Tabela 17, calibracao sobre o posto: Brito e Assaf Neto[1] 0,077 -> 0,095
+OK     Tabela 17, calibracao sobre o posto: Brito e Assaf Neto[2] 0,0290 -> 0,0278
+OK     Tabela 17, calibracao sobre o posto: Brito e Assaf Neto[3] 0,738 -> 1,075
+OK     Tabela 17, calibracao sobre o posto: Brito e Assaf Neto[4] 54,6% -> 54,7%
 OK     unidade e firma-ano: 'a regra baseada no escore sintético sinaliza 44,1% das firma' -> 'a regra baseada no escore sintético sinaliza 44,1% dos firma'
 OK     nota da Tabela 17: 'Firmas sinalizadas e valor preditivo positivo referem-se' -> 'Firma-anos sinalizados e valor preditivo positivo referem-se'
 OK     cabecalho da Tabela 17: Modelo[4] Firmas sinalizadas -> Firma-anos sinalizados
@@ -38,7 +60,9 @@ OK     Tabela 16, sigla: EBITDA[0] EBITDA -> MEB
 OK     convencao explicitada: 'o escore sintético fica muito atrás: 0,649 em um ano' -> 'o escore sintético fica muito atrás: na atribuição de referê'
 OK     0,816 e do subconjunto puro: 'Nas entradas por patrimônio líquido negativo, o escore alcan' -> 'Nas entradas exclusivamente por patrimônio líquido negativo,'
 OK     quantifica a sobreposicao mecanica: 'Ela não basta, porém, porque no horizonte de dois anos' -> 'Seu peso é mensurável: as 66 entradas desse tipo têm EBITDA '
-OK     5.9 afirmava um teste que nao foi feito: 'O tratamento conservador da subseção 5.8 mostra que a limita' -> 'O tratamento da subseção 5.8 cobre a antecipação por divulga'
+OK     5.9: teste da RJ atrasada (script 15): 'O tratamento conservador da subseção 5.8 mostra que a limita' -> 'O tratamento da subseção 5.8 cobre a antecipação por divulga'
+OK     5.5: resultado fragil: 'A única diferença significativa nesse tipo de entrada é cont' -> 'A única diferença significativa nesse tipo de entrada é cont'
+OK     conclusao: resultado fragil: 'e o escore supera o escore supervisionado nas primeiras.' -> 'e o escore supera nominalmente o escore supervisionado nas p'
 OK     Tabela 11 mostrava inversao nao comentada: 'No horizonte de dois anos, com 34 entradas, nenhuma diferenç' -> 'No horizonte de dois anos, com 34 entradas, nenhuma diferenç'
 OK     resumo: 'A razão é de composição:' -> 'Os dados são consistentes com uma explicação de composição:'
 OK     resumo: horizonte de dois anos e ressalva mecanica: 'Nas entradas por prejuízo operacional persistente o escore f' -> 'Nas entradas por prejuízo operacional persistente o escore f'
@@ -71,6 +95,7 @@ OK     referencia inserida: FIELD, C. A.; WELSH, A. H. Bootstrapping clustered
 OK     referencia inserida: FRIEDMAN, J. H. Greedy function approximation: a g
 OK     referencia inserida: HORN, J. L. A rationale and test for the number of
 OK     referencia inserida: KAISER, H. F. The application of electronic comput
+OK     referencia inserida: NICULESCU-MIZIL, A.; CARUANA, R. Predicting good p
 OK     referencia inserida: PEDUZZI, P.; CONCATO, J.; KEMPER, E.; HOLFORD, T. 
 OK     referencia inserida: SAITO, T.; REHMSMEIER, M. The precision-recall plo
 OK     referencia inserida: VAN CALSTER, B.; McLERNON, D. J.; VAN SMEDEN, M.; 
