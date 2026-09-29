@@ -6,7 +6,7 @@ Gera artigo/Artigo_Fragilidade_Financeira_revisado.docx e revisao/log_aplicacao.
 """
 import sys, json, os
 import docx, docx.text.paragraph
-from tracked import replace, insert_after, delete_paragraph, consertar_midia
+from tracked import replace, insert_after, delete_paragraph, consertar_midia, insert_row_after, insert_column
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(AQUI, '..', 'artigo', 'Artigo_Fragilidade_Financeira.docx')
@@ -108,16 +108,25 @@ celula('Efeito dos controles', 'Brito e Assaf Neto', 3, '+0,085', V['ba_efeito']
 sub('entre as que saem, 32,2% estavam em situação de vulnerabilidade na última observação, contra 16,0% entre as que permanecem',
     f"entre as que saem, {V['vul_saem']} estavam em situação de vulnerabilidade na última observação, contra {V['vul_ficam']} entre as que permanecem",
     'introducao, saidas recalculadas')
-sub('das 143 companhias que deixam o painel antes do fim do período, seja por cancelamento de registro, seja por interrupção da entrega das demonstrações, 32,2% estavam em vulnerabilidade na última observação, contra 16,0% entre as que permanecem, e 46 saídas apresentam sinal de dificuldade financeira. Dessas, 6 ocorrem a partir do estado saudável',
-    f"das {V['n_saem']} companhias cuja última observação antecede 2025, {V['vul_saem']} estavam em vulnerabilidade na última observação, contra {V['vul_ficam']} entre as que permanecem, e {V['n_dist']} saídas apresentam sinal de dificuldade financeira, definido como recuperação judicial registrada ou vulnerabilidade em uma das duas últimas observações. Dessas, {V['n_cand']} ocorrem a partir do estado saudável",
-    '5.8, saidas recalculadas')
+sub('das 143 companhias que deixam o painel antes do fim do período, seja por cancelamento de registro, seja por interrupção da entrega das demonstrações, 32,2% estavam em vulnerabilidade na última observação, contra 16,0% entre as que permanecem, e 46 saídas apresentam sinal de dificuldade financeira. Dessas, 6 ocorrem a partir do estado saudável, sem desfecho observável, e a sensibilidade as trata como evento. A quinta restringe a amostra às firmas com registro ativo ao fim do período.',
+    f"das {V['n_saem']} companhias cuja última observação antecede 2025, {V['vul_saem']} estavam em vulnerabilidade na última observação, contra {V['vul_ficam']} entre as que permanecem, e {V['n_dist']} saídas apresentam sinal de dificuldade financeira, definido como recuperação judicial registrada ou vulnerabilidade em uma das duas últimas observações. Dessas, {V['n_cand']} ocorrem a partir do estado saudável, sem desfecho observável, e a sensibilidade as trata como evento. A quinta linha usa, em lugar dessa classificação, o motivo do cancelamento no cadastro de companhias abertas. Por ele, as {V['n_saem']} saídas se dividem em fechamento voluntário de capital ({V['c_fech']}), recuperação judicial ({V['c_rj']}), incorporação ou reorganização ({V['c_inc']}), falência ou liquidação ({V['c_fal']}), cancelamento por outro motivo ({V['c_out']}) e motivo não identificado ({V['c_nid']}); {V['c_filtro']} delas decorrem apenas do filtro amostral, com o registro ainda ativo. As {V['c_dist']} saídas associadas a dificuldade financeira pelo cadastro, {V['c_dist_pct']} do total, incluem {V['c_cand']} ocorridas a partir do estado saudável, que a sensibilidade trata como evento. Como a saída por dificuldade financeira impede que se observe o desfecho que se pretende prever, ela constitui um risco competitivo, e as duas classificações levam à mesma conclusão. A sexta restringe a amostra às firmas com registro ativo ao fim do período.",
+    '5.8, saidas recalculadas e motivo pelo cadastro (ponto 4 do orientador)')
+linha19 = [row for t in d.tables if 'Somente a primeira entrada de cada firma' in ' '.join(c.text for r in t.rows for c in r.cells) for row in t.rows if row.cells[0].text.strip() == 'Saídas associadas a distress tratadas como evento']
+if len(linha19) == 1:
+    insert_row_after(linha19[0], ['Saídas por dificuldade financeira segundo o cadastro, como evento', V['t19b_n'], V['t19b_ev'], V['t19b_F'], V['t19b_PLS'], V['t19b_COB'], V['t19b_ROA']])
+    log.append('OK     Tabela 19: linha nova, saidas pelo motivo do cadastro')
+else:
+    log.append(f'FALHOU Tabela 19: linha de saidas encontrada {len(linha19)} vezes')
+sub('Fonte: elaboração própria. Horizonte de um ano, atribuição de referência, com todas as transformações estimadas nas firmas de treino.',
+    'Fonte: elaboração própria. Horizonte de um ano, atribuição de referência, com todas as transformações estimadas nas firmas de treino. Na quarta linha, a saída associada a dificuldade financeira é identificada pela recuperação judicial registrada ou pela vulnerabilidade nas duas últimas observações; na quinta, pelo motivo do cancelamento no cadastro de companhias abertas.',
+    'nota da Tabela 19')
 for col, old, new in [(1, '5.052', V['t19_n']), (2, '155', V['t19_ev']), (3, '0,767', V['t19_F']), (4, '0,878', V['t19_PLS']),
                       (5, '0,895', V['t19_COB']), (6, '0,876', V['t19_ROA'])]:
     if old != new:
         celula('Somente a primeira entrada de cada firma', 'Saídas associadas a distress tratadas como evento', col, old, new, 'Tabela 19, saidas')
 sub('O motivo da saída foi recuperado do cadastro de companhias abertas, mas a classificação de saídas associadas a dificuldade financeira permanece aproximada.',
-    'A classificação de saídas associadas a dificuldade financeira é aproximada, construída a partir da recuperação judicial registrada e do estado de vulnerabilidade nas últimas observações; o motivo formal do cancelamento, disponível no cadastro de companhias abertas, não foi incorporado à análise.',
-    '5.9: codigo nao usa o cadastro')
+    'A classificação de saídas associadas a dificuldade financeira é aproximada. As duas versões empregadas, uma pelo estado de vulnerabilidade e pela recuperação judicial registrada nas últimas observações, outra pelo motivo do cancelamento no cadastro de companhias abertas, levam à mesma conclusão, mas nenhuma identifica a data em que a dificuldade se instalou.',
+    '5.9: saidas pelas duas classificacoes')
 
 # ------------------------------------------------------------------ 6. calibracao e metricas operacionais
 sub('a calibração é adequada em todos os modelos, com inclinações entre 0,968 e 1,016, à exceção do modelo de Brito e Assaf Neto, com 0,738.',
@@ -202,6 +211,96 @@ sub('e a qual delas o escore é cego', 'e em qual delas o escore tem desempenho 
 sub('revela se o indicador é uniformemente inferior ou apenas cego a uma das rotas', 'revela se o indicador é uniformemente inferior ou fraco em apenas uma das rotas', 'conclusao')
 sub('são, assim, o mesmo fato observado de dois ângulos', 'são, assim, compatíveis com um mesmo fato observado de dois ângulos', 'conclusao')
 
+# ------------------------------------------------------------------ 11b. Ponzi com exercicios consecutivos (Tabela 8)
+for lin, c8, c7, n8, n7 in [('Escore médio, posição Ponzi', '0,909', '0,874', V['pz8'], V['pz7']),
+                            ('Escore médio, demais posições', '−0,400', '−0,384', V['np8'], V['np7']),
+                            ('Estatística de Kolmogorov-Smirnov', '0,434', '0,416', V['ks8'], V['ks7']),
+                            ('Área sob a curva para a posição Ponzi', '0,783', '0,770', V['auc8'], V['auc7'])]:
+    if c8 != n8: celula('Escore sem cobertura de juros', lin, 1, c8, n8, 'Tabela 8, Ponzi com exercicios consecutivos')
+    if c7 != n7: celula('Escore sem cobertura de juros', lin, 2, c7, n7, 'Tabela 8, Ponzi com exercicios consecutivos')
+sub('abrangendo 2.265 firma-anos, ou 30,5% do painel', f"abrangendo {V['pz_n']} firma-anos, ou {V['pz_pct']} do painel", 'nota da Tabela 8')
+sub('O escore médio das observações em posição Ponzi é de 0,909, contra −0,400 para as demais, e a área sob a curva para discriminar essa posição é de 0,783. Excluída a cobertura de juros, ela passa a 0,770.',
+    f"O escore médio das observações em posição Ponzi é de {V['pz8']}, contra {V['np8']} para as demais, e a área sob a curva para discriminar essa posição é de {V['auc8']}. Excluída a cobertura de juros, ela passa a {V['auc7']}.", '5.2, Ponzi')
+sub('com área sob a curva de 0,783, ou 0,770 quando excluído', f"com área sob a curva de {V['auc8']}, ou {V['auc7']} quando excluído", 'introducao, Ponzi')
+
+# ------------------------------------------------------------------ 11c. arvores: valores reproduzidos com as versoes de requirements.txt
+for lin, col, a, b, apos in [('Árvores impulsionadas', 1, '0,900', '0,897', None), ('Árvores impulsionadas', 2, '+0,136', '+0,133', None),
+                             ('Árvores impulsionadas', 3, '[+0,090; +0,184]', '[+0,086; +0,181]', None),
+                             ('Árvores impulsionadas', 1, '0,752', '0,753', 'Horizonte de dois anos'), ('Árvores impulsionadas', 2, '+0,125', '+0,126', 'Horizonte de dois anos'),
+                             ('Árvores impulsionadas', 3, '[+0,060; +0,191]', '[+0,060; +0,192]', 'Horizonte de dois anos')]:
+    celula('p DeLong', lin, col, a, b, 'Tabela 10, arvores (versao fixada)', apos=apos)
+for col, a, b in [(1, '0,910', '0,911'), (2, '+0,166', '+0,167'), (4, '0,713', '0,708')]:
+    celula('AUC, um ano', 'Árvores impulsionadas', col, a, b, 'Tabela 11, arvores (versao fixada)')
+for lin, a, b in [('Somente por EBITDA negativo', '0,723', '0,719'), ('Patrimônio líquido negativo', '0,772', '0,771'),
+                  ('Recuperação judicial', '0,849', '0,850'), ('Todas as entradas', '0,757', '0,755')]:
+    celula('Somente por EBITDA negativo', lin, 3, a, b, 'Tabela 13, arvores (versao fixada)', apos='Horizonte de dois anos')
+celula('Restritiva', 'Sem as entradas exclusivas do critério de EBITDA', 4, '0,858', '0,857', 'Tabela 18, arvores (versao fixada)')
+celula('Restritiva', 'Restritiva: patrimônio líquido negativo ou recuperação judicial', 4, '0,955', '0,954', 'Tabela 18, arvores (versao fixada)')
+sub('0,874 do retorno sobre ativos e 0,900 da referência não linear', '0,874 do retorno sobre ativos e 0,897 da referência não linear', '5.3, arvores')
+sub('e a referência não linear 0,858, sem diferença', 'e a referência não linear 0,857, sem diferença', '5.5, arvores')
+sub('as árvores impulsionadas alcançam 0,900, e a diferença para a cobertura de juros isolada, de 0,006 ponto,',
+    'as árvores impulsionadas alcançam 0,897, e a diferença para a cobertura de juros isolada, de 0,003 ponto,', '5.6, arvores')
+
+# ------------------------------------------------------------------ 11d. estabilidade entre as dez atribuicoes (prometida no texto e ausente)
+sub('cujas médias e desvios-padrão são reportados na subseção 5.6', 'cujas médias e desvios-padrão são reportados na subseção 5.3', 'remissao corrigida')
+sub('que ele supera por 0,030 ponto sem significância estatística.',
+    f"que ele supera por 0,030 ponto sem significância estatística. Sob as dez atribuições aleatórias de firmas a partições, as médias praticamente coincidem com os valores da atribuição de referência: {V['st1_F_mu']} para o escore sintético, com desvio-padrão de {V['st1_F_sd']}, {V['st1_PLS_mu']} para o escore supervisionado ({V['st1_PLS_sd']}) e {V['st1_GB_mu']} para a referência não linear ({V['st1_GB_sd']}). O modelo de Brito e Assaf Neto é o mais sensível à atribuição, com média de {V['st1_BA_mu']} e amplitude de {V['st1_BA_min']} a {V['st1_BA_max']}, o que reforça a leitura de que sua diferença para o escore sintético não é distinguível.",
+    'estabilidade reportada')
+
+# ------------------------------------------------------------------ 11e. Tabela 13: coluna da margem EBITDA
+MEB13 = {2: '0,978', 3: '0,689', 4: '0,780', 5: '0,824', 7: '0,618', 8: '0,678', 9: '0,724', 10: '0,654'}
+t13 = [t for t in d.tables if 'Somente por EBITDA negativo' in ' '.join(c.text for r in t.rows for c in r.cells)]
+if len(t13) == 1 and len(t13[0].columns) == 7:
+    insert_column(t13[0], 6, 'MEB', lambda i, txt: MEB13.get(i, ''), largura_twips=1000)
+    log.append('OK     Tabela 13: coluna MEB (margem EBITDA isolada)')
+else:
+    log.append(f'FALHOU Tabela 13: {len(t13)} tabelas encontradas')
+sub('e não os da atribuição de referência.', 'e não os da atribuição de referência. A última coluna reporta a margem EBITDA isolada, cuja condição define o critério de prejuízo operacional.', 'nota da Tabela 13')
+
+# ------------------------------------------------------------------ 11f. literatura: o que o texto afirma de cada obra, conferido na fonte
+sub('e reporta que o porte, a estrutura de capital e a liquidez concentram o poder preditivo.',
+    'e reporta que o porte, a estrutura de capital, o desempenho e a liquidez corrente são os fatores estatisticamente significativos.', 'Ohlson: quatro fatores')
+sub('documenta que a amostragem por pareamento entre falidas e não falidas enviesa as estimativas, recomendando o uso de amostras que preservem a frequência populacional do evento.',
+    'mostra que estimar esses modelos em amostras não aleatórias, com sobrerrepresentação das firmas em dificuldade ou selecionadas pela disponibilidade de dados, enviesa as estimativas de parâmetros e probabilidades, argumento que favorece amostras que preservem a frequência populacional do evento.',
+    'Zmijewski: sobreamostragem e selecao, nao pareamento')
+sub('quanto ao viés de amostragem por pareamento', 'quanto ao viés das amostras não aleatórias', 'Zmijewski, 2.4')
+sub('comparam florestas aleatórias e máquinas de vetores de suporte com o discriminante clássico em amostra norte-americana e reportam ganho de aproximadamente dez pontos percentuais de acurácia.',
+    'comparam técnicas de aprendizado de máquina, como bagging, boosting e florestas aleatórias, com modelos tradicionais em amostra de firmas norte-americanas e reportam ganho expressivo de acurácia fora da amostra.',
+    'Barboza: numero nao confirmado na fonte')
+sub('propõe classificação em dois estágios que melhora o desempenho em horizontes longos',
+    'propõe classificação em dois estágios, baseada em perfis financeiros das firmas, que melhora as previsões quando combinada a técnicas de conjunto', 'du Jardin')
+sub('constrói indicadores de fragilidade a partir de razões de fluxo de caixa e endividamento, com finalidade macroprudencial, e encontra deterioração sistemática das posições no período que antecede a crise de 2008.',
+    'constrói indicadores de fragilidade para o financiamento imobiliário residencial, nos Estados Unidos e, no segundo trabalho, também no Reino Unido e na França, com finalidade macroprudencial, e encontra fragilidade elevada no setor residencial norte-americano a partir de 2004, no período que antecede a crise de 2008.',
+    'Tymoigne: setor residencial')
+sub('aplica a classificação em nível setorial na economia norte-americana e reporta migração generalizada de posições hedge para especulativas ao longo das expansões.',
+    'aplica a classificação, definida pela cobertura de juros, a grupos setoriais da economia norte-americana e examina em que medida cada setor evolui de acordo com a hipótese de instabilidade financeira.',
+    'Mulligan: achado nao confirmado na fonte')
+sub('e mostram que a distribuição das firmas entre regimes varia sistematicamente ao longo do ciclo.',
+    'e documentam crescimento expressivo da participação de firmas Ponzi a partir de 1970, concentrado nas companhias de menor porte.', 'Davis et al.')
+sub('Nishi (2019) obtém resultado análogo para setores não financeiros japoneses.',
+    'Nishi (2019) aplica a taxonomia aos setores não financeiros japoneses e encontra predominância da posição especulativa, com evolução distinta por setor e porte.', 'Nishi')
+sub('empregando limiares absolutos de cobertura de juros, e documentam deterioração acentuada das posições após 2013.',
+    'adaptando os indicadores e a taxonomia de Minsky aos dados contábeis regulatórios de mais de 60 firmas, e documentam aumento da fragilidade financeira ao longo do período, sobretudo entre 2008 e 2013.',
+    'Torres Filho et al.: 2008-2013, nao apos 2013')
+sub('investigam o comportamento financeiro das companhias não financeiras brasileiras na década de 2010 e associam a estagnação do investimento à fragilização das posições patrimoniais.',
+    'investigam o comportamento financeiro das grandes companhias não financeiras brasileiras entre 2012 e 2019 e associam a estagnação do investimento a uma postura defensiva das firmas, que após a recessão de 2015-2016 reestruturaram o endividamento e elevaram a preferência pela liquidez.',
+    'Mantoan et al.: postura defensiva')
+sub('ambos documentando aumento da proporção de firmas assim classificadas após 2008.',
+    'documentando aumento da proporção de firmas assim classificadas desde meados dos anos 2000, na amostra da OCDE, e desde o fim dos anos 1980, na do BIS.',
+    'zumbis: periodos corretos')
+sub('agrega três indicadores fiscais com pesos fixados de forma exógena para classificar entes subnacionais',
+    'combina três indicadores fiscais, por meio de limiares e de uma regra de classificação fixados de forma exógena, para classificar entes subnacionais', 'CAPAG: regra, nao pesos')
+sub('seguindo o critério absoluto adotado por Torres Filho, Martins e Miaguti (2019) e pela literatura de firmas zumbis.',
+    'critério absoluto na linha da taxonomia de Minsky e próximo do adotado pela literatura de firmas zumbis, que exige cobertura inferior à unidade por três exercícios consecutivos.',
+    '3.3: criterio Ponzi nao e o dos zumbis (3 anos)')
+sub('as duas últimas winsorizadas por ano nos percentis 1 e 99, conforme a implementação original, com os quantis estimados exclusivamente nas firmas de treino.',
+    'a primeira e a última winsorizadas por ano nos percentis 1 e 99, com os quantis estimados exclusivamente nas firmas de treino, tratamento ausente do trabalho original e adotado aqui para conter os valores extremos produzidos por denominadores próximos de zero.',
+    'Brito e Assaf: winsorizacao nao e da implementacao original; variaveis corretas')
+
+sub('o que a qualifica como extensão viável, e não apenas desejável.',
+    'mas a viabilidade de um exercício econométrico com o índice agregado ainda depende de avaliação própria, anterior a qualquer compromisso com essa extensão.',
+    '6.2: moderacao do indice agregado (recomendacao do orientador)')
+
 # ------------------------------------------------------------------ 12. referencias de metodo no texto
 sub('pelo número de componentes retidos pelo critério de Kaiser', 'pelo número de componentes retidos pelo critério de Kaiser (KAISER, 1960)', 'citacao')
 sub('e o critério de Kaiser retém 3 componentes, que juntos explicam 56,80%.',
@@ -251,6 +350,39 @@ insert_after(sexta, texto, sexta)
 log.append('OK     2.4: paragrafo "Ha ainda uma lacuna" movido para depois da sexta dimensao')
 
 d.save(DST)
+
+# ------------------------------------------------------------------ 15. figuras regeneradas pelo codigo (Figuras 2 e 3 mudam com a versao das arvores)
+import zipfile, struct, re, shutil
+FIGS = {'media/b291c90bff9762b12cfefcdeb9eaac8533714c5a.png': os.path.join(AQUI, 'fig2_roc.png'),
+        'media/decomposicao.png': os.path.join(AQUI, 'fig3_decomposicao.png')}
+tmp = DST + '.tmp'
+with zipfile.ZipFile(DST) as zi, zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as zo:
+    rels = zi.read('word/_rels/document.xml.rels').decode()
+    rid = {}
+    for el in re.findall(r'<Relationship [^>]*/>', rels):
+        t = re.search(r'Target="([^"]+)"', el).group(1); i = re.search(r'Id="([^"]+)"', el).group(1)
+        if t in FIGS: rid[i] = t
+    for item in zi.infolist():
+        data = zi.read(item.filename)
+        alvo = 'media/' + item.filename.split('word/media/')[-1] if item.filename.startswith('word/media/') else None
+        if alvo in FIGS:
+            data = open(FIGS[alvo], 'rb').read()
+        if item.filename == 'word/document.xml':
+            x = data.decode()
+            for i, t in rid.items():
+                w, h = struct.unpack('>II', open(FIGS[t], 'rb').read()[16:24])
+                # ajusta a altura do desenho que usa esta imagem a proporcao da imagem nova
+                for m in re.finditer(r'<w:drawing>.*?</w:drawing>', x, re.S):
+                    bloco = m.group(0)
+                    if f'r:embed="{i}"' not in bloco: continue
+                    cx = int(re.search(r'<wp:extent cx="(\d+)"', bloco).group(1)); cy = round(cx * h / w)
+                    novo_b = re.sub(r'(<wp:extent cx="\d+" cy=")\d+(")', rf'\g<1>{cy}\2', bloco)
+                    novo_b = re.sub(r'(<a:ext cx="\d+" cy=")\d+(")', rf'\g<1>{cy}\2', novo_b)
+                    x = x.replace(bloco, novo_b); break
+            data = x.encode()
+        zo.writestr(item, data)
+shutil.move(tmp, DST)
+log.append('OK     Figuras 2 e 3 substituidas pelas geradas pelo codigo (versao fixada), com a altura ajustada a proporcao')
 open(os.path.join(AQUI, 'log_aplicacao.txt'), 'w').write('\n'.join(log) + '\n')
 print('\n'.join(log))
 print(f"\n{sum(l.startswith('OK') for l in log)} aplicadas, {sum(l.startswith('FALHOU') for l in log)} falhas")

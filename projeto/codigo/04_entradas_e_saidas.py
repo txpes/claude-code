@@ -69,5 +69,21 @@ print(f'\n{"":30s} {"obs":>6s} {"ev":>4s} ' + ''.join(f'{n:>7s}' for n in ['F','
 print(f'{"especificacao principal":30s} {nb:6d} {eb:4d} ' + ''.join(f'{rb[n]:7.4f}' for n in ['F','PLS','GB','COB','ROA']))
 print(f'{"saidas por distress como evento":30s} {ns:6d} {es:4d} ' + ''.join(f'{rs[n]:7.4f}' for n in ['F','PLS','GB','COB','ROA']))
 print(f'vantagem PLS - F: {rb["PLS"]-rb["F"]:+.4f} (principal) | {rs["PLS"]-rs["F"]:+.4f} (saidas como evento)')
+
+# ------------------------------------------------------------------ BLOCO E2: motivo da saida pelo cadastro da CVM
+print('\n'+'='*78); print('BLOCO E2  |  MOTIVO DA SAIDA PELO CADASTRO (saidas_2025.csv)'); print('='*78)
+cad = pd.read_csv(U+'saidas_2025.csv'); cad = cad[cad.CD_CVM.isin(saem)]
+assert len(cad) == len(saem), 'saidas_2025.csv nao cobre todas as saidas do painel'
+comp = cad.classe.value_counts(); filtro = int(cad.saida_por_filtro.sum())
+print(comp.to_string()); print(f'saidas por filtro amostral (registro ativo): {filtro}')
+dist_cad = set(cad[cad.distress_potencial == True].CD_CVM)
+print(f'saidas com distress pelo cadastro (RJ, falencia, liquidacao ou cancelamento associado): {len(dist_cad)} ({len(dist_cad)/len(saem)*100:.1f}%)')
+cand2 = P[(P.CD_CVM.isin(dist_cad)) & (P.em_risco==1) & P[['X12','X22']].notna().all(axis=1)]
+cand2 = cand2.sort_values('ano').groupby('CD_CVM').tail(1); cand2 = cand2[cand2.V1.isna()]
+print(f'observacoes finais em risco, sem t+1, de firmas com saida por distress no cadastro: {len(cand2)}')
+sens2 = pd.concat([base.drop(columns=['ano_ev','reentrada']), cand2.assign(V1=1.0)], ignore_index=True)
+rc, nc_, ec, fc = evaluate(sens2, 'V1')
+print(f'{"saidas por distress (cadastro)":30s} {nc_:6d} {ec:4d} ' + ''.join(f'{rc[n]:7.4f}' for n in ['F','PLS','GB','COB','ROA']))
 pickle.dump({'F':(rb,rf,nb,eb,nf,ef,n1,n2,gaps),'E':(rs,ns,es,len(saem),len(dist),len(cand_last),
-             last.V_estado.mean(),rj_any[list(saem)].mean(),fica_last.V_estado.mean())},open('blocoEF.pkl','wb'))
+             last.V_estado.mean(),rj_any[list(saem)].mean(),fica_last.V_estado.mean()),
+             'E2':(rc,nc_,ec,comp.to_dict(),filtro,len(dist_cad),len(cand2))},open('blocoEF.pkl','wb'))

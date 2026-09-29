@@ -96,7 +96,7 @@ T['grade'] = {nm: {c: auc_in(b, rhs, c) for c in (True, False)} for nm, rhs in
    [('F', ['F']), ('COB', ['COB']), ('ROA', ['ROA']), ('BA', ['X12', 'X16', 'X19', 'X22']), ('LC', ['LC']), ('ALV', ['ALV'])]}
 
 # ---------------------------------------------------------------- minskyana e series
-P['c1'] = (P.COB < 1).astype(int); P['ponzi'] = ((P.c1 == 1) & (P.groupby('CD_CVM')['c1'].shift(1) == 1)).astype(int)
+P['c1'] = (P.COB < 1).astype(int); P['ponzi'] = ((P.c1 == 1) & (P.groupby('CD_CVM')['c1'].shift(1) == 1) & (P.groupby('CD_CVM')['ano'].shift(1) == P.ano - 1)).astype(int)   # exercicios consecutivos
 T['ponzi_n'] = int(P.ponzi.sum()); T['ponzi_pct'] = P.ponzi.mean()
 T['ponzi_serie'] = P.groupby('ano').ponzi.mean().to_dict()
 T['serie_entrada'] = P[P.em_risco == 1].groupby('ano').V_entrada.mean().to_dict()

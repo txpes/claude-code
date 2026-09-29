@@ -315,3 +315,37 @@ O desenho é o do script 03. A única mudança é a calibração: regressão log
 
 ### 10.3 Nota de execução
 O `executar.sh` agora roda 15 scripts e limita as threads do OpenMP. Rodando em paralelo, os scripts disputam os núcleos e um que leva 22 segundos passou de 45 minutos.
+
+---
+
+## 11. Rodada final (29/09/2026): fechamento das pendências
+
+### 11.1 O que foi feito
+
+| Pendência | Resultado |
+|---|---|
+| Motivo da saída pelo cadastro (ponto 4 do orientador) | Composição das 201 saídas no texto (§5.8): fechamento voluntário 119, RJ 28, incorporação 22, falência ou liquidação 12, outros 7, sem motivo 13; 28 são só filtro amostral. Linha nova na Tabela 19: tratar como evento as 44 saídas por dificuldade (cadastro) dá F 0,762 e COB 0,889, e a conclusão não muda. A saída passa a ser tratada como **risco competitivo** (termo do orientador). Script 04, bloco E2 |
+| Árvores com números de outra versão | Todas as ocorrências alinhadas à versão fixada: Tabelas 10, 11, 13 e 18; §5.3, §5.5 e §5.6 (0,897; 0,003 contra a cobertura); Figuras 2 e 3 regeneradas |
+| Ponzi sem checar anos consecutivos | Corrigido (07 e 11). Tabela 8: 0,782 e 0,769, 2.254 firma-anos (30,4%); a queda continua em 0,013 |
+| Coluna MEB na Tabela 13 | Inserida (0,978 na rota operacional em um ano), com a nota |
+| Estabilidade prometida e ausente | A §3.4 remetia à §5.6 e os números não estavam em lugar nenhum. Agora estão na §5.3: F 0,763 (dp 0,002), PLS 0,874 (0,003), árvores 0,897 (0,004); B&A mais sensível (0,705 a 0,739) |
+| Afirmações sobre a literatura | 20 obras conferidas na fonte; 13 correções (seção 10.2 do `REGISTRO_CONFERENCIA.md`). As mais importantes: Mantoan et al. dizem o **contrário** do que o texto afirmava; Torres Filho et al. (2008-2013, e não "após 2013"); Davis et al.; Zmijewski; zumbis (três anos, e não dois); CAPAG (regra, e não pesos); a winsorização do Brito e Assaf Neto não é "da implementação original" |
+| Figuras 1, 2 e 4 | 1 e 4 idênticas ao código; 2 e 3 substituídas pelas do código, com a altura ajustada à proporção |
+| Planilha | Todas as abas preenchidas pelo código final (`revisao/atualizar_planilha.py`); Tabela 17 substituída pela versão completa; nota duplicada removida |
+| Nota de decisões | `Nota_Decisoes_Metodologicas_revisada.docx`, com 16 alterações controladas e um parágrafo que lista para o orientador as correções da revisão |
+| Registro bibliográfico | Id 3 (Portaria) conferida no DOU; 12 referências novas; Friedman confirmado no Project Euclid e Van Calster no Europe PMC |
+| §6.2 | Moderada: o índice agregado fica como agenda, sem compromisso |
+| LEIAME do pacote | Atualizado para o estado final |
+
+### 11.2 Como sei que não criamos lacunas novas
+- **Código:** o pacote final roda do zero pelo `executar.sh`, com os 15 scripts, sem erro.
+- **Tabelas:** `revisao/verificar_artigo.py` compara **584 células numéricas** das 20 tabelas do artigo revisado, com as alterações aceitas, contra as saídas do código final: **0 divergências**.
+  - **Controle:** o mesmo verificador, rodado no artigo original, acusa exatamente as **50 células** corrigidas. O verificador não passa por construção.
+- **Texto:** os números do texto corrido que não estão em tabela (intrafirma 0,689, winsorização 31,55% e 0,799, probit parcimonioso 0,332 e 0,348, pré e pós-pandemia, reentradas, série por estado) foram conferidos um a um contra o código. Uma varredura por 30 valores e expressões antigas no artigo e na nota não encontrou resíduo.
+- **Referências:** 45 entradas em ordem alfabética, todas citadas no texto.
+- **Arquivo:** ids das alterações únicos, exclusões bem formadas, sem imagens `.undefined`, e o arquivo abre na biblioteca de leitura de .docx.
+
+### 11.3 O que continua fora do meu alcance
+- **PDF:** o LibreOffice deste ambiente não funciona. Abra o .docx no Word, confira o layout (a Tabela 13 ganhou uma coluna) e exporte o PDF de lá.
+- **Páginas dos editores:** a conferência visual das páginas em HTML (Elsevier, Wiley, T&F, OUP) e as cidades das editoras dos livros de Minsky.
+- **Decisões do autor:** o enquadramento do resultado central (horizonte de dois anos como manchete), a divisão entre corpo e apêndice e a versão em inglês.

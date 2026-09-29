@@ -4,7 +4,7 @@ warnings.filterwarnings('ignore')
 exec(open('01_pipeline_sem_vazamento.py').read().split("out = {}")[0])
 N=pickle.load(open('N.pkl','rb'))
 # validacao minskyana: escores de 8 e de 7 indicadores (painel completo; exercicio descritivo, sem avaliacao preditiva)
-d=P.copy(); d['c1']=(d.COB<1).astype(int); d['ponzi']=((d.c1==1)&(d.groupby('CD_CVM')['c1'].shift(1)==1)).astype(int)
+d=P.copy(); d['c1']=(d.COB<1).astype(int); d['ponzi']=((d.c1==1)&(d.groupby('CD_CVM')['c1'].shift(1)==1)&(d.groupby('CD_CVM')['ano'].shift(1)==d.ano-1)).astype(int)   # exercicios consecutivos
 for lab,cols in [('8',IND),('7',[c for c in IND if c!='COB'])]:
     X=d[cols].astype(float).copy()
     for c in [c for c in NEG if c in cols]: X[c]=-X[c]

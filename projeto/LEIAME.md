@@ -1,30 +1,33 @@
 # Indicador sintético de fragilidade financeira — pacote do projeto
 
-Estado em 28 de setembro de 2026. Tudo o que está aqui é consistente entre si: os números do
-artigo, das tabelas e da nota vêm da mesma estimação, e o código reproduz essa estimação a
-partir dos painéis incluídos.
+Estado em 29 de setembro de 2026, após revisão integral. As versões revisadas do artigo, da nota e da planilha
+(`*_revisado*`) trazem as correções como alterações controladas e são consistentes entre si e com o
+código: um verificador automático (`revisao/verificar_artigo.py`) compara as 584 células numéricas das
+tabelas do artigo com as saídas do código e não encontra divergência. Os originais foram mantidos.
 
 ## Como reproduzir
 
     cd codigo
     DADOS=../dados bash executar.sh
 
-Se faltar alguma dependência:
+Com as versões usadas na revisão:
 
-    pip install pandas numpy scipy scikit-learn statsmodels matplotlib openpyxl
+    pip install -r codigo/requirements.txt
 
-A execução completa leva cerca de trinta minutos e não requer acesso à rede. O pacote foi
-testado a partir do zip extraído em diretório limpo, e os números reproduzem os do artigo.
+A execução completa roda os quinze scripts em poucos minutos e não requer acesso à rede. Foi
+testada em diretório limpo. As árvores impulsionadas dependem da versão do scikit-learn; com as
+versões de `requirements.txt`, os números reproduzem os do artigo revisado.
 
 ## O que tem em cada pasta
 
 | Pasta | Conteúdo |
 |---|---|
-| `artigo/` | Versão final, em Word e PDF, e a nota de decisões metodológicas |
-| `tabelas/` | Planilha com 13 abas e as fórmulas das tabelas do artigo |
-| `codigo/` | Treze scripts, o executor e o leia-me com a ordem e as armadilhas |
+| `artigo/` | Versão original (Word e PDF) e versões revisadas do artigo e da nota, com alterações controladas |
+| `tabelas/` | Planilha original e revisada (`Tabelas_Artigo_revisado.xlsx`), preenchida pelo código final |
+| `codigo/` | Quinze scripts, o executor, `requirements.txt` e o leia-me com a ordem e as armadilhas |
 | `dados/` | Painéis 2010–2025 já sem os emissores estrangeiros, mais os arquivos auxiliares e o relatório da fase de dados |
-| `referencias/` | Planilha de conferência bibliográfica e o registro do trabalho de verificação |
+| `referencias/` | Planilha de conferência bibliográfica (45 entradas) e o registro do trabalho de verificação |
+| `revisao/` | Scripts que aplicam as alterações controladas, atualizam a planilha e verificam o artigo contra o código |
 
 ## Estado dos painéis
 
@@ -45,7 +48,7 @@ cruzada agrupada por firma, atribuição de referência.
 | Modelo | Área sob a curva |
 |---|---|
 | Componentes principais | 0,764 |
-| Árvores impulsionadas | 0,900 |
+| Árvores impulsionadas | 0,897 |
 | Cobertura de juros | 0,894 |
 | Mínimos quadrados parciais | 0,875 |
 | Retorno sobre ativos | 0,874 |
@@ -56,23 +59,18 @@ distinguível das alternativas; recuperação judicial 0,828, também sem difere
 
 ## O que permanece em aberto
 
-1. **Conferência manual de duas classes de referência.** Os metadados vieram do registro do
-   DOI no Crossref, depositados pelos próprios editores, porque as páginas em HTML recusaram
-   acesso automatizado. Restam duas verificações de olho: as páginas dos artigos com DOI e os
-   catálogos da Columbia e da Yale para cidade e editora dos livros de Minsky. O detalhamento
-   está em `referencias/REGISTRO_CONFERENCIA.md`.
+Todas as pendências de dados, código, números e referências foram resolvidas na revisão
+(ver `ESCRUTINIO_COMPLETO.md` na raiz do repositório). Restam decisões do autor:
 
-2. **Sensibilidade das datas de recuperação judicial.** Em trinta firmas o primeiro documento
-   entregue trata do andamento do processo, e não do pedido, de modo que a data registrada pode
-   estar atrasada em relação ao ajuizamento. Está declarado como limitação na subseção 5.9. A
-   verificação consiste em antecipar em um ano a entrada dessas firmas e reestimar.
-
-3. **Separação entre corpo e apêndice.** São vinte tabelas, número alto para submissão a
-   periódico. Para o corpo ficariam a estrutura fatorial, a comparação principal nos dois
-   esquemas, a decomposição, os subconjuntos puros e o perfil das firmas.
-
-4. **Itens pendentes da coorientação.** Os comentários sobre a revisão de literatura e a lista
-   de técnicas de avaliação da predição ainda não foram recebidos.
+1. **Enquadramento do resultado central.** No horizonte de um ano, o contraste na rota operacional é
+   em boa parte mecânico; no de dois anos, a leitura de composição é a que se sustenta. O texto já
+   traz os números e a ressalva; falta decidir se a manchete passa a ser o horizonte de dois anos.
+2. **Separação entre corpo e apêndice.** São vinte tabelas.
+3. **Itens pendentes da coorientação.** Os comentários sobre a revisão de literatura e as técnicas
+   de avaliação da predição ainda não foram recebidos.
+4. **Conferência visual das páginas dos editores.** As referências com DOI foram conferidas pelo
+   registro do DOI (dados depositados pelos editores); as páginas em HTML recusam acesso
+   automatizado. As cidades das editoras dos livros de Minsky não constam da fonte consultada.
 
 ## Expansão para a dissertação
 

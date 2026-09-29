@@ -142,3 +142,90 @@ def consertar_midia(src, dst):
                 data = data.replace(b'.undefined"', b'.png"')
             zo.writestr(nome, data)
     shutil.move(tmp, dst)
+
+
+def insert_row_after(row, valores):
+    """insere, como alteracao controlada, uma linha de tabela depois de row (python-docx _Row), copiando o formato"""
+    novo = copy.deepcopy(row._tr)
+    trpr = novo.find(qn('w:trPr'))
+    if trpr is None:
+        trpr = _mk('w:trPr'); novo.insert(0, trpr)
+    trpr.append(_mk('w:ins', **{'w:id': _nid(), 'w:author': AUTOR, 'w:date': DATA}))
+    tcs = novo.findall(qn('w:tc'))
+    assert len(tcs) == len(valores), (len(tcs), len(valores))
+    for tc, v in zip(tcs, valores):
+        ps = tc.findall(qn('w:p'))
+        for extra in ps[1:]:
+            tc.remove(extra)
+        p = ps[0]
+        brun = next(iter(_runs(p)), None)
+        rpr = copy.deepcopy(brun.find(qn('w:rPr'))) if brun is not None and brun.find(qn('w:rPr')) is not None else None
+        for ch in list(p):
+            if ch.tag != qn('w:pPr'):
+                p.remove(ch)
+        ins = _mk('w:ins', **{'w:id': _nid(), 'w:author': AUTOR, 'w:date': DATA})
+        nr = _mk('w:r')
+        if rpr is not None:
+            nr.append(rpr)
+        t = _mk('w:t'); t.text = v; t.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve'); nr.append(t)
+        ins.append(nr); p.append(ins)
+    row._tr.addnext(novo)
+    return novo
+
+
+def insert_column(table, depois_de, cabecalho, valores_por_rotulo, largura_twips=None):
+    """insere, como alteracao controlada, uma coluna depois da coluna de indice depois_de.
+    valores_por_rotulo: funcao(indice_linha, texto_primeira_celula) -> texto da nova celula"""
+    tbl = table._tbl
+    grid = tbl.find(qn('w:tblGrid'))
+    cols = grid.findall(qn('w:gridCol'))
+    novo_gc = copy.deepcopy(cols[depois_de]); cols[depois_de].addnext(novo_gc)
+    if largura_twips:
+        # redistribui: reduz proporcionalmente as demais para manter a largura total
+        tot = sum(int(c.get(qn('w:w'))) for c in cols)
+        novo_gc.set(qn('w:w'), str(largura_twips))
+        fator = (tot - largura_twips) / tot
+        for c in cols:
+            c.set(qn('w:w'), str(int(int(c.get(qn('w:w'))) * fator)))
+    for i, tr in enumerate(tbl.findall(qn('w:tr'))):
+        tcs = tr.findall(qn('w:tc'))
+        base = tcs[depois_de] if depois_de < len(tcs) else tcs[-1]
+        span = base.find(qn('w:tcPr') + '/' + qn('w:gridSpan'))
+        texto0 = ''.join(t.text or '' for t in tcs[0].iter(qn('w:t')))
+        novo = copy.deepcopy(base)
+        tcpr = novo.find(qn('w:tcPr'))
+        if tcpr is not None:
+            w = tcpr.find(qn('w:tcW'))
+            if w is not None and largura_twips:
+                w.set(qn('w:w'), str(largura_twips)); w.set(qn('w:type'), 'dxa')
+            cell_ins = _mk('w:cellIns', **{'w:id': _nid(), 'w:author': AUTOR, 'w:date': DATA})
+            tcpr.append(cell_ins)
+        if span is not None:
+            # linha de titulo mesclada: apenas amplia o gridSpan da celula existente
+            span.set(qn('w:val'), str(int(span.get(qn('w:val'))) + 1))
+            continue
+        ps = novo.findall(qn('w:p'))
+        for extra in ps[1:]:
+            novo.remove(extra)
+        p = ps[0]
+        brun = next(iter(_runs(p)), None)
+        rpr = copy.deepcopy(brun.find(qn('w:rPr'))) if brun is not None and brun.find(qn('w:rPr')) is not None else None
+        for ch in list(p):
+            if ch.tag != qn('w:pPr'):
+                p.remove(ch)
+        v = cabecalho if i == 0 else valores_por_rotulo(i, texto0)
+        if v:
+            ins = _mk('w:ins', **{'w:id': _nid(), 'w:author': AUTOR, 'w:date': DATA})
+            nr = _mk('w:r')
+            if rpr is not None:
+                nr.append(rpr)
+            t = _mk('w:t'); t.text = v; t.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve'); nr.append(t)
+            ins.append(nr); p.append(ins)
+        base.addnext(novo)
+    # alinha a largura de cada celula a grade redistribuida
+    larg = [c.get(qn('w:w')) for c in grid.findall(qn('w:gridCol'))]
+    for tr in tbl.findall(qn('w:tr')):
+        for k, tc in enumerate(tr.findall(qn('w:tc'))):
+            w = tc.find(qn('w:tcPr') + '/' + qn('w:tcW'))
+            if w is not None and k < len(larg) and tc.find(qn('w:tcPr') + '/' + qn('w:gridSpan')) is None:
+                w.set(qn('w:w'), larg[k]); w.set(qn('w:type'), 'dxa')

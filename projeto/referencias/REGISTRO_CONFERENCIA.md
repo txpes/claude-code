@@ -188,3 +188,38 @@ As 5 correções passaram nas duas checagens.
 - [ ] id 3: manter a Nota Técnica (e registrar a origem) ou trocar pela Portaria
 - [ ] id 17: mover ADALET McGOWAN para o início da lista (ordem alfabética)
 - [ ] Opcional: abrir manualmente, no navegador, as páginas do editor dos artigos com DOI e as de Columbia/Yale para fechar as limitações 1 e 2
+
+---
+
+## 10. Atualização de 29/09/2026: estado final da lista e verificação do conteúdo citado
+
+### 10.1 Situação da lista
+- **id 3:** a Nota Técnica foi substituída, por decisão do autor, pela **Portaria STN n. 882/2018**. Ementa, data, edição 244, seção 1 e p. 143 foram conferidas no DOU (in.gov.br). As pendências da seção 9 sobre a id 3 estão resolvidas.
+- **12 referências novas de método** (ids 34-45): Brier, Cox, Dunn, Field e Welsh, Friedman, Horn, Kaiser, Niculescu-Mizil e Caruana, Peduzzi et al., Saito e Rehmsmeier, Van Calster et al. e Vickers e Elkin. Todas foram conferidas no registro do DOI. As páginas de Friedman foram confirmadas no Project Euclid (editor) e o número do artigo de Van Calster (230) no Europe PMC.
+- A lista final tem **45 entradas**, em ordem alfabética, e todas são citadas no texto.
+
+### 10.2 O que o texto afirma de cada obra: conferido na fonte
+
+| Obra | Afirmação no texto | Fonte consultada | Resultado |
+|---|---|---|---|
+| Altman (1968) | 66 manufatureiras pareadas; 95% um ano antes | citado por Minussi et al. (2002), PDF na Redalyc | confere |
+| Ohlson (1980) | 105 falidas e 2.058 não falidas; porte, estrutura de capital e liquidez | fontes secundárias concordantes (fonte primária inacessível daqui) | amostra confere; **corrigido**: os quatro fatores de Ohlson incluem o desempenho |
+| Zmijewski (1984) | "pareamento enviesa; recomenda frequência populacional" | Semantic Scholar e RePEc (resumo) | **corrigido**: o trabalho trata de sobreamostragem de firmas em dificuldade e de seleção por disponibilidade de dados |
+| Campbell et al. (2008) | variáveis de mercado; retornos baixos; 1963-2003 | resumo (Crossref) e versão do autor (Harvard) | confere |
+| Brito e Assaf Neto (2008) | 60 firmas, 1994-2004, quatro indicadores, 90% | PDF na Redalyc | confere; **corrigido** "winsorização conforme a implementação original": o original não winsoriza |
+| Minussi et al. (2002) | 323 clientes industriais; treino e teste | PDF na Redalyc | confere |
+| Guimarães e Moreira (2008) | 116 companhias, 17 setores, 1994-2003 | PDF da revista (UFRJ) | confere |
+| Scalzer et al. (2015) | cobertura dois anos antes; liquidez geral um ano antes | PDF na Redalyc | confere |
+| Barboza et al. (2017) | "cerca de dez pontos percentuais" | resumos secundários | **reescrito** sem o número, que não foi confirmado |
+| du Jardin (2016) | "melhora em horizontes longos" | resumo (EconPapers e SciSpace) | **reescrito**: perfis financeiros combinados a técnicas de conjunto |
+| Tymoigne (2010, 2014) | fragilidade antes de 2008 | PDF do WP 605 (Levy) e resumo do artigo de 2014 (OpenAlex) | **precisado**: financiamento imobiliário residencial (EUA; Reino Unido e França em 2014), fragilidade elevada a partir de 2004 |
+| Mulligan (2013) | "migração de hedge para especulativa nas expansões" | resumo (RePEc) | **reescrito**: aplica a classificação por cobertura de juros a grupos setoriais |
+| Davis et al. (2019) | "distribuição varia ao longo do ciclo" | resumo (OUP) | **corrigido**: crescimento de firmas Ponzi a partir de 1970, concentrado nas pequenas |
+| Nishi (2019) | "resultado análogo" | resumo (Semantic Scholar) | **precisado**: predomínio especulativo, evolução distinta por setor e porte |
+| Torres Filho et al. (2019) | "deterioração após 2013"; limiares de cobertura | resumo (T&F, via Semantic Scholar) | **corrigido**: aumento sobretudo entre 2008 e 2013; o critério de cobertura não foi atribuído a eles |
+| Mantoan et al. (2021) | "fragilização patrimonial" | resumo (Springer, via Semantic Scholar) | **corrigido**: postura defensiva, com reestruturação da dívida e maior preferência pela liquidez |
+| Adalet McGowan et al. (2018); Banerjee e Hofmann (2018) | aumento "após 2008"; cobertura e idade | resumo (OUP) e PDF do BIS | **corrigido**: desde meados dos anos 2000 (OCDE) e desde o fim dos anos 1980 (BIS). A definição (cobertura abaixo de 1 por **três** anos e idade de 10 anos ou mais) confere. O critério Ponzi do artigo (dois anos) deixou de ser apresentado como "o dos zumbis" |
+| Barker e Rayens (2003) | PLS preferível à PCA para discriminar | resumo (Crossref) | confere |
+| Portaria 882 / CAPAG | "pesos fixados de forma exógena" | DOU e Tesouro Transparente | **corrigido**: a CAPAG combina três indicadores por limiares e regra de classificação, e não por pesos |
+
+As correções estão no artigo revisado como alterações controladas.

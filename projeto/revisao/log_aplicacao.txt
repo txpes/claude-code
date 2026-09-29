@@ -21,14 +21,16 @@ OK     Tabela 9, BA winsorizado: Brito e Assaf Neto[1] 0,788 -> 0,810
 OK     Tabela 9, BA winsorizado: Brito e Assaf Neto[2] 0,703 -> 0,755
 OK     Tabela 9, BA winsorizado: Brito e Assaf Neto[3] +0,085 -> +0,054
 OK     introducao, saidas recalculadas: 'entre as que saem, 32,2% estavam em situação de vulnerabilid' -> 'entre as que saem, 31,8% estavam em situação de vulnerabilid'
-OK     5.8, saidas recalculadas: 'das 143 companhias que deixam o painel antes do fim do perío' -> 'das 201 companhias cuja última observação antecede 2025, 31,'
+OK     5.8, saidas recalculadas e motivo pelo cadastro (ponto 4 do orientador): 'das 143 companhias que deixam o painel antes do fim do perío' -> 'das 201 companhias cuja última observação antecede 2025, 31,'
+OK     Tabela 19: linha nova, saidas pelo motivo do cadastro
+OK     nota da Tabela 19: 'Fonte: elaboração própria. Horizonte de um ano, atribuição d' -> 'Fonte: elaboração própria. Horizonte de um ano, atribuição d'
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[1] 5.052 -> 5.055
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[2] 155 -> 158
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[3] 0,767 -> 0,771
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[4] 0,878 -> 0,880
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[5] 0,895 -> 0,896
 OK     Tabela 19, saidas: Saídas associadas a distress tratadas como evento[6] 0,876 -> 0,877
-OK     5.9: codigo nao usa o cadastro: 'O motivo da saída foi recuperado do cadastro de companhias a' -> 'A classificação de saídas associadas a dificuldade financeir'
+OK     5.9: saidas pelas duas classificacoes: 'O motivo da saída foi recuperado do cadastro de companhias a' -> 'A classificação de saídas associadas a dificuldade financeir'
 OK     Tabela 17 refeita com calibracao sobre o posto (script 14): 'a calibração é adequada em todos os modelos, com inclinações' -> 'a calibração é adequada em todos os modelos, com inclinações'
 OK     metodo de calibracao: 'Cada escore é convertido em probabilidade por calibração log' -> 'Cada escore é convertido em probabilidade por regressão logí'
 OK     especificidade, decisao liquida e horizonte de dois anos: 'com valor preditivo positivo de 0,053 contra 0,124.' -> 'com valor preditivo positivo de 0,053 contra 0,124. No mesmo'
@@ -78,6 +80,55 @@ OK     introducao: moderacao e horizonte de dois anos: 'a desvantagem do escore 
 OK     5.1: 'e a qual delas o escore é cego' -> 'e em qual delas o escore tem desempenho fraco'
 OK     conclusao: 'revela se o indicador é uniformemente inferior ou apenas ceg' -> 'revela se o indicador é uniformemente inferior ou fraco em a'
 OK     conclusao: 'são, assim, o mesmo fato observado de dois ângulos' -> 'são, assim, compatíveis com um mesmo fato observado de dois '
+OK     Tabela 8, Ponzi com exercicios consecutivos: Escore médio, posição Ponzi[1] 0,909 -> 0,908
+OK     Tabela 8, Ponzi com exercicios consecutivos: Escore médio, posição Ponzi[2] 0,874 -> 0,873
+OK     Tabela 8, Ponzi com exercicios consecutivos: Escore médio, demais posições[1] −0,400 -> −0,396
+OK     Tabela 8, Ponzi com exercicios consecutivos: Escore médio, demais posições[2] −0,384 -> −0,381
+OK     Tabela 8, Ponzi com exercicios consecutivos: Estatística de Kolmogorov-Smirnov[1] 0,434 -> 0,433
+OK     Tabela 8, Ponzi com exercicios consecutivos: Estatística de Kolmogorov-Smirnov[2] 0,416 -> 0,415
+OK     Tabela 8, Ponzi com exercicios consecutivos: Área sob a curva para a posição Ponzi[1] 0,783 -> 0,782
+OK     Tabela 8, Ponzi com exercicios consecutivos: Área sob a curva para a posição Ponzi[2] 0,770 -> 0,769
+OK     nota da Tabela 8: 'abrangendo 2.265 firma-anos, ou 30,5% do painel' -> 'abrangendo 2.254 firma-anos, ou 30,4% do painel'
+OK     5.2, Ponzi: 'O escore médio das observações em posição Ponzi é de 0,909, ' -> 'O escore médio das observações em posição Ponzi é de 0,908, '
+OK     introducao, Ponzi: 'com área sob a curva de 0,783, ou 0,770 quando excluído' -> 'com área sob a curva de 0,782, ou 0,769 quando excluído'
+OK     Tabela 10, arvores (versao fixada): Árvores impulsionadas[1] 0,900 -> 0,897
+OK     Tabela 10, arvores (versao fixada): Árvores impulsionadas[2] +0,136 -> +0,133
+OK     Tabela 10, arvores (versao fixada): Árvores impulsionadas[3] [+0,090; +0,184] -> [+0,086; +0,181]
+OK     Tabela 10, arvores (versao fixada): Árvores impulsionadas[1] 0,752 -> 0,753
+OK     Tabela 10, arvores (versao fixada): Árvores impulsionadas[2] +0,125 -> +0,126
+OK     Tabela 10, arvores (versao fixada): Árvores impulsionadas[3] [+0,060; +0,191] -> [+0,060; +0,192]
+OK     Tabela 11, arvores (versao fixada): Árvores impulsionadas[1] 0,910 -> 0,911
+OK     Tabela 11, arvores (versao fixada): Árvores impulsionadas[2] +0,166 -> +0,167
+OK     Tabela 11, arvores (versao fixada): Árvores impulsionadas[4] 0,713 -> 0,708
+OK     Tabela 13, arvores (versao fixada): Somente por EBITDA negativo[3] 0,723 -> 0,719
+OK     Tabela 13, arvores (versao fixada): Patrimônio líquido negativo[3] 0,772 -> 0,771
+OK     Tabela 13, arvores (versao fixada): Recuperação judicial[3] 0,849 -> 0,850
+OK     Tabela 13, arvores (versao fixada): Todas as entradas[3] 0,757 -> 0,755
+OK     Tabela 18, arvores (versao fixada): Sem as entradas exclusivas do critério de EBITDA[4] 0,858 -> 0,857
+OK     Tabela 18, arvores (versao fixada): Restritiva: patrimônio líquido negativo ou recuperação judicial[4] 0,955 -> 0,954
+OK     5.3, arvores: '0,874 do retorno sobre ativos e 0,900 da referência não line' -> '0,874 do retorno sobre ativos e 0,897 da referência não line'
+OK     5.5, arvores: 'e a referência não linear 0,858, sem diferença' -> 'e a referência não linear 0,857, sem diferença'
+OK     5.6, arvores: 'as árvores impulsionadas alcançam 0,900, e a diferença para ' -> 'as árvores impulsionadas alcançam 0,897, e a diferença para '
+OK     remissao corrigida: 'cujas médias e desvios-padrão são reportados na subseção 5.6' -> 'cujas médias e desvios-padrão são reportados na subseção 5.3'
+OK     estabilidade reportada: 'que ele supera por 0,030 ponto sem significância estatística' -> 'que ele supera por 0,030 ponto sem significância estatística'
+OK     Tabela 13: coluna MEB (margem EBITDA isolada)
+OK     nota da Tabela 13: 'e não os da atribuição de referência.' -> 'e não os da atribuição de referência. A última coluna report'
+OK     Ohlson: quatro fatores: 'e reporta que o porte, a estrutura de capital e a liquidez c' -> 'e reporta que o porte, a estrutura de capital, o desempenho '
+OK     Zmijewski: sobreamostragem e selecao, nao pareamento: 'documenta que a amostragem por pareamento entre falidas e nã' -> 'mostra que estimar esses modelos em amostras não aleatórias,'
+OK     Zmijewski, 2.4: 'quanto ao viés de amostragem por pareamento' -> 'quanto ao viés das amostras não aleatórias'
+OK     Barboza: numero nao confirmado na fonte: 'comparam florestas aleatórias e máquinas de vetores de supor' -> 'comparam técnicas de aprendizado de máquina, como bagging, b'
+OK     du Jardin: 'propõe classificação em dois estágios que melhora o desempen' -> 'propõe classificação em dois estágios, baseada em perfis fin'
+OK     Tymoigne: setor residencial: 'constrói indicadores de fragilidade a partir de razões de fl' -> 'constrói indicadores de fragilidade para o financiamento imo'
+OK     Mulligan: achado nao confirmado na fonte: 'aplica a classificação em nível setorial na economia norte-a' -> 'aplica a classificação, definida pela cobertura de juros, a '
+OK     Davis et al.: 'e mostram que a distribuição das firmas entre regimes varia ' -> 'e documentam crescimento expressivo da participação de firma'
+OK     Nishi: 'Nishi (2019) obtém resultado análogo para setores não financ' -> 'Nishi (2019) aplica a taxonomia aos setores não financeiros '
+OK     Torres Filho et al.: 2008-2013, nao apos 2013: 'empregando limiares absolutos de cobertura de juros, e docum' -> 'adaptando os indicadores e a taxonomia de Minsky aos dados c'
+OK     Mantoan et al.: postura defensiva: 'investigam o comportamento financeiro das companhias não fin' -> 'investigam o comportamento financeiro das grandes companhias'
+OK     zumbis: periodos corretos: 'ambos documentando aumento da proporção de firmas assim clas' -> 'documentando aumento da proporção de firmas assim classifica'
+OK     CAPAG: regra, nao pesos: 'agrega três indicadores fiscais com pesos fixados de forma e' -> 'combina três indicadores fiscais, por meio de limiares e de '
+OK     3.3: criterio Ponzi nao e o dos zumbis (3 anos): 'seguindo o critério absoluto adotado por Torres Filho, Marti' -> 'critério absoluto na linha da taxonomia de Minsky e próximo '
+OK     Brito e Assaf: winsorizacao nao e da implementacao original; variaveis corretas: 'as duas últimas winsorizadas por ano nos percentis 1 e 99, c' -> 'a primeira e a última winsorizadas por ano nos percentis 1 e'
+OK     6.2: moderacao do indice agregado (recomendacao do orientador): 'o que a qualifica como extensão viável, e não apenas desejáv' -> 'mas a viabilidade de um exercício econométrico com o índice '
 OK     citacao: 'pelo número de componentes retidos pelo critério de Kaiser' -> 'pelo número de componentes retidos pelo critério de Kaiser ('
 OK     Horn: 3 componentes: 'e o critério de Kaiser retém 3 componentes, que juntos expli' -> 'e o critério de Kaiser retém 3 componentes, que juntos expli'
 OK     citacoes: 'a área sob a curva de precisão e revocação, o escore de Brie' -> 'a área sob a curva de precisão e revocação (SAITO; REHMSMEIE'
@@ -101,3 +152,4 @@ OK     referencia inserida: SAITO, T.; REHMSMEIER, M. The precision-recall plo
 OK     referencia inserida: VAN CALSTER, B.; McLERNON, D. J.; VAN SMEDEN, M.; 
 OK     referencia inserida: VICKERS, A. J.; ELKIN, E. B. Decision curve analys
 OK     2.4: paragrafo "Ha ainda uma lacuna" movido para depois da sexta dimensao
+OK     Figuras 2 e 3 substituidas pelas geradas pelo codigo (versao fixada), com a altura ajustada a proporcao
