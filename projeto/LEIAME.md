@@ -22,12 +22,12 @@ versões de `requirements.txt`, os números reproduzem os do artigo revisado.
 
 | Pasta | Conteúdo |
 |---|---|
-| `artigo/` | Versão original (Word e PDF) e versões revisadas do artigo e da nota, com alterações controladas |
+| `artigo/` | Versão original (Word e PDF). Versões revisadas do artigo e da nota com alterações controladas (`*_revisado*.docx`) e com as alterações aceitas (`*_limpo*` / `*_limpa*`, em Word e PDF) |
 | `tabelas/` | Planilha original e revisada (`Tabelas_Artigo_revisado.xlsx`), preenchida pelo código final |
 | `codigo/` | Quinze scripts, o executor, `requirements.txt` e o leia-me com a ordem e as armadilhas |
 | `dados/` | Painéis 2010–2025 já sem os emissores estrangeiros, mais os arquivos auxiliares e o relatório da fase de dados |
-| `referencias/` | Planilha de conferência bibliográfica (45 entradas) e o registro do trabalho de verificação |
-| `revisao/` | Scripts que aplicam as alterações controladas, atualizam a planilha e verificam o artigo contra o código |
+| `referencias/` | Planilha de conferência bibliográfica (48 entradas) e o registro do trabalho de verificação |
+| `revisao/` | Scripts que aplicam as alterações controladas, geram a versão limpa, atualizam a planilha e verificam o artigo contra o código |
 
 ## Estado dos painéis
 
@@ -57,6 +57,8 @@ Decomposição por rota de deterioração, subconjuntos puros, horizonte de um a
 operacional 0,649 contra 0,973 da cobertura de juros; patrimônio negativo 0,816, sem diferença
 distinguível das alternativas; recuperação judicial 0,828, também sem diferença distinguível.
 
+A mensagem de encaminhamento ao orientador está em `CARTA_EDUARDO.md`.
+
 ## O que permanece em aberto
 
 Todas as pendências de dados, código, números e referências foram resolvidas na revisão
@@ -65,7 +67,8 @@ Todas as pendências de dados, código, números e referências foram resolvidas
 1. **Enquadramento do resultado central.** No horizonte de um ano, o contraste na rota operacional é
    em boa parte mecânico; no de dois anos, a leitura de composição é a que se sustenta. O texto já
    traz os números e a ressalva; falta decidir se a manchete passa a ser o horizonte de dois anos.
-2. **Separação entre corpo e apêndice.** São vinte tabelas.
+2. **Separação entre corpo e apêndice.** São vinte tabelas; a proposta está em `CARTA_EDUARDO.md`.
+   Versão em inglês, se o periódico-alvo for internacional (o abstract já está no artigo).
 3. **Itens pendentes da coorientação.** Os comentários sobre a revisão de literatura e as técnicas
    de avaliação da predição ainda não foram recebidos.
 4. **Conferência visual das páginas dos editores.** As referências com DOI foram conferidas pelo

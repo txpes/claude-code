@@ -196,7 +196,8 @@ As 5 correções passaram nas duas checagens.
 ### 10.1 Situação da lista
 - **id 3:** a Nota Técnica foi substituída, por decisão do autor, pela **Portaria STN n. 882/2018**. Ementa, data, edição 244, seção 1 e p. 143 foram conferidas no DOU (in.gov.br). As pendências da seção 9 sobre a id 3 estão resolvidas.
 - **12 referências novas de método** (ids 34-45): Brier, Cox, Dunn, Field e Welsh, Friedman, Horn, Kaiser, Niculescu-Mizil e Caruana, Peduzzi et al., Saito e Rehmsmeier, Van Calster et al. e Vickers e Elkin. Todas foram conferidas no registro do DOI. As páginas de Friedman foram confirmadas no Project Euclid (editor) e o número do artigo de Van Calster (230) no Europe PMC.
-- A lista final tem **45 entradas**, em ordem alfabética, e todas são citadas no texto.
+- **3 referências de literatura recente** (ids 46-48): Jones, Johnstone e Wilson (2017), Tian, Yu e Guo (2015) e Veganzones e Séverin (2018). Os dados bibliográficos foram conferidos no registro do DOI. O conteúdo citado foi conferido no resumo (OpenAlex) e, para Tian et al., na versão do autor.
+- A lista final tem **48 entradas**, em ordem alfabética, e todas são citadas no texto.
 
 ### 10.2 O que o texto afirma de cada obra: conferido na fonte
 

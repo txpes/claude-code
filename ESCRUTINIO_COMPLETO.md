@@ -346,6 +346,47 @@ O `executar.sh` agora roda 15 scripts e limita as threads do OpenMP. Rodando em 
 - **Arquivo:** ids das alterações únicos, exclusões bem formadas, sem imagens `.undefined`, e o arquivo abre na biblioteca de leitura de .docx.
 
 ### 11.3 O que continua fora do meu alcance
-- **PDF:** o LibreOffice deste ambiente não funciona. Abra o .docx no Word, confira o layout (a Tabela 13 ganhou uma coluna) e exporte o PDF de lá.
+- ~~**PDF:** o LibreOffice deste ambiente não funciona.~~ Resolvido na seção 12: o PDF foi gerado e conferido página a página.
 - **Páginas dos editores:** a conferência visual das páginas em HTML (Elsevier, Wiley, T&F, OUP) e as cidades das editoras dos livros de Minsky.
 - **Decisões do autor:** o enquadramento do resultado central (horizonte de dois anos como manchete), a divisão entre corpo e apêndice e a versão em inglês.
+
+---
+
+## 12. Rodada de fechamento para envio ao orientador (29/09/2026)
+
+### 12.1 Decisões menores aplicadas
+Todas estão no `aplicar_revisao.py`, com registro no `log_aplicacao.txt`. O resultado foi 170 alterações aplicadas e 0 falhas.
+
+| Decisão | Onde |
+|---|---|
+| Estatuto exploratório da decomposição explicitado no resumo | Resumo |
+| "Significância inferior a um por mil" → "p < 0,001" (3 ocorrências) | §4 e §5 |
+| Declarada uma vez a equivalência entre critério (b) e "prejuízo operacional" | §3.3 |
+| Conclusão com os dois horizontes (0,649 × 0,973 em um ano; 0,377 × 0,522 em dois), coerente com o resumo e a introdução | §6.1 |
+| Literatura recente de aprendizado de máquina (Jones, Johnstone e Wilson, 2017; Tian, Yu e Guo, 2015; Veganzones e Séverin, 2018), conferida na fonte | §2.2 e referências (48 entradas) |
+| Classificação JEL, abstract e keywords em inglês | Abertura |
+| Seção "Disponibilidade de dados e código" | Antes das referências |
+| Larguras das colunas das Tabelas 13, 14 e 19, sem palavras quebradas nem intervalos em três linhas | Tabelas |
+
+### 12.2 Versões limpas e PDF
+- `revisao/aceitar_alteracoes.py` aceita todas as alterações controladas e gera:
+  - `Artigo_Fragilidade_Financeira_revisado_limpo.docx`;
+  - `Nota_Decisoes_Metodologicas_revisada_limpa.docx`.
+- Os PDFs correspondentes (40 e 5 páginas) foram gerados com o LibreOffice depois da instalação do `libreoffice-writer`.
+- A conferência visual das páginas encontrou dois problemas de layout, ambos corrigidos na etapa 14b:
+  - cabeçalhos quebrados no meio da palavra;
+  - intervalos da Tabela 14 em três linhas.
+- A paginação final do periódico dependerá do template dele.
+
+### 12.3 Checagens depois das mudanças
+- `verificar_artigo.py` na versão limpa: 584 células conferidas, 0 divergências.
+- Referências: 48 entradas, em ordem alfabética, todas citadas no texto.
+- Comentários do orientador: os itens que estavam parciais em `REVISAO_COMENTARIOS_EDUARDO.md` (I.4, I.5, I.6, I.9, II.a, a observação sobre o índice agregado e III) foram conferidos no texto limpo e estão resolvidos.
+
+### 12.4 Encaminhamento
+- `projeto/CARTA_EDUARDO.md` traz um rascunho de mensagem ao orientador com:
+  - a resposta a cada comentário;
+  - as correções da revisão;
+  - os ajustes menores;
+  - três perguntas: manchete, corpo × apêndice (com proposta) e idioma.
+- As três decisões continuam com o autor.

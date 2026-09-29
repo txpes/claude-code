@@ -6,7 +6,7 @@ Gera artigo/Artigo_Fragilidade_Financeira_revisado.docx e revisao/log_aplicacao.
 """
 import sys, json, os
 import docx, docx.text.paragraph
-from tracked import replace, insert_after, delete_paragraph, consertar_midia, insert_row_after, insert_column
+from tracked import replace, insert_after, delete_paragraph, consertar_midia, insert_row_after, insert_column, insert_after_rotulado
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(AQUI, '..', 'artigo', 'Artigo_Fragilidade_Financeira.docx')
@@ -139,7 +139,7 @@ sub('com valor preditivo positivo de 0,053 contra 0,124.',
     'com valor preditivo positivo de 0,053 contra 0,124. No mesmo limiar, a especificidade é de 0,570 para o escore sintético e de 0,831 para a cobertura de juros, e a decisão líquida sob razão de custo de dez para um é positiva em todos os modelos, de 0,003 para o escore sintético a 0,011 para a referência não linear. No horizonte de dois anos, as métricas de probabilidade aproximam-se das da previsão constante e a decisão líquida é praticamente nula em todos os modelos, o que limita a utilidade operacional da previsão nesse horizonte.',
     'especificidade, decisao liquida e horizonte de dois anos')
 sub('Inclinação de calibração com valor ideal unitário.',
-    'Inclinação de calibração com valor ideal unitário. Probabilidades obtidas por regressão logística sobre o posto do escore na distribuição do treino.',
+    'Inclinação de calibração com valor ideal unitário. Probabilidades obtidas por regressão logística sobre o posto do escore na distribuição do treino. Modelos na ordem da área sob a curva ROC da Tabela 10.',
     'nota da Tabela 17')
 T17 = [('Árvores impulsionadas', ['0,234','0,0265','1,016','17,2%','0,136'], ['0,230','0,0251','1,087','17,2%','0,134']),
        ('Cobertura de juros', ['0,215','0,0280','0,970','18,7%','0,124'], ['0,184','0,0256','0,988','18,7%','0,124']),
@@ -301,6 +301,16 @@ sub('o que a qualifica como extensão viável, e não apenas desejável.',
     'mas a viabilidade de um exercício econométrico com o índice agregado ainda depende de avaliação própria, anterior a qualquer compromisso com essa extensão.',
     '6.2: moderacao do indice agregado (recomendacao do orientador)')
 
+# ------------------------------------------------------------------ 11g. apresentacao: exploratorio, p-valores, terminologia
+sub('Uma análise diagnóstica posterior decompõe o evento pelo critério que o define',
+    'Uma análise diagnóstica posterior, de caráter exploratório, decompõe o evento pelo critério que o define', 'resumo: estatuto exploratorio')
+sub('antecipando a entrada com significância inferior a um por mil.', 'antecipando a entrada com p < 0,001.', 'p-valor')
+sub('O coeficiente é positivo e significativo a menos de um por mil nos quatro modelos.', 'O coeficiente é positivo e significativo, com p < 0,001, nos quatro modelos.', 'p-valor')
+sub('Os três são significativos a menos de um por mil,', 'Os três são significativos, com p < 0,001,', 'p-valor')
+sub('A conversão de uma medida na outra é tratada na subseção 4.3, onde se apresenta a decomposição dos eventos e a construção da amostra de risco.',
+    'A conversão de uma medida na outra é tratada na subseção 4.3, onde se apresenta a decomposição dos eventos e a construção da amostra de risco. No restante do texto, o critério (b) é também designado como prejuízo operacional persistente, e as entradas que o satisfazem, como entradas por prejuízo operacional; a denominação refere-se ao resultado antes de juros, impostos, depreciação e amortização, e não ao lucro operacional contábil.',
+    'terminologia: prejuizo operacional = criterio (b)')
+
 # ------------------------------------------------------------------ 12. referencias de metodo no texto
 sub('pelo número de componentes retidos pelo critério de Kaiser', 'pelo número de componentes retidos pelo critério de Kaiser (KAISER, 1960)', 'citacao')
 sub('e o critério de Kaiser retém 3 componentes, que juntos explicam 56,80%.',
@@ -328,7 +338,10 @@ NOVAS = [
  ('OHLSON', 'PEDUZZI, P.; CONCATO, J.; KEMPER, E.; HOLFORD, T. R.; FEINSTEIN, A. R. A simulation study of the number of events per variable in logistic regression analysis. Journal of Clinical Epidemiology, v. 49, n. 12, p. 1373-1379, 1996.'),
  ('PEDUZZI', 'SAITO, T.; REHMSMEIER, M. The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. PLOS ONE, v. 10, n. 3, e0118432, 2015.'),
  ('TYMOIGNE, É. Measuring', 'VAN CALSTER, B.; McLERNON, D. J.; VAN SMEDEN, M.; WYNANTS, L.; STEYERBERG, E. W. Calibration: the Achilles heel of predictive analytics. BMC Medicine, v. 17, art. 230, 2019.'),
+ ('JOLLIFFE', 'JONES, S.; JOHNSTONE, D.; WILSON, R. Predicting corporate bankruptcy: an evaluation of alternative statistical frameworks. Journal of Business Finance & Accounting, v. 44, n. 1-2, p. 3-34, 2017.'),
+ ('SCALZER', 'TIAN, S.; YU, Y.; GUO, H. Variable selection and corporate bankruptcy forecasts. Journal of Banking & Finance, v. 52, p. 89-100, 2015.'),
  ('VAN CALSTER', 'VICKERS, A. J.; ELKIN, E. B. Decision curve analysis: a novel method for evaluating prediction models. Medical Decision Making, v. 26, n. 6, p. 565-574, 2006.'),
+ ('VAN CALSTER', 'VEGANZONES, D.; SÉVERIN, E. An investigation of bankruptcy prediction in imbalanced datasets. Decision Support Systems, v. 112, p. 111-124, 2018.'),
 ]
 ref_ini = max(i for i, p in enumerate(d.paragraphs) if p.text.strip() == 'Referências')
 modelo = next(p for p in d.paragraphs[ref_ini:] if p.text.startswith('ALTMAN'))
@@ -341,6 +354,42 @@ for antes, texto in NOVAS:
     inseridos[texto.split(',')[0]] = docx.text.paragraph.Paragraph(novo, alvo._parent)
     log.append(f'OK     referencia inserida: {texto[:50]}')
 
+sub('com 0,649 contra 0,973 da cobertura de juros.',
+    'com 0,649 contra 0,973 da cobertura de juros em um ano, contraste em boa parte mecânico, e 0,377 contra 0,522 em dois anos, horizonte em que a ordenação do escore se inverte.',
+    'conclusao: horizonte de dois anos, coerente com resumo e introducao')
+
+sub('e Mai et al. (2019) incorporam informação textual das divulgações corporativas.',
+    'e Mai et al. (2019) incorporam informação textual das divulgações corporativas. Jones, Johnstone e Wilson (2017), comparando dezesseis classificadores, concluem que modelos simples como o logit têm desempenho razoável, mas que métodos de conjunto como boosting e florestas aleatórias os superam; Tian, Yu e Guo (2015) mostram, por seleção de variáveis, que razões construídas apenas com dados contábeis carregam informação incremental sobre o risco de falência; e Veganzones e Séverin (2018) documentam que o forte desbalanceamento entre firmas em dificuldade e saudáveis degrada o desempenho dos classificadores, ponto que motiva as métricas sensíveis à prevalência da subseção 5.7.',
+    'literatura recente (2015-2018), conferida na fonte')
+
+# ------------------------------------------------------------------ 13b. JEL, abstract em ingles e disponibilidade de dados
+pk = next(p for p in d.paragraphs if p.text.startswith('Palavras-chave:'))
+resumo_tit = next(p for p in d.paragraphs if p.text.strip() == 'Resumo')
+resumo_txt = next(p for p in d.paragraphs if p.text.startswith('Examina-se se a agregação'))
+ABSTRACT = ('This paper examines whether aggregating accounting indicators into a synthetic financial fragility score is justified relative to its best '
+            'individual components, using a panel of 7,419 firm-year observations from 730 Brazilian non-financial listed companies between 2010 and 2025. '
+            'Over the pooled set of events, aggregation is not justified: the area under the ROC curve of the score is 0.764, against 0.894 for interest '
+            'coverage and 0.874 for return on assets, a conclusion that holds under firm-clustered cross-validation and under temporal evaluation. A '
+            'subsequent, exploratory diagnostic analysis decomposes the event by the criterion that defines it and shows that the aggregate result is '
+            'produced by one of the deterioration routes. For entries through persistent operating losses, the score trails interest coverage by 0.32 '
+            'points at one year, a contrast in which the mechanical overlap between the event and the predictors weighs, and by 0.15 points at two years; '
+            'for entries through negative equity and judicial reorganization, the differences are not statistically distinguishable. The data are '
+            'consistent with a composition explanation: firms heading toward operating losses show, at the time of prediction, lower leverage and higher '
+            'liquidity than average, and a score dominated by balance-sheet structure classifies them as robust. The conclusion about aggregation '
+            'therefore depends on the deterioration route one seeks to anticipate.')
+insert_after_rotulado(pk, 'Keywords: ', 'Financial fragility; Synthetic indicator; Principal components; Financial vulnerability; Listed companies.', pk)
+insert_after(pk, ABSTRACT, resumo_txt)
+insert_after(pk, 'Abstract', resumo_tit)
+insert_after_rotulado(pk, 'Classificação JEL: ', 'G33; G32; C38; C53; E12.', pk)
+log.append('OK     JEL, abstract e keywords inseridos')
+ult = next(p for p in d.paragraphs if p.text.startswith('A agregação do escore em índice setorial'))
+refs_tit = next(p for p in d.paragraphs if p.text.strip() == 'Referências')
+insert_after(ult, 'Os painéis foram construídos a partir dos dados abertos da Comissão de Valores Mobiliários: Demonstrações Financeiras Padronizadas, '
+             'documentos periódicos e eventuais e cadastro de companhias abertas. Os painéis construídos, o código que reproduz todas as tabelas e figuras '
+             'e a lista das versões das bibliotecas utilizadas estão disponíveis com o autor.', ult)
+insert_after(ult, 'Disponibilidade de dados e código', refs_tit)
+log.append('OK     secao de disponibilidade de dados e codigo')
+
 # ------------------------------------------------------------------ 14. 2.4: paragrafo fora de ordem
 fora = next(p for p in d.paragraphs if p.text.startswith('Há ainda uma lacuna de avaliação'))
 sexta = next(p for p in d.paragraphs if p.text.startswith('A sexta dimensão é a que organiza'))
@@ -348,6 +397,23 @@ texto = fora.text
 delete_paragraph(fora)
 insert_after(sexta, texto, sexta)
 log.append('OK     2.4: paragrafo "Ha ainda uma lacuna" movido para depois da sexta dimensao')
+
+# ------------------------------------------------------------------ 14b. larguras de colunas (palavras quebradas no meio e intervalos em tres linhas)
+from docx.oxml.ns import qn as _qn
+def larguras(contem, novas, motivo):
+    ts = [t for t in d.tables if contem in ' '.join(c.text for r in t.rows for c in r.cells)]
+    if len(ts) != 1: log.append(f'FALHOU larguras {motivo}: {len(ts)} tabelas'); return
+    tbl = ts[0]._tbl; cols = tbl.find(_qn('w:tblGrid')).findall(_qn('w:gridCol'))
+    if len(cols) != len(novas): log.append(f'FALHOU larguras {motivo}: {len(cols)} colunas'); return
+    for c, w in zip(cols, novas): c.set(_qn('w:w'), str(w))
+    for tr in tbl.findall(_qn('w:tr')):
+        for k, tc in enumerate(tr.findall(_qn('w:tc'))):
+            w = tc.find(_qn('w:tcPr') + '/' + _qn('w:tcW'))
+            if w is not None and k < len(novas): w.set(_qn('w:w'), str(novas[k])); w.set(_qn('w:type'), 'dxa')
+    log.append(f'OK     larguras: {motivo} (soma {sum(novas)})')
+larguras('Somente por EBITDA negativo', [2071, 1000, 1000, 1000, 1100, 1000, 1000, 900], 'Tabela 13')
+larguras('Cobertura menos F', [1771, 1000, 850, 1100, 1650, 1050, 1650], 'Tabela 14')
+larguras('Somente a primeira entrada de cada firma', [2971, 900, 1000, 1000, 1000, 1200, 1000], 'Tabela 19')
 
 d.save(DST)
 

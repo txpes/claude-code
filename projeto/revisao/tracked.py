@@ -229,3 +229,17 @@ def insert_column(table, depois_de, cabecalho, valores_por_rotulo, largura_twips
             w = tc.find(qn('w:tcPr') + '/' + qn('w:tcW'))
             if w is not None and k < len(larg) and tc.find(qn('w:tcPr') + '/' + qn('w:gridSpan')) is None:
                 w.set(qn('w:w'), larg[k]); w.set(qn('w:type'), 'dxa')
+
+
+def insert_after_rotulado(p, rotulo, texto, modelo):
+    """insere depois de p um paragrafo 'rotulo + texto', com o rotulo no formato do 1o run do modelo e o texto no do 2o"""
+    novo = insert_after(p, rotulo, modelo)
+    runs_modelo = _runs(modelo._p)
+    rpr2 = runs_modelo[1].find(qn('w:rPr')) if len(runs_modelo) > 1 else None
+    ins = _mk('w:ins', **{'w:id': _nid(), 'w:author': AUTOR, 'w:date': DATA})
+    nr = _mk('w:r')
+    if rpr2 is not None:
+        nr.append(copy.deepcopy(rpr2))
+    t = _mk('w:t'); t.text = texto; t.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve'); nr.append(t)
+    ins.append(nr); novo.append(ins)
+    return novo

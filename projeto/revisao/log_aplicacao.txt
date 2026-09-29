@@ -129,6 +129,11 @@ OK     CAPAG: regra, nao pesos: 'agrega três indicadores fiscais com pesos fixa
 OK     3.3: criterio Ponzi nao e o dos zumbis (3 anos): 'seguindo o critério absoluto adotado por Torres Filho, Marti' -> 'critério absoluto na linha da taxonomia de Minsky e próximo '
 OK     Brito e Assaf: winsorizacao nao e da implementacao original; variaveis corretas: 'as duas últimas winsorizadas por ano nos percentis 1 e 99, c' -> 'a primeira e a última winsorizadas por ano nos percentis 1 e'
 OK     6.2: moderacao do indice agregado (recomendacao do orientador): 'o que a qualifica como extensão viável, e não apenas desejáv' -> 'mas a viabilidade de um exercício econométrico com o índice '
+OK     resumo: estatuto exploratorio: 'Uma análise diagnóstica posterior decompõe o evento pelo cri' -> 'Uma análise diagnóstica posterior, de caráter exploratório, '
+OK     p-valor: 'antecipando a entrada com significância inferior a um por mi' -> 'antecipando a entrada com p < 0,001.'
+OK     p-valor: 'O coeficiente é positivo e significativo a menos de um por m' -> 'O coeficiente é positivo e significativo, com p < 0,001, nos'
+OK     p-valor: 'Os três são significativos a menos de um por mil,' -> 'Os três são significativos, com p < 0,001,'
+OK     terminologia: prejuizo operacional = criterio (b): 'A conversão de uma medida na outra é tratada na subseção 4.3' -> 'A conversão de uma medida na outra é tratada na subseção 4.3'
 OK     citacao: 'pelo número de componentes retidos pelo critério de Kaiser' -> 'pelo número de componentes retidos pelo critério de Kaiser ('
 OK     Horn: 3 componentes: 'e o critério de Kaiser retém 3 componentes, que juntos expli' -> 'e o critério de Kaiser retém 3 componentes, que juntos expli'
 OK     citacoes: 'a área sob a curva de precisão e revocação, o escore de Brie' -> 'a área sob a curva de precisão e revocação (SAITO; REHMSMEIE'
@@ -150,6 +155,16 @@ OK     referencia inserida: NICULESCU-MIZIL, A.; CARUANA, R. Predicting good p
 OK     referencia inserida: PEDUZZI, P.; CONCATO, J.; KEMPER, E.; HOLFORD, T. 
 OK     referencia inserida: SAITO, T.; REHMSMEIER, M. The precision-recall plo
 OK     referencia inserida: VAN CALSTER, B.; McLERNON, D. J.; VAN SMEDEN, M.; 
+OK     referencia inserida: JONES, S.; JOHNSTONE, D.; WILSON, R. Predicting co
+OK     referencia inserida: TIAN, S.; YU, Y.; GUO, H. Variable selection and c
 OK     referencia inserida: VICKERS, A. J.; ELKIN, E. B. Decision curve analys
+OK     referencia inserida: VEGANZONES, D.; SÉVERIN, E. An investigation of ba
+OK     conclusao: horizonte de dois anos, coerente com resumo e introducao: 'com 0,649 contra 0,973 da cobertura de juros.' -> 'com 0,649 contra 0,973 da cobertura de juros em um ano, cont'
+OK     literatura recente (2015-2018), conferida na fonte: 'e Mai et al. (2019) incorporam informação textual das divulg' -> 'e Mai et al. (2019) incorporam informação textual das divulg'
+OK     JEL, abstract e keywords inseridos
+OK     secao de disponibilidade de dados e codigo
 OK     2.4: paragrafo "Ha ainda uma lacuna" movido para depois da sexta dimensao
+OK     larguras: Tabela 13 (soma 9071)
+OK     larguras: Tabela 14 (soma 9071)
+OK     larguras: Tabela 19 (soma 9071)
 OK     Figuras 2 e 3 substituidas pelas geradas pelo codigo (versao fixada), com a altura ajustada a proporcao
