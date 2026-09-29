@@ -81,8 +81,8 @@ Todas as pendências de dados, código, números e referências foram resolvidas
 lado a lado, e a divisão entre corpo e apêndice foi feita. As duas decisões podem ser revistas pelo
 orientador. Ficam em aberto:
 
-1. **Versão em inglês**, se o periódico-alvo for internacional; o abstract já está no artigo.
-2. **Paginação final**, que depende do modelo do periódico escolhido.
+1. **Formatação final**, conforme as normas do programa de mestrado.
+2. **Retorno do orientador** sobre a estrutura.
 3. **Itens pendentes da coorientação.** Os comentários sobre a revisão de literatura e as técnicas
    de avaliação da predição ainda não foram recebidos.
 4. **Conferência visual das páginas dos editores.** As referências com DOI foram conferidas pelo
