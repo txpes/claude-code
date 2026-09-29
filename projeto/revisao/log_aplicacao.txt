@@ -128,6 +128,8 @@ OK     zumbis: periodos corretos: 'ambos documentando aumento da proporção de 
 OK     CAPAG: regra, nao pesos: 'agrega três indicadores fiscais com pesos fixados de forma e' -> 'combina três indicadores fiscais, por meio de limiares e de '
 OK     3.3: criterio Ponzi nao e o dos zumbis (3 anos): 'seguindo o critério absoluto adotado por Torres Filho, Marti' -> 'critério absoluto na linha da taxonomia de Minsky e próximo '
 OK     Brito e Assaf: winsorizacao nao e da implementacao original; variaveis corretas: 'as duas últimas winsorizadas por ano nos percentis 1 e 99, c' -> 'a primeira e a última winsorizadas por ano nos percentis 1 e'
+OK     2.4: saida como censura informativa (ponto I.4 do orientador): 'Trata-se explicitamente o viés de sobrevivência, mantendo no' -> 'Trata-se explicitamente a saída do painel, que constitui cen'
+OK     2.4: moderacao sobre isolamento (parte III do orientador): 'isola o efeito do método de agregação.' -> 'mantém constantes os demais elementos e concentra a comparaç'
 OK     6.2: moderacao do indice agregado (recomendacao do orientador): 'o que a qualifica como extensão viável, e não apenas desejáv' -> 'mas a viabilidade de um exercício econométrico com o índice '
 OK     resumo: estatuto exploratorio: 'Uma análise diagnóstica posterior decompõe o evento pelo cri' -> 'Uma análise diagnóstica posterior, de caráter exploratório, '
 OK     p-valor: 'antecipando a entrada com significância inferior a um por mi' -> 'antecipando a entrada com p < 0,001.'

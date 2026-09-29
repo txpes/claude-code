@@ -68,6 +68,13 @@ sub('PCA 0,857; PLS 0,856; árvores 0,858', 'PCA 0,857; PLS 0,856; árvores 0,85
 sub('em trinta firmas o primeiro documento trata do andamento do processo, e a sensibilidade correspondente está declarada como limitação',
     'em 22 firmas do painel o primeiro documento trata do andamento do processo, e a sensibilidade que antecipa em um ano a data dessas firmas foi estimada e não altera a conclusão central',
     'secao 6: 22 firmas e teste feito')
+# indice agregado: cobertura de dados verificada nao equivale a viabilidade econometrica (observacao do orientador)
+sub('cuja viabilidade o levantamento de cobertura confirmou.',
+    'que não é condição para a dissertação: o levantamento confirmou a cobertura dos dados trimestrais, mas a viabilidade econométrica do exercício ainda depende de avaliação própria.',
+    'secao 6: extensao agregada nao obrigatoria')
+sub('qualifica a extensão agregada como viável.', 'indica que os dados permitem a extensão agregada, cuja viabilidade econométrica ainda depende de avaliação própria.',
+    'quadro: frequencia trimestral')
+sub('é praticável no universo estudado.', 'é praticável no universo estudado quanto à disponibilidade de dados.', 'quadro: indice agregado')
 alvo = next((p for p in d.paragraphs if p.text.startswith('A terceira decorre da conferência bibliográfica')), None)
 if alvo is not None:
     insert_after(alvo, 'Uma revisão integral do código e dos dados, feita depois desta rodada, corrigiu seis pontos, nenhum dos quais altera a conclusão central: '

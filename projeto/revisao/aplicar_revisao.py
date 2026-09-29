@@ -297,6 +297,12 @@ sub('as duas últimas winsorizadas por ano nos percentis 1 e 99, conforme a impl
     'a primeira e a última winsorizadas por ano nos percentis 1 e 99, com os quantis estimados exclusivamente nas firmas de treino, tratamento ausente do trabalho original e adotado aqui para conter os valores extremos produzidos por denominadores próximos de zero.',
     'Brito e Assaf: winsorizacao nao e da implementacao original; variaveis corretas')
 
+# ------------------------------------------------------------------ 11h. releitura com os comentarios do orientador
+sub('Trata-se explicitamente o viés de sobrevivência, mantendo no painel as firmas que o deixam antes do fim do período.',
+    'Trata-se explicitamente a saída do painel, que constitui censura informativa e risco competitivo, e não apenas viés de sobrevivência: as firmas que deixam o painel são mantidas até a última observação, e as saídas por dificuldade financeira são testadas como evento.',
+    '2.4: saida como censura informativa (ponto I.4 do orientador)')
+sub('isola o efeito do método de agregação.', 'mantém constantes os demais elementos e concentra a comparação no método de agregação.',
+    '2.4: moderacao sobre isolamento (parte III do orientador)')
 sub('o que a qualifica como extensão viável, e não apenas desejável.',
     'mas a viabilidade de um exercício econométrico com o índice agregado ainda depende de avaliação própria, anterior a qualquer compromisso com essa extensão.',
     '6.2: moderacao do indice agregado (recomendacao do orientador)')
