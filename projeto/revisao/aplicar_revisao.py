@@ -181,8 +181,13 @@ sub('e o escore supera o escore supervisionado nas primeiras.',
 
 # ------------------------------------------------------------------ 10. esquema temporal: Brito e Assaf
 sub('No horizonte de dois anos, com 34 entradas, nenhuma diferença alcança significância, e o esquema temporal é informativo apenas quanto à direção.',
-    'No horizonte de dois anos, com 34 entradas, nenhuma diferença alcança significância, e o esquema temporal é informativo apenas quanto à direção. A exceção à ordenação é o modelo de Brito e Assaf Neto, que no esquema temporal supera o escore sintético, com 0,787 contra 0,744, ao contrário do que ocorre na validação cruzada.',
-    'Tabela 11 mostrava inversao nao comentada')
+    'No horizonte de dois anos, com 34 entradas, nenhuma diferença alcança significância, e o esquema temporal é informativo apenas quanto à direção. A ordem entre os quatro modelos que superam o escore muda em relação à validação cruzada, com no máximo 0,020 ponto entre eles, e o modelo de Brito e Assaf Neto, abaixo do escore sintético na validação cruzada, o supera no esquema temporal, com 0,787 contra 0,744.',
+    'Tabela 11 mostrava inversao nao comentada; ordem entre benchmarks muda')
+sub('O esquema temporal reproduz a ordenação da validação cruzada no horizonte de um ano, com 40 entradas no período de teste e todas as diferenças significativas.',
+    'O esquema temporal reproduz o resultado central da validação cruzada no horizonte de um ano: com 40 entradas no período de teste, o escore sintético fica abaixo da cobertura de juros, do retorno sobre ativos, do escore supervisionado e das árvores impulsionadas, com todas as diferenças significativas.',
+    '5.3: temporal reproduz o resultado, nao a ordenacao completa')
+sub('e a mesma ordenação aparece sob avaliação temporal.', 'e o escore também fica abaixo dessas duas métricas sob avaliação temporal.',
+    'introducao: temporal reproduz o resultado, nao a ordenacao completa')
 
 # ------------------------------------------------------------------ 11. moderacao do mecanismo (ponto 9 do orientador)
 sub('A razão é de composição:', 'Os dados são consistentes com uma explicação de composição:', 'resumo')
