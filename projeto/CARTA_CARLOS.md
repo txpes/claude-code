@@ -7,7 +7,7 @@ Carlos, tudo bem?
 O Eduardo me mandou comentários sobre a versão anterior do artigo, e fiz as mudanças. Segue em anexo a versão atual. Gostaria de conversar com você sobre elas, principalmente sobre os pontos em que tocam o que tínhamos combinado.
 
 **O que o Eduardo pediu e foi feito**
-- **PCA dentro das partições:** padronização, correlação e autovetores agora são estimados só no treino. A AUC não mudou (0,764).
+- **PCA dentro das partições:** padronização, correlação e autovetores agora são estimados só no treino. A AUC fora da amostra fica em 0,764.
 - **Validação minskyana:** refeita sem a cobertura de juros. A AUC passa de 0,782 para 0,769.
 - **Calendário informacional:** nova §3.6, com a data de referência, a divulgação e a regra quando o evento cai no mesmo ano civil. Fiz também um teste antecipando a data da recuperação judicial.
 - **Saídas do painel:** classifiquei o motivo das 201 saídas no cadastro da CVM, tratei as saídas por dificuldade como evento e passei a descrevê-las como censura informativa e risco competitivo.
