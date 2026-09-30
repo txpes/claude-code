@@ -30,6 +30,7 @@ Dependências: pandas, numpy, scipy, scikit-learn, statsmodels, matplotlib, open
 | 13_puros_e_perfil.py | Subconjuntos puros, amplitude dos intervalos e perfil das firmas por rota | 14, 15 e Figura 3 |
 | 14_metricas_calibradas.py | Métricas de probabilidade com calibração sobre o posto, dois horizontes | 17 |
 | 15_rj_antecipada.py | Sensibilidade à datação da recuperação judicial: RJ antecipada em um ano para as firmas cujo primeiro documento é de andamento | 5.9 |
+| 16_tres_indicadores.py | Escore restrito aos três indicadores de maior poder discriminante (retorno sobre ativos, cobertura de juros e margem EBITDA), por componente principal e por média simples, com a seleção refeita dentro do treino | 5.6 |
 
 ## Princípio do desenho
 

@@ -302,6 +302,40 @@ sub('as duas últimas winsorizadas por ano nos percentis 1 e 99, conforme a impl
     'a primeira e a última winsorizadas por ano nos percentis 1 e 99, com os quantis estimados exclusivamente nas firmas de treino, tratamento ausente do trabalho original e adotado aqui para conter os valores extremos produzidos por denominadores próximos de zero.',
     'Brito e Assaf: winsorizacao nao e da implementacao original; variaveis corretas')
 
+# ------------------------------------------------------------------ 11i. escore com os tres indicadores de maior poder discriminante (script 16)
+sub('e não sustentam decisão sobre as hipóteses.',
+    'e não sustentam decisão sobre as hipóteses. O mesmo estatuto tem o escore restrito aos três indicadores de maior poder discriminante, '
+    'apresentado ao fim da subseção 5.6, construído depois de observados os resultados.',
+    '3.5: estatuto do escore com tres indicadores')
+alvo = next((p for p in d.paragraphs if 'a forma funcional contribui pouco.' in p.text), None)
+if alvo is not None:
+    insert_after(alvo,
+        'Uma última verificação separa o critério de agregação da escolha do que se agrega. Restrito aos três indicadores de maior poder '
+        'discriminante da Tabela 16, o retorno sobre ativos, a cobertura de juros e a margem EBITDA, o mesmo procedimento não supervisionado, '
+        f"com componentes principais estimados apenas nas firmas de treino, produz no horizonte de um ano escore com área sob a curva de {V['t3_h1_F3']}, "
+        f"contra {V['t3_h1_F']} do escore sobre os oito indicadores e {V['t3_h1_COB']} da cobertura de juros, sem diferença distinguível desta "
+        f"(cobertura menos escore restrito: {V['t3_h1_cob_dif']}, com intervalo de {V['t3_h1_cob_lo']} a {V['t3_h1_cob_hi']}), e supera o retorno sobre ativos "
+        f"e o escore supervisionado sobre os oito indicadores por {V['t3_h1_roa']} e {V['t3_h1_pls']} ponto. No horizonte de dois anos, alcança {V['t3_h2_F3']} "
+        f"e supera a cobertura de juros, com {V['t3_h2_COB']}, por {V['t3_h2_dif']} ponto (intervalo de {V['t3_h2_lo']} a {V['t3_h2_hi']}), sem diferença "
+        f"distinguível do retorno sobre ativos ({V['t3_h2_ROA']}) nem do escore supervisionado ({V['t3_h2_PLS']}). A média simples dos três indicadores "
+        f"padronizados difere do componente principal em no máximo {V['t3_m3']} ponto, e a seleção refeita pelos três maiores poderes discriminantes "
+        f"dentro de cada partição de treino escolhe o mesmo conjunto em {V['t3_sel']} das 100 partições, de modo que o resultado não decorre de a escolha "
+        'ter sido feita sobre a amostra completa. Agregados apenas os melhores componentes, a agregação não supervisionada acompanha o melhor '
+        'indicador isolado nos dois horizontes, a cobertura de juros em um ano e o retorno sobre ativos em dois, sem superá-lo. O resultado é '
+        'consistente com a leitura de que o desempenho do escore sobre os oito indicadores reflete sobretudo a composição do conjunto agregado. '
+        'No horizonte de um ano, contudo, a margem EBITDA reintroduz a sobreposição mecânica discutida na subseção 5.5, e a decomposição por rota '
+        f"deve ser lida com essa ressalva: o escore restrito alcança {V['t3_h1_EBITDA']} nas {V['t3_h1_EBITDA_n']} entradas por prejuízo operacional, "
+        f"{V['t3_h1_PL']} nas {V['t3_h1_PL_n']} por patrimônio líquido negativo e {V['t3_h1_RJ']} nas {V['t3_h1_RJ_n']} por recuperação judicial; em dois anos, "
+        f"{V['t3_h2_EBITDA']}, {V['t3_h2_PL']} e {V['t3_h2_RJ']}, com {V['t3_h2_EBITDA_n']}, {V['t3_h2_PL_n']} e {V['t3_h2_RJ_n']} entradas.",
+        alvo)
+    log.append('OK     5.6: escore com os tres indicadores de maior poder discriminante')
+else:
+    log.append('FALHOU 5.6: ancora do escore com tres indicadores')
+sub('A multidimensionalidade documentada na avaliação de H1',
+    'Restrito aos três indicadores de maior poder discriminante, o mesmo procedimento não supervisionado acompanha o melhor indicador isolado '
+    'nos dois horizontes, sem superá-lo, o que reforça essa leitura. A multidimensionalidade documentada na avaliação de H1',
+    'conclusao: escore com tres indicadores')
+
 # ------------------------------------------------------------------ 11h. releitura com os comentarios do orientador
 sub('Trata-se explicitamente o viés de sobrevivência, mantendo no painel as firmas que o deixam antes do fim do período.',
     'Trata-se explicitamente a saída do painel, que constitui censura informativa e risco competitivo, e não apenas viés de sobrevivência: as firmas que deixam o painel são mantidas até a última observação, e as saídas por dificuldade financeira são testadas como evento.',

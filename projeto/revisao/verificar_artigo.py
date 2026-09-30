@@ -201,5 +201,15 @@ for rot_, k, base in [('Escore sintético em nível', 'F', None), ('Escore em n�
     i = linha(t, rot_); confere(t, i, 1, lg[k], 'T20')
     if base: confere(t, i, 2, lg[k] - lg[base], 'T20')
 
+# ---------------------------------------------------------------- texto da 5.6: escore com os tres indicadores (script 16)
+if os.path.exists(os.path.join(R, 'tres_indicadores.pkl')):
+    TI = L('tres_indicadores.pkl'); txt = ''.join(t.text or '' for t in root.iter(W + 't'))
+    f3 = lambda x: f'{x:.3f}'.replace('.', ',')
+    esperados = [f3(TI[1]['ref']['F3']), f3(TI[2]['ref']['F3']), f3(-TI[2]['cmp']['COB vs F3'][0]), f3(-TI[1]['cmp']['ROA vs F3'][0])]
+    esperados += [f3(TI[h]['puros'][k]['auc']['F3']) for h in (1, 2) for k in ['EBITDA puras', 'PL puras', 'RJ puras']]
+    faltam = [e for e in esperados if e not in txt]
+    print(f'texto do escore com tres indicadores: {len(esperados) - len(faltam)} de {len(esperados)} valores encontrados', faltam or '')
+    if faltam: erros.append(f'5.6 tres indicadores: {faltam}')
+
 print(f'celulas conferidas: {conferidas} | divergencias: {len(erros)}')
 for e in erros: print('  ', e)

@@ -130,6 +130,9 @@ OK     zumbis: periodos corretos: 'ambos documentando aumento da proporção de 
 OK     CAPAG: regra, nao pesos: 'agrega três indicadores fiscais com pesos fixados de forma e' -> 'combina três indicadores fiscais, por meio de limiares e de '
 OK     3.3: criterio Ponzi nao e o dos zumbis (3 anos): 'seguindo o critério absoluto adotado por Torres Filho, Marti' -> 'critério absoluto na linha da taxonomia de Minsky e próximo '
 OK     Brito e Assaf: winsorizacao nao e da implementacao original; variaveis corretas: 'as duas últimas winsorizadas por ano nos percentis 1 e 99, c' -> 'a primeira e a última winsorizadas por ano nos percentis 1 e'
+OK     3.5: estatuto do escore com tres indicadores: 'e não sustentam decisão sobre as hipóteses.' -> 'e não sustentam decisão sobre as hipóteses. O mesmo estatuto'
+OK     5.6: escore com os tres indicadores de maior poder discriminante
+OK     conclusao: escore com tres indicadores: 'A multidimensionalidade documentada na avaliação de H1' -> 'Restrito aos três indicadores de maior poder discriminante, '
 OK     2.4: saida como censura informativa (ponto I.4 do orientador): 'Trata-se explicitamente o viés de sobrevivência, mantendo no' -> 'Trata-se explicitamente a saída do painel, que constitui cen'
 OK     2.4: moderacao sobre isolamento (parte III do orientador): 'isola o efeito do método de agregação.' -> 'mantém constantes os demais elementos e concentra a comparaç'
 OK     6.2: moderacao do indice agregado (recomendacao do orientador): 'o que a qualifica como extensão viável, e não apenas desejáv' -> 'mas a viabilidade de um exercício econométrico com o índice '

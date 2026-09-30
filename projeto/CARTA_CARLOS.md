@@ -27,10 +27,37 @@ O Eduardo me mandou comentários sobre a versão anterior do artigo, e fiz as mu
 - **Frequência trimestral.** O Eduardo recomendou não tratar o índice agregado como capítulo obrigatório antes de verificar a viabilidade econométrica. A agenda agora diz que a cobertura dos dados trimestrais é alta, mas não afirma que a extensão é viável. Queria ouvir sua opinião, já que aqui as recomendações de vocês apontam em direções um pouco diferentes.
 - **Separação temporal e classificação.** Continuam no artigo. Como as tabelas de robustez foram para um apêndice, a separação temporal é agora a Tabela A.3, a comparação dentro e fora da amostra é a A.2, e a de classificação é a Tabela 14.
 
-**O que ainda depende de você**
-1. Os comentários sobre a revisão de literatura.
-2. A lista de técnicas de avaliação da predição.
-3. O que você quis dizer com "os três indicadores". Entendi como os três de maior poder discriminante (retorno sobre ativos, cobertura de juros e margem EBITDA), mas esperei sua confirmação antes de montar esse escore.
+**Os três indicadores**
+
+Montei o escore com o retorno sobre ativos, a cobertura de juros e a margem EBITDA, pelo mesmo procedimento não supervisionado e sem vazamento (fim da §5.6):
+- **Um ano:** 0,895, contra 0,764 do escore com os oito indicadores e 0,894 da cobertura. Empata com a cobertura.
+- **Dois anos:** 0,722. Supera a cobertura (0,681) com diferença significativa e empata com o ROA (0,731).
+- **Robustez:** a média simples dos três dá o mesmo resultado. Refazendo a escolha dos três dentro de cada partição de treino, o mesmo trio aparece em 98 de 100 partições.
+
+Ou seja, agregando só os melhores componentes, o escore acompanha o melhor indicador isolado, mas não o supera. Isso reforça a leitura de que o problema do escore original está na composição, e não na agregação em si.
+
+Uma ressalva: em um ano, a margem EBITDA traz de volta a sobreposição mecânica. Por rota:
+- **Um ano:** 0,958 nas 66 entradas por prejuízo operacional, 0,784 nas 51 por patrimônio negativo e 0,888 nas 11 por recuperação judicial.
+- **Dois anos:** 0,576, 0,801 e 0,798, com 52, 46 e 9 entradas.
+
+**Técnicas de avaliação da predição: uma proposta para fechar**
+
+O artigo já cobre as três dimensões usuais de avaliação:
+- **Discriminação:** AUC ROC, com bootstrap agrupado por firma e Bonferroni, e PR-AUC.
+- **Calibração:** Brier e inclinação e intercepto de calibração.
+- **Utilidade:** sensibilidade, especificidade, VPP, VPN e decisão líquida.
+
+Tudo isso sob dois esquemas de validação: por firma e temporal.
+
+Minha proposta é fechar a lista assim. O KS já está na tabela de diagnóstico, e o Gini (2 × AUC − 1) é equivalente à AUC. Se você achar importante, há duas adições baratas, porque o código já tem tudo:
+1. um gráfico de calibração;
+2. a taxa de captura dos eventos no decil de maior risco, mais próxima da prática de crédito.
+
+Faz sentido para você?
+
+**Revisão de literatura**
+
+Quando puder, me reenvie seus comentários sobre a revisão de literatura.
 
 Podemos marcar uma conversa para passar por isso?
 

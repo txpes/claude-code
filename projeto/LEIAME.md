@@ -14,7 +14,7 @@ Com as versões usadas na revisão:
 
     pip install -r codigo/requirements.txt
 
-A execução completa roda os quinze scripts em poucos minutos e não requer acesso à rede. Foi
+A execução completa roda os dezesseis scripts em poucos minutos e não requer acesso à rede. Foi
 testada em diretório limpo. As árvores impulsionadas dependem da versão do scikit-learn; com as
 versões de `requirements.txt`, os números reproduzem os do artigo revisado.
 

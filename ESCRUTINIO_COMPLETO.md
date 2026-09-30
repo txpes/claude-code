@@ -426,3 +426,30 @@ Todas estão no `aplicar_revisao.py`, com registro no `log_aplicacao.txt`. O res
 - `verificar_artigo.py`: **596 células, 0 divergências**, tanto na versão com alterações controladas quanto na final com apêndice. As 12 células a mais são as colunas novas da Tabela 14. A faixa do VPN citada na nota é conferida por asserção.
 - **Menções:** todas as 20 tabelas são citadas no texto. A primeira menção segue a ordem de numeração no corpo (1 a 14) e no apêndice (A.1 a A.6). Não sobrou menção a um número antigo.
 - **PDF:** 40 páginas, conferido nas páginas da Tabela 14, da §5.8 e do Apêndice (39 e 40), sem palavras quebradas.
+
+---
+
+## 14. Escore com os três indicadores de maior poder discriminante (30/09/2026)
+
+- **Origem:** pergunta da coorientação, confirmada pelo autor: o escore usa os três indicadores de maior KS, retorno sobre ativos, cobertura de juros e margem EBITDA.
+- **Script novo (`codigo/16_tres_indicadores.py`):** usa o mesmo pipeline sem vazamento do 01.
+  - Os escores são o primeiro componente principal dos três (F3) e a média simples padronizada (M3).
+  - Para testar se escolher o trio na amostra completa enviesa o resultado, o script refaz a escolha pelos três maiores KS dentro de cada partição de treino.
+- **Resultados** (atribuição de referência, bootstrap agrupado por firma):
+  - **Um ano:** F3 0,895 contra F 0,764 e COB 0,894. COB − F3 = −0,001 [−0,015; +0,015]. F3 supera o ROA por 0,021 e o PLS de oito indicadores por 0,019, com intervalos que excluem o zero.
+  - **Dois anos:** F3 0,722 contra COB 0,681 (+0,040 [+0,018; +0,062]). Sem diferença do ROA (0,731) nem do PLS (0,725).
+  - **Média simples (M3):** difere de F3 em no máximo 0,001.
+  - **Escolha dentro do treino:** o mesmo trio aparece em 98 de 100 partições.
+  - **Rotas puras:**
+    - um ano: 0,958 (66), 0,784 (51) e 0,888 (11);
+    - dois anos: 0,576 (52), 0,801 (46) e 0,798 (9).
+- **Leitura:** agregados apenas os melhores componentes, o escore acompanha o melhor indicador isolado nos dois horizontes, sem superá-lo. Isso é consistente com a explicação de composição e não altera a conclusão central.
+- **No artigo** (alterações controladas):
+  - parágrafo novo no fim da §5.6;
+  - frase de estatuto na §3.5 (análise posterior aos resultados);
+  - frase na conclusão.
+- **Checagens:**
+  - o `verificar_artigo.py` confere os 10 valores do parágrafo contra o `tres_indicadores.pkl`;
+  - tabelas: 596 células, 0 divergências;
+  - alterações controladas: 179 aplicadas, 0 falhas.
+- **Correção desta rodada:** a §5.3 e a introdução diziam que o esquema temporal "reproduz a ordenação" da validação cruzada. Agora dizem que ele reproduz o resultado central, e que a ordem entre os benchmarks muda.
