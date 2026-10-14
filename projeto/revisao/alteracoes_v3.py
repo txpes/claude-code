@@ -61,7 +61,10 @@ add(op='inserir_apos', ancora='2. Panorama da fragilidade financeira', modelo='E
     f'entre 2014 e 2015, a parcela passou de {pct(c14)}% para {pct(c15)}%, manteve-se em {pct(ano.cob1.loc[2016])}% em 2016 e só voltou a '
     f'patamar inferior a 45% em 2018. A parcela com EBITDA negativo acompanha o mesmo ciclo em nível mais baixo, com máximo de '
     f'{pct(ano.ebitda.max())}% em {int(ano.ebitda.idxmax())}, e a de patrimônio líquido negativo cresce de forma mais lenta e persistente, de '
-    f'{pct(ano.pl.loc[2010])}% em 2010 a {pct(pl17)}% em 2017, e fica entre 8% e 10% a partir de 2021.'])
+    f'{pct(ano.pl.loc[2010])}% em 2010 a {pct(pl17)}% em 2017, e fica entre 8% e 10% a partir de 2021. A pandemia de 2020, que Silber '
+    '(2020) discute como choque exógeno capaz de desorganizar a economia e destruir empresas, produz efeito mais modesto e passageiro '
+    f'sobre a cobertura de juros: a parcela inferior à unidade passa de {pct(ano.cob1.loc[2019])}% em 2019 para {pct(ano.cob1.loc[2020])}% em 2020 e '
+    f'recua para {pct(ano.cob1.loc[2021])}% em 2021.'])
 add(op='figura_apos', ancora='A Figura {FIG:panorama} mostra', modelo_legenda='Figura 4 – ',
     legenda='Figura {FIG:panorama} – Sinais de dificuldade financeira das companhias abertas não financeiras, 2010-2025',
     imagem='fig_panorama.png',
@@ -75,7 +78,8 @@ add(op='inserir_apos', ancora='Fonte: elaboração própria a partir das Demonst
     'três deles de um mesmo grupo têxtil. A Tabela {TAB:panorama} resume os indicadores por subperíodo. A recessão de 2015-2016 eleva '
     'todos os sinais ao mesmo tempo. Nos anos seguintes, a cobertura de juros e o EBITDA voltam a patamares próximos ou inferiores aos '
     'do início do período, mas o patrimônio líquido negativo permanece mais frequente do que em 2010-2014, e a alavancagem mediana, '
-    'depois de recuar, volta a subir em 2022-2025.'])
+    'depois de recuar, volta a subir em 2022-2025, em linha com a relação positiva entre crises financeiras e alavancagem das '
+    'companhias brasileiras documentada por Franzotti et al. (2021) para as crises de 2002, 2008 e 2015.'])
 cab = ['Período', 'Companhias por ano', 'Cobertura de juros < 1 (%)', 'EBITDA < 0 (%)', 'PL < 0 (%)', 'Prejuízo líquido (%)',
        'Alavancagem mediana', 'Recuperações']
 linhas = [cab] + [[r.periodo, f'{r.companhias:.0f}', pct(r.cob1), pct(r.ebitda), pct(r.pl), pct(r.prejuizo), num(r.alv), str(r.rj)] for r in tab.itertuples()]
@@ -115,7 +119,10 @@ add(op='substituir', antigo='e encontra predominância da posição especulativa
 add(op='substituir', antigo='e elevaram a preferência pela liquidez.',
     novo='e elevaram a preferência pela liquidez. Rolim, Cattan e Antonioli (2021) examinam dezenove setores das companhias abertas não '
          'financeiras brasileiras entre 2010 e 2016 e encontram redução das firmas em posição hedge e aumento das especulativas e Ponzi '
-         'no período de reversão do ciclo, com padrões setoriais distintos.')
+         'no período de reversão do ciclo, com padrões setoriais distintos. No plano agregado, Teixeira, Tiryaki e Drummond (2020) '
+         'derivam um indicador de fragilidade financeira para o Brasil por modelo de fator dinâmico, com dados mensais de 1996 a 2018, '
+         'e mostram que seu aumento compromete o desempenho macroeconômico: é outra aplicação da redução de dimensionalidade à '
+         'mensuração da fragilidade.')
 add(op='mover_apos', inicio='Entre as duas tradições existe um conjunto de abordagens', ancora='No Brasil, Torres Filho, Martins e Miaguti (2019)')
 add(op='substituir', antigo='Entre as duas tradições existe um conjunto de abordagens que constrói medidas agregadas sem consultar o desfecho.',
     novo='O mesmo pilar reúne outras medidas construídas sem consultar o desfecho.')
@@ -127,7 +134,9 @@ add(op='substituir', antigo='3.3 A tradição de predição de insolvência', no
 add(op='substituir', antigo='o que ilustra a diversidade de alvos que a literatura nacional agrupa sob o rótulo de insolvência.',
     novo='o que ilustra a diversidade de alvos que a literatura nacional agrupa sob o rótulo de insolvência. Predebom, Bianchi e '
          'Machado (2025) relacionam as fases do ciclo econômico à insolvência das companhias listadas na B3 entre 2010 e 2019, medida '
-         'pelo escore Z, e encontram que o ciclo altera a relação entre insolvência e gerenciamento de resultados.')
+         'pelo escore Z, e encontram que o ciclo altera a relação entre insolvência e gerenciamento de resultados. Oliveira e Diniz '
+         '(2025), com 1.369 observações de companhias abertas brasileiras entre 2010 e 2019, mostram que as firmas em insolvência, '
+         'medida por quatro modelos, são significativamente mais propensas a violar cláusulas financeiras de contratos de dívida.')
 add(op='substituir', antigo='Todos partilham o mesmo pressuposto: o desfecho orienta a construção do preditor.',
     novo='Mais recentemente, Jabeur et al. (2021) comparam um modelo de árvores impulsionadas para dados categóricos, o CatBoost, com '
          'oito modelos de referência a um, dois e três anos da falência e reportam ganho de classificação, e Shetty, Musa e Brédart (2022) '
@@ -155,10 +164,7 @@ add(op='substituir', antigo='A Tabela 11 repete a comparação sobre os subconju
     novo='A Tabela 11 e a Figura 3 repetem a comparação sobre os subconjuntos puros')    # a figura nao era citada no texto
 
 # ------------------------------------------------------------ 5. dados: emissores estrangeiros que permaneceram
-add(op='substituir', antigo='e não há cadastro de companhia aberta.',
-    novo='e não há cadastro de companhia aberta. Três outros emissores na mesma condição, com 16 firma-anos e nenhuma entrada em '
-         'vulnerabilidade, permaneceram nesta versão; reestimados os modelos sem eles, as áreas sob a curva das medidas que não envolvem '
-         'estimação mudam no máximo 0,001 ponto e nenhuma conclusão se altera.')
+add(op='substituir', antigo='Excluem-se da amostra doze emissores estrangeiros', novo='Excluem-se da amostra quinze emissores estrangeiros')   # correcao de outubro de 2026
 
 # ------------------------------------------------------------ 6. equações como objetos de equação
 def r(t, estilo=None):
@@ -187,6 +193,10 @@ NOVAS = [('BANERJEE, R.; HOFMANN, B. The rise of zombie firms', 'BANERJEE, R.; H
          ('OHLSON, J. A.', None),
          ('MULLIGAN, R. F.', None),
          ('SCALZER, R. S.', 'SHETTY, S.; MUSA, M.; BRÉDART, X. Bankruptcy prediction using machine learning techniques. Journal of Risk and Financial Management, v. 15, n. 1, art. 35, 2022.'),
+         ('FIELD, C. A.', 'FRANZOTTI, T. D. A.; MAGNANI, V. M.; AMBROZINI, M. A.; VALLE, M. R. Financing of Brazilian companies during financial crises: comparative between the crises of 2002, 2008 and 2015. RAM. Revista de Administração Mackenzie, v. 22, n. 1, eRAMF210154, 2021.'),
+         ('OHLSON, J. A.', 'OLIVEIRA, W. C.; DINIZ, J. A. Influence of financial situation and earnings management on violation of financial covenants by insolvent companies: evidence from Brazil. RAM. Revista de Administração Mackenzie, v. 26, n. 3, eRAMF250127, 2025.'),
+         ('SHETTY, S.', 'SILBER, S. D. A fragilidade econômica e financeira na pandemia do Sars-Covid-19. Estudos Avançados, v. 34, n. 100, p. 107-115, 2020.'),
+         ('SILBER, S. D.', 'TEIXEIRA, D. N.; TIRYAKI, G. F.; DRUMMOND, C. E. I. Fragilidade financeira e volatilidade dos ciclos econômicos no Brasil pós-Plano Real. Estudos Econômicos (São Paulo), v. 50, n. 1, p. 125-158, 2020.'),
          ('PREDEBOM, B.', 'ROLIM, L. N.; CATTAN, R.; ANTONIOLI, J. Fragilidade financeira das empresas não financeiras de capital aberto no Brasil entre 2010 e 2016: uma análise setorial a partir de Minsky. Análise Econômica, v. 39, n. 78, 2021.')]
 for ancora, ref in NOVAS:
     if ref:

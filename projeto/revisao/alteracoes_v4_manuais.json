@@ -1,0 +1,32 @@
+[
+ {
+  "op": "substituir",
+  "antigo": "A única diferença significativa nesse tipo de entrada é contra o escore supervisionado, que o escore sintético supera por 0,063 ponto, resultado que não resiste à antecipação das datas de recuperação judicial examinada na subseção 6.9.",
+  "novo": "Contra o escore supervisionado, o escore sintético fica à frente por 0,063 ponto, com intervalo que toca o zero: a vantagem é nominal, e se afasta ainda mais da significância com a antecipação das datas de recuperação judicial examinada na subseção 6.9."
+ },
+ {
+  "op": "substituir",
+  "antigo": "Nas entradas por recuperação judicial nenhuma diferença é distinguível, com a ressalva de poder registrada adiante.",
+  "novo": "Nas entradas por recuperação judicial, nenhuma diferença contra as razões isoladas é distinguível; o escore supervisionado fica à frente do sintético por 0,063 ponto, com intervalo que exclui o zero por margem mínima, o que, com 11 entradas, não sustenta afirmação forte, pela ressalva de poder registrada adiante."
+ },
+ {
+  "op": "substituir",
+  "antigo": "nas entradas exclusivamente por patrimônio líquido negativo, a vantagem do escore sintético sobre o supervisionado deixa de ser distinguível,",
+  "novo": "nas entradas exclusivamente por patrimônio líquido negativo, a vantagem nominal do escore sintético sobre o supervisionado se afasta ainda mais da significância,"
+ },
+ {
+  "op": "substituir",
+  "antigo": "Como o primeiro componente carrega sobretudo capital de giro, com 0,532, alavancagem, com 0,415, e liquidez corrente, com 0,373, o escore lê essas firmas como robustas.",
+  "novo": "Como três das quatro maiores cargas do primeiro componente são de estrutura patrimonial, capital de giro, com 0,530, alavancagem, com 0,415, e liquidez corrente, com 0,379, ao lado do retorno sobre ativos, com 0,483, o escore lê essas firmas como robustas."
+ },
+ {
+  "op": "substituir",
+  "antigo": "Como o primeiro componente carrega sobretudo capital de giro, alavancagem e liquidez, o escore classifica essas firmas como robustas:",
+  "novo": "Como o primeiro componente carrega sobretudo indicadores de estrutura patrimonial, como capital de giro, alavancagem e liquidez, o escore classifica essas firmas como robustas:"
+ },
+ {
+  "op": "substituir",
+  "antigo": "Um escore cujas maiores cargas são capital de giro, alavancagem e liquidez as classifica como robustas,",
+  "novo": "Um escore em que três das quatro maiores cargas são de estrutura patrimonial, capital de giro, alavancagem e liquidez, as classifica como robustas,"
+ }
+]

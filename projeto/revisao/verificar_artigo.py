@@ -1,6 +1,8 @@
 """Verificacao final: compara cada celula numerica das tabelas do artigo revisado (com as alteracoes aceitas)
 com o valor recalculado pelo codigo final, na precisao exibida na celula.
-Uso: python verificar_artigo.py <diretorio onde o executar.sh rodou> [docx; padrao: o revisado]"""
+Uso: python verificar_artigo.py <diretorio onde o executar.sh rodou> [docx; padrao: o revisado] [correcoes.json]
+Com o terceiro argumento, grava para cada celula divergente o texto novo, no mesmo formato da celula (casas, sinal,
+percentual, separador de milhar), para ser aplicado por corrigir_celulas.py."""
 import sys, os, re, zipfile, pickle
 import numpy as np, pandas as pd
 from lxml import etree
@@ -45,7 +47,19 @@ def num(s):
     return out
 
 
-erros, conferidas = [], 0
+erros, conferidas, correcoes = [], 0, []
+
+
+def formata(e, modelo, dec, pct):
+    """escreve e no formato do token modelo (sinal explicito, menos tipografico, milhar, percentual)"""
+    v = e * 100 if pct else e
+    casas = dec - 2 if pct else dec
+    txt = f'{abs(v):,.{casas}f}'.replace(',', 'X').replace('.', ',').replace('X', '.')
+    if '.' not in modelo.split(',')[0]:
+        txt = txt.replace('.', '') if casas == 0 or ',' in txt else txt
+    neg = round(v, casas) < 0
+    sinal = ('−' if '−' in modelo else '-') if neg else ('+' if modelo.lstrip('<').startswith('+') else '')
+    return sinal + txt + ('%' if pct else '')
 
 
 def confere(tab, lin, col, esperado, rot=''):
@@ -54,12 +68,17 @@ def confere(tab, lin, col, esperado, rot=''):
     esp = esperado if isinstance(esperado, (list, tuple)) else [esperado]
     if len(vals) != len(esp):
         erros.append(f'{rot} [{lin},{col}] "{cel}": esperado {esp}'); return
-    for (v, dec, menor), e in zip(vals, esp):
+    novo, mudou = cel, False
+    toks = list(re.finditer(r'(<)?([+\-−]?\d{1,3}(?:\.\d{3})*(?:,\d+)?)(%)?', cel))
+    for (v, dec, menor), e, tk in reversed(list(zip(vals, esp, toks))):
         conferidas += 1
         if menor:
             if not e < v + 1e-12: erros.append(f'{rot} [{lin},{col}] "{cel}": esperado {e:.5f}')
         elif abs(v - e) > 0.5 * 10 ** (-dec) + 1e-9:
             erros.append(f'{rot} [{lin},{col}] "{cel}": esperado {e:.5f}')
+            novo = novo[:tk.start(2)] + formata(e, tk.group(2), dec, bool(tk.group(3))).rstrip('%') + novo[tk.end(2):]; mudou = True
+    if mudou:
+        correcoes.append(dict(tabela=next(k for k, t in enumerate(tabelas) if t is tab), linha=lin, coluna=col, antigo=cel, novo=novo, rot=rot))
 
 
 def acha(*chaves):
@@ -179,7 +198,9 @@ for rot_, m in [('Árvores impulsionadas', 'GB'), ('Cobertura de juros', 'COB'),
     r = G3[1][m]; o = r[80]; i = linha(t, rot_)
     for j, v in enumerate([r['pr_auc'], r['brier'], r['incl'], o['sinalizadas'], o['vpp'], o['espec'], r['nb10']], 1): confere(t, i, j, v, 'T17')
 vpn = [G3[1][m][80]['vpn'] for m in ['GB', 'COB', 'PLS', 'ROA', 'F', 'BA']]
-assert f'{min(vpn):.3f}' == '0.988' and f'{max(vpn):.3f}' == '0.993', vpn   # faixa do VPN citada na nota
+faixa_vpn = f"entre {min(vpn):.3f} e {max(vpn):.3f}".replace('.', ',')          # faixa do VPN citada na nota da tabela de metricas
+if faixa_vpn not in ''.join(t.text or '' for t in root.iter(W + 't')):
+    erros.append(f'nota da tabela de metricas: faixa do VPN deveria ser {faixa_vpn!r}')
 i = linha(t, 'Referência sem informação'); confere(t, i, 1, G3[1]['_prev'], 'T17'); confere(t, i, 2, G3[1]['_brier_ref'], 'T17')
 t = acha('Restritiva')
 for rot_, nome in [('Definição principal', 'principal'), ('Sem as entradas exclusivas do critério de EBITDA', 'sem entradas so EBITDA'),
@@ -212,4 +233,7 @@ if os.path.exists(os.path.join(R, 'tres_indicadores.pkl')):
     if faltam: erros.append(f'5.6 tres indicadores: {faltam}')
 
 print(f'celulas conferidas: {conferidas} | divergencias: {len(erros)}')
+if len(sys.argv) > 3:
+    import json; json.dump(correcoes, open(sys.argv[3], 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print(f'{len(correcoes)} celulas com texto novo -> {sys.argv[3]}')
 for e in erros: print('  ', e)

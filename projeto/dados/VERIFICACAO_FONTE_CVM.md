@@ -81,3 +81,28 @@ Os casos conhecidos estão na base, com o ano do primeiro documento:
    - rodar de novo todo o código.
 
    Para que só o efeito dos dados apareça, a atribuição às partições deve ser feita sobre a lista original de firmas. Até lá, a §4.1 precisa dizer a verdade: a frase dos "doze emissores" deve ser ajustada.
+
+---
+
+## Correção aplicada (15/10/2026)
+
+O script `dados/corrigir_painel_2026-10.py` foi aplicado aos três painéis. Ele é idempotente: rodá-lo de novo não muda nada.
+- **Exclusões:** saem os três emissores estrangeiros, 16 firma-anos no painel completo e 18 no de insumos. O painel passa a ter **7.403 firma-anos e 727 companhias**.
+- **Linhas refeitas a partir da CVM:**
+  - Águas do Rio 1 e 4, 2021: demonstração anual. A liquidez corrente da Águas do Rio 1 passa de 34,5 para 2,65, e a cobertura de juros, de −33,97 para 0,02.
+  - Equatorial Pará, 2025: versão 2 da DFP. O ROA passa de 0,359 para 0,083, e a margem EBITDA, de 1,66 para 0,19.
+  - COSERN, 2010: receita preenchida. A margem EBITDA passa de 0,242 para 0,233.
+
+  Os valores corrigidos eram extremos do ano (o máximo da liquidez e o mínimo da cobertura em 2021; o máximo do ROA e da margem em 2025). Por isso a correção altera a padronização dos componentes principais um pouco mais do que a simples exclusão dos emissores.
+- **Fórmulas:** os indicadores das linhas refeitas usam as definições da tabela de indicadores. As colunas não afetadas pela correção reproduzem exatamente os valores antigos, o que confere as fórmulas. Nenhum critério de vulnerabilidade mudou nessas linhas.
+- **Conferência depois da correção:** 37.012 de 37.015 comparações batem. As 3 restantes são o falso alarme já descrito (conta repetida no arquivo da CVM). Nenhum código de emissor estrangeiro sobrou.
+- **Partições:** a atribuição das firmas às partições externas é feita sobre a lista original de firmas (`EXCLUIDOS_2026_10` nos scripts 01 e 16). As demais firmas mantêm a mesma partição, e as diferenças nos resultados refletem só os dados.
+
+## Classificação judicial ou extrajudicial
+
+O assunto do primeiro documento indica recuperação **extrajudicial** em alguns casos que a base classifica como judicial. Os mais claros:
+- Grupo Casas Bahia, 2024;
+- InterCement, 2024;
+- o plano extrajudicial da Lupatech antes da recuperação judicial de 2014–2015.
+
+O critério de evento abrange os dois tipos, e o panorama só reporta o total de recuperações judiciais e extrajudiciais. Por isso nenhum resultado depende dessa classificação. Ela não foi alterada, e o texto não usa a divisão por tipo.

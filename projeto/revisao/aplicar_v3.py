@@ -6,7 +6,7 @@ Regras:
   - tabelas e figuras novas recebem marcadores ({TAB:id}, {FIG:id}), resolvidos no fim, quando todas as tabelas e figuras
     do corpo sao renumeradas pela ordem em que aparecem; as do apendice mantem a serie A.n.
 
-Uso: python aplicar_v3.py base.docx alteracoes.json saida.docx [pasta das imagens]"""
+Uso: python aplicar_v3.py base.docx alteracoes.json[,outra.json...] saida.docx [pasta das imagens]"""
 import sys, re, json, copy, os
 import docx
 from docx.shared import Emu
@@ -223,6 +223,40 @@ def op_equacao(inicio, omml):
     log.append(f'OK     equacao convertida: {inicio[:40]!r}')
 
 
+def op_trocar_imagem(legenda, imagem):
+    """troca a imagem da figura cuja legenda comeca com `legenda`, mantendo a largura e ajustando a altura a proporcao"""
+    cap = unico_topo(legenda); fig = cap.getnext()
+    if fig.find('.//' + W + 'drawing') is None:
+        raise Falha(f'figura {legenda!r}: paragrafo seguinte sem imagem')
+    rid, img = d.part.get_or_add_image(os.path.join(IMG, imagem))
+    next(fig.iter('{http://schemas.openxmlformats.org/drawingml/2006/main}blip')).set(
+        '{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed', rid)
+    for ext in fig.iter():
+        if (ext.tag.endswith('}extent') or ext.tag.endswith('}ext')) and ext.get('cx') is not None:
+            ext.set('cy', str(int(int(ext.get('cx')) * img.px_height / img.px_width)))
+    log.append(f'OK     imagem trocada: {legenda[:40]!r} <- {imagem}')
+
+
+def op_celula(tabela, linha, coluna, antigo, novo, apos=None):
+    """troca o texto de uma celula: tabela identificada por um texto que so ela contem, linha pelo rotulo da primeira
+    coluna (a primeira linha com esse rotulo depois da linha cujo rotulo comeca com `apos`, se dado)"""
+    ts = [t for t in body.iter(W + 'tbl') if tabela in texto(t)]
+    if len(ts) != 1:
+        raise Falha(f'celula: tabela {tabela[:40]!r} com {len(ts)} ocorrencias')
+    trs = ts[0].findall(W + 'tr'); ok = apos is None
+    for tr in trs:
+        tcs = tr.findall(W + 'tc'); r0 = texto(tcs[0]).strip()
+        if not ok:
+            ok = r0.startswith(apos); continue
+        if r0 == linha:
+            alvo = tcs[coluna]
+            if texto(alvo).strip() != antigo:
+                raise Falha(f'celula {linha!r}[{coluna}]: esperado {antigo!r}, encontrado {texto(alvo)!r}')
+            trocar(alvo.find(W + 'p'), re.escape(texto(alvo).strip()), lambda m: novo)
+            log.append(f'OK     celula {linha[:30]!r}[{coluna}]: {antigo} -> {novo}'); return
+    raise Falha(f'celula: linha {linha!r} nao encontrada')
+
+
 def renumerar_tabelas_figuras():
     """mapa pela ordem das legendas no corpo; apendice segue A.n; marcadores {TAB:id}/{FIG:id} resolvidos aqui"""
     tops = topo()
@@ -247,9 +281,9 @@ def renumerar_tabelas_figuras():
 
 
 OPS = {'renumerar_secoes': op_renumerar_secoes, 'substituir': op_substituir, 'paragrafo': op_paragrafo, 'inserir_apos': op_inserir_apos,
-       'remover': op_remover, 'mover_apos': op_mover_apos, 'figura_apos': op_figura_apos, 'tabela_apos': op_tabela_apos, 'equacao': op_equacao}
+       'remover': op_remover, 'mover_apos': op_mover_apos, 'figura_apos': op_figura_apos, 'tabela_apos': op_tabela_apos, 'equacao': op_equacao, 'celula': op_celula, 'trocar_imagem': op_trocar_imagem}
 try:
-    for k, a in enumerate(json.load(open(alt, encoding='utf-8'))):
+    for k, a in enumerate(x for arq in alt.split(',') for x in json.load(open(arq, encoding='utf-8'))):
         a = dict(a); op = a.pop('op'); a.pop('motivo', None)
         OPS[op](**a)
     renumerar_tabelas_figuras()

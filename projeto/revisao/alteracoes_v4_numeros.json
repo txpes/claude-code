@@ -1,0 +1,337 @@
+[
+ {
+  "op": "substituir",
+  "antigo": "em painel de 7.419 observações firma-ano de 730 companhias abertas",
+  "novo": "em painel de 7.403 observações firma-ano de 727 companhias abertas"
+ },
+ {
+  "op": "substituir",
+  "antigo": "using a panel of 7,419 firm-year observations from 730 Brazilian",
+  "novo": "using a panel of 7,403 firm-year observations from 727 Brazilian"
+ },
+ {
+  "op": "substituir",
+  "antigo": "a área sob a curva ROC do escore é de 0,764, contra 0,894 da cobertura de juros e 0,874 do retorno sobre ativos, em conclusão que se mantém",
+  "novo": "a área sob a curva ROC do escore é de 0,763, contra 0,894 da cobertura de juros e 0,874 do retorno sobre ativos, em conclusão que se mantém"
+ },
+ {
+  "op": "substituir",
+  "antigo": "the area under the ROC curve of the score is 0.764, against 0.894 for interest coverage and 0.874 for return on assets",
+  "novo": "the area under the ROC curve of the score is 0.763, against 0.894 for interest coverage and 0.874 for return on assets"
+ },
+ {
+  "op": "substituir",
+  "antigo": "o escore fica 0,32 ponto atrás da cobertura de juros em um ano",
+  "novo": "o escore fica 0,33 ponto atrás da cobertura de juros em um ano"
+ },
+ {
+  "op": "substituir",
+  "antigo": "the score trails interest coverage by 0.32 points at one year",
+  "novo": "the score trails interest coverage by 0.33 points at one year"
+ },
+ {
+  "op": "substituir",
+  "antigo": "O painel reúne 7.419 observações firma-ano, cobrindo 730 companhias",
+  "novo": "O painel reúne 7.403 observações firma-ano, cobrindo 727 companhias"
+ },
+ {
+  "op": "substituir",
+  "antigo": "entre as que saem, 31,8% estavam em situação de vulnerabilidade na última observação, contra 14,4% entre as que permanecem. Oito",
+  "novo": "entre as que saem, 32,0% estavam em situação de vulnerabilidade na última observação, contra 14,4% entre as que permanecem. Oito"
+ },
+ {
+  "op": "substituir",
+  "antigo": "o escore alcança 0,764 fora da amostra, contra 0,894 da cobertura de juros e 0,874 do retorno sobre ativos, e o escore também",
+  "novo": "o escore alcança 0,763 fora da amostra, contra 0,894 da cobertura de juros e 0,874 do retorno sobre ativos, e o escore também"
+ },
+ {
+  "op": "substituir",
+  "antigo": "com área sob a curva de 0,782, ou 0,769 quando excluído",
+  "novo": "com área sob a curva de 0,781, ou 0,768 quando excluído"
+ },
+ {
+  "op": "substituir",
+  "antigo": "ali o escore alcança 0,649 contra 0,973 da cobertura de juros em um ano, diferença de 0,324 ponto em boa parte mecânica, e 0,377 contra 0,522 em dois anos",
+  "novo": "ali o escore alcança 0,647 contra 0,973 da cobertura de juros em um ano, diferença de 0,327 ponto em boa parte mecânica, e 0,377 contra 0,522 em dois anos"
+ },
+ {
+  "op": "substituir",
+  "antigo": "alavancagem mediana de 0,213 contra 0,326 das que não entram, liquidez corrente de 1,998 contra 1,430 e capital de giro superior à mediana geral",
+  "novo": "alavancagem mediana de 0,213 contra 0,326 das que não entram, liquidez corrente de 1,998 contra 1,429 e capital de giro superior à mediana geral"
+ },
+ {
+  "op": "substituir",
+  "antigo": "O painel de insumos reúne 7.690 observações firma-ano.",
+  "novo": "O painel de insumos reúne 7.672 observações firma-ano."
+ },
+ {
+  "op": "substituir",
+  "antigo": "O painel final contém 7.419 observações firma-ano referentes a 730 companhias.",
+  "novo": "O painel final contém 7.403 observações firma-ano referentes a 727 companhias."
+ },
+ {
+  "op": "substituir",
+  "antigo": "cresce de 358 em 2010 para um máximo de 584 em 2023, encerrando o período em 529.",
+  "novo": "cresce de 358 em 2010 para um máximo de 581 em 2023, encerrando o período em 527."
+ },
+ {
+  "op": "substituir",
+  "antigo": "Cada firma é observada em média por 10,2 exercícios, com mediana de 9, e apenas 237 das 730 companhias",
+  "novo": "Cada firma é observada em média por 10,2 exercícios, com mediana de 9, e apenas 237 das 727 companhias"
+ },
+ {
+  "op": "substituir",
+  "antigo": "7.419 observações em todos os indicadores, sem valores ausentes.",
+  "novo": "7.403 observações em todos os indicadores, sem valores ausentes."
+ },
+ {
+  "op": "substituir",
+  "antigo": "Sob a definição ampla, 1.115 observações firma-ano encontram-se em situação de vulnerabilidade, o equivalente a 15,0% do painel.",
+  "novo": "Sob a definição ampla, 1.115 observações firma-ano encontram-se em situação de vulnerabilidade, o equivalente a 15,1% do painel."
+ },
+ {
+  "op": "substituir",
+  "antigo": "A proporção de 15,0% refere-se à presença no estado de vulnerabilidade",
+  "novo": "A proporção de 15,1% refere-se à presença no estado de vulnerabilidade"
+ },
+ {
+  "op": "substituir",
+  "antigo": "A amostra de risco reúne as 5.695 observações",
+  "novo": "A amostra de risco reúne as 5.682 observações"
+ },
+ {
+  "op": "substituir",
+  "antigo": "e as 803 observações sem exercício anterior saudável observado, das quais 689 correspondem à primeira aparição",
+  "novo": "e as 800 observações sem exercício anterior saudável observado, das quais 686 correspondem à primeira aparição"
+ },
+ {
+  "op": "substituir",
+  "antigo": "No horizonte de um ano, ela contém 5.086 observações e 153 entradas, ou 3,01%. As duas medidas são distintas e ambas relevantes: 3,41% é a incidência de entrada no painel, ao passo que 3,01% é a frequência",
+  "novo": "No horizonte de um ano, ela contém 5.076 observações e 153 entradas, ou 3,01%. As duas medidas são distintas e ambas relevantes: 3,41% é a incidência de entrada no painel, ao passo que 3,01% é a frequência"
+ },
+ {
+  "op": "substituir",
+  "antigo": "sobre as 7.419 observações do painel.",
+  "novo": "sobre as 7.403 observações do painel."
+ },
+ {
+  "op": "substituir",
+  "antigo": "O primeiro componente responde por 26,92% da variância total, e o critério de Kaiser retém 3 componentes, que juntos explicam 56,80%.",
+  "novo": "O primeiro componente responde por 27,04% da variância total, e o critério de Kaiser retém 3 componentes, que juntos explicam 56,84%."
+ },
+ {
+  "op": "substituir",
+  "antigo": "o primeiro componente responde por 26,92% da variância e são necessários",
+  "novo": "o primeiro componente responde por 27,04% da variância e são necessários"
+ },
+ {
+  "op": "substituir",
+  "antigo": "reduz a área sob a curva fora da amostra de 0,764 para 0,706 ou 0,665, ilustra",
+  "novo": "reduz a área sob a curva fora da amostra de 0,763 para 0,707 ou 0,661, ilustra"
+ },
+ {
+  "op": "substituir",
+  "antigo": "O escore médio das observações em posição Ponzi é de 0,908, contra −0,396 para as demais, e a área sob a curva para discriminar essa posição é de 0,782 (Tabela A.1). Excluída a cobertura de juros, ela passa a 0,769. A queda de 0,013 ponto",
+  "novo": "O escore médio das observações em posição Ponzi é de 0,908, contra −0,396 para as demais, e a área sob a curva para discriminar essa posição é de 0,781 (Tabela A.1). Excluída a cobertura de juros, ela passa a 0,768. A queda de 0,013 ponto"
+ },
+ {
+  "op": "substituir",
+  "antigo": "abrangendo 2.254 firma-anos, ou 30,4% do painel.",
+  "novo": "abrangendo 2.249 firma-anos, ou 30,4% do painel."
+ },
+ {
+  "op": "substituir",
+  "antigo": "A alavancagem isolada passa de 0,531 para 0,730 quando o modelo recebe setor, ano e porte, e a liquidez corrente de 0,604 para 0,724; na direção oposta, a cobertura de juros perde 0,042 ponto.",
+  "novo": "A alavancagem isolada passa de 0,531 para 0,730 quando o modelo recebe setor, ano e porte, e a liquidez corrente de 0,604 para 0,724; na direção oposta, a cobertura de juros perde 0,041 ponto."
+ },
+ {
+  "op": "substituir",
+  "antigo": "Amostra comum de 5.046 observações e 149 entradas no horizonte de um ano, e 4.294 e 126 no de dois.",
+  "novo": "Amostra comum de 5.037 observações e 149 entradas no horizonte de um ano, e 4.288 e 126 no de dois."
+ },
+ {
+  "op": "substituir",
+  "antigo": "No horizonte de um ano, o escore sintético alcança 0,764, contra 0,894 da cobertura de juros, 0,874 do retorno sobre ativos e 0,897 da referência não linear.",
+  "novo": "No horizonte de um ano, o escore sintético alcança 0,763, contra 0,894 da cobertura de juros, 0,874 do retorno sobre ativos e 0,897 da referência não linear."
+ },
+ {
+  "op": "substituir",
+  "antigo": "que ele supera por 0,030 ponto sem significância estatística.",
+  "novo": "que ele supera por 0,028 ponto sem significância estatística."
+ },
+ {
+  "op": "substituir",
+  "antigo": "0,763 para o escore sintético, com desvio-padrão de 0,002, 0,874 para o escore supervisionado (0,003) e 0,897 para a referência não linear (0,004). O modelo de Brito e Assaf Neto é o mais sensível à atribuição, com média de 0,725 e amplitude de 0,705 a 0,739,",
+  "novo": "0,762 para o escore sintético, com desvio-padrão de 0,002, 0,874 para o escore supervisionado (0,003) e 0,897 para a referência não linear (0,004). O modelo de Brito e Assaf Neto é o mais sensível à atribuição, com média de 0,726 e amplitude de 0,706 a 0,740,"
+ },
+ {
+  "op": "substituir",
+  "antigo": "com no máximo 0,020 ponto entre eles",
+  "novo": "com no máximo 0,021 ponto entre eles"
+ },
+ {
+  "op": "substituir",
+  "antigo": "o supera no esquema temporal, com 0,787 contra 0,744.",
+  "novo": "o supera no esquema temporal, com 0,789 contra 0,744."
+ },
+ {
+  "op": "substituir",
+  "antigo": "Treino com desfechos até 2021, 109 entradas em 3.250 observações; teste com desfechos de 2022 a 2025, 40 entradas em 1.796 observações no horizonte de um ano e 34 em 1.617 no de dois.",
+  "novo": "Treino com desfechos até 2021, 109 entradas em 3.249 observações; teste com desfechos de 2022 a 2025, 40 entradas em 1.788 observações no horizonte de um ano e 34 em 1.611 no de dois."
+ },
+ {
+  "op": "substituir",
+  "antigo": "com coeficientes de 0,344 e 0,216.",
+  "novo": "com coeficientes de 0,342 e 0,214."
+ },
+ {
+  "op": "substituir",
+  "antigo": "de 0,639 sob estado para 0,344 sob transição",
+  "novo": "de 0,631 sob estado para 0,342 sob transição"
+ },
+ {
+  "op": "substituir",
+  "antigo": "de 0,345 para 0,150.",
+  "novo": "de 0,343 para 0,150."
+ },
+ {
+  "op": "substituir",
+  "antigo": "o coeficiente é de 0,332; sem controles, em 76,50 eventos por parâmetro, é de 0,348; e na especificação completa, de 0,344.",
+  "novo": "o coeficiente é de 0,329; sem controles, em 76,50 eventos por parâmetro, é de 0,345; e na especificação completa, de 0,342."
+ },
+ {
+  "op": "substituir",
+  "antigo": "alcança 0,649 em um ano, contra 0,973 da cobertura de juros, diferença de 0,324 ponto com intervalo",
+  "novo": "alcança 0,647 em um ano, contra 0,973 da cobertura de juros, diferença de 0,327 ponto com intervalo"
+ },
+ {
+  "op": "substituir",
+  "antigo": "o escore alcança 0,816 e fica nominalmente à frente da cobertura de juros e do retorno sobre ativos, por 0,030 e 0,032 ponto",
+  "novo": "o escore alcança 0,816 e fica nominalmente à frente da cobertura de juros e do retorno sobre ativos, por 0,029 e 0,031 ponto"
+ },
+ {
+  "op": "substituir",
+  "antigo": "que o escore sintético supera por 0,066 ponto",
+  "novo": "que o escore sintético supera por 0,063 ponto"
+ },
+ {
+  "op": "substituir",
+  "antigo": "tem amplitude de 0,125 ponto",
+  "novo": "tem amplitude de 0,116 ponto"
+ },
+ {
+  "op": "substituir",
+  "antigo": "Nas 83 entradas restantes, o escore sintético alcança 0,857, o escore supervisionado 0,856 e a referência não linear 0,857,",
+  "novo": "Nas 83 entradas restantes, o escore sintético alcança 0,856, o escore supervisionado 0,857 e a referência não linear 0,856,"
+ },
+ {
+  "op": "substituir",
+  "antigo": "a área sob a curva da cobertura de juros cai para 0,591.",
+  "novo": "a área sob a curva da cobertura de juros cai para 0,592."
+ },
+ {
+  "op": "substituir",
+  "antigo": "alavancagem mediana de 0,213 contra 0,326 das que não entram, liquidez corrente de 1,998 contra 1,430 e capital de giro superior. São",
+  "novo": "alavancagem mediana de 0,213 contra 0,326 das que não entram, liquidez corrente de 1,998 contra 1,429 e capital de giro superior. São"
+ },
+ {
+  "op": "substituir",
+  "antigo": "com proporções entre 55,2% e 68,3%",
+  "novo": "com proporções entre 54,5% e 68,3%"
+ },
+ {
+  "op": "substituir",
+  "antigo": "eleva a área sob a curva de 0,764 para 0,875,",
+  "novo": "eleva a área sob a curva de 0,763 para 0,877,"
+ },
+ {
+  "op": "substituir",
+  "antigo": "ficam em 0,856 e 0,857, sem diferença distinguível.",
+  "novo": "ficam em 0,857 e 0,856, sem diferença distinguível."
+ },
+ {
+  "op": "substituir",
+  "antigo": "escore com área sob a curva de 0,895, contra 0,764 do escore sobre os oito indicadores e 0,894 da cobertura de juros, sem diferença distinguível desta (cobertura menos escore restrito: −0,001, com intervalo de −0,015 a +0,015), e supera o retorno sobre ativos e o escore supervisionado sobre os oito indicadores por 0,021 e 0,019 ponto. No horizonte de dois anos, alcança 0,722 e supera a cobertura de juros, com 0,681, por 0,040 ponto (intervalo de +0,018 a +0,062), sem diferença distinguível do retorno sobre ativos (0,731) nem do escore supervisionado (0,725). A média simples dos três indicadores padronizados difere do componente principal em no máximo 0,001 ponto, e a seleção refeita pelos três maiores poderes discriminantes dentro de cada partição de treino escolhe o mesmo conjunto em 98 das 100 partições",
+  "novo": "escore com área sob a curva de 0,895, contra 0,763 do escore sobre os oito indicadores e 0,894 da cobertura de juros, sem diferença distinguível desta (cobertura menos escore restrito: −0,001, com intervalo de −0,015 a +0,015), e supera o retorno sobre ativos e o escore supervisionado sobre os oito indicadores por 0,021 e 0,018 ponto. No horizonte de dois anos, alcança 0,722 e supera a cobertura de juros, com 0,681, por 0,041 ponto (intervalo de +0,020 a +0,063), sem diferença distinguível do retorno sobre ativos (0,731) nem do escore supervisionado (0,724). A média simples dos três indicadores padronizados difere do componente principal em no máximo 0,001 ponto, e a seleção refeita pelos três maiores poderes discriminantes dentro de cada partição de treino escolhe o mesmo conjunto em 99 das 100 partições"
+ },
+ {
+  "op": "substituir",
+  "antigo": "o escore restrito alcança 0,958 nas 66 entradas por prejuízo operacional, 0,784 nas 51 por patrimônio líquido negativo e 0,888 nas 11 por recuperação judicial; em dois anos, 0,576, 0,801 e 0,798, com 52, 46 e 9 entradas.",
+  "novo": "o escore restrito alcança 0,959 nas 66 entradas por prejuízo operacional, 0,784 nas 51 por patrimônio líquido negativo e 0,888 nas 11 por recuperação judicial; em dois anos, 0,576, 0,802 e 0,798, com 52, 46 e 9 entradas."
+ },
+ {
+  "op": "substituir",
+  "antigo": "Com prevalência de 2,95%,",
+  "novo": "Com prevalência de 2,96%,"
+ },
+ {
+  "op": "substituir",
+  "antigo": "No mesmo limiar, o valor preditivo negativo fica entre 0,988 e 0,993 em todos os modelos.",
+  "novo": "No mesmo limiar, o valor preditivo negativo fica entre 0,989 e 0,993 em todos os modelos."
+ },
+ {
+  "op": "substituir",
+  "antigo": "com inclinações entre 0,988 e 1,087 e interceptos",
+  "novo": "com inclinações entre 0,991 e 1,097 e interceptos"
+ },
+ {
+  "op": "substituir",
+  "antigo": "sinaliza 44,1% dos firma-anos, contra 18,7% da cobertura de juros, com valor preditivo positivo de 0,053 contra 0,124. No mesmo limiar, a especificidade é de 0,570 para o escore sintético e de 0,831 para a cobertura de juros",
+  "novo": "sinaliza 44,3% dos firma-anos, contra 18,7% da cobertura de juros, com valor preditivo positivo de 0,053 contra 0,124. No mesmo limiar, a especificidade é de 0,568 para o escore sintético e de 0,832 para a cobertura de juros"
+ },
+ {
+  "op": "substituir",
+  "antigo": "das 201 companhias cuja última observação antecede 2025, 31,8% estavam em vulnerabilidade na última observação, contra 14,4% entre as que permanecem, e 65 saídas",
+  "novo": "das 200 companhias cuja última observação antecede 2025, 32,0% estavam em vulnerabilidade na última observação, contra 14,4% entre as que permanecem, e 65 saídas"
+ },
+ {
+  "op": "substituir",
+  "antigo": "Por ele, as 201 saídas se dividem em fechamento voluntário de capital (119), recuperação judicial (28), incorporação ou reorganização (22), falência ou liquidação (12), cancelamento por outro motivo (7) e motivo não identificado (13); 28 delas decorrem",
+  "novo": "Por ele, as 200 saídas se dividem em fechamento voluntário de capital (119), recuperação judicial (28), incorporação ou reorganização (22), falência ou liquidação (12), cancelamento por outro motivo (7) e motivo não identificado (12); 27 delas decorrem"
+ },
+ {
+  "op": "substituir",
+  "antigo": "As 44 saídas associadas a dificuldade financeira pelo cadastro, 21,9% do total, incluem 11 ocorridas",
+  "novo": "As 44 saídas associadas a dificuldade financeira pelo cadastro, 22,0% do total, incluem 11 ocorridas"
+ },
+ {
+  "op": "substituir",
+  "antigo": "leva a área sob a curva fora da amostra de 0,764 para 0,752; somar ou subtrair o segundo componente, cujo sinal é arbitrário, a reduz para 0,706 ou 0,665; e reconstruir o escore sobre desvios da média histórica de cada firma, calculada apenas com exercícios anteriores, a leva a 0,689. Winsorizando os oito indicadores nos percentis 1 e 99, a variância explicada pelo primeiro componente sobe de 26,92% para 31,55% e o escore alcança 0,799 fora da amostra",
+  "novo": "leva a área sob a curva fora da amostra de 0,763 para 0,751; somar ou subtrair o segundo componente, cujo sinal é arbitrário, a reduz para 0,707 ou 0,661; e reconstruir o escore sobre desvios da média histórica de cada firma, calculada apenas com exercícios anteriores, a leva a 0,690. Winsorizando os oito indicadores nos percentis 1 e 99, a variância explicada pelo primeiro componente sobe de 27,04% para 31,65% e o escore alcança 0,799 fora da amostra"
+ },
+ {
+  "op": "substituir",
+  "antigo": "de 4,45% até 2019 e 2,25% a partir de 2020.",
+  "novo": "de 4,45% até 2019 e 2,27% a partir de 2020."
+ },
+ {
+  "op": "substituir",
+  "antigo": "A área sob a curva passa a 0,765 para o escore sintético e a 0,887 para a cobertura de juros",
+  "novo": "A área sob a curva passa a 0,764 para o escore sintético e a 0,888 para a cobertura de juros"
+ },
+ {
+  "op": "substituir",
+  "antigo": "é superado pelas razões contábeis isoladas: 0,764 contra 0,894 da cobertura de juros e 0,874 do retorno sobre ativos",
+  "novo": "é superado pelas razões contábeis isoladas: 0,763 contra 0,894 da cobertura de juros e 0,874 do retorno sobre ativos"
+ },
+ {
+  "op": "substituir",
+  "antigo": "com 0,649 contra 0,973 da cobertura de juros em um ano, contraste em boa parte mecânico, e 0,377 contra 0,522 em dois anos",
+  "novo": "com 0,647 contra 0,973 da cobertura de juros em um ano, contraste em boa parte mecânico, e 0,377 contra 0,522 em dois anos"
+ },
+ {
+  "op": "substituir",
+  "antigo": "alavancagem mediana de 0,213 contra 0,326 das que não entram e liquidez corrente de 1,998 contra 1,430:",
+  "novo": "alavancagem mediana de 0,213 contra 0,326 das que não entram e liquidez corrente de 1,998 contra 1,429:"
+ },
+ {
+  "op": "substituir",
+  "antigo": "Amostra de 5.046 observações e 149 entradas. Todas",
+  "novo": "Amostra de 5.037 observações e 149 entradas. Todas"
+ },
+ {
+  "op": "substituir",
+  "antigo": "Amostra comum de 5.046 observações e 149 entradas. Controles",
+  "novo": "Amostra comum de 5.037 observações e 149 entradas. Controles"
+ }
+]

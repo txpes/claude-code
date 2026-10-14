@@ -74,7 +74,7 @@
   "modelo": "Episódios recentes de deterioração financeira severa",
   "textos": [
    "Antes da investigação, convém situar o objeto. Esta seção descreve, com o mesmo painel utilizado nos testes, a evolução de quatro sinais de dificuldade financeira entre as companhias abertas não financeiras brasileiras de 2010 a 2025: a cobertura de juros inferior à unidade, o EBITDA negativo, o patrimônio líquido negativo e o recurso à recuperação judicial ou extrajudicial. A descrição é deliberadamente simples e não depende de estimação alguma.",
-   "A Figura {FIG:panorama} mostra que a parcela de companhias com cobertura de juros inferior à unidade, isto é, com resultado operacional insuficiente para pagar as despesas financeiras do exercício, oscilou entre 32,0%, em 2010, e 62,8%, em 2015, com média de 43,4% no período. O salto coincide com a recessão de 2015-2016: entre 2014 e 2015, a parcela passou de 45,3% para 62,8%, manteve-se em 60,0% em 2016 e só voltou a patamar inferior a 45% em 2018. A parcela com EBITDA negativo acompanha o mesmo ciclo em nível mais baixo, com máximo de 17,5% em 2015, e a de patrimônio líquido negativo cresce de forma mais lenta e persistente, de 5,6% em 2010 a 12,6% em 2017, e fica entre 8% e 10% a partir de 2021."
+   "A Figura {FIG:panorama} mostra que a parcela de companhias com cobertura de juros inferior à unidade, isto é, com resultado operacional insuficiente para pagar as despesas financeiras do exercício, oscilou entre 32,0%, em 2010, e 62,8%, em 2015, com média de 43,4% no período. O salto coincide com a recessão de 2015-2016: entre 2014 e 2015, a parcela passou de 45,3% para 62,8%, manteve-se em 60,0% em 2016 e só voltou a patamar inferior a 45% em 2018. A parcela com EBITDA negativo acompanha o mesmo ciclo em nível mais baixo, com máximo de 17,5% em 2015, e a de patrimônio líquido negativo cresce de forma mais lenta e persistente, de 5,6% em 2010 a 12,6% em 2017, e fica entre 8% e 10% a partir de 2021. A pandemia de 2020, que Silber (2020) discute como choque exógeno capaz de desorganizar a economia e destruir empresas, produz efeito mais modesto e passageiro sobre a cobertura de juros: a parcela inferior à unidade passa de 39,4% em 2019 para 41,4% em 2020 e recua para 33,9% em 2021."
   ]
  },
  {
@@ -90,7 +90,7 @@
   "ancora": "Fonte: elaboração própria a partir das Demonstrações Financeiras Padronizadas e dos documentos periódicos e eventuais (CVM). Faixas",
   "modelo": "Episódios recentes de deterioração financeira severa",
   "textos": [
-   "As recuperações judiciais e extrajudiciais, datadas pelo primeiro documento da companhia que as menciona, somam 72 companhias do painel no período. A distribuição anual é irregular, com sete casos em 2014 e em 2018 e 11 em 2024, três deles de um mesmo grupo têxtil. A Tabela {TAB:panorama} resume os indicadores por subperíodo. A recessão de 2015-2016 eleva todos os sinais ao mesmo tempo. Nos anos seguintes, a cobertura de juros e o EBITDA voltam a patamares próximos ou inferiores aos do início do período, mas o patrimônio líquido negativo permanece mais frequente do que em 2010-2014, e a alavancagem mediana, depois de recuar, volta a subir em 2022-2025."
+   "As recuperações judiciais e extrajudiciais, datadas pelo primeiro documento da companhia que as menciona, somam 72 companhias do painel no período. A distribuição anual é irregular, com sete casos em 2014 e em 2018 e 11 em 2024, três deles de um mesmo grupo têxtil. A Tabela {TAB:panorama} resume os indicadores por subperíodo. A recessão de 2015-2016 eleva todos os sinais ao mesmo tempo. Nos anos seguintes, a cobertura de juros e o EBITDA voltam a patamares próximos ou inferiores aos do início do período, mas o patrimônio líquido negativo permanece mais frequente do que em 2010-2014, e a alavancagem mediana, depois de recuar, volta a subir em 2022-2025, em linha com a relação positiva entre crises financeiras e alavancagem das companhias brasileiras documentada por Franzotti et al. (2021) para as crises de 2002, 2008 e 2015."
   ]
  },
  {
@@ -141,22 +141,22 @@
    ],
    [
     "2020–2021",
-    "540",
-    "37,6",
+    "537",
+    "37,5",
     "9,0",
     "10,1",
-    "28,5",
-    "0,310",
+    "28,4",
+    "0,311",
     "3"
    ],
    [
     "2022–2025",
-    "564",
+    "561",
     "42,4",
-    "9,7",
+    "9,8",
     "9,0",
-    "28,9",
-    "0,345",
+    "28,7",
+    "0,346",
     "21"
    ]
   ],
@@ -211,7 +211,7 @@
  {
   "op": "substituir",
   "antigo": "e elevaram a preferência pela liquidez.",
-  "novo": "e elevaram a preferência pela liquidez. Rolim, Cattan e Antonioli (2021) examinam dezenove setores das companhias abertas não financeiras brasileiras entre 2010 e 2016 e encontram redução das firmas em posição hedge e aumento das especulativas e Ponzi no período de reversão do ciclo, com padrões setoriais distintos."
+  "novo": "e elevaram a preferência pela liquidez. Rolim, Cattan e Antonioli (2021) examinam dezenove setores das companhias abertas não financeiras brasileiras entre 2010 e 2016 e encontram redução das firmas em posição hedge e aumento das especulativas e Ponzi no período de reversão do ciclo, com padrões setoriais distintos. No plano agregado, Teixeira, Tiryaki e Drummond (2020) derivam um indicador de fragilidade financeira para o Brasil por modelo de fator dinâmico, com dados mensais de 1996 a 2018, e mostram que seu aumento compromete o desempenho macroeconômico: é outra aplicação da redução de dimensionalidade à mensuração da fragilidade."
  },
  {
   "op": "mover_apos",
@@ -236,7 +236,7 @@
  {
   "op": "substituir",
   "antigo": "o que ilustra a diversidade de alvos que a literatura nacional agrupa sob o rótulo de insolvência.",
-  "novo": "o que ilustra a diversidade de alvos que a literatura nacional agrupa sob o rótulo de insolvência. Predebom, Bianchi e Machado (2025) relacionam as fases do ciclo econômico à insolvência das companhias listadas na B3 entre 2010 e 2019, medida pelo escore Z, e encontram que o ciclo altera a relação entre insolvência e gerenciamento de resultados."
+  "novo": "o que ilustra a diversidade de alvos que a literatura nacional agrupa sob o rótulo de insolvência. Predebom, Bianchi e Machado (2025) relacionam as fases do ciclo econômico à insolvência das companhias listadas na B3 entre 2010 e 2019, medida pelo escore Z, e encontram que o ciclo altera a relação entre insolvência e gerenciamento de resultados. Oliveira e Diniz (2025), com 1.369 observações de companhias abertas brasileiras entre 2010 e 2019, mostram que as firmas em insolvência, medida por quatro modelos, são significativamente mais propensas a violar cláusulas financeiras de contratos de dívida."
  },
  {
   "op": "substituir",
@@ -285,8 +285,8 @@
  },
  {
   "op": "substituir",
-  "antigo": "e não há cadastro de companhia aberta.",
-  "novo": "e não há cadastro de companhia aberta. Três outros emissores na mesma condição, com 16 firma-anos e nenhuma entrada em vulnerabilidade, permaneceram nesta versão; reestimados os modelos sem eles, as áreas sob a curva das medidas que não envolvem estimação mudam no máximo 0,001 ponto e nenhuma conclusão se altera."
+  "antigo": "Excluem-se da amostra doze emissores estrangeiros",
+  "novo": "Excluem-se da amostra quinze emissores estrangeiros"
  },
  {
   "op": "equacao",
@@ -341,6 +341,38 @@
   "modelo": "ALTMAN, E. I.",
   "textos": [
    "SHETTY, S.; MUSA, M.; BRÉDART, X. Bankruptcy prediction using machine learning techniques. Journal of Risk and Financial Management, v. 15, n. 1, art. 35, 2022."
+  ]
+ },
+ {
+  "op": "inserir_apos",
+  "ancora": "FIELD, C. A.",
+  "modelo": "ALTMAN, E. I.",
+  "textos": [
+   "FRANZOTTI, T. D. A.; MAGNANI, V. M.; AMBROZINI, M. A.; VALLE, M. R. Financing of Brazilian companies during financial crises: comparative between the crises of 2002, 2008 and 2015. RAM. Revista de Administração Mackenzie, v. 22, n. 1, eRAMF210154, 2021."
+  ]
+ },
+ {
+  "op": "inserir_apos",
+  "ancora": "OHLSON, J. A.",
+  "modelo": "ALTMAN, E. I.",
+  "textos": [
+   "OLIVEIRA, W. C.; DINIZ, J. A. Influence of financial situation and earnings management on violation of financial covenants by insolvent companies: evidence from Brazil. RAM. Revista de Administração Mackenzie, v. 26, n. 3, eRAMF250127, 2025."
+  ]
+ },
+ {
+  "op": "inserir_apos",
+  "ancora": "SHETTY, S.",
+  "modelo": "ALTMAN, E. I.",
+  "textos": [
+   "SILBER, S. D. A fragilidade econômica e financeira na pandemia do Sars-Covid-19. Estudos Avançados, v. 34, n. 100, p. 107-115, 2020."
+  ]
+ },
+ {
+  "op": "inserir_apos",
+  "ancora": "SILBER, S. D.",
+  "modelo": "ALTMAN, E. I.",
+  "textos": [
+   "TEIXEIRA, D. N.; TIRYAKI, G. F.; DRUMMOND, C. E. I. Fragilidade financeira e volatilidade dos ciclos econômicos no Brasil pós-Plano Real. Estudos Econômicos (São Paulo), v. 50, n. 1, p. 125-158, 2020."
   ]
  },
  {

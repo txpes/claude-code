@@ -1,0 +1,2010 @@
+[
+ {
+  "tabela": 2,
+  "linha": 5,
+  "coluna": 3,
+  "antigo": "15,0%",
+  "novo": "15,1%",
+  "rot": "T2"
+ },
+ {
+  "tabela": 3,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "1,810",
+  "novo": "1,803",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 1,
+  "coluna": 2,
+  "antigo": "2,232",
+  "novo": "2,168",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 1,
+  "coluna": 6,
+  "antigo": "2,085",
+  "novo": "2,089",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,362",
+  "novo": "0,363",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 3,
+  "coluna": 5,
+  "antigo": "0,331",
+  "novo": "0,332",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 3,
+  "coluna": 6,
+  "antigo": "0,483",
+  "novo": "0,484",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,317",
+  "novo": "0,316",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "0,274",
+  "novo": "0,273",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 4,
+  "coluna": 4,
+  "antigo": "0,115",
+  "novo": "0,114",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 4,
+  "coluna": 5,
+  "antigo": "0,226",
+  "novo": "0,225",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "3,081",
+  "novo": "3,080",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "17,582",
+  "novo": "17,543",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 5,
+  "coluna": 4,
+  "antigo": "0,363",
+  "novo": "0,365",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 5,
+  "coluna": 6,
+  "antigo": "2,657",
+  "novo": "2,656",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 6,
+  "coluna": 2,
+  "antigo": "2,141",
+  "novo": "2,143",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 6,
+  "coluna": 6,
+  "antigo": "0,393",
+  "novo": "0,392",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 8,
+  "coluna": 1,
+  "antigo": "0,091",
+  "novo": "0,090",
+  "rot": "T3"
+ },
+ {
+  "tabela": 3,
+  "linha": 8,
+  "coluna": 2,
+  "antigo": "2,220",
+  "novo": "2,223",
+  "rot": "T3"
+ },
+ {
+  "tabela": 4,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,17",
+  "novo": "0,18",
+  "rot": "T4"
+ },
+ {
+  "tabela": 4,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "0,10",
+  "novo": "0,11",
+  "rot": "T4"
+ },
+ {
+  "tabela": 4,
+  "linha": 7,
+  "coluna": 1,
+  "antigo": "0,11",
+  "novo": "0,12",
+  "rot": "T4"
+ },
+ {
+  "tabela": 4,
+  "linha": 7,
+  "coluna": 4,
+  "antigo": "0,12",
+  "novo": "0,13",
+  "rot": "T4"
+ },
+ {
+  "tabela": 5,
+  "linha": 1,
+  "coluna": 2,
+  "antigo": "15,0%",
+  "novo": "15,1%",
+  "rot": "T5"
+ },
+ {
+  "tabela": 5,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "5.695",
+  "novo": "5.682",
+  "rot": "T5"
+ },
+ {
+  "tabela": 5,
+  "linha": 7,
+  "coluna": 1,
+  "antigo": "5.086",
+  "novo": "5.076",
+  "rot": "T5"
+ },
+ {
+  "tabela": 5,
+  "linha": 9,
+  "coluna": 1,
+  "antigo": "5.046",
+  "novo": "5.037",
+  "rot": "T5"
+ },
+ {
+  "tabela": 5,
+  "linha": 10,
+  "coluna": 2,
+  "antigo": "2,95%",
+  "novo": "2,96%",
+  "rot": "T5"
+ },
+ {
+  "tabela": 6,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "2,153",
+  "novo": "2,163",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 1,
+  "coluna": 2,
+  "antigo": "26,92%",
+  "novo": "27,04%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 1,
+  "coluna": 3,
+  "antigo": "26,92%",
+  "novo": "27,04%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 2,
+  "coluna": 1,
+  "antigo": "1,326",
+  "novo": "1,323",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 2,
+  "coluna": 2,
+  "antigo": "16,58%",
+  "novo": "16,54%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "43,50%",
+  "novo": "43,58%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "1,064",
+  "novo": "1,060",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 3,
+  "coluna": 2,
+  "antigo": "13,30%",
+  "novo": "13,26%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 3,
+  "coluna": 3,
+  "antigo": "56,80%",
+  "novo": "56,84%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,925",
+  "novo": "0,930",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "11,57%",
+  "novo": "11,62%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "68,36%",
+  "novo": "68,46%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "0,840",
+  "novo": "0,836",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "10,50%",
+  "novo": "10,45%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 5,
+  "coluna": 3,
+  "antigo": "78,87%",
+  "novo": "78,91%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 6,
+  "coluna": 2,
+  "antigo": "9,63%",
+  "novo": "9,62%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 6,
+  "coluna": 3,
+  "antigo": "88,49%",
+  "novo": "88,53%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 7,
+  "coluna": 1,
+  "antigo": "0,509",
+  "novo": "0,508",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 7,
+  "coluna": 2,
+  "antigo": "6,36%",
+  "novo": "6,34%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 7,
+  "coluna": 3,
+  "antigo": "94,85%",
+  "novo": "94,88%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 8,
+  "coluna": 1,
+  "antigo": "0,412",
+  "novo": "0,410",
+  "rot": "T6"
+ },
+ {
+  "tabela": 6,
+  "linha": 8,
+  "coluna": 2,
+  "antigo": "5,15%",
+  "novo": "5,12%",
+  "rot": "T6"
+ },
+ {
+  "tabela": 7,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "0,532",
+  "novo": "0,530",
+  "rot": "T7"
+ },
+ {
+  "tabela": 7,
+  "linha": 2,
+  "coluna": 1,
+  "antigo": "0,486",
+  "novo": "0,483",
+  "rot": "T7"
+ },
+ {
+  "tabela": 7,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,373",
+  "novo": "0,379",
+  "rot": "T7"
+ },
+ {
+  "tabela": 7,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "0,238",
+  "novo": "0,240",
+  "rot": "T7"
+ },
+ {
+  "tabela": 7,
+  "linha": 6,
+  "coluna": 1,
+  "antigo": "0,226",
+  "novo": "0,224",
+  "rot": "T7"
+ },
+ {
+  "tabela": 15,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,433",
+  "novo": "0,432",
+  "rot": "T8"
+ },
+ {
+  "tabela": 15,
+  "linha": 3,
+  "coluna": 2,
+  "antigo": "0,415",
+  "novo": "0,413",
+  "rot": "T8"
+ },
+ {
+  "tabela": 15,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,782",
+  "novo": "0,781",
+  "rot": "T8"
+ },
+ {
+  "tabela": 15,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "0,769",
+  "novo": "0,768",
+  "rot": "T8"
+ },
+ {
+  "tabela": 16,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "0,818",
+  "novo": "0,817",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 1,
+  "coluna": 2,
+  "antigo": "0,764",
+  "novo": "0,763",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 1,
+  "coluna": 4,
+  "antigo": "0,764",
+  "novo": "0,763",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 2,
+  "coluna": 1,
+  "antigo": "0,852",
+  "novo": "0,853",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "−0,042",
+  "novo": "−0,041",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,859",
+  "novo": "0,860",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 3,
+  "coluna": 3,
+  "antigo": "−0,014",
+  "novo": "−0,015",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "0,755",
+  "novo": "0,756",
+  "rot": "T9"
+ },
+ {
+  "tabela": 16,
+  "linha": 4,
+  "coluna": 4,
+  "antigo": "0,734",
+  "novo": "0,735",
+  "rot": "T9"
+ },
+ {
+  "tabela": 8,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "0,764",
+  "novo": "0,763",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 2,
+  "coluna": 2,
+  "antigo": "+0,133",
+  "novo": "+0,134",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "[+0,086; +0,181]",
+  "novo": "[+0,087; +0,178]",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 3,
+  "coluna": 2,
+  "antigo": "+0,129",
+  "novo": "+0,131",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 3,
+  "coluna": 3,
+  "antigo": "[+0,080; +0,181]",
+  "novo": "[+0,079; +0,177]",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,875",
+  "novo": "0,877",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "+0,111",
+  "novo": "+0,114",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "[+0,064; +0,160]",
+  "novo": "[+0,066; +0,159]",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "+0,110",
+  "novo": "+0,111",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 5,
+  "coluna": 3,
+  "antigo": "[+0,061; +0,158]",
+  "novo": "[+0,064; +0,157]",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 6,
+  "coluna": 1,
+  "antigo": "0,734",
+  "novo": "0,735",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 6,
+  "coluna": 2,
+  "antigo": "−0,030",
+  "novo": "−0,028",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 6,
+  "coluna": 3,
+  "antigo": "[−0,075; +0,016]",
+  "novo": "[−0,073; +0,019]",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 6,
+  "coluna": 4,
+  "antigo": "0,199",
+  "novo": "0,222",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 6,
+  "coluna": 6,
+  "antigo": "0,188",
+  "novo": "0,217",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 7,
+  "coluna": 2,
+  "antigo": "−0,160",
+  "novo": "−0,159",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 7,
+  "coluna": 3,
+  "antigo": "[−0,193; −0,125]",
+  "novo": "[−0,193; −0,126]",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 8,
+  "coluna": 2,
+  "antigo": "−0,233",
+  "novo": "−0,232",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 8,
+  "coluna": 3,
+  "antigo": "[−0,282; −0,181]",
+  "novo": "[−0,282; −0,183]",
+  "rot": "T10 h1"
+ },
+ {
+  "tabela": 8,
+  "linha": 10,
+  "coluna": 1,
+  "antigo": "0,627",
+  "novo": "0,626",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 11,
+  "coluna": 1,
+  "antigo": "0,753",
+  "novo": "0,749",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 11,
+  "coluna": 2,
+  "antigo": "+0,126",
+  "novo": "+0,122",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 11,
+  "coluna": 3,
+  "antigo": "[+0,060; +0,192]",
+  "novo": "[+0,059; +0,188]",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 14,
+  "coluna": 3,
+  "antigo": "[+0,008; +0,105]",
+  "novo": "[+0,010; +0,104]",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 14,
+  "coluna": 4,
+  "antigo": "0,020",
+  "novo": "0,015",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 14,
+  "coluna": 5,
+  "antigo": "0,120",
+  "novo": "0,090",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 13,
+  "coluna": 1,
+  "antigo": "0,725",
+  "novo": "0,724",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 13,
+  "coluna": 2,
+  "antigo": "+0,098",
+  "novo": "+0,097",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 13,
+  "coluna": 3,
+  "antigo": "[+0,049; +0,148]",
+  "novo": "[+0,049; +0,145]",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 12,
+  "coluna": 2,
+  "antigo": "+0,104",
+  "novo": "+0,105",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 12,
+  "coluna": 3,
+  "antigo": "[+0,060; +0,148]",
+  "novo": "[+0,061; +0,149]",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 15,
+  "coluna": 1,
+  "antigo": "0,667",
+  "novo": "0,668",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 15,
+  "coluna": 2,
+  "antigo": "+0,041",
+  "novo": "+0,042",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 15,
+  "coluna": 3,
+  "antigo": "[−0,012; +0,091]",
+  "novo": "[−0,010; +0,091]",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 15,
+  "coluna": 4,
+  "antigo": "0,115",
+  "novo": "0,114",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 15,
+  "coluna": 5,
+  "antigo": "0,690",
+  "novo": "0,684",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 15,
+  "coluna": 6,
+  "antigo": "0,129",
+  "novo": "0,117",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 16,
+  "coluna": 2,
+  "antigo": "−0,059",
+  "novo": "−0,058",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 8,
+  "linha": 16,
+  "coluna": 3,
+  "antigo": "[−0,091; −0,028]",
+  "novo": "[−0,090; −0,028]",
+  "rot": "T10 h2"
+ },
+ {
+  "tabela": 17,
+  "linha": 2,
+  "coluna": 1,
+  "antigo": "0,911",
+  "novo": "0,913",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 2,
+  "coluna": 2,
+  "antigo": "+0,167",
+  "novo": "+0,168",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "[+0,077; +0,265]",
+  "novo": "[+0,082; +0,269]",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,904",
+  "novo": "0,905",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 3,
+  "coluna": 4,
+  "antigo": "0,727",
+  "novo": "0,728",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 3,
+  "coluna": 3,
+  "antigo": "[+0,067; +0,258]",
+  "novo": "[+0,071; +0,262]",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,900",
+  "novo": "0,901",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "[+0,063; +0,259]",
+  "novo": "[+0,067; +0,260]",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "0,891",
+  "novo": "0,892",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "+0,147",
+  "novo": "+0,148",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 5,
+  "coluna": 3,
+  "antigo": "[+0,045; +0,252]",
+  "novo": "[+0,051; +0,256]",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 6,
+  "coluna": 1,
+  "antigo": "0,787",
+  "novo": "0,789",
+  "rot": "T11"
+ },
+ {
+  "tabela": 17,
+  "linha": 6,
+  "coluna": 4,
+  "antigo": "0,686",
+  "novo": "0,688",
+  "rot": "T11"
+ },
+ {
+  "tabela": 9,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "0,344",
+  "novo": "0,342",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "5.086",
+  "novo": "5.076",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 1,
+  "coluna": 2,
+  "antigo": "0,216",
+  "novo": "0,214",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "4.321",
+  "novo": "4.314",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 1,
+  "coluna": 3,
+  "antigo": "0,639",
+  "novo": "0,631",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "6.662",
+  "novo": "6.649",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 8,
+  "coluna": 3,
+  "antigo": "0,345",
+  "novo": "0,343",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 1,
+  "coluna": 4,
+  "antigo": "0,551",
+  "novo": "0,546",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 4,
+  "coluna": 4,
+  "antigo": "5.912",
+  "novo": "5.902",
+  "rot": "T12"
+ },
+ {
+  "tabela": 9,
+  "linha": 8,
+  "coluna": 4,
+  "antigo": "0,289",
+  "novo": "0,288",
+  "rot": "T12"
+ },
+ {
+  "tabela": 10,
+  "linha": 2,
+  "coluna": 2,
+  "antigo": "0,646",
+  "novo": "0,644",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "0,969",
+  "novo": "0,970",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 3,
+  "coluna": 4,
+  "antigo": "0,825",
+  "novo": "0,826",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 3,
+  "coluna": 5,
+  "antigo": "0,806",
+  "novo": "0,807",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 3,
+  "coluna": 6,
+  "antigo": "0,833",
+  "novo": "0,834",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 3,
+  "coluna": 7,
+  "antigo": "0,689",
+  "novo": "0,690",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "0,888",
+  "novo": "0,887",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "0,887",
+  "novo": "0,888",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 4,
+  "coluna": 5,
+  "antigo": "0,922",
+  "novo": "0,923",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "0,763",
+  "novo": "0,762",
+  "rot": "T13 h1 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 7,
+  "coluna": 3,
+  "antigo": "0,719",
+  "novo": "0,720",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 7,
+  "coluna": 7,
+  "antigo": "0,618",
+  "novo": "0,619",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 8,
+  "coluna": 2,
+  "antigo": "0,807",
+  "novo": "0,806",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 8,
+  "coluna": 3,
+  "antigo": "0,771",
+  "novo": "0,770",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 9,
+  "coluna": 2,
+  "antigo": "0,807",
+  "novo": "0,806",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 9,
+  "coluna": 3,
+  "antigo": "0,850",
+  "novo": "0,846",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 9,
+  "coluna": 4,
+  "antigo": "0,766",
+  "novo": "0,767",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 9,
+  "coluna": 5,
+  "antigo": "0,859",
+  "novo": "0,860",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 9,
+  "coluna": 7,
+  "antigo": "0,724",
+  "novo": "0,725",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 10,
+  "coluna": 3,
+  "antigo": "0,755",
+  "novo": "0,754",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 10,
+  "linha": 10,
+  "coluna": 5,
+  "antigo": "0,726",
+  "novo": "0,727",
+  "rot": "T13 h2 principal"
+ },
+ {
+  "tabela": 11,
+  "linha": 1,
+  "coluna": 2,
+  "antigo": "0,649",
+  "novo": "0,647",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 1,
+  "coluna": 3,
+  "antigo": "+0,324",
+  "novo": "+0,327",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 1,
+  "coluna": 4,
+  "antigo": "[+0,244; +0,411]",
+  "novo": "[+0,249; +0,410]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 1,
+  "coluna": 5,
+  "antigo": "+0,291",
+  "novo": "+0,294",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 1,
+  "coluna": 6,
+  "antigo": "[+0,217; +0,371]",
+  "novo": "[+0,223; +0,373]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "−0,030",
+  "novo": "−0,029",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 2,
+  "coluna": 4,
+  "antigo": "[−0,093; +0,038]",
+  "novo": "[−0,096; +0,035]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 2,
+  "coluna": 5,
+  "antigo": "−0,066",
+  "novo": "−0,063",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 2,
+  "coluna": 6,
+  "antigo": "[−0,129; −0,003]",
+  "novo": "[−0,128; 0,001]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 3,
+  "coluna": 4,
+  "antigo": "[−0,097; +0,117]",
+  "novo": "[−0,089; +0,110]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 3,
+  "coluna": 6,
+  "antigo": "[−0,001; +0,136]",
+  "novo": "[0,003; +0,134]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 4,
+  "coluna": 4,
+  "antigo": "[+0,057; +0,233]",
+  "novo": "[+0,060; +0,230]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 4,
+  "coluna": 5,
+  "antigo": "+0,275",
+  "novo": "+0,273",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 4,
+  "coluna": 6,
+  "antigo": "[+0,196; +0,353]",
+  "novo": "[+0,192; +0,351]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "0,796",
+  "novo": "0,795",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 5,
+  "coluna": 3,
+  "antigo": "−0,005",
+  "novo": "−0,004",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 5,
+  "coluna": 4,
+  "antigo": "[−0,069; +0,063]",
+  "novo": "[−0,068; +0,067]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 5,
+  "coluna": 5,
+  "antigo": "−0,082",
+  "novo": "−0,083",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 5,
+  "coluna": 6,
+  "antigo": "[−0,139; −0,023]",
+  "novo": "[−0,141; −0,023]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 6,
+  "coluna": 4,
+  "antigo": "[−0,240; +0,069]",
+  "novo": "[−0,242; +0,066]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 11,
+  "linha": 6,
+  "coluna": 6,
+  "antigo": "[−0,026; +0,148]",
+  "novo": "[−0,022; +0,147]",
+  "rot": "T14"
+ },
+ {
+  "tabela": 12,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "1,430",
+  "novo": "1,429",
+  "rot": "T15"
+ },
+ {
+  "tabela": 12,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "1,510",
+  "novo": "1,508",
+  "rot": "T15"
+ },
+ {
+  "tabela": 12,
+  "linha": 7,
+  "coluna": 3,
+  "antigo": "22,171",
+  "novo": "22,173",
+  "rot": "T15"
+ },
+ {
+  "tabela": 12,
+  "linha": 8,
+  "coluna": 3,
+  "antigo": "4.193",
+  "novo": "4.186",
+  "rot": "T15"
+ },
+ {
+  "tabela": 13,
+  "linha": 1,
+  "coluna": 2,
+  "antigo": "0,486",
+  "novo": "0,483",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 1,
+  "coluna": 3,
+  "antigo": "0,889",
+  "novo": "0,890",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 1,
+  "coluna": 4,
+  "antigo": "45,2%",
+  "novo": "45,4%",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 2,
+  "coluna": 2,
+  "antigo": "0,238",
+  "novo": "0,240",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 2,
+  "coluna": 4,
+  "antigo": "36,6%",
+  "novo": "36,8%",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,688",
+  "novo": "0,689",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 3,
+  "coluna": 2,
+  "antigo": "0,226",
+  "novo": "0,224",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 3,
+  "coluna": 3,
+  "antigo": "0,301",
+  "novo": "0,300",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,351",
+  "novo": "0,350",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "0,532",
+  "novo": "0,530",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "0,107",
+  "novo": "0,110",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 4,
+  "coluna": 4,
+  "antigo": "60,8%",
+  "novo": "61,0%",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "0,342",
+  "novo": "0,343",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "0,373",
+  "novo": "0,379",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 5,
+  "coluna": 3,
+  "antigo": "0,195",
+  "novo": "0,191",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 5,
+  "coluna": 4,
+  "antigo": "55,8%",
+  "novo": "57,3%",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 6,
+  "coluna": 1,
+  "antigo": "0,323",
+  "novo": "0,324",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 6,
+  "coluna": 3,
+  "antigo": "0,007",
+  "novo": "0,008",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 7,
+  "coluna": 4,
+  "antigo": "55,2%",
+  "novo": "54,5%",
+  "rot": "T16"
+ },
+ {
+  "tabela": 13,
+  "linha": 8,
+  "coluna": 3,
+  "antigo": "0,004",
+  "novo": "0,005",
+  "rot": "T16"
+ },
+ {
+  "tabela": 14,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "0,230",
+  "novo": "0,226",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 1,
+  "coluna": 3,
+  "antigo": "1,087",
+  "novo": "1,062",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 1,
+  "coluna": 4,
+  "antigo": "17,2%",
+  "novo": "18,4%",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 1,
+  "coluna": 5,
+  "antigo": "0,134",
+  "novo": "0,129",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 1,
+  "coluna": 6,
+  "antigo": "0,846",
+  "novo": "0,835",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 2,
+  "coluna": 1,
+  "antigo": "0,184",
+  "novo": "0,191",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "0,988",
+  "novo": "0,991",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 2,
+  "coluna": 6,
+  "antigo": "0,831",
+  "novo": "0,832",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 2,
+  "coluna": 7,
+  "antigo": "0,009",
+  "novo": "0,010",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,172",
+  "novo": "0,178",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 3,
+  "coluna": 3,
+  "antigo": "1,072",
+  "novo": "1,044",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 3,
+  "coluna": 4,
+  "antigo": "20,8%",
+  "novo": "21,4%",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 3,
+  "coluna": 5,
+  "antigo": "0,113",
+  "novo": "0,111",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 3,
+  "coluna": 6,
+  "antigo": "0,810",
+  "novo": "0,804",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "0,175",
+  "novo": "0,176",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "0,993",
+  "novo": "1,000",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 5,
+  "coluna": 2,
+  "antigo": "0,0275",
+  "novo": "0,0276",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 5,
+  "coluna": 4,
+  "antigo": "44,1%",
+  "novo": "44,3%",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 5,
+  "coluna": 6,
+  "antigo": "0,570",
+  "novo": "0,568",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 6,
+  "coluna": 1,
+  "antigo": "0,095",
+  "novo": "0,096",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 6,
+  "coluna": 3,
+  "antigo": "1,075",
+  "novo": "1,097",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 6,
+  "coluna": 4,
+  "antigo": "54,7%",
+  "novo": "53,0%",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 6,
+  "coluna": 5,
+  "antigo": "0,044",
+  "novo": "0,046",
+  "rot": "T17"
+ },
+ {
+  "tabela": 14,
+  "linha": 6,
+  "coluna": 6,
+  "antigo": "0,462",
+  "novo": "0,479",
+  "rot": "T17"
+ },
+ {
+  "tabela": 18,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "5.046",
+  "novo": "5.037",
+  "rot": "T18"
+ },
+ {
+  "tabela": 18,
+  "linha": 1,
+  "coluna": 3,
+  "antigo": "0,763",
+  "novo": "0,762",
+  "rot": "T18"
+ },
+ {
+  "tabela": 18,
+  "linha": 2,
+  "coluna": 1,
+  "antigo": "4.980",
+  "novo": "4.971",
+  "rot": "T18"
+ },
+ {
+  "tabela": 18,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "0,857",
+  "novo": "0,856",
+  "rot": "T18"
+ },
+ {
+  "tabela": 18,
+  "linha": 2,
+  "coluna": 4,
+  "antigo": "0,857",
+  "novo": "0,856",
+  "rot": "T18"
+ },
+ {
+  "tabela": 18,
+  "linha": 2,
+  "coluna": 6,
+  "antigo": "0,856",
+  "novo": "0,857",
+  "rot": "T18"
+ },
+ {
+  "tabela": 18,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "5.575",
+  "novo": "5.566",
+  "rot": "T18"
+ },
+ {
+  "tabela": 18,
+  "linha": 3,
+  "coluna": 6,
+  "antigo": "0,932",
+  "novo": "0,933",
+  "rot": "T18"
+ },
+ {
+  "tabela": 19,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "5.046",
+  "novo": "5.037",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 1,
+  "coluna": 3,
+  "antigo": "0,764",
+  "novo": "0,763",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 1,
+  "coluna": 4,
+  "antigo": "0,875",
+  "novo": "0,877",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 2,
+  "coluna": 1,
+  "antigo": "5.035",
+  "novo": "5.026",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 2,
+  "coluna": 3,
+  "antigo": "0,759",
+  "novo": "0,758",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 2,
+  "coluna": 4,
+  "antigo": "0,876",
+  "novo": "0,877",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 2,
+  "coluna": 5,
+  "antigo": "0,898",
+  "novo": "0,899",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "4.629",
+  "novo": "4.620",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 3,
+  "coluna": 3,
+  "antigo": "0,789",
+  "novo": "0,788",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 3,
+  "coluna": 4,
+  "antigo": "0,897",
+  "novo": "0,895",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 4,
+  "coluna": 1,
+  "antigo": "5.055",
+  "novo": "5.046",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 4,
+  "coluna": 3,
+  "antigo": "0,771",
+  "novo": "0,770",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 4,
+  "coluna": 5,
+  "antigo": "0,896",
+  "novo": "0,897",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 5,
+  "coluna": 1,
+  "antigo": "5.057",
+  "novo": "5.048",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 5,
+  "coluna": 3,
+  "antigo": "0,762",
+  "novo": "0,761",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 6,
+  "coluna": 1,
+  "antigo": "4.201",
+  "novo": "4.193",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 6,
+  "coluna": 3,
+  "antigo": "0,745",
+  "novo": "0,744",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 6,
+  "coluna": 4,
+  "antigo": "0,890",
+  "novo": "0,891",
+  "rot": "T19"
+ },
+ {
+  "tabela": 19,
+  "linha": 6,
+  "coluna": 6,
+  "antigo": "0,892",
+  "novo": "0,893",
+  "rot": "T19"
+ },
+ {
+  "tabela": 20,
+  "linha": 1,
+  "coluna": 1,
+  "antigo": "0,763",
+  "novo": "0,762",
+  "rot": "T20"
+ },
+ {
+  "tabela": 20,
+  "linha": 2,
+  "coluna": 2,
+  "antigo": "+0,016",
+  "novo": "+0,017",
+  "rot": "T20"
+ },
+ {
+  "tabela": 20,
+  "linha": 3,
+  "coluna": 1,
+  "antigo": "0,886",
+  "novo": "0,887",
+  "rot": "T20"
+ },
+ {
+  "tabela": 20,
+  "linha": 4,
+  "coluna": 2,
+  "antigo": "−0,000",
+  "novo": "−0,001",
+  "rot": "T20"
+ }
+]

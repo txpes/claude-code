@@ -1,0 +1,22 @@
+[
+ {
+  "op": "trocar_imagem",
+  "legenda": "Figura 1 – ",
+  "imagem": "fig1_scree.png"
+ },
+ {
+  "op": "trocar_imagem",
+  "legenda": "Figura 2 – ",
+  "imagem": "fig2_roc.png"
+ },
+ {
+  "op": "trocar_imagem",
+  "legenda": "Figura 3 – ",
+  "imagem": "fig3_decomposicao.png"
+ },
+ {
+  "op": "trocar_imagem",
+  "legenda": "Figura 4 – ",
+  "imagem": "fig3_series.png"
+ }
+]

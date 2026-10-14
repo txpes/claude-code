@@ -44,8 +44,15 @@ def auc(x, y):
     r = pd.Series(x).rank().values; n1 = int(y.sum())
     return (r[y==1].sum() - n1*(n1+1)/2) / (n1*(len(y)-n1))
 
+# Emissores estrangeiros excluidos na correcao de outubro de 2026. Entram no sorteio das particoes externas apenas
+# para que as demais firmas mantenham a mesma particao da versao anterior; nao tem observacao alguma no painel.
+EXCLUIDOS_2026_10 = {80187, 80195, 80217}
+
 def folds(firms, k, seed):
-    u = np.array(sorted(set(firms))); rg = np.random.default_rng(seed); rg.shuffle(u)
+    u = set(firms)
+    if len(u) == P.CD_CVM.nunique():                 # particao externa, sobre o painel inteiro
+        u = u | EXCLUIDOS_2026_10
+    u = np.array(sorted(u)); rg = np.random.default_rng(seed); rg.shuffle(u)
     return {f: i % k for i, f in enumerate(u)}
 
 def orient(df):
