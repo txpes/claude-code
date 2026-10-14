@@ -25,13 +25,16 @@ Segue a nova versão do artigo, com os ajustes que você pediu nos áudios. Abai
 5. **Citações recentes.** Entraram dez trabalhos de 2020 em diante, quatro deles brasileiros, todos conferidos na fonte. A lista passa a ter 11 referências desse período.
 6. **Dados conferidos com a CVM.** Conferi o painel contra os arquivos originais da CVM. Achei três emissores estrangeiros que deveriam ter sido excluídos e quatro firma-anos com valores errados, e corrigi tudo. Depois rodei o código de novo, mantendo a mesma divisão das firmas entre os grupos de teste. Nenhuma conclusão muda, e as tabelas conferem com o código.
    - Alguns números mudaram na terceira casa: o escore fica em 0,763, contra 0,894 da cobertura.
-   - Um resultado secundário perdeu significância. A vantagem do escore sobre o PLS nas entradas por patrimônio negativo ficou no limite (intervalo encostando no zero), e o texto agora a trata como nominal.
+   - Na decomposição por rota (entradas puras, um ano), duas leituras mudaram de grau:
+     - prejuízo operacional (66 entradas): igual, o escore fica muito atrás (0,647 contra 0,973 da cobertura);
+     - patrimônio negativo (51 entradas): a vantagem do escore sobre o PLS ficou no limite, com intervalo encostando no zero, e o texto agora a trata como nominal;
+     - recuperação judicial (11 entradas): o PLS fica à frente do escore por 0,063, com intervalo que exclui o zero por margem mínima; com 11 entradas, o texto não tira conclusão forte disso.
 
 Com o panorama na frente, as tabelas do corpo ganharam um número: a de métricas é agora a 15, e a de decomposição por tipo, a 11. As do apêndice não mudaram.
 
 **Técnicas de avaliação.** Mantive a proposta que te mandei antes: fechar a lista atual e, se você achar útil, acrescentar o gráfico de calibração e a captura no decil de maior risco.
 
-Podemos manter a apresentação ao Eduardo na semana que vem? Estou preparando os slides.
+Podemos manter a apresentação ao Eduardo na semana que vem? Os slides já estão prontos, 15 no total, para uns 20 minutos.
 
 Abraço,
 Thomas

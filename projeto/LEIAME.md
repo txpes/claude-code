@@ -116,7 +116,7 @@ As pendências de código, números e referências da revisão de setembro foram
 lado a lado, e a divisão entre corpo e apêndice foi feita. As duas decisões podem ser revistas pelo
 orientador. Ficam em aberto:
 
-1. **Apresentação para a reunião com o orientador.**
+1. **Apresentação para a reunião com o orientador:** pronta, com 15 slides em artefato que baixa como PowerPoint e PDF. Os números são os da v4.
 2. **Terceira leva de citações**, opcional: três candidatas aguardam um resumo verificável.
 3. **Formatação final**, conforme as normas do programa de mestrado.
 4. **Retorno do orientador** sobre a estrutura.
