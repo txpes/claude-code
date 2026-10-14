@@ -14,7 +14,7 @@ Com as versões usadas na revisão:
 
     pip install -r codigo/requirements.txt
 
-A execução completa roda os dezesseis scripts em poucos minutos e não requer acesso à rede. Foi
+A execução completa roda os dezessete scripts em poucos minutos e não requer acesso à rede. Foi
 testada em diretório limpo. As árvores impulsionadas dependem da versão do scikit-learn; com as
 versões de `requirements.txt`, os números reproduzem os do artigo revisado.
 
@@ -59,7 +59,26 @@ distinguível das alternativas; recuperação judicial 0,828, também sem difere
 
 A mensagem de encaminhamento ao orientador está em `CARTA_EDUARDO.md`.
 
-## Versões do artigo e numeração das tabelas
+## Versão 3 (outubro de 2026)
+
+A versão em uso é `envio/Artigo_Fragilidade_Financeira_v3.docx`, com o PDF em `artigo/`. Ela incorpora os pedidos do coorientador
+(áudios de 13 e 14/10, transcritos em `coorientacao/`):
+- seção 2 com o panorama;
+- números na introdução;
+- equações como objetos de fórmula;
+- literatura em dois pilares;
+- citações recentes.
+
+Para gerar a v3 a partir da v2:
+
+    python revisao/alteracoes_v3.py <pasta do executar.sh>      # monta alteracoes_v3.json com os números do script 17
+    python revisao/aplicar_v3.py envio/Artigo_Fragilidade_Financeira_v2.docx revisao/alteracoes_v3.json envio/Artigo_Fragilidade_Financeira_v3.docx <pasta das imagens>
+    python revisao/checar_estrutura.py envio/Artigo_Fragilidade_Financeira_v3.docx   # remissões, ordem de citação, referências
+    python revisao/verificar_artigo.py <pasta do executar.sh> envio/Artigo_Fragilidade_Financeira_v3.docx
+
+A conferência do painel contra os arquivos da CVM está em `dados/VERIFICACAO_FONTE_CVM.md`. O script é `revisao/conferir_cvm.py`.
+
+## Versões anteriores e numeração das tabelas
 
 Para regenerar o artigo a partir do original, rode os scripts de `revisao/` nesta ordem:
 
@@ -76,16 +95,18 @@ A correspondência completa está na aba `Numeracao_final` da planilha.
 
 ## O que permanece em aberto
 
-Todas as pendências de dados, código, números e referências foram resolvidas na revisão
+As pendências de código, números e referências da revisão de setembro foram resolvidas
 (ver `ESCRUTINIO_COMPLETO.md` na raiz do repositório). O enquadramento ficou com os dois horizontes
 lado a lado, e a divisão entre corpo e apêndice foi feita. As duas decisões podem ser revistas pelo
 orientador. Ficam em aberto:
 
-1. **Formatação final**, conforme as normas do programa de mestrado.
-2. **Retorno do orientador** sobre a estrutura.
-3. **Itens pendentes da coorientação.** Os comentários sobre a revisão de literatura e as técnicas
-   de avaliação da predição ainda não foram recebidos.
-4. **Conferência visual das páginas dos editores.** As referências com DOI foram conferidas pelo
+1. **Correção completa do painel antes da submissão:** excluir os três emissores estrangeiros, corrigir quatro firma-anos e rodar tudo de novo, mantendo a atribuição às partições (ver `dados/VERIFICACAO_FONTE_CVM.md`).
+2. **Segunda leva de citações recentes**, ainda em conferência.
+3. **Formatação final**, conforme as normas do programa de mestrado.
+4. **Retorno do orientador** sobre a estrutura.
+5. **Itens pendentes da coorientação.** A revisão de literatura foi tratada a partir do áudio de 14/10; a
+   proposta sobre as técnicas de avaliação aguarda a resposta do coorientador.
+6. **Conferência visual das páginas dos editores.** As referências com DOI foram conferidas pelo
    registro do DOI (dados depositados pelos editores); as páginas em HTML recusam acesso
    automatizado. As cidades das editoras dos livros de Minsky não constam da fonte consultada.
 

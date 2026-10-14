@@ -453,3 +453,60 @@ Todas estão no `aplicar_revisao.py`, com registro no `log_aplicacao.txt`. O res
   - tabelas: 596 células, 0 divergências;
   - alterações controladas: 179 aplicadas, 0 falhas.
 - **Correção desta rodada:** a §5.3 e a introdução diziam que o esquema temporal "reproduz a ordenação" da validação cruzada. Agora dizem que ele reproduz o resultado central, e que a ordem entre os benchmarks muda.
+
+---
+
+## 15. Versão 3: pedidos do coorientador (14/10/2026)
+
+**Origem.** Áudios de 13 e 14/10, transcritos em `projeto/coorientacao/AUDIOS_CARLOS_2026-10.md`. O plano está em `PLANO_MUDANCAS_CARLOS.md`.
+
+### 15.1 Fonte dos dados conferida antes do panorama
+- O painel foi comparado com as DFP de 2010 a 2025 baixadas da CVM: 36.999 de 37.015 comparações batem (99,96%).
+- **Achados:**
+  - três emissores estrangeiros (16 firma-anos, nenhuma entrada) deveriam ter sido excluídos. Sem eles, as medidas sem estimação mudam no máximo 0,001, e nenhuma conclusão muda;
+  - quatro firma-anos têm valores errados, todos fora da amostra de estimação.
+- **No texto:** a v3 registra o fato na §5.1. A correção completa fica para a versão de submissão.
+- **Detalhes:** `projeto/dados/VERIFICACAO_FONTE_CVM.md`.
+
+### 15.2 O que mudou
+- **Infraestrutura:**
+  - `revisao/aplicar_v3.py` aplica 42 operações sobre a v2, cada uma com âncora que casa uma única vez;
+  - as seções são renumeradas antes, e as tabelas e figuras, pela ordem do documento;
+  - `revisao/checar_estrutura.py` confere as remissões a seções, tabelas, figuras e equações, a ordem de primeira menção e as referências.
+- **Seção 2 (panorama):**
+  - script `17_panorama.py`;
+  - Figura 1 com duas partes, sem eixo duplo (paleta validada com rótulo direto e marcadores distintos);
+  - Tabela 1 por subperíodo;
+  - os números do texto vêm do mesmo `panorama.pkl`.
+
+  A Figura 4 da v2 (séries por estado e por transição) ficou na §6.8. Ela não repete o panorama, que não mostra a série de vulnerabilidade; o plano previa movê-la.
+- **Introdução:**
+  - parágrafo com números do Brasil;
+  - frase de que PCA e PLS não são métodos novos;
+  - parágrafo com as cinco características do desenho, vindo da antiga 2.4;
+  - roteiro atualizado.
+- **Literatura em dois pilares:** 3.1 conceitos, 3.2 não supervisionado, 3.3 supervisionado e 3.4 comparação, com um parágrafo de comparabilidade.
+  - A 2.4 "A lacuna" saiu, e o argumento não se apoia mais em Zmijewski (1984), que continua citado na 3.3 pelo argumento de amostragem.
+  - O parágrafo sobre Merton, firmas zumbis e CAPAG foi para o pilar não supervisionado.
+- **Equações:** as três foram convertidas para fórmulas do Word (OMML).
+  - A renderização foi conferida no LibreOffice, depois da instalação do `libreoffice-math`.
+  - A barra de condição usa o separador do delimitador, e a entrelinha é automática para não cortar a fração.
+- **Citações de 2020 em diante:** são 6 novas, com DOI e resumo conferidos (Crossref, Semantic Scholar e OpenAlex).
+  - A lista passa a 54 referências, 7 delas de 2020 em diante.
+  - Ficaram de fora, por falta de resumo verificável: Álvarez et al. (2023), Bibi e Chandorkar (2025) e Dasilas e Rigani (2024).
+- **Figura 4 (decomposição por rota):** não era citada no texto e passou a ser.
+
+### 15.3 Checagens
+- `verificar_artigo.py`: 596 células, 0 divergências, mais os 10 valores do escore com três indicadores.
+- `checar_estrutura.py`: 0 problemas.
+  - Todas as 21 tabelas e 5 figuras são citadas, com a primeira menção em ordem.
+  - As três equações estão como objeto.
+  - Nenhuma remissão a seção inexistente.
+- **PDF:** 44 páginas, conferidas no panorama, na Tabela 1, nas equações e no início da revisão de literatura.
+- **Autorreferências** ("este artigo" e semelhantes): nenhuma.
+
+### 15.4 Pendências
+- **Nota de decisões:** não acompanha a renumeração da v3, porque não foi enviada nesta rodada.
+- **Correção completa do painel**, antes da submissão.
+- **Segunda leva de citações recentes.**
+- **Slides para a reunião com o Eduardo**, se o autor quiser.

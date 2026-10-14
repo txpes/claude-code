@@ -224,3 +224,29 @@ As 5 correções passaram nas duas checagens.
 | Portaria 882 / CAPAG | "pesos fixados de forma exógena" | DOU e Tesouro Transparente | **corrigido**: a CAPAG combina três indicadores por limiares e regra de classificação, e não por pesos |
 
 As correções estão no artigo revisado como alterações controladas.
+
+## 11. Versão 3 (14/10/2026): citações de 2020 em diante
+
+Atendendo à coorientação, entraram seis obras recentes (ids 49 a 54). Em todas, os dados bibliográficos foram conferidos pelo registro do DOI (Crossref), e o que o texto afirma foi conferido no resumo:
+
+| Obra | Fonte do resumo |
+|---|---|
+| Banerjee e Hofmann (2022) | Crossref |
+| Jabeur et al. (2021) | Semantic Scholar |
+| Novikova e Rozmainsky (2020) | Crossref |
+| Predebom, Bianchi e Machado (2025) | Crossref |
+| Rolim, Cattan e Antonioli (2021) | Crossref |
+| Shetty, Musa e Brédart (2022) | Crossref |
+
+**Pendências de dados:**
+- Para Rolim et al. e Predebom et al., o registro não traz páginas.
+- No registro de Predebom et al., o título aparece uma vez com "Trailed" e outra com "Traded". Foi adotada a segunda forma, coerente com o resumo. Conferir na página da revista.
+
+**Ficaram de fora**, porque o resumo não pôde ser conferido (os editores não o expõem ao acesso automatizado):
+- Álvarez, García-Posada e Mayordomo (2023);
+- Bibi e Chandorkar (2025);
+- Dasilas e Rigani (2024).
+
+Ficam como candidatas para a segunda leva.
+
+A lista tem agora **54 entradas**, 7 delas de 2020 em diante.
