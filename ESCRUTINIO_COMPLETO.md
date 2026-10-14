@@ -510,3 +510,50 @@ Todas estão no `aplicar_revisao.py`, com registro no `log_aplicacao.txt`. O res
 - **Correção completa do painel**, antes da submissão.
 - **Segunda leva de citações recentes.**
 - **Slides para a reunião com o Eduardo**, se o autor quiser.
+
+---
+
+## 16. Versão 4: painel corrigido e números refeitos (15/10/2026)
+
+### 16.1 Dados
+- **Correção:** foram excluídos três emissores estrangeiros e refeitos quatro firma-anos (ver `projeto/dados/VERIFICACAO_FONTE_CVM.md`). A conferência contra a CVM passa a 100%; as 3 diferenças restantes são o falso alarme conhecido.
+- **Partições:** são as mesmas da execução anterior (`EXCLUIDOS_2026_10`), e os 17 scripts rodaram de novo.
+- **Principais mudanças:**
+
+  | Quantidade | Antes | Depois |
+  |---|---|---|
+  | Escore, atribuição de referência | 0,764 | 0,763 |
+  | Escore supervisionado (PLS) | 0,875 | 0,877 |
+  | Validação minskyana | 0,782 e 0,769 | 0,781 e 0,768 |
+  | Variância do primeiro componente | 26,92% | 27,04% |
+  | Prejuízo operacional, um ano | 0,649 contra 0,973 | 0,647 contra 0,973 |
+
+  A cobertura (0,894), o ROA (0,874) e as árvores (0,897) não mudam na terceira casa.
+
+### 16.2 Como os números foram atualizados
+- **Tabelas:** o `verificar_artigo.py` passou a gravar o texto novo de cada célula divergente, no formato original, e o `corrigir_celulas.py` o aplica. Foram 251 células.
+- **Texto:** o `numeros_texto.py` tem 85 frases-modelo cobrindo todos os números do texto corrido.
+  - Preenchidas com a execução antiga, as 85 casam exatamente com o texto da v3. Isso confere a origem de cada número.
+  - Preenchidas com a nova, substituem as antigas. 67 mudaram.
+- **Figuras:** as quatro figuras do código foram trocadas pelas da nova execução, e o panorama também foi regerado.
+
+### 16.3 Conclusões revistas por mudança de significância
+- **PL puro, escore contra o supervisionado:** o intervalo passa a tocar o zero ([−0,128; +0,001]). O texto agora trata a vantagem como nominal (§6.5 e §6.9).
+- **RJ puro:** o supervisionado fica à frente do escore com intervalo que exclui o zero por margem mínima ([+0,003; +0,134]), com 11 entradas. O texto diz isso e mantém a ressalva de poder (§6.5).
+- **Todas as demais afirmações de significância foram reconferidas e se mantêm:**
+  - Bonferroni no agregado;
+  - esquema temporal;
+  - Brier contra a previsão constante;
+  - decisão líquida;
+  - escore com três indicadores;
+  - teste da RJ antecipada.
+
+### 16.4 Correção de redação encontrada nesta rodada
+- O texto dizia que as maiores cargas do primeiro componente são capital de giro, alavancagem e liquidez.
+- O retorno sobre ativos tem a segunda maior carga (0,483).
+- A introdução, a §6.5 e a conclusão passaram a dizer que três das quatro maiores cargas são de estrutura patrimonial. O argumento de composição se mantém.
+
+### 16.5 Checagens
+- `verificar_artigo.py`: 596 células, 0 divergências, mais os 10 valores do escore com três indicadores e a faixa do VPN.
+- `checar_estrutura.py`: 0 problemas. São 58 referências, 11 delas de 2020 em diante.
+- PDF de 44 páginas, com as figuras conferidas.

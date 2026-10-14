@@ -1,6 +1,6 @@
 # Resposta ao orientador, item a item (versão para revisão do Carlos)
 
-*Pedido do coorientador (áudio de 13/10): responder o e-mail do Eduardo item a item, com a localização de cada mudança, e mandar primeiro ao Carlos. Os números de seção e de tabela são os da v3 (`Artigo_Fragilidade_Financeira_v3.docx`).*
+*Pedido do coorientador (áudio de 13/10): responder o e-mail do Eduardo item a item, com a localização de cada mudança, e mandar primeiro ao Carlos. Os números de seção e de tabela são os da v4 (`Artigo_Fragilidade_Financeira_v4.docx`).*
 
 ---
 
@@ -12,8 +12,8 @@ Obrigado pelas observações. Segue a versão revisada do artigo e, abaixo, o qu
 
 **Parte I**
 
-1. **PCA estimado dentro de cada partição.** Médias, desvios-padrão, matriz de correlação e autovetor passaram a ser estimados só nas firmas de treino, e as de teste são projetadas com esses parâmetros. O mesmo vale para a winsorização do modelo de Brito e Assaf Neto e para a escolha de componentes do PLS. A AUC fora da amostra fica em 0,764. *Onde: §4.4.*
-2. **Validação minskyana.** A expressão passou a ser "critério externo à variável dependente e não utilizado na calibração supervisionada", e o texto reconhece a sobreposição com a cobertura de juros. Refeita com um escore sem a cobertura, a AUC passa de 0,782 para 0,769, e a validade convergente se mantém. *Onde: §6.2 e Tabela A.1.*
+1. **PCA estimado dentro de cada partição.** Médias, desvios-padrão, matriz de correlação e autovetor passaram a ser estimados só nas firmas de treino, e as de teste são projetadas com esses parâmetros. O mesmo vale para a winsorização do modelo de Brito e Assaf Neto e para a escolha de componentes do PLS. A AUC fora da amostra fica em 0,763. *Onde: §4.4.*
+2. **Validação minskyana.** A expressão passou a ser "critério externo à variável dependente e não utilizado na calibração supervisionada", e o texto reconhece a sobreposição com a cobertura de juros. Refeita com um escore sem a cobertura, a AUC passa de 0,781 para 0,768, e a validade convergente se mantém. *Onde: §6.2 e Tabela A.1.*
 3. **Calendário informacional.** A nova §4.6 explica:
    - a data de referência dos indicadores;
    - quando a informação se torna pública;
@@ -22,7 +22,7 @@ Obrigado pelas observações. Segue a versão revisada do artigo e, abaixo, o qu
    - como a recuperação judicial é datada.
 
    A exposição a antecipação artificial é medida (11 entradas), e o resultado não muda sem elas. Fiz também um teste antecipando a data da recuperação judicial. *Onde: §4.6, §6.8 e §6.9.*
-4. **Saída do painel.** Classifiquei o motivo das 201 saídas pelo cadastro da CVM:
+4. **Saída do painel.** Classifiquei o motivo das 200 saídas pelo cadastro da CVM:
 
    | Motivo | Saídas |
    |---|---|
@@ -31,7 +31,7 @@ Obrigado pelas observações. Segue a versão revisada do artigo e, abaixo, o qu
    | Incorporação | 22 |
    | Falência ou liquidação | 12 |
    | Outros | 7 |
-   | Sem motivo | 13 |
+   | Sem motivo | 12 |
 
    Tratar as saídas por dificuldade financeira como evento não muda a conclusão. A limitação passou a ser descrita como censura informativa e risco competitivo, e não só como viés de sobrevivência. *Onde: §6.8 e Tabela A.5; também na introdução.*
 5. **Inferência.** O bootstrap agrupado por firma é a inferência principal em todas as comparações, com Bonferroni aplicado sobre ele. O DeLong ficou apenas como referência convencional. *Onde: §4.4 e Tabela 9.*
@@ -59,7 +59,7 @@ Obrigado pelas observações. Segue a versão revisada do artigo e, abaixo, o qu
 - **Literatura:** a revisão foi reorganizada em dois pilares, não supervisionado e supervisionado (seção 3), e ganhou trabalhos recentes.
 - **Equações:** passaram para o editor de fórmulas.
 - **Escore com três indicadores:** um escore só com os três indicadores de maior poder discriminante acompanha o melhor indicador isolado, sem superá-lo, o que reforça a leitura de composição (§6.6).
-- **Código e números:** a revisão de código corrigiu alguns números. Nenhum altera a conclusão, e todas as tabelas conferem com o código.
+- **Dados conferidos com a CVM:** conferi o painel contra os arquivos originais da CVM e corrigi três emissores estrangeiros que deveriam ter sido excluídos e quatro firma-anos com valores errados. Nenhuma conclusão muda, e todas as tabelas conferem com o código.
 - **Estrutura:** as tabelas de validação e robustez foram para o Apêndice A.
 
 Fico à disposição para apresentar o trabalho na reunião.

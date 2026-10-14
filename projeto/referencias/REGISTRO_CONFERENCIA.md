@@ -250,3 +250,21 @@ Atendendo à coorientação, entraram seis obras recentes (ids 49 a 54). Em toda
 Ficam como candidatas para a segunda leva.
 
 A lista tem agora **54 entradas**, 7 delas de 2020 em diante.
+
+## 12. Versão 4 (15/10/2026): segunda leva de citações recentes
+
+Entraram quatro obras brasileiras de 2020 em diante (ids 55 a 58). Os dados bibliográficos e o resumo foram conferidos no registro do DOI (Crossref, depositado pela SciELO):
+
+| Obra | Onde entrou e para quê |
+|---|---|
+| Franzotti et al. (2021) | Panorama (seção 2): relação entre crises e alavancagem |
+| Oliveira e Diniz (2025) | Pilar supervisionado: insolvência e violação de cláusulas, companhias da B3 de 2010 a 2019 |
+| Silber (2020) | Panorama: a pandemia como choque exógeno |
+| Teixeira, Tiryaki e Drummond (2020) | Pilar não supervisionado: indicador de fragilidade por modelo de fator dinâmico |
+
+A lista tem agora **58 entradas**, 11 delas de 2020 em diante.
+
+Continuam de fora, porque o resumo não pôde ser conferido:
+- Álvarez et al. (2023);
+- Bibi e Chandorkar (2025);
+- Dasilas e Rigani (2024).

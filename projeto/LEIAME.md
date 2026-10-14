@@ -32,9 +32,9 @@ versões de `requirements.txt`, os números reproduzem os do artigo revisado.
 ## Estado dos painéis
 
 Os três painéis em `dados/` são os de 2010 a 2025, com a detecção de recuperação judicial já
-corrigida, e com os doze emissores estrangeiros de recibos de depósito removidos. São 7.419
-observações firma-ano, 730 companhias, 194 entradas em vulnerabilidade sobre 5.695 firma-anos
-de risco. Os arquivos que o Cowork gerou antes dessa exclusão não estão aqui, para não haver
+corrigida, e com os quinze emissores estrangeiros de recibos de depósito removidos (doze na extração original e três na
+correção de outubro de 2026, com quatro firma-anos refeitos; ver `dados/VERIFICACAO_FONTE_CVM.md`). São 7.403
+observações firma-ano, 727 companhias, 194 entradas em vulnerabilidade sobre 5.682 firma-anos de risco. Os arquivos que o Cowork gerou antes dessa exclusão não estão aqui, para não haver
 duas versões circulando.
 
 `relatorio_fase_dados.md` descreve a extensão do painel, a correção da detecção de recuperação
@@ -47,21 +47,37 @@ cruzada agrupada por firma, atribuição de referência.
 
 | Modelo | Área sob a curva |
 |---|---|
-| Componentes principais | 0,764 |
+| Componentes principais | 0,763 |
 | Árvores impulsionadas | 0,897 |
 | Cobertura de juros | 0,894 |
-| Mínimos quadrados parciais | 0,875 |
+| Mínimos quadrados parciais | 0,877 |
 | Retorno sobre ativos | 0,874 |
 
 Decomposição por rota de deterioração, subconjuntos puros, horizonte de um ano: prejuízo
-operacional 0,649 contra 0,973 da cobertura de juros; patrimônio negativo 0,816, sem diferença
+operacional 0,647 contra 0,973 da cobertura de juros; patrimônio negativo 0,816, sem diferença
 distinguível das alternativas; recuperação judicial 0,828, também sem diferença distinguível.
 
 A mensagem de encaminhamento ao orientador está em `CARTA_EDUARDO.md`.
 
+## Versão 4 (15/10/2026)
+
+A versão em uso é `envio/Artigo_Fragilidade_Financeira_v4.docx`, com o PDF em `artigo/`. Ela é a v3 com o painel corrigido: os três emissores estrangeiros foram excluídos, quatro firma-anos foram refeitos com as demonstrações corretas da CVM e todos os números, tabelas e figuras vieram de uma nova execução. A versão traz também a segunda leva de citações recentes.
+
+Para regenerar a v4:
+
+    python dados/corrigir_painel_2026-10.py dados <pasta com dfp_cia_aberta_AAAA.zip>     # já aplicado aos painéis do repositório
+    cd codigo && DADOS=../dados bash executar.sh
+    python revisao/alteracoes_v3.py <pasta do executar.sh>
+    python revisao/numeros_texto.py <execução v3> <dados v3> <execução v4> <dados v4> revisao/alteracoes_v4_numeros.json
+    python revisao/aplicar_v3.py envio/Artigo_Fragilidade_Financeira_v2.docx revisao/alteracoes_v4_figuras.json,revisao/alteracoes_v3.json,revisao/alteracoes_v4_numeros.json,revisao/alteracoes_v4_manuais.json <saída> <pasta do executar.sh>
+    python revisao/verificar_artigo.py <pasta do executar.sh> <saída> revisao/correcoes_celulas_v4.json
+    python revisao/corrigir_celulas.py <saída> revisao/correcoes_celulas_v4.json envio/Artigo_Fragilidade_Financeira_v4.docx
+
+O `numeros_texto.py` usa frases-modelo. Cada uma é preenchida com a execução antiga, precisa casar com o texto atual e é então trocada pela versão preenchida com a nova. Assim, todo número do texto corrido tem origem conferida no código.
+
 ## Versão 3 (outubro de 2026)
 
-A versão em uso é `envio/Artigo_Fragilidade_Financeira_v3.docx`, com o PDF em `artigo/`. Ela incorpora os pedidos do coorientador
+A v3 (`envio/Artigo_Fragilidade_Financeira_v3.docx`) incorporou os pedidos do coorientador
 (áudios de 13 e 14/10, transcritos em `coorientacao/`):
 - seção 2 com o panorama;
 - números na introdução;
@@ -100,8 +116,8 @@ As pendências de código, números e referências da revisão de setembro foram
 lado a lado, e a divisão entre corpo e apêndice foi feita. As duas decisões podem ser revistas pelo
 orientador. Ficam em aberto:
 
-1. **Correção completa do painel antes da submissão:** excluir os três emissores estrangeiros, corrigir quatro firma-anos e rodar tudo de novo, mantendo a atribuição às partições (ver `dados/VERIFICACAO_FONTE_CVM.md`).
-2. **Segunda leva de citações recentes**, ainda em conferência.
+1. **Apresentação para a reunião com o orientador.**
+2. **Terceira leva de citações**, opcional: três candidatas aguardam um resumo verificável.
 3. **Formatação final**, conforme as normas do programa de mestrado.
 4. **Retorno do orientador** sobre a estrutura.
 5. **Itens pendentes da coorientação.** A revisão de literatura foi tratada a partir do áudio de 14/10; a
