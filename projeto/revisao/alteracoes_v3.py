@@ -111,11 +111,18 @@ add(op='paragrafo', inicio='Esta seção percorre a literatura na ordem', novo=
     'vulnerabilidade financeira, e a subseção 3.4 explicita o que a comparação mede.')
 add(op='inserir_apos', ancora='A literatura sobre dificuldade financeira de empresas organiza-se', modelo='3.2 O fundamento teórico',
     textos=['3.1 Fragilidade, vulnerabilidade e distress'])
+add(op='substituir', antigo='sem cura. A orientação para vulnerabilidade',
+    novo='sem cura. Álvarez, García-Posada e Mayordomo (2023) adotam taxonomia próxima para empresas espanholas: a firma em distress '
+         'apresenta ao mesmo tempo insolvência de fluxo de caixa e insolvência patrimonial, e a firma zumbi é a firma em distress que '
+         'recebeu crédito novo. A distinção entre as duas formas de insolvência reaparece, neste trabalho, nas rotas de deterioração por '
+         'prejuízo operacional e por patrimônio líquido negativo. A orientação para vulnerabilidade')    # terceira leva de citacoes
 add(op='substituir', antigo='3.2 O fundamento teórico e sua operacionalização', novo='3.2 Pilar não supervisionado: medir a fragilidade')
 add(op='substituir', antigo='e encontra predominância da posição especulativa, com evolução distinta por setor e porte.',
     novo='e encontra predominância da posição especulativa, com evolução distinta por setor e porte. Novikova e Rozmainsky (2020) '
          'acompanham os regimes de financiamento de 42 grandes companhias não financeiras portuguesas entre 2001 e 2017 e documentam a '
-         'redução da parcela em posição hedge e o aumento dos regimes frágeis antes e durante a Grande Recessão.')
+         'redução da parcela em posição hedge e o aumento dos regimes frágeis antes e durante a Grande Recessão. Bibi e Chandorkar (2025) '
+         'constroem indicadores minskyanos para 59 companhias listadas na bolsa peruana entre 2003 e 2023 e encontram exposições à '
+         'fragilidade financeira distintas entre setores.')
 add(op='substituir', antigo='e elevaram a preferência pela liquidez.',
     novo='e elevaram a preferência pela liquidez. Rolim, Cattan e Antonioli (2021) examinam dezenove setores das companhias abertas não '
          'financeiras brasileiras entre 2010 e 2016 e encontram redução das firmas em posição hedge e aumento das especulativas e Ponzi '
@@ -186,7 +193,9 @@ add(op='equacao', inicio='F(i,t) = v₁′ x*(i,t)', omml=eq2)
 add(op='equacao', inicio='P[V(i,t+h) = 1 | F(i,t), Z(i,t)]', omml=eq3)
 
 # ------------------------------------------------------------ 7. referências novas, em ordem alfabética
-NOVAS = [('BANERJEE, R.; HOFMANN, B. The rise of zombie firms', 'BANERJEE, R.; HOFMANN, B. Corporate zombies: anatomy and life cycle. Economic Policy, v. 37, n. 112, p. 757-803, 2022.'),
+NOVAS = [('ALTMAN, E. I.', 'ÁLVAREZ, L.; GARCÍA-POSADA, M.; MAYORDOMO, S. Distressed firms, zombie firms and zombie lending: a taxonomy. Journal of Banking & Finance, v. 149, art. 106762, 2023.'),
+         ('BARKER, M.', 'BIBI, S.; CHANDORKAR, P. A. Minsky in Peru: unveiling the hidden financial fragility at a sectoral level. Structural Change and Economic Dynamics, v. 73, p. 77-88, 2025.'),
+         ('BANERJEE, R.; HOFMANN, B. The rise of zombie firms', 'BANERJEE, R.; HOFMANN, B. Corporate zombies: anatomy and life cycle. Economic Policy, v. 37, n. 112, p. 757-803, 2022.'),
          ('HORN, J. L.', 'JABEUR, S. B.; GHARIB, C.; MEFTEH-WALI, S.; ARFI, W. B. CatBoost model and artificial intelligence techniques for corporate failure prediction. Technological Forecasting and Social Change, v. 166, art. 120658, 2021.'),
          ('NISHI, H.', 'NOVIKOVA, A. Y.; ROZMAINSKY, I. V. The non-financial private firms’ sector of Portugal in 2001–2017: the financial fragility hypothesis-based analysis. Voprosy Ekonomiki, n. 3, p. 115-128, 2020.'),
          ('PEDUZZI, P.', 'PREDEBOM, B.; BIANCHI, M.; MACHADO, V. Influence of economic cycles on the relationship of earnings management and insolvency of publicly traded companies. Brazilian Business Review, v. 22, n. 1, 2025.'),

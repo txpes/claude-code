@@ -16,6 +16,7 @@ OK     1 paragrafo(s) inserido(s) depois de 'Fonte: elaboração própria a part
 OK     substituido: '3. Fragilidade, vulnerabilidade e distress'
 OK     paragrafo reescrito: 'Esta seção percorre a literatura na ordem'
 OK     1 paragrafo(s) inserido(s) depois de 'A literatura sobre dificuldade financeir'
+OK     substituido: 'sem cura. A orientação para vulnerabilidade'
 OK     substituido: '3.2 O fundamento teórico e sua operacionalização'
 OK     substituido: 'e encontra predominância da posição especulativa, '
 OK     substituido: 'e elevaram a preferência pela liquidez.'
@@ -37,6 +38,8 @@ OK     substituido: 'Excluem-se da amostra doze emissores estrangeiros'
 OK     equacao convertida: 'x*ₖ(i,t) = [xₖ(i,t) − μₖ] / σₖ'
 OK     equacao convertida: 'F(i,t) = v₁′ x*(i,t)'
 OK     equacao convertida: 'P[V(i,t+h) = 1 | F(i,t), Z(i,t)]'
+OK     1 paragrafo(s) inserido(s) depois de 'ALTMAN, E. I.'
+OK     1 paragrafo(s) inserido(s) depois de 'BARKER, M.'
 OK     1 paragrafo(s) inserido(s) depois de 'BANERJEE, R.; HOFMANN, B. The rise of zo'
 OK     1 paragrafo(s) inserido(s) depois de 'HORN, J. L.'
 OK     1 paragrafo(s) inserido(s) depois de 'NISHI, H.'
@@ -121,4 +124,4 @@ OK     substituido: 'Como o primeiro componente carrega sobretudo capit'
 OK     substituido: 'Como o primeiro componente carrega sobretudo capit'
 OK     substituido: 'Um escore cujas maiores cargas são capital de giro'
 OK     tabelas e figuras renumeradas: 59 mencoes; mudancas {('Tabela', '{TAB:panorama}'): '1', ('Tabela', '1'): '2', ('Tabela', '2'): '3', ('Tabela', '3'): '4', ('Tabela', '4'): '5', ('Tabela', '5'): '6', ('Tabela', '6'): '7', ('Tabela', '7'): '8', ('Tabela', '8'): '9', ('Tabela', '9'): '10', ('Tabela', '10'): '11', ('Tabela', '11'): '12', ('Tabela', '12'): '13', ('Tabela', '13'): '14', ('Tabela', '14'): '15', ('Figura', '{FIG:panorama}'): '1', ('Figura', '1'): '2', ('Figura', '2'): '3', ('Figura', '3'): '4', ('Figura', '4'): '5'}
-123 operacoes, 0 falhas -> /tmp/claude-0/-home-user-claude-code/1da602dc-bc86-58ab-8327-b26df5cfe2b8/scratchpad/ap/v4c.docx
+126 operacoes, 0 falhas -> /tmp/claude-0/-home-user-claude-code/1da602dc-bc86-58ab-8327-b26df5cfe2b8/scratchpad/ap/v4b_pre.docx

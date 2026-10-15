@@ -268,3 +268,18 @@ Continuam de fora, porque o resumo não pôde ser conferido:
 - Álvarez et al. (2023);
 - Bibi e Chandorkar (2025);
 - Dasilas e Rigani (2024).
+
+## 13. Versão 4 (15/10/2026): terceira leva de citações recentes
+
+Entraram duas das três candidatas (ids 59 e 60). Os dados bibliográficos vêm do registro do DOI (Crossref). O conteúdo foi conferido no resumo escrito pelos autores, em versões abertas:
+
+| Obra | Fonte do resumo | Onde entrou e para quê |
+|---|---|---|
+| Álvarez, García-Posada e Mayordomo (2023) | Versão de trabalho (SSRN e Banco de España, DT 2219) | §3.1: distress como insolvência de fluxo de caixa e patrimonial ao mesmo tempo; firma zumbi como firma em distress que recebeu crédito novo |
+| Bibi e Chandorkar (2025) | Versão publicada, no repositório da Universidade de Aalborg; e versão SSRN | §3.2: indicadores minskyanos para 59 companhias listadas no Peru, 2003-2023, com exposição à fragilidade distinta por setor |
+
+Na versão de trabalho, o primeiro sobrenome aparece como "Álvarez Román"; adotou-se "Álvarez", como no registro da versão publicada.
+
+**Continua de fora** Dasilas e Rigani (2024): não há versão aberta com resumo conferível.
+
+A lista tem agora **60 entradas**, 13 delas de 2020 em diante.

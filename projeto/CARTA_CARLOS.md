@@ -22,7 +22,7 @@ Segue a nova versão do artigo, com os ajustes que você pediu nos áudios. Abai
    - 3.4 o que a comparação entre os dois mede.
 
    Ficou explícito que PCA e PLS não são métodos novos e que a contribuição está na comparação controlada e na decomposição por rota. A seção "A lacuna" saiu, e o argumento não se apoia mais no trabalho de 1984.
-5. **Citações recentes.** Entraram dez trabalhos de 2020 em diante, quatro deles brasileiros, todos conferidos na fonte. A lista passa a ter 11 referências desse período.
+5. **Citações recentes.** Entraram doze trabalhos de 2020 em diante, quatro deles brasileiros, todos conferidos na fonte. A lista passa a ter 13 referências desse período, de 60 no total.
 6. **Dados conferidos com a CVM.** Conferi o painel contra os arquivos originais da CVM. Achei três emissores estrangeiros que deveriam ter sido excluídos e quatro firma-anos com valores errados, e corrigi tudo. Depois rodei o código de novo, mantendo a mesma divisão das firmas entre os grupos de teste. Nenhuma conclusão muda, e as tabelas conferem com o código.
    - Alguns números mudaram na terceira casa: o escore fica em 0,763, contra 0,894 da cobertura.
    - Na decomposição por rota (entradas puras, um ano), duas leituras mudaram de grau:

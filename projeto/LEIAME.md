@@ -61,7 +61,7 @@ A mensagem de encaminhamento ao orientador está em `CARTA_EDUARDO.md`.
 
 ## Versão 4 (15/10/2026)
 
-A versão em uso é `envio/Artigo_Fragilidade_Financeira_v4.docx`, com o PDF em `artigo/`. Ela é a v3 com o painel corrigido: os três emissores estrangeiros foram excluídos, quatro firma-anos foram refeitos com as demonstrações corretas da CVM e todos os números, tabelas e figuras vieram de uma nova execução. A versão traz também a segunda leva de citações recentes.
+A versão em uso é `envio/Artigo_Fragilidade_Financeira_v4.docx`, com o PDF em `artigo/`. Ela é a v3 com o painel corrigido: os três emissores estrangeiros foram excluídos, quatro firma-anos foram refeitos com as demonstrações corretas da CVM e todos os números, tabelas e figuras vieram de uma nova execução. A versão traz também a segunda e a terceira levas de citações recentes: são 60 referências, 13 delas de 2020 em diante.
 
 Para regenerar a v4:
 
@@ -117,7 +117,7 @@ lado a lado, e a divisão entre corpo e apêndice foi feita. As duas decisões p
 orientador. Ficam em aberto:
 
 1. **Apresentação para a reunião com o orientador:** pronta, com 15 slides em artefato que baixa como PowerPoint e PDF. Os números são os da v4.
-2. **Terceira leva de citações**, opcional: três candidatas aguardam um resumo verificável.
+2. **Terceira leva de citações:** entraram duas; Dasilas e Rigani (2024) ficou de fora, sem resumo verificável.
 3. **Formatação final**, conforme as normas do programa de mestrado.
 4. **Retorno do orientador** sobre a estrutura.
 5. **Itens pendentes da coorientação.** A revisão de literatura foi tratada a partir do áudio de 14/10; a
