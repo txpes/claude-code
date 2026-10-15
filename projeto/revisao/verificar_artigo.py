@@ -58,7 +58,10 @@ def formata(e, modelo, dec, pct):
     if '.' not in modelo.split(',')[0]:
         txt = txt.replace('.', '') if casas == 0 or ',' in txt else txt
     neg = round(v, casas) < 0
-    sinal = ('−' if '−' in modelo else '-') if neg else ('+' if modelo.lstrip('<').startswith('+') else '')
+    pos = round(v, casas) > 0
+    # sinal explicito quando o modelo tem sinal (+, - ou −): um limite que passa de negativo a positivo ganha '+'
+    tem_sinal = modelo.lstrip('<')[:1] in '+-−'
+    sinal = ('−' if '−' in modelo else '-') if neg else ('+' if tem_sinal and pos else '')
     return sinal + txt + ('%' if pct else '')
 
 
