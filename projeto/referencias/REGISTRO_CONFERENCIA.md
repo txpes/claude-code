@@ -283,3 +283,8 @@ Na versão de trabalho, o primeiro sobrenome aparece como "Álvarez Román"; ado
 **Continua de fora** Dasilas e Rigani (2024): não há versão aberta com resumo conferível.
 
 A lista tem agora **60 entradas**, 13 delas de 2020 em diante.
+
+## 14. Versão 5 (20/10/2026): pendências de dados
+
+- **Rolim, Cattan e Antonioli (2021):** as páginas 83-108 foram conferidas no cabeçalho do PDF da revista (seer.ufrgs.br), que traz "Análise Econômica, Porto Alegre, v. 39, n. 78, p. 83-108, mar. 2021". A referência foi completada.
+- **Predebom, Bianchi e Machado (2025):** continua pendente. A página do SciELO recusa acesso automatizado, e o registro do DOI sem o sufixo de idioma não existe. Conferir no navegador o título ("Traded") antes da submissão.

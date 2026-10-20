@@ -1,0 +1,24 @@
+[
+ {
+  "op": "substituir",
+  "antigo": "sob diferentes razões de custo entre falso negativo e falso positivo.",
+  "novo": "sob diferentes razões de custo entre falso negativo e falso positivo. Complementam essas métricas o gráfico de calibração por decis de probabilidade prevista e a taxa de captura no decil de maior risco, isto é, a fração das entradas concentrada nos 10% de firma-anos com maior probabilidade prevista, com intervalo por bootstrap agrupado por firma."
+ },
+ {
+  "op": "inserir_apos",
+  "ancora": "a ordenação em precisão e revocação reproduz",
+  "ancora_contem": true,
+  "modelo": "Com prevalência de",
+  "textos": [
+   "Duas medidas complementares tornam visível a diferença entre ordenar e calibrar. A Figura {FIG:calibracao} compara, em cada decil de probabilidade prevista, a probabilidade média com a frequência observada de entrada. No horizonte de um ano, os três modelos acompanham a diagonal nos decis inferiores; no decil de maior risco, a cobertura de juros e a referência não linear preveem 0,167 e 0,173 e observam 0,185 e 0,203, enquanto o escore sintético prevê 0,094 e observa 0,135: além de ordenar pior, ele concentra menos risco no topo da distribuição e o subestima. A taxa de captura no decil de maior risco traduz o mesmo ponto em termos operacionais: os 10% de firma-anos com maior probabilidade prevista concentram 46,3% das entradas pelo escore sintético, contra 62,4% pela cobertura de juros (diferença de 0,161, com intervalo de +0,057 a +0,263) e 68,5% pela referência não linear. No horizonte de dois anos, as probabilidades médias previstas não passam de 0,09 em nenhum decil, e a captura cai para 25,4% no escore sintético e 19,8% na cobertura de juros, diferença não distinguível (−0,056, com intervalo de −0,158 a +0,024); só a referência não linear captura mais que o escore sintético com intervalo que exclui o zero, com 38,9%."
+  ]
+ },
+ {
+  "op": "figura_apos",
+  "ancora": "Duas medidas complementares tornam visível",
+  "modelo_legenda": "Figura 4 – ",
+  "legenda": "Figura {FIG:calibracao} – Calibração por decis de probabilidade prevista, fora da amostra",
+  "imagem": "fig_calibracao.png",
+  "fonte": "Fonte: elaboração própria. Firma-anos ordenados pela probabilidade prevista fora da amostra e divididos em dez grupos de igual tamanho; probabilidades por regressão logística sobre o posto do escore, estimada nas firmas de treino. Atribuição de referência; 5.037 firma-anos e 149 entradas em um ano, 4.288 e 126 em dois."
+ }
+]

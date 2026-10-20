@@ -1,6 +1,6 @@
 # Resposta ao orientador, item a item (versão para revisão do Carlos)
 
-*Pedido do coorientador (áudio de 13/10): responder o e-mail do Eduardo item a item, com a localização de cada mudança, e mandar primeiro ao Carlos. Os números de seção e de tabela são os da v4 (`Artigo_Fragilidade_Financeira_v4.docx`).*
+*Pedido do coorientador (áudio de 13/10): responder o e-mail do Eduardo item a item, com a localização de cada mudança, e mandar primeiro ao Carlos. Os números de seção, tabela e figura são os da v5 (`Artigo_Fragilidade_Financeira_v5.docx`).*
 
 ---
 
@@ -39,9 +39,10 @@ Obrigado pelas observações. Segue a versão revisada do artigo e, abaixo, o qu
    - PR-AUC e Brier;
    - inclinação e intercepto de calibração;
    - sensibilidade, especificidade, VPP e VPN;
-   - decisão líquida.
+   - decisão líquida;
+   - gráfico de calibração por decis e taxa de captura no decil de maior risco.
 
-   A calibração passou a ser feita sobre o posto do escore, e todos os modelos superam a previsão constante no Brier. *Onde: §4.4, §6.7 e Tabela 15.*
+   A calibração passou a ser feita sobre o posto do escore, e todos os modelos superam a previsão constante no Brier. No decil de maior risco, o escore concentra 46,3% das entradas em um ano, contra 62,4% da cobertura de juros. *Onde: §4.4, §6.7, Tabela 15 e Figura 5.*
 7. **Múltiplas entradas.** Das 171 firmas com entrada, 149 têm uma e 22 têm duas ou mais. Cada reentrada é tratada como novo evento, e a sensibilidade só com a primeira entrada não muda o resultado. *Onde: §5.3 e Tabela A.5.*
 8. **H4.** Está declarada como análise diagnóstica posterior, inclusive no resumo, e o texto usa "a análise diagnóstica fornece evidência consistente com H4". *Onde: §4.5 e §6.6.*
 9. **Mecanismo.** As três formulações que você apontou foram substituídas pelas versões moderadas que sugeriu, e o restante do texto segue o mesmo tom. *Onde: §6.5 e §6.6.*

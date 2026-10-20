@@ -1,44 +1,25 @@
-# E-mail ao coorientador (versão 4)
+# E-mail ao coorientador (versão 5)
 
-**Assunto:** Artigo revisado: panorama, introdução, equações, literatura e resposta ao Eduardo
+**Assunto:** Artigo revisado (v5) e retorno sobre todos os pontos
 
 Carlos, tudo bem?
 
-Segue a nova versão do artigo, com os ajustes que você pediu nos áudios. Abaixo, a resposta ao Eduardo item a item, com a localização de cada mudança no texto; ainda não mandei para ele.
+Seguem a versão 5 do artigo e um documento que reúne tudo num só lugar:
+- os seus pedidos, com o que foi feito e onde está no texto;
+- a resposta ao Eduardo item a item, ainda não enviada a ele;
+- as decisões que tomei nos pontos que estavam em aberto.
 
-**O que mudou**
-1. **Panorama do Brasil (nova seção 2).** Usa os dados da CVM, com o mesmo painel dos testes, de 2010 a 2025:
-   - a parcela de companhias com cobertura de juros abaixo de 1 tem média de 43,4% e pico de 62,8% em 2015, na recessão;
-   - EBITDA negativo e patrimônio líquido negativo também são mostrados ao longo do período;
-   - 72 companhias entraram em recuperação judicial ou extrajudicial no período.
+Em resumo:
 
-   Tudo isso aparece numa figura (Figura 1) e numa tabela por período (Tabela 1). As demais seções foram renumeradas.
-2. **Introdução.** Ganhou um parágrafo com esses números.
-3. **Equações.** As três estão no editor de fórmulas, numeradas.
-4. **Revisão de literatura.** Reorganizada em dois pilares:
-   - 3.1 conceitos;
-   - 3.2 não supervisionado, ou seja, medir a fragilidade;
-   - 3.3 supervisionado, ou seja, prever a dificuldade financeira;
-   - 3.4 o que a comparação entre os dois mede.
+1. **Seus pedidos:** todos estão no texto. São eles o panorama do Brasil (nova seção 2 e números na introdução), as equações no editor de fórmulas, a literatura em dois pilares sem a seção da lacuna, a frase de que PCA e PLS não são a contribuição e as citações recentes (13 de 60 referências são de 2020 em diante).
+2. **Técnicas de avaliação:** incluí o gráfico de calibração por decis e a taxa de captura no decil de maior risco. No decil de maior risco, o escore concentra 46,3% das entradas em um ano, contra 62,4% da cobertura de juros. Com isso, considero a lista fechada.
+3. **Dados:** conferi o painel com os arquivos da CVM e corrigi três emissores estrangeiros e quatro firma-anos. As conclusões não mudam, e todas as tabelas conferem com o código.
+4. **Submissão:** proponho a Revista Contabilidade & Finanças. O limite é de 8.000 palavras, e o texto tem cerca de 15.600. A ideia é manter a versão longa como base da dissertação e fazer uma versão curta depois da reunião com o Eduardo. O plano de corte está no documento.
 
-   Ficou explícito que PCA e PLS não são métodos novos e que a contribuição está na comparação controlada e na decomposição por rota. A seção "A lacuna" saiu, e o argumento não se apoia mais no trabalho de 1984.
-5. **Citações recentes.** Entraram doze trabalhos de 2020 em diante, quatro deles brasileiros, todos conferidos na fonte. A lista passa a ter 13 referências desse período, de 60 no total.
-6. **Dados conferidos com a CVM.** Conferi o painel contra os arquivos originais da CVM. Achei três emissores estrangeiros que deveriam ter sido excluídos e quatro firma-anos com valores errados, e corrigi tudo. Depois rodei o código de novo, mantendo a mesma divisão das firmas entre os grupos de teste. Nenhuma conclusão muda, e as tabelas conferem com o código.
-   - Alguns números mudaram na terceira casa: o escore fica em 0,763, contra 0,894 da cobertura.
-   - Na decomposição por rota (entradas puras, um ano), duas leituras mudaram de grau:
-     - prejuízo operacional (66 entradas): igual, o escore fica muito atrás (0,647 contra 0,973 da cobertura);
-     - patrimônio negativo (51 entradas): a vantagem do escore sobre o PLS ficou no limite, com intervalo encostando no zero, e o texto agora a trata como nominal;
-     - recuperação judicial (11 entradas): o PLS fica à frente do escore por 0,063, com intervalo que exclui o zero por margem mínima; com 11 entradas, o texto não tira conclusão forte disso.
-
-Com o panorama na frente, as tabelas do corpo ganharam um número: a de métricas é agora a 15, e a de decomposição por tipo, a 11. As do apêndice não mudaram.
-
-**Técnicas de avaliação.** Mantive a proposta que te mandei antes: fechar a lista atual e, se você achar útil, acrescentar o gráfico de calibração e a captura no decil de maior risco.
-
-Podemos manter a apresentação ao Eduardo na semana que vem? Os slides já estão prontos, 15 no total, para uns 20 minutos.
+Os slides da reunião estão prontos: https://claude.ai/artifact/N8JKodxixn5y5RLPLJd6k3. Se você tiver os pontos pontuais que comentou que mandaria, eu incorporo antes da reunião.
 
 Abraço,
 Thomas
 
 ---
-Anexo: `Artigo_Fragilidade_Financeira_v4.docx`
-Abaixo, a resposta ao Eduardo (ver `CARTA_EDUARDO.md`).
+Anexos: `Artigo_Fragilidade_Financeira_v5.docx` e `Retorno_revisao_artigo.docx`

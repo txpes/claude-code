@@ -206,7 +206,7 @@ NOVAS = [('ALTMAN, E. I.', 'ÁLVAREZ, L.; GARCÍA-POSADA, M.; MAYORDOMO, S. Dist
          ('OHLSON, J. A.', 'OLIVEIRA, W. C.; DINIZ, J. A. Influence of financial situation and earnings management on violation of financial covenants by insolvent companies: evidence from Brazil. RAM. Revista de Administração Mackenzie, v. 26, n. 3, eRAMF250127, 2025.'),
          ('SHETTY, S.', 'SILBER, S. D. A fragilidade econômica e financeira na pandemia do Sars-Covid-19. Estudos Avançados, v. 34, n. 100, p. 107-115, 2020.'),
          ('SILBER, S. D.', 'TEIXEIRA, D. N.; TIRYAKI, G. F.; DRUMMOND, C. E. I. Fragilidade financeira e volatilidade dos ciclos econômicos no Brasil pós-Plano Real. Estudos Econômicos (São Paulo), v. 50, n. 1, p. 125-158, 2020.'),
-         ('PREDEBOM, B.', 'ROLIM, L. N.; CATTAN, R.; ANTONIOLI, J. Fragilidade financeira das empresas não financeiras de capital aberto no Brasil entre 2010 e 2016: uma análise setorial a partir de Minsky. Análise Econômica, v. 39, n. 78, 2021.')]
+         ('PREDEBOM, B.', 'ROLIM, L. N.; CATTAN, R.; ANTONIOLI, J. Fragilidade financeira das empresas não financeiras de capital aberto no Brasil entre 2010 e 2016: uma análise setorial a partir de Minsky. Análise Econômica, v. 39, n. 78, p. 83-108, 2021.')]
 for ancora, ref in NOVAS:
     if ref:
         add(op='inserir_apos', ancora=ancora, modelo='ALTMAN, E. I.', textos=[ref])

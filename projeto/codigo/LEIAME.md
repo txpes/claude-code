@@ -32,6 +32,7 @@ Dependências: pandas, numpy, scipy, scikit-learn, statsmodels, matplotlib, open
 | 15_rj_antecipada.py | Sensibilidade à datação da recuperação judicial: RJ antecipada em um ano para as firmas cujo primeiro documento é de andamento | 5.9 |
 | 16_tres_indicadores.py | Escore restrito aos três indicadores de maior poder discriminante (retorno sobre ativos, cobertura de juros e margem EBITDA), por componente principal e por média simples, com a seleção refeita dentro do treino | 5.6 |
 | 17_panorama.py | Panorama descritivo por ano e subperíodo (cobertura de juros < 1, EBITDA e PL negativos, prejuízo, alavancagem, recuperações) e a figura da seção 2 | 2 |
+| 18_calibracao_captura.py | Calibração por decis de probabilidade prevista e taxa de captura no decil de maior risco, com bootstrap agrupado por firma | 6.7 e figura de calibração |
 
 ## Princípio do desenho
 
