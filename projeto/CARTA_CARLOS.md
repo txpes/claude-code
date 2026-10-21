@@ -16,10 +16,12 @@ Em resumo:
 3. **Dados:** conferi o painel com os arquivos da CVM e corrigi três emissores estrangeiros e quatro firma-anos. As conclusões não mudam, e todas as tabelas conferem com o código.
 4. **Submissão:** proponho a Revista Contabilidade & Finanças. O limite é de 8.000 palavras, e o texto tem cerca de 15.600. A ideia é manter a versão longa como base da dissertação e fazer uma versão curta depois da reunião com o Eduardo. O plano de corte está no documento.
 
-Se estiver de acordo, já encaminho a resposta e o artigo ao Eduardo antes da reunião, para ele chegar com o texto lido. Os slides estão prontos: https://claude.ai/artifact/N8JKodxixn5y5RLPLJd6k3. Se você tiver os pontos pontuais que comentou que mandaria, eu incorporo antes da reunião.
+Se estiver de acordo, já encaminho a resposta e o artigo ao Eduardo antes da reunião, para ele chegar com o texto lido. Os slides estão prontos, também em anexo. Se você tiver os pontos pontuais que comentou que mandaria, eu acrescento antes da reunião.
+
+Me confirma quando puder compartilhar com o Eduardo para ele já ir dando uma olhada no material, por favor?
 
 Abraço,
 Thomas
 
 ---
-Anexos: `Artigo_Fragilidade_Financeira_v5.docx` e `Retorno_revisao_artigo.docx`
+Anexos: `Artigo_Fragilidade_Financeira_v5.docx`, `Retorno_revisao_artigo.docx` e `Slides_reuniao_v5.pdf`
