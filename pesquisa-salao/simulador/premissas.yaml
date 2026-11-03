@@ -1,0 +1,113 @@
+# Premissas do plano (como estão hoje) — Briefing v1, Apêndice A.
+# Nenhum número fica no código: tudo que o simulador usa está aqui.
+
+horizonte_meses: 36
+
+postos_fase1:
+  - {grupo: ancoras_cabelo, tipo: cabelo, qtd: 2, fat_maduro: 12000, cota_salao: 0.43}
+  - {grupo: cabelo, tipo: cabelo, qtd: 1, fat_maduro: 12000, cota_salao: 0.50}
+  - {grupo: manicure, tipo: manicure, qtd: 2, fat_maduro: 6000, cota_salao: 0.45}
+  - {grupo: estetica, tipo: estetica, qtd: 1, fat_maduro: 7000, cota_salao: 0.50}
+
+postos_fase2:
+  - {grupo: cabelo_f2, tipo: cabelo, qtd: 1, fat_maduro: 12000, cota_salao: 0.50}
+  - {grupo: manicure_f2, tipo: manicure, qtd: 1, fat_maduro: 6000, cota_salao: 0.45}
+
+fator_preco: 1.08
+faltas: 0.03
+taxa_cartao: 0.02          # média sobre a cota do salão, com PIX e D+1
+produtos: 0.04             # sobre o faturamento total
+
+varejo_mes_maduro: 6500
+margem_varejo: 0.30        # já descontada a comissão de 10%; tributado no Anexo I
+
+horas_ociosas: 1000        # por mês, tributado no Anexo III
+horas_ociosas_mes_inicio: 7
+
+segundo_turno: 0.15        # sobre faturamento de cabelo e manicure
+segundo_turno_tipos: [cabelo, manicure]
+segundo_turno_custo_fixo: 300
+
+fixos_fase1: 8700
+fixos_fase2: 9100
+fixos_extras: 450          # ECAD, coleta, seguros, taxas
+extra_ano1: 750            # meses 1 a 12
+desconto_aluguel_ano1: 600 # meses 1 a 12
+meses_ano1: 12
+
+recepcao_intermitente: 900
+recepcionista_fixa: 2900
+
+pro_labore_minimo: 1650
+pro_labore_cheio: 4000
+pro_labore_minimo_ate_mes: 6
+pro_labore_minimo_ate_mes_revisao: 9
+
+investimento_montagem: 74000
+capital_giro: 26000
+capex_fase2: 8000
+
+rampa_fase1: [0.35, 0.45, 0.55, 0.60, 0.65, 0.70, 0.74, 0.78, 0.82, 0.85, 0.88, 0.90]
+rampa_fase1_depois: 0.90
+rampa_fase2: [0.45, 0.55, 0.65, 0.72, 0.80, 0.85]
+rampa_fase2_depois: 0.90
+
+# Tabelas do Simples: (limite superior da faixa de RBT12, alíquota nominal, dedução)
+anexo_III:
+  - [180000, 0.06, 0]
+  - [360000, 0.112, 9360]
+  - [720000, 0.135, 17640]
+  - [1800000, 0.16, 35640]
+anexo_I:
+  - [180000, 0.04, 0]
+  - [360000, 0.073, 5940]
+  - [720000, 0.095, 13860]
+  - [1800000, 0.107, 22500]
+
+gatilhos:
+  expansao_mes_minimo: 3
+  expansao_ocupacao_f1: 0.70
+  expansao_caixa_minimo: -85000
+  recepcao_postos_f1: 6
+  recepcao_postos_f2: 2
+  recepcao_ocupacao: 0.80
+  segundo_turno_mes_minimo: 13
+  segundo_turno_ocupacao_f1: 0.85
+  revisao_mes: 6
+  revisao_faturamento_minimo: 34000
+  parada_mes_minimo: 6
+  parada_caixa: -95000
+
+cenarios:
+  base: {}
+  rampa_lenta: {multiplicador_ocupacao: 0.8, teto_ocupacao: 0.90}
+  fat_menor: {fator_preco_mult: 0.75}
+  obra_cara: {investimento_mult: 1.2}
+  tudo_junto: {multiplicador_ocupacao: 0.8, teto_ocupacao: 0.90, fator_preco_mult: 0.75, investimento_mult: 1.2}
+  sem_aumento: {fator_preco: 1.0}
+
+salao_maduro:
+  ocupacoes_relatorio: [0.70, 0.80, 0.90]
+  varejo_base: 6500
+
+sensibilidade:
+  fat_cabeleireira_de: 8000
+  fat_cabeleireira_ate: 20000
+  fat_cabeleireira_passo: 2000
+
+escada_ancora:
+  # parte da profissional por faixa do faturamento mensal dela
+  faixas: [[10000, 0.55], [15000, 0.60], [null, 0.65]]
+  faturamentos_exemplo: [8000, 10000, 12000, 15000, 20000, 25000]
+
+# "Sem a alavanca": valor que a premissa teria sem ela. Valores marcados como
+# estimativa do analista (o briefing não define o contrafactual de cada alavanca).
+alavancas:
+  segundo_turno: {segundo_turno: 0.0, segundo_turno_custo_fixo: 0}
+  repasse_calibrado:   # estimativa: repasse uniforme de 60% à profissional (cota 40%)
+    cotas: {ancoras_cabelo: 0.40, cabelo: 0.40, manicure: 0.40, estetica: 0.40, cabelo_f2: 0.40, manicure_f2: 0.40}
+  horas_ociosas: {horas_ociosas: 0}
+  pix_padrao: {taxa_cartao: 0.035}          # estimativa: mix só cartão
+  varejo_maior: {varejo_mes_maduro: 3000}   # estimativa: varejo tímido
+  varejo_anexo_I: {varejo_no_anexo_III: true}
+  aluguel_escalonado: {desconto_aluguel_ano1: 0}
