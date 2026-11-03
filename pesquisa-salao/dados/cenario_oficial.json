@@ -1,0 +1,124 @@
+{
+ "base": {
+  "tir_nominal": 1.65175648712275,
+  "vpl_25_75": 328881.27404918656,
+  "payback": 15,
+  "pior_caixa": -91677.82158294613,
+  "anos": [
+   48019,
+   165399,
+   163548,
+   151167,
+   158667
+  ],
+  "investimento": 87000,
+  "parcela_mutuo": 3960.795845670397,
+  "menor_caixa_empresa_com_mutuo": 28322.178417053874,
+  "caixa_final": 541564.2354970911,
+  "lucro_maduro_mes60": 13998.034815681673
+ },
+ "rampa_lenta": {
+  "tir_nominal": 0.6916355841137822,
+  "vpl_25_75": 104152.8808962145,
+  "payback": 25,
+  "pior_caixa": -97374.72804118613,
+  "anos": [
+   9074,
+   73639,
+   87440,
+   75059,
+   82559
+  ],
+  "investimento": 87000,
+  "parcela_mutuo": 3960.795845670397,
+  "menor_caixa_empresa_com_mutuo": 22625.27195881387,
+  "caixa_final": 182534.72961563044,
+  "lucro_maduro_mes60": 7655.700521639195
+ },
+ "fat_menor": {
+  "tir_nominal": 0.589468903756438,
+  "vpl_25_75": 78835.91559280966,
+  "payback": 27,
+  "pior_caixa": -98968.33798030844,
+  "anos": [
+   2555,
+   67540,
+   77895,
+   65513,
+   73013
+  ],
+  "investimento": 87000,
+  "parcela_mutuo": 3960.795845670397,
+  "menor_caixa_empresa_com_mutuo": 21031.662019691565,
+  "caixa_final": 141280.19717776615,
+  "lucro_maduro_mes60": 6860.21023117502
+ },
+ "obra_cara": {
+  "tir_nominal": 1.2963869812007287,
+  "vpl_25_75": 297264.2324920694,
+  "payback": 18,
+  "pior_caixa": -109077.82158294613,
+  "anos": [
+   35355,
+   160974,
+   163548,
+   151167,
+   158667
+  ],
+  "investimento": 104400.0,
+  "parcela_mutuo": 3960.795845670397,
+  "menor_caixa_empresa_com_mutuo": 10922.178417053876,
+  "caixa_final": 507075.54321799614,
+  "lucro_maduro_mes60": 13998.034815681673
+ },
+ "sem_aumento": {
+  "tir_nominal": 1.3303607497596954,
+  "vpl_25_75": 256586.09772165646,
+  "payback": 17,
+  "pior_caixa": -93017.64032,
+  "anos": [
+   33352,
+   140057,
+   138176,
+   125794,
+   133294
+  ],
+  "investimento": 87000,
+  "parcela_mutuo": 3960.795845670397,
+  "menor_caixa_empresa_com_mutuo": 26982.359679999998,
+  "caixa_final": 425437.44221932796,
+  "lucro_maduro_mes60": 11883.649147220956
+ },
+ "tudo_junto": {
+  "tir_nominal": null,
+  "vpl_25_75": -178577.80029529735,
+  "payback": null,
+  "pior_caixa": -218175.66691269694,
+  "anos": [
+   -26776,
+   -15733,
+   -18001,
+   -30382,
+   -22883
+  ],
+  "investimento": 104400.0,
+  "parcela_mutuo": 3960.795845670397,
+  "menor_caixa_empresa_com_mutuo": -276411.4799678647,
+  "caixa_final": -276411.4799678647,
+  "lucro_maduro_mes60": -1131.0888431169478
+ },
+ "base_sem_riscos_extras": {
+  "tir_nominal": 1.682640586488367,
+  "vpl_25_75": 346115.8064298836,
+  "payback": 15,
+  "pior_caixa": -91677.82158294613,
+  "anos": [
+   48019,
+   167559,
+   167976,
+   167976,
+   167976
+  ],
+  "investimento": 87000
+ }
+}
