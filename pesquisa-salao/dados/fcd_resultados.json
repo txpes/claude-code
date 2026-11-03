@@ -1,0 +1,750 @@
+{
+ "Plano (premissas originais)": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.872390687693525,
+   "tir_nominal_aa": 2.0039461811898884,
+   "vpl": {
+    "Selic (custo de oportunidade)": 505864.9694471192,
+    "Selic + 6 p.p.": 430171.60083513416,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 369025.74053123035
+   },
+   "payback": 14,
+   "payback_descontado_selic+6": 15,
+   "fluxo_anual": [
+    50549,
+    170894,
+    171294,
+    171294,
+    171294
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 14274.468762703651,
+   "parada": null,
+   "multiplo_caixa": 9.936806808619911
+  },
+  "com_giro": {
+   "tir_real_aa": 1.4090162532358512,
+   "tir_nominal_aa": 1.5193491976340532,
+   "vpl": {
+    "Selic (custo de oportunidade)": 496943.85423307004,
+    "Selic + 6 p.p.": 417379.6575470855,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 353369.45602810464
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 17,
+   "fluxo_anual": [
+    50549,
+    170894,
+    171294,
+    171294,
+    197294
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 14274.468762703651,
+   "parada": null,
+   "multiplo_caixa": 7.613237038378734
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.8927805360420238,
+   "tir_nominal_aa": 2.0252698845927486,
+   "vpl": {
+    "Selic (custo de oportunidade)": 618384.3574681358,
+    "Selic + 6 p.p.": 517189.1360431808,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 437172.3761083502
+   },
+   "payback": 14,
+   "payback_descontado_selic+6": 15,
+   "fluxo_anual": [
+    50549,
+    170894,
+    171294,
+    171294,
+    342587
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 14274.468762703651,
+   "parada": null,
+   "multiplo_caixa": 12.25158552689618
+  }
+ },
+ "Validado (sala R$ 5,2 mil)": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.6141406855970883,
+   "tir_nominal_aa": 1.7338683289974353,
+   "vpl": {
+    "Selic (custo de oportunidade)": 455585.3519698992,
+    "Selic + 6 p.p.": 385476.6351570759,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 328863.9108115206
+   },
+   "payback": 15,
+   "payback_descontado_selic+6": 16,
+   "fluxo_anual": [
+    37726,
+    158677,
+    159079,
+    159079,
+    159079
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 9.103250806700991
+  },
+  "com_giro": {
+   "tir_real_aa": 1.231000697542052,
+   "tir_nominal_aa": 1.333180529489478,
+   "vpl": {
+    "Selic (custo de oportunidade)": 446664.23675585,
+    "Selic + 6 p.p.": 372684.6918690272,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 313207.62630839495
+   },
+   "payback": 17,
+   "payback_descontado_selic+6": 19,
+   "fluxo_anual": [
+    37726,
+    158677,
+    159079,
+    159079,
+    185079
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 6.996405596958734
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.6387450103871624,
+   "tir_nominal_aa": 1.7595995318628948,
+   "vpl": {
+    "Selic (custo de oportunidade)": 560081.3419890759,
+    "Selic + 6 p.p.": 466289.2279956985,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 392151.2275695633
+   },
+   "payback": 15,
+   "payback_descontado_selic+6": 16,
+   "fluxo_anual": [
+    37726,
+    158677,
+    159079,
+    159079,
+    318158
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 11.252970051498341
+  }
+ },
+ "Validado com sala de R$ 4,3 mil": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.835479065943061,
+   "tir_nominal_aa": 1.9653440071632535,
+   "vpl": {
+    "Selic (custo de oportunidade)": 500105.7012881867,
+    "Selic + 6 p.p.": 425003.6755882879,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 364339.00701637805
+   },
+   "payback": 14,
+   "payback_descontado_selic+6": 15,
+   "fluxo_anual": [
+    48670,
+    169621,
+    170023,
+    170023,
+    170023
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 14168.60200958365,
+   "parada": null,
+   "multiplo_caixa": 9.842710266160452
+  },
+  "com_giro": {
+   "tir_real_aa": 1.3845250129496876,
+   "tir_nominal_aa": 1.4937362585427834,
+   "vpl": {
+    "Selic (custo de oportunidade)": 491184.5860741375,
+    "Selic + 6 p.p.": 412211.7323002392,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 348682.7225132524
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 17,
+   "fluxo_anual": [
+    48670,
+    169621,
+    170023,
+    170023,
+    196023
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 14168.60200958365,
+   "parada": null,
+   "multiplo_caixa": 7.543605596958734
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.8564269608083577,
+   "tir_nominal_aa": 1.9872513156133804,
+   "vpl": {
+    "Selic (custo de oportunidade)": 611790.5880418805,
+    "Selic + 6 p.p.": 511375.84429827955,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 431980.232328182
+   },
+   "payback": 14,
+   "payback_descontado_selic+6": 15,
+   "fluxo_anual": [
+    48670,
+    169621,
+    170023,
+    170023,
+    340046
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 14168.60200958365,
+   "parada": null,
+   "multiplo_caixa": 12.140321402849693
+  }
+ },
+ "Validado com sala de R$ 6,2 mil": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.393080305437001,
+   "tir_nominal_aa": 1.5026833834260156,
+   "vpl": {
+    "Selic (custo de oportunidade)": 406769.17947177694,
+    "Selic + 6 p.p.": 342135.58205267676,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 289965.7790079488
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 18,
+   "fluxo_anual": [
+    25726,
+    146677,
+    147079,
+    147079,
+    147079
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 12256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 8.29243999589018
+  },
+  "com_giro": {
+   "tir_real_aa": 1.0740727916782937,
+   "tir_nominal_aa": 1.1690653255371597,
+   "vpl": {
+    "Selic (custo de oportunidade)": 397848.06425772776,
+    "Selic + 6 p.p.": 329343.6387646281,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 274309.4945048231
+   },
+   "payback": 19,
+   "payback_descontado_selic+6": 20,
+   "fluxo_anual": [
+    25726,
+    146677,
+    147079,
+    147079,
+    173079
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 12256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 6.396405596958734
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.422053529373819,
+   "tir_nominal_aa": 1.5329835810191401,
+   "vpl": {
+    "Selic (custo de oportunidade)": 503382.6072820533,
+    "Selic + 6 p.p.": 416852.1487165526,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 348479.07322897256
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 18,
+   "fluxo_anual": [
+    25726,
+    146677,
+    147079,
+    147079,
+    294158
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 12256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 10.279997078525367
+  }
+ },
+ "Validado + equipamentos/ar +R$ 6 mil": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.5049295875418602,
+   "tir_nominal_aa": 1.6196553626512777,
+   "vpl": {
+    "Selic (custo de oportunidade)": 449585.3519698992,
+    "Selic + 6 p.p.": 379476.6351570759,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 322863.9108115206
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 17,
+   "fluxo_anual": [
+    37726,
+    158677,
+    159079,
+    159079,
+    159079
+   ],
+   "investimento": 80000,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 8.420506996198418
+  },
+  "com_giro": {
+   "tir_real_aa": 1.1656618882739291,
+   "tir_nominal_aa": 1.2648492027568752,
+   "vpl": {
+    "Selic (custo de oportunidade)": 440664.23675585,
+    "Selic + 6 p.p.": 366684.6918690272,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 307207.62630839495
+   },
+   "payback": 18,
+   "payback_descontado_selic+6": 19,
+   "fluxo_anual": [
+    37726,
+    158677,
+    159079,
+    159079,
+    185079
+   ],
+   "investimento": 106000,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 6.6003826386403155
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.531390466707331,
+   "tir_nominal_aa": 1.6473281500825268,
+   "vpl": {
+    "Selic (custo de oportunidade)": 554081.3419890759,
+    "Selic + 6 p.p.": 460289.2279956985,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 386151.2275695633
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 17,
+   "fluxo_anual": [
+    37726,
+    158677,
+    159079,
+    159079,
+    318158
+   ],
+   "investimento": 80000,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 10.408997297635965
+  }
+ },
+ "Validado, salão absorve taxa cheia do cartão": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.5094475808395798,
+   "tir_nominal_aa": 1.6243802800420326,
+   "vpl": {
+    "Selic (custo de oportunidade)": 426981.36026455025,
+    "Selic + 6 p.p.": 360380.3232624596,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 306606.3033096406
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 17,
+   "fluxo_anual": [
+    33273,
+    150849,
+    151242,
+    151242,
+    151242
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 12603.502398623648,
+   "parada": null,
+   "multiplo_caixa": 8.619570382903694
+  },
+  "com_giro": {
+   "tir_real_aa": 1.1537191584566195,
+   "tir_nominal_aa": 1.2523594959139328,
+   "vpl": {
+    "Selic (custo de oportunidade)": 418060.245050501,
+    "Selic + 6 p.p.": 347588.3799744109,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 290950.0188065149
+   },
+   "payback": 18,
+   "payback_descontado_selic+6": 19,
+   "fluxo_anual": [
+    33273,
+    150849,
+    151242,
+    151242,
+    177242
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 12603.502398623648,
+   "parada": null,
+   "multiplo_caixa": 6.638482083348733
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.5359518588522287,
+   "tir_nominal_aa": 1.6520984539876609,
+   "vpl": {
+    "Selic (custo de oportunidade)": 526329.2519717261,
+    "Selic + 6 p.p.": 437211.6037779531,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 366775.707806042
+   },
+   "payback": 16,
+   "payback_descontado_selic+6": 17,
+   "fluxo_anual": [
+    33273,
+    150849,
+    151242,
+    151242,
+    302484
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 12603.502398623648,
+   "parada": null,
+   "multiplo_caixa": 10.6633815826805
+  }
+ },
+ "Estresse: rampa lenta": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 0.6480960975458032,
+   "tir_nominal_aa": 0.7235788988134011,
+   "vpl": {
+    "Selic (custo de oportunidade)": 176127.21411245668,
+    "Selic + 6 p.p.": 139583.54263875104,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 110206.87118451773
+   },
+   "payback": 25,
+   "payback_descontado_selic+6": 28,
+   "fluxo_anual": [
+    -2541,
+    70181,
+    85996,
+    85996,
+    85996
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 7166.359249205296,
+   "parada": null,
+   "multiplo_caixa": 4.400393715440855
+  },
+  "com_giro": {
+   "tir_real_aa": 0.49997182790666606,
+   "tir_nominal_aa": 0.5686705376247914,
+   "vpl": {
+    "Selic (custo de oportunidade)": 167206.09889840745,
+    "Selic + 6 p.p.": 126791.5993507024,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 94550.58668139206
+   },
+   "payback": 29,
+   "payback_descontado_selic+6": 34,
+   "fluxo_anual": [
+    -2541,
+    70181,
+    85996,
+    85996,
+    111996
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 7166.359249205296,
+   "parada": null,
+   "multiplo_caixa": 3.5162913494262327
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 0.6991735743106839,
+   "tir_nominal_aa": 0.7769957240141134,
+   "vpl": {
+    "Selic (custo de oportunidade)": 232616.48670564592,
+    "Selic + 6 p.p.": 183269.85619954517,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 144419.2317485978
+   },
+   "payback": 25,
+   "payback_descontado_selic+6": 28,
+   "fluxo_anual": [
+    -2541,
+    70181,
+    85996,
+    85996,
+    171993
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 7166.359249205296,
+   "parada": null,
+   "multiplo_caixa": 5.5625060261227945
+  }
+ },
+ "Estresse: faturamento -25%": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 0.5550942463445103,
+   "tir_nominal_aa": 0.626317562827089,
+   "vpl": {
+    "Selic (custo de oportunidade)": 144389.69393031087,
+    "Selic + 6 p.p.": 112025.28439460232,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 86002.53423400478
+   },
+   "payback": 27,
+   "payback_descontado_selic+6": 31,
+   "fluxo_anual": [
+    -14797,
+    72307,
+    75908,
+    75908,
+    75908
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 6325.706549395978,
+   "parada": null,
+   "multiplo_caixa": 3.8545447620312663
+  },
+  "com_giro": {
+   "tir_real_aa": 0.42640273311732413,
+   "tir_nominal_aa": 0.49173197829409765,
+   "vpl": {
+    "Selic (custo de oportunidade)": 135468.57871626166,
+    "Selic + 6 p.p.": 99233.34110655366,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 70346.2497308791
+   },
+   "payback": 31,
+   "payback_descontado_selic+6": 37,
+   "fluxo_anual": [
+    -14797,
+    72307,
+    75908,
+    75908,
+    101908
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 6325.706549395978,
+   "parada": null,
+   "multiplo_caixa": 3.1123631239031373
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 0.6086411340810021,
+   "tir_nominal_aa": 0.6823168980219121,
+   "vpl": {
+    "Selic (custo de oportunidade)": 194252.46932117312,
+    "Selic + 6 p.p.": 150586.95709348732,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 116201.59986338938
+   },
+   "payback": 27,
+   "payback_descontado_selic+6": 31,
+   "fluxo_anual": [
+    -14797,
+    72307,
+    75908,
+    75908,
+    151817
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 6325.706549395978,
+   "parada": null,
+   "multiplo_caixa": 4.880335013284668
+  }
+ },
+ "Estresse: obra +20%": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.3299846811773035,
+   "tir_nominal_aa": 1.4366979795752242,
+   "vpl": {
+    "Selic (custo de oportunidade)": 435156.79635664553,
+    "Selic + 6 p.p.": 365307.3079198379,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 308930.1394117806
+   },
+   "payback": 17,
+   "payback_descontado_selic+6": 18,
+   "fluxo_anual": [
+    32450,
+    157873,
+    159079,
+    159079,
+    159079
+   ],
+   "investimento": 88800.0,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 7.517580229897867
+  },
+  "com_giro": {
+   "tir_real_aa": 1.0530737453782262,
+   "tir_nominal_aa": 1.1471045229165489,
+   "vpl": {
+    "Selic (custo de oportunidade)": 426235.6811425963,
+    "Selic + 6 p.p.": 352515.3646317892,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 293273.8549086549
+   },
+   "payback": 19,
+   "payback_descontado_selic+6": 20,
+   "fluxo_anual": [
+    32450,
+    157873,
+    159079,
+    159079,
+    185079
+   ],
+   "investimento": 114800.0,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 6.041473209189291
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.3601933531811912,
+   "tir_nominal_aa": 1.46829020875689,
+   "vpl": {
+    "Selic (custo de oportunidade)": 539652.7863758223,
+    "Selic + 6 p.p.": 446119.90075846046,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 372217.45616982324
+   },
+   "payback": 17,
+   "payback_descontado_selic+6": 18,
+   "fluxo_anual": [
+    32450,
+    157873,
+    159079,
+    159079,
+    318158
+   ],
+   "investimento": 88800.0,
+   "lucro_mes_60": 13256.60200958365,
+   "parada": null,
+   "multiplo_caixa": 9.309012933895659
+  }
+ },
+ "Estresse: sem aumento de preço": {
+  "sem_valor_terminal": {
+   "tir_real_aa": 1.2884871270048102,
+   "tir_nominal_aa": 1.3932998374216305,
+   "vpl": {
+    "Selic (custo de oportunidade)": 365383.2285324113,
+    "Selic + 6 p.p.": 306305.94052034477,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 258621.3360646683
+   },
+   "payback": 17,
+   "payback_descontado_selic+6": 18,
+   "fluxo_anual": [
+    23436,
+    134070,
+    134442,
+    134442,
+    134442
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 11203.5353592108,
+   "parada": null,
+   "multiplo_caixa": 7.5788275679240344
+  },
+  "com_giro": {
+   "tir_real_aa": 0.9892889136716772,
+   "tir_nominal_aa": 1.08039834591784,
+   "vpl": {
+    "Selic (custo de oportunidade)": 356462.1133183621,
+    "Selic + 6 p.p.": 293513.9972322961,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 242965.05156154267
+   },
+   "payback": 19,
+   "payback_descontado_selic+6": 21,
+   "fluxo_anual": [
+    23436,
+    134070,
+    134442,
+    134442,
+    160442
+   ],
+   "investimento": 100000,
+   "lucro_mes_60": 11203.5353592108,
+   "parada": null,
+   "multiplo_caixa": 5.868332400263785
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": 1.3195586735708615,
+   "tir_nominal_aa": 1.425794460820407,
+   "vpl": {
+    "Selic (custo de oportunidade)": 453695.7929610053,
+    "Selic + 6 p.p.": 374602.9853197948,
+    "Selic + 12 p.p. (risco de pequeno negócio)": 312107.2663638291
+   },
+   "payback": 17,
+   "payback_descontado_selic+6": 18,
+   "fluxo_anual": [
+    23436,
+    134070,
+    134442,
+    134442,
+    268885
+   ],
+   "investimento": 74000,
+   "lucro_mes_60": 11203.5353592108,
+   "parada": null,
+   "multiplo_caixa": 9.395617085633894
+  }
+ },
+ "Estresse: tudo junto": {
+  "sem_valor_terminal": {
+   "tir_real_aa": null,
+   "tir_nominal_aa": null,
+   "vpl": {
+    "Selic (custo de oportunidade)": -175247.14299007435,
+    "Selic + 6 p.p.": -167667.69954035513,
+    "Selic + 12 p.p. (risco de pequeno negócio)": -161487.22933997517
+   },
+   "payback": null,
+   "payback_descontado_selic+6": null,
+   "fluxo_anual": [
+    -37511,
+    -16082,
+    -16082,
+    -16082,
+    -16082
+   ],
+   "investimento": 88800.0,
+   "lucro_mes_60": -1340.1839587442882,
+   "parada": 6,
+   "multiplo_caixa": -1.1468468109231225
+  },
+  "com_giro": {
+   "tir_real_aa": -0.5155468960714449,
+   "tir_nominal_aa": -0.493358943911517,
+   "vpl": {
+    "Selic (custo de oportunidade)": -184168.25820412356,
+    "Selic + 6 p.p.": -180459.64282840377,
+    "Selic + 12 p.p. (risco de pequeno negócio)": -177143.5138431008
+   },
+   "payback": null,
+   "payback_descontado_selic+6": null,
+   "fluxo_anual": [
+    -37511,
+    -16082,
+    -16082,
+    -16082,
+    9918
+   ],
+   "investimento": 114800.0,
+   "lucro_mes_60": -1340.1839587442882,
+   "parada": 6,
+   "multiplo_caixa": -0.6606271499126591
+  },
+  "valor_terminal_12m": {
+   "tir_real_aa": null,
+   "tir_nominal_aa": null,
+   "vpl": {
+    "Selic (custo de oportunidade)": -185811.22641624656,
+    "Selic + 6 p.p.": -175837.49603183605,
+    "Selic + 12 p.p. (risco de pequeno negócio)": -167885.29776277163
+   },
+   "payback": null,
+   "payback_descontado_selic+6": null,
+   "fluxo_anual": [
+    -37511,
+    -16082,
+    -16082,
+    -16082,
+    -32164
+   ],
+   "investimento": 88800.0,
+   "lucro_mes_60": -1340.1839587442882,
+   "parada": 6,
+   "multiplo_caixa": -1.3279527512939722
+  }
+ }
+}
