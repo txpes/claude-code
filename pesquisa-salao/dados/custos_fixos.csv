@@ -1,0 +1,15 @@
+linha,fase,valor_mes,minimo,maximo,metodo,fonte_ids
+Aluguel + condomínio + IPTU,1,5200,4500,6500,"estimativa: FipeZAP Rio ago/2026 R$ 57,51/m² × 70 m² + condomínio/IPTU dos anúncios (R$ 19–45/m²); plano R$ 4.200",S07;S08;S10;S13
+Energia elétrica,1,2160,1728,2592,"estimativa: 1,848 kWh/mês (Secadores 445 + AC 858 + iluminação 240 + aquecedor 143 + autoclave 62 + outros 100) × R$ 1.169/kWh (Light R$ 0,8806 sem impostos, com ICMS 20% e PIS/COFINS ~4,65% por dentro). Reajuste 2026 do B3 (+15,12% por liminar) pode ou não estar no valor-base — conferir na fatura/resolução ANEEL",S52;S53
+Sistema de gestão,1,110,75,160,Trinks R$ 110/mês mensal (1–2 prof.); 3+ prof. sob consulta,S49;S48
+Homologação dos contratos de parceria (rateio mensal),1,150,150,200,"CCT Rio cl. 18ª: R$ 150 por contrato em cada sindicato (laboral e patronal), validade 1 ano; 6 contratos (8 na fase 2)",S27
+Contador,1,a confirmar,300,600,faixa nacional ME de serviços R$ 249–349 (SP) + 10–25% no Rio; salão-parceiro exige mais trabalho — cotar 3,S68;S69
+ECAD,1,a confirmar,,,"valor depende de área, região e uso — simulador do ECAD",S34;S78
+Água e esgoto,1,a confirmar,,,tarifa da concessionária a confirmar,
+Internet e telefone,1,a confirmar,,,,
+Marketing (recorrente),1,1200,,,valor do plano; ver F13,
+Limpeza / lavanderia / manutenção,1,a confirmar,,,,
+Coleta de perfurocortantes,1,a confirmar,,,,
+Seguro empresarial e RC,1,a confirmar,,,,
+Seguro-fiança,1,a confirmar,,,,
+"Taxas anuais (alvará, licença sanitária, TCL/TFE)",1,a confirmar,,,"licença sanitária anual, renovação até 30/abr (Decreto 23.915/2004)",S30

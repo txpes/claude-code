@@ -1,0 +1,72 @@
+{
+  "renda_media_responsavel_cidade": 4377.719387524551,
+  "gasto_ano_domicilio_2026": 790.0145279999999,
+  "n_setores_cidade": 13782,
+  "regioes": {
+    "R1 Tijuca (Afonso Pena)": {
+      "lat": -22.9184484,
+      "lon": -43.2177451,
+      "pop_total": 51806,
+      "mulheres": 29164,
+      "mulheres_20_69": 19995,
+      "pct_60_mais": 0.3025721754516918,
+      "domicilios": 22662,
+      "renda_media_responsavel": 8345.112875277684,
+      "mercado_ano_sem_ajuste": 17903662.422403205,
+      "mercado_ano_ajustado_renda": 34129205.316722535,
+      "gasto_ano_por_mulher_20_69_sem_ajuste": 895.3852539179667,
+      "gasto_ano_por_mulher_20_69_ajustado": 1706.845585420177,
+      "fatia_necessaria_sem_ajuste": 0.05250322407910012,
+      "fatia_necessaria_ajustada": 0.02754239342160778,
+      "bairros_no_raio": {
+        "Tijuca": 32441,
+        "Maracanã": 8218,
+        "Rio Comprido": 6719,
+        "Praça da Bandeira": 4428
+      }
+    },
+    "R2 Copacabana (Cardeal Arcoverde–Siqueira Campos)": {
+      "lat": -22.9655657,
+      "lon": -43.184354799999994,
+      "pop_total": 56322,
+      "mulheres": 32018,
+      "mulheres_20_69": 21952,
+      "pct_60_mais": 0.34384967876939837,
+      "domicilios": 28170,
+      "renda_media_responsavel": 9455.125613055943,
+      "mercado_ano_sem_ajuste": 22254712.377604973,
+      "mercado_ano_ajustado_renda": 48066374.83716647,
+      "gasto_ano_por_mulher_20_69_sem_ajuste": 1013.7811405666216,
+      "gasto_ano_por_mulher_20_69_ajustado": 2189.593982547328,
+      "fatia_necessaria_sem_ajuste": 0.042238245278151815,
+      "fatia_necessaria_ajustada": 0.019556290716419115,
+      "bairros_no_raio": {
+        "Copacabana": 54812,
+        "Botafogo": 1510
+      }
+    },
+    "R3 Humaitá (Largo dos Leões) — referência": {
+      "lat": -22.9533219,
+      "lon": -43.1966495,
+      "pop_total": 31439,
+      "mulheres": 17531,
+      "mulheres_20_69": 12076,
+      "pct_60_mais": 0.26606906102152394,
+      "domicilios": 14166,
+      "renda_media_responsavel": 10459.946427061159,
+      "mercado_ano_sem_ajuste": 11191277.892761456,
+      "mercado_ano_ajustado_renda": 26739988.758126453,
+      "gasto_ano_por_mulher_20_69_sem_ajuste": 926.7753995588563,
+      "gasto_ano_por_mulher_20_69_ajustado": 2214.3998212698298,
+      "fatia_necessaria_sem_ajuste": 0.08399398254671114,
+      "fatia_necessaria_ajustada": 0.03515334312600741,
+      "bairros_no_raio": {
+        "Botafogo": 20828,
+        "Humaitá": 10527,
+        "Jardim Botânico": 83,
+        "Santa Teresa": 0,
+        "Alto da Boa Vista": 0
+      }
+    }
+  }
+}

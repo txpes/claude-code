@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_418f45f63f47648c1d93874593ae0447 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style='position:fixed;bottom:20px;left:20px;z-index:9999;background:#fff;padding:8px 10px;border:1px solid #999;font:12px sans-serif'><b>Salão da Manon — F2/F3</b><br>Círculos: raio de 800 m<br>Azul: metrô · Verde: Largo dos Leões<br>Vermelho: esmalteria · Laranja: salão · Roxo: cílios/sobrancelha<br>Concorrentes sem número de porta geocodificável não aparecem (ver concorrentes.csv)</div>
+    
+            <div class="folium-map" id="map_418f45f63f47648c1d93874593ae0447" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_418f45f63f47648c1d93874593ae0447 = L.map(
+                "map_418f45f63f47648c1d93874593ae0447",
+                {
+                    center: [-22.94, -43.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b37ad9ae91c94b43cdd23637accfeb66 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b37ad9ae91c94b43cdd23637accfeb66.addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var circle_marker_fbefd09f12963371f6ab022227ffcf53 = L.circleMarker(
+                [-22.9184484, -43.2177451],
+                {"bubblingMouseEvents": true, "color": "#1f4e9c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f4e9c", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            circle_marker_fbefd09f12963371f6ab022227ffcf53.bindTooltip(
+                `<div>
+                     Metrô Afonso Pena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5522c21cdcb72700307b689f6fa65f9f = L.circleMarker(
+                [-22.9241676, -43.2325745],
+                {"bubblingMouseEvents": true, "color": "#1f4e9c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f4e9c", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            circle_marker_5522c21cdcb72700307b689f6fa65f9f.bindTooltip(
+                `<div>
+                     Metrô Saens Peña
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef5d426343f20b4e2f334ca966cb4729 = L.circleMarker(
+                [-22.9638248, -43.1813721],
+                {"bubblingMouseEvents": true, "color": "#1f4e9c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f4e9c", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            circle_marker_ef5d426343f20b4e2f334ca966cb4729.bindTooltip(
+                `<div>
+                     Metrô Cardeal Arcoverde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f726d90fc5f93edd9d2c1220c6f7962d = L.circleMarker(
+                [-22.9673066, -43.1873375],
+                {"bubblingMouseEvents": true, "color": "#1f4e9c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f4e9c", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            circle_marker_f726d90fc5f93edd9d2c1220c6f7962d.bindTooltip(
+                `<div>
+                     Metrô Siqueira Campos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_0a7b313b0467bf120f7ba6c0309075f9 = L.circle(
+                [-22.9184484, -43.2177451],
+                {"bubblingMouseEvents": true, "color": "#1f4e9c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f4e9c", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            circle_0a7b313b0467bf120f7ba6c0309075f9.bindTooltip(
+                `<div>
+                     R1 Tijuca (Afonso Pena): 19,995 mulheres 20–69; renda média resp. R$ 8,345; fatia necessária 2.8%–5.3%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_e26c08a5f5c53557c3342b72822d1e29 = L.circle(
+                [-22.9655657, -43.184354799999994],
+                {"bubblingMouseEvents": true, "color": "#1f4e9c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f4e9c", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            circle_e26c08a5f5c53557c3342b72822d1e29.bindTooltip(
+                `<div>
+                     R2 Copacabana (Cardeal Arcoverde–Siqueira Campos): 21,952 mulheres 20–69; renda média resp. R$ 9,455; fatia necessária 2.0%–4.2%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_5a76690d8feed8d2542ae9f4dbd6ca55 = L.circle(
+                [-22.9533219, -43.1966495],
+                {"bubblingMouseEvents": true, "color": "#1f4e9c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f4e9c", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            circle_5a76690d8feed8d2542ae9f4dbd6ca55.bindTooltip(
+                `<div>
+                     R3 Humaitá (Largo dos Leões) — referência: 12,076 mulheres 20–69; renda média resp. R$ 10,460; fatia necessária 3.5%–8.4%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a21e99d4497f9bf7d6397581e9be157d = L.marker(
+                [-22.9533219, -43.1966495],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_ccf7245c78986c5bf1118c32dc683249 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a21e99d4497f9bf7d6397581e9be157d.bindTooltip(
+                `<div>
+                     Largo dos Leões (casa — referência de deslocamento)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a21e99d4497f9bf7d6397581e9be157d.setIcon(icon_ccf7245c78986c5bf1118c32dc683249);
+            
+    
+            var marker_2b573d1b5a8ce5e8916d2bc51412b554 = L.marker(
+                [-22.9219545, -43.2352264],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_53c99bb2a44daf562e57b7620c4ec67d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f80892ebade261a561a3004d2c2365e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d380cc2a3e0ca5a6cd3c551f2e912247 = $(`<div id="html_d380cc2a3e0ca5a6cd3c551f2e912247" style="width: 100.0%; height: 100.0%;"><b>Unhas Cariocas Shopping Tijuca</b><br>Avenida Maracanã 987, Rio de Janeiro<br>Distância em linha reta do ponto: 1834 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_7f80892ebade261a561a3004d2c2365e.setContent(html_d380cc2a3e0ca5a6cd3c551f2e912247);
+            
+        
+
+        marker_2b573d1b5a8ce5e8916d2bc51412b554.bindPopup(popup_7f80892ebade261a561a3004d2c2365e)
+        ;
+
+        
+    
+    
+            marker_2b573d1b5a8ce5e8916d2bc51412b554.bindTooltip(
+                `<div>
+                     C02 Unhas Cariocas Shopping Tijuca (esmalteria)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2b573d1b5a8ce5e8916d2bc51412b554.setIcon(icon_53c99bb2a44daf562e57b7620c4ec67d);
+            
+    
+            var marker_09bee02ff363816fedbf2ebf07c2875e = L.marker(
+                [-22.9219545, -43.2352264],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_1b27d71f90050995cd95403cf84f419b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4696569ff346d1690a4100baf08d98a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a9253cd2b2f856ba89fa0999d6fa3f6d = $(`<div id="html_a9253cd2b2f856ba89fa0999d6fa3f6d" style="width: 100.0%; height: 100.0%;"><b>Werner Shopping Tijuca</b><br>Avenida Maracanã, 987, LOJA 42 E 43, Tijuca, Rio de Janeiro, RJ - 20511-000<br>Nota Trinks 5.0 (5 avaliações). Horário: Aberto todos os dias: 09:00 às 23:00. Distância em linha reta do ponto: 1834 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_f4696569ff346d1690a4100baf08d98a.setContent(html_a9253cd2b2f856ba89fa0999d6fa3f6d);
+            
+        
+
+        marker_09bee02ff363816fedbf2ebf07c2875e.bindPopup(popup_f4696569ff346d1690a4100baf08d98a)
+        ;
+
+        
+    
+    
+            marker_09bee02ff363816fedbf2ebf07c2875e.bindTooltip(
+                `<div>
+                     C03 Werner Shopping Tijuca (salão)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09bee02ff363816fedbf2ebf07c2875e.setIcon(icon_1b27d71f90050995cd95403cf84f419b);
+            
+    
+            var marker_dd6216a84a56f96fe677d6622cd0a720 = L.marker(
+                [-22.9299221, -43.2372578],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_9b2b2d3c3e765f5d64b04517d481b349 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab98638613c6eaf5ad3475ca3da9928c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_bb1aa8ba5303e73c6858b531cf00985d = $(`<div id="html_bb1aa8ba5303e73c6858b531cf00985d" style="width: 100.0%; height: 100.0%;"><b>Beleza Tijuca</b><br>Rua Conde de Bonfim (Em frente a Praça Saens Penã), 310, (Em frente a Praça Saens Penã), Tijuca, Rio de Janeiro, RJ - 20520-054<br>Horário: Domingo: Fechado Segunda-Feira a Sábado: 09:00 às 19:00. Distância em linha reta do ponto: 2369 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_ab98638613c6eaf5ad3475ca3da9928c.setContent(html_bb1aa8ba5303e73c6858b531cf00985d);
+            
+        
+
+        marker_dd6216a84a56f96fe677d6622cd0a720.bindPopup(popup_ab98638613c6eaf5ad3475ca3da9928c)
+        ;
+
+        
+    
+    
+            marker_dd6216a84a56f96fe677d6622cd0a720.bindTooltip(
+                `<div>
+                     C04 Beleza Tijuca (salão)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd6216a84a56f96fe677d6622cd0a720.setIcon(icon_9b2b2d3c3e765f5d64b04517d481b349);
+            
+    
+            var marker_97d92709ec62d13fefc6094ea66655c4 = L.marker(
+                [-22.9258941, -43.2402259],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_68e49c69e1d97ba75c8eaf9c89dc8508 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93409c475500864aed1d169024cd4b39 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3df1a705d24152c099c8180fc7ddbf91 = $(`<div id="html_3df1a705d24152c099c8180fc7ddbf91" style="width: 100.0%; height: 100.0%;"><b>Barcellos Rocha Concept</b><br>Rua José Higino, 101, LOJA A AO LADO DO ESTACIONAMENTO DO EXTRA, Tijuca, Rio de Janeiro, RJ - 20520-201<br>Nota Trinks 5.0 (25 avaliações). Horário: Domingo a Segunda-Feira: Fechado Terça-Feira a Sábado: 09:00 às 20:00. Distância em linha reta do ponto: 2448 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_93409c475500864aed1d169024cd4b39.setContent(html_3df1a705d24152c099c8180fc7ddbf91);
+            
+        
+
+        marker_97d92709ec62d13fefc6094ea66655c4.bindPopup(popup_93409c475500864aed1d169024cd4b39)
+        ;
+
+        
+    
+    
+            marker_97d92709ec62d13fefc6094ea66655c4.bindTooltip(
+                `<div>
+                     C06 Barcellos Rocha Concept (salão)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97d92709ec62d13fefc6094ea66655c4.setIcon(icon_68e49c69e1d97ba75c8eaf9c89dc8508);
+            
+    
+            var marker_89b10774fc90d2cff4944625f29a9524 = L.marker(
+                [-22.9189859, -43.2135738],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_465c30a33efe125ec8ae832fafa00277 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_399ed0e75fbd0f2d95cfae7ef0078a30 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fc3ba8b3c53f5679592add48b0231fb1 = $(`<div id="html_fc3ba8b3c53f5679592add48b0231fb1" style="width: 100.0%; height: 100.0%;"><b>Studio 822</b><br>Rua Haddock Lobo, 408, Tijuca, Rio de Janeiro, RJ - 20260-142<br>Nota Trinks 4.0 (4 avaliações). Horário: Domingo: Fechado Segunda-Feira a Sábado: 10:00 às 19:00. Distância em linha reta do ponto: 432 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_399ed0e75fbd0f2d95cfae7ef0078a30.setContent(html_fc3ba8b3c53f5679592add48b0231fb1);
+            
+        
+
+        marker_89b10774fc90d2cff4944625f29a9524.bindPopup(popup_399ed0e75fbd0f2d95cfae7ef0078a30)
+        ;
+
+        
+    
+    
+            marker_89b10774fc90d2cff4944625f29a9524.bindTooltip(
+                `<div>
+                     C08 Studio 822 (salão)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89b10774fc90d2cff4944625f29a9524.setIcon(icon_465c30a33efe125ec8ae832fafa00277);
+            
+    
+            var marker_4a450afb3f3332508553a46e87e664bf = L.marker(
+                [-22.9321567, -43.2404825],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_fb4818f77d633baa86f43288b21490c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_871ab25e2911dbf71ccd2ef409ff9478 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_159122456cd0acd58417701208f1cf49 = $(`<div id="html_159122456cd0acd58417701208f1cf49" style="width: 100.0%; height: 100.0%;"><b>Salão Sotto Hair</b><br>Rua Conde de Bonfim 711, Tijuca, Rio de Janeiro<br>Distância em linha reta do ponto: 2781 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_871ab25e2911dbf71ccd2ef409ff9478.setContent(html_159122456cd0acd58417701208f1cf49);
+            
+        
+
+        marker_4a450afb3f3332508553a46e87e664bf.bindPopup(popup_871ab25e2911dbf71ccd2ef409ff9478)
+        ;
+
+        
+    
+    
+            marker_4a450afb3f3332508553a46e87e664bf.bindTooltip(
+                `<div>
+                     C13 Salão Sotto Hair (salão)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a450afb3f3332508553a46e87e664bf.setIcon(icon_fb4818f77d633baa86f43288b21490c0);
+            
+    
+            var marker_e7e109ebcd542c448881a9103dd87fa3 = L.marker(
+                [-22.9219545, -43.2352264],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_be2d97d668ebf30a14eb55e16dcf87f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da2e93a32906f57a377e40afe6c05b55 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9829c9ff7d9c19b1f8955e73a3d60225 = $(`<div id="html_9829c9ff7d9c19b1f8955e73a3d60225" style="width: 100.0%; height: 100.0%;"><b>Sense Spa Express Shopping Tijuca</b><br>Rua Barata Ribeiro, 363, LOJA A, Copacabana, Rio de Janeiro, RJ - 22040-001<br>Nota Trinks 4.0 (1 avaliações). Horário: Domingo: 11:00 às 18:00 Segunda-Feira a Sexta-Feira: 11:00 às 21:00 Sábado: 09:00 às 21:00. Distância em linha reta do ponto: 1834 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_da2e93a32906f57a377e40afe6c05b55.setContent(html_9829c9ff7d9c19b1f8955e73a3d60225);
+            
+        
+
+        marker_e7e109ebcd542c448881a9103dd87fa3.bindPopup(popup_da2e93a32906f57a377e40afe6c05b55)
+        ;
+
+        
+    
+    
+            marker_e7e109ebcd542c448881a9103dd87fa3.bindTooltip(
+                `<div>
+                     C14 Sense Spa Express Shopping Tijuca (spa/estética)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7e109ebcd542c448881a9103dd87fa3.setIcon(icon_be2d97d668ebf30a14eb55e16dcf87f5);
+            
+    
+            var marker_0fe3d6fa85dc8ff4365223c706b54222 = L.marker(
+                [-22.9219545, -43.2352264],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_94b6aff04af715a7a4075103a0e0e108 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8053610777debab5b288a9e5ad00a995 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_29b40e026887842884bf47e6e6608b05 = $(`<div id="html_29b40e026887842884bf47e6e6608b05" style="width: 100.0%; height: 100.0%;"><b>Spa das Sobrancelhas Shopping Tijuca</b><br>Avenida Maracanã, 987,  2 Torre Sala 703, Tijuca, Rio de Janeiro, RJ - 20511-000<br>Nota Trinks 5.0 (3 avaliações). Horário: Domingo: Fechado Segunda-Feira a Sexta-Feira: 11:00 às 20:00 Sábado: 11:00 às 17:00. Distância em linha reta do ponto: 1834 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_8053610777debab5b288a9e5ad00a995.setContent(html_29b40e026887842884bf47e6e6608b05);
+            
+        
+
+        marker_0fe3d6fa85dc8ff4365223c706b54222.bindPopup(popup_8053610777debab5b288a9e5ad00a995)
+        ;
+
+        
+    
+    
+            marker_0fe3d6fa85dc8ff4365223c706b54222.bindTooltip(
+                `<div>
+                     C15 Spa das Sobrancelhas Shopping Tijuca (estúdio de sobrancelha)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fe3d6fa85dc8ff4365223c706b54222.setIcon(icon_94b6aff04af715a7a4075103a0e0e108);
+            
+    
+            var marker_040ea060079bcea1f5ae26088b83adeb = L.marker(
+                [-22.9645467, -43.1739241],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_0d21a16137905effb3ecb2bd956cdc39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_baa0b3bfbf761c8c2d444d9769562c6a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_86270d0251e9d5bffbf2584721940834 = $(`<div id="html_86270d0251e9d5bffbf2584721940834" style="width: 100.0%; height: 100.0%;"><b>Cor e Unha Leme</b><br>Avenida Princesa Isabel, 300, Bloco A Loja D, Copacabana, Rio de Janeiro, RJ - 22011-010<br>Nota Trinks 5.0 (3 avaliações). Horário: Domingo: 09:30 às 19:30 Segunda-Feira: 09:00 às 19:30 Terça-Feira a Sábado: 09:30 às 19:30. Distância em linha reta do ponto: 1075 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_baa0b3bfbf761c8c2d444d9769562c6a.setContent(html_86270d0251e9d5bffbf2584721940834);
+            
+        
+
+        marker_040ea060079bcea1f5ae26088b83adeb.bindPopup(popup_baa0b3bfbf761c8c2d444d9769562c6a)
+        ;
+
+        
+    
+    
+            marker_040ea060079bcea1f5ae26088b83adeb.bindTooltip(
+                `<div>
+                     C17 Cor e Unha Leme (esmalteria)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_040ea060079bcea1f5ae26088b83adeb.setIcon(icon_0d21a16137905effb3ecb2bd956cdc39);
+            
+    
+            var marker_3da9d01399bb321f3f28960377244d8d = L.marker(
+                [-22.9634647, -43.1778411],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_e7c0283dc2750ca182df43ee872c4f91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_036a9225faed6acfc20ff7b34b39da10 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c07f28f3ea5ab1b162217ca42d32f35a = $(`<div id="html_c07f28f3ea5ab1b162217ca42d32f35a" style="width: 100.0%; height: 100.0%;"><b>Sense Spa Express Copacabana</b><br>Rua Barata Ribeiro, 363, LOJA A, Copacabana, Rio de Janeiro, RJ - 22040-001<br>Nota Trinks 4.0 (1 avaliações). Horário: Domingo: 11:00 às 18:00 Segunda-Feira a Sexta-Feira: 11:00 às 21:00 Sábado: 09:00 às 21:00. Distância em linha reta do ponto: 707 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_036a9225faed6acfc20ff7b34b39da10.setContent(html_c07f28f3ea5ab1b162217ca42d32f35a);
+            
+        
+
+        marker_3da9d01399bb321f3f28960377244d8d.bindPopup(popup_036a9225faed6acfc20ff7b34b39da10)
+        ;
+
+        
+    
+    
+            marker_3da9d01399bb321f3f28960377244d8d.bindTooltip(
+                `<div>
+                     C18 Sense Spa Express Copacabana (spa/estética)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3da9d01399bb321f3f28960377244d8d.setIcon(icon_e7c0283dc2750ca182df43ee872c4f91);
+            
+    
+            var marker_33edbd79c61b5c4afb14c630d673b9c0 = L.marker(
+                [-22.9718481, -43.1869093],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_afc2aaeaec8d1e67edbfd39221a56c45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cbf878ee29077ef5e2f1b8cda56c1b1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4f1100cddbc8b4cd34103397926f308f = $(`<div id="html_4f1100cddbc8b4cd34103397926f308f" style="width: 100.0%; height: 100.0%;"><b>My Face Studio Copacabana</b><br>Rua Rua Santa Clara, 105, Copacabana, Rio de Janeiro, RJ - 22041-011<br>Nota Trinks 5.0 (1 avaliações). Horário: Domingo: Fechado Segunda-Feira a Sexta-Feira: 09:00 às 20:00 Sábado: 09:00 às 18:00. Distância em linha reta do ponto: 742 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_7cbf878ee29077ef5e2f1b8cda56c1b1.setContent(html_4f1100cddbc8b4cd34103397926f308f);
+            
+        
+
+        marker_33edbd79c61b5c4afb14c630d673b9c0.bindPopup(popup_7cbf878ee29077ef5e2f1b8cda56c1b1)
+        ;
+
+        
+    
+    
+            marker_33edbd79c61b5c4afb14c630d673b9c0.bindTooltip(
+                `<div>
+                     C19 My Face Studio Copacabana (estética)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_33edbd79c61b5c4afb14c630d673b9c0.setIcon(icon_afc2aaeaec8d1e67edbfd39221a56c45);
+            
+    
+            var marker_5672e7749f6fab26052d02f889d26d67 = L.marker(
+                [-22.9671598, -43.1834588],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_2a91664f700e5dd0d161687e40fbb7ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d93b6e574c52fb9b58b491f72fd8affc = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d7731e94fa22f7f76e2e3535ea81bf61 = $(`<div id="html_d7731e94fa22f7f76e2e3535ea81bf61" style="width: 100.0%; height: 100.0%;"><b>Studio Caroline Rosa Copacabana</b><br>Rua Rua Barata Ribeiro, 774, Sala 505, Copacabana, Rio de Janeiro, RJ - 22051-002<br>Nota Trinks 5.0 (1 avaliações). Horário: Domingo a Segunda-Feira: Fechado Terça-Feira a Sexta-Feira: 10:00 às 19:00 Sábado: 10:00 às 17:00. Distância em linha reta do ponto: 199 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_d93b6e574c52fb9b58b491f72fd8affc.setContent(html_d7731e94fa22f7f76e2e3535ea81bf61);
+            
+        
+
+        marker_5672e7749f6fab26052d02f889d26d67.bindPopup(popup_d93b6e574c52fb9b58b491f72fd8affc)
+        ;
+
+        
+    
+    
+            marker_5672e7749f6fab26052d02f889d26d67.bindTooltip(
+                `<div>
+                     C20 Studio Caroline Rosa Copacabana (estúdio)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5672e7749f6fab26052d02f889d26d67.setIcon(icon_2a91664f700e5dd0d161687e40fbb7ab);
+            
+    
+            var marker_3973a2133d9a616cb2be58e6999aa5a2 = L.marker(
+                [-22.967873, -43.184887],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_2c60f145b08b0dce25b7ba1c7fe751bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1343eb8b722d240bf404a890d8ba6f5 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_722ae4dd4b30dd2ebae883b585febea2 = $(`<div id="html_722ae4dd4b30dd2ebae883b585febea2" style="width: 100.0%; height: 100.0%;"><b>Clínica dos Pés Copacabana (podologia)</b><br>Rua Barata Ribeiro 370, Copacabana, Rio de Janeiro<br>Distância em linha reta do ponto: 261 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_f1343eb8b722d240bf404a890d8ba6f5.setContent(html_722ae4dd4b30dd2ebae883b585febea2);
+            
+        
+
+        marker_3973a2133d9a616cb2be58e6999aa5a2.bindPopup(popup_f1343eb8b722d240bf404a890d8ba6f5)
+        ;
+
+        
+    
+    
+            marker_3973a2133d9a616cb2be58e6999aa5a2.bindTooltip(
+                `<div>
+                     C21 Clínica dos Pés Copacabana (podologia) (podologia)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3973a2133d9a616cb2be58e6999aa5a2.setIcon(icon_2c60f145b08b0dce25b7ba1c7fe751bc);
+            
+    
+            var marker_1b04e1c662d00597eee27b2ebbef2497 = L.marker(
+                [-22.9475279, -43.1834107],
+                {
+}
+            ).addTo(map_418f45f63f47648c1d93874593ae0447);
+        
+    
+            var icon_a3782e8a059d765da25d46ca7c6fb071 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "scissors",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_389f51e0147f35be84c7a0d1fa793947 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6204e585d912b22d8bedf67b228745dd = $(`<div id="html_6204e585d912b22d8bedf67b228745dd" style="width: 100.0%; height: 100.0%;"><b>Unhas Cariocas Botafogo Praia Shopping</b><br>Praia de Botafogo 400, Rio de Janeiro<br>Distância em linha reta do ponto: 1501 m. Nota Google e Instagram: a confirmar (Google Maps/Instagram não acessíveis por coleta automática).</div>`)[0];
+                popup_389f51e0147f35be84c7a0d1fa793947.setContent(html_6204e585d912b22d8bedf67b228745dd);
+            
+        
+
+        marker_1b04e1c662d00597eee27b2ebbef2497.bindPopup(popup_389f51e0147f35be84c7a0d1fa793947)
+        ;
+
+        
+    
+    
+            marker_1b04e1c662d00597eee27b2ebbef2497.bindTooltip(
+                `<div>
+                     C22 Unhas Cariocas Botafogo Praia Shopping (esmalteria)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b04e1c662d00597eee27b2ebbef2497.setIcon(icon_a3782e8a059d765da25d46ca7c6fb071);
+            
+</script>
+</html>

@@ -1,0 +1,30 @@
+concorrente_id,regiao,servico_codigo,preco,preco_a_partir_de,origem,data_coleta
+C01,R1,UNH05,205.0,n,site da rede (https://unidades.unhascariocas.com.br/rtb); item 'Alongamento De Fibra De Vidro',2026-11-03
+C01,R1,UNH05,255.0,n,site da rede (https://unidades.unhascariocas.com.br/rtb); item 'Alongamento Gel Moldado',2026-11-03
+C01,R1,UNH04,75.0,n,site da rede (https://unidades.unhascariocas.com.br/rtb); item 'Esmaltação Em Gel Mãos (Com Cutilagem)',2026-11-03
+C01,R1,UNH03,64.0,n,site da rede (https://unidades.unhascariocas.com.br/rtb); item 'Pé + Mão',2026-11-03
+C01,R1,UNH02,39.0,n,site da rede (https://unidades.unhascariocas.com.br/rtb); item 'Pedicure Tradicional',2026-11-03
+C01,R1,UNH06,70.0,n,site da rede (https://unidades.unhascariocas.com.br/rtb); item 'Spa Dos Pés',2026-11-03
+C01,R1,UNH06,90.0,n,site da rede (https://unidades.unhascariocas.com.br/rtb); item 'Spa Dos Pés Plus',2026-11-03
+C02,R1,UNH05,250.0,n,site da rede (https://unidades.unhascariocas.com.br/str); item 'Alongamento De Fibra De Vidro',2026-11-03
+C02,R1,UNH05,300.0,n,site da rede (https://unidades.unhascariocas.com.br/str); item 'Alongamento Gel Moldado',2026-11-03
+C02,R1,UNH04,85.0,n,site da rede (https://unidades.unhascariocas.com.br/str); item 'Esmaltação Em Gel Mãos (Com Cutilagem)',2026-11-03
+C02,R1,UNH03,81.0,n,site da rede (https://unidades.unhascariocas.com.br/str); item 'Pé + Mão',2026-11-03
+C02,R1,UNH02,47.0,n,site da rede (https://unidades.unhascariocas.com.br/str); item 'Pedicure Tradicional',2026-11-03
+C02,R1,UNH06,90.0,n,site da rede (https://unidades.unhascariocas.com.br/str); item 'Spa Dos Pés',2026-11-03
+C02,R1,UNH06,115.0,n,site da rede (https://unidades.unhascariocas.com.br/str); item 'Spa Dos Pés Plus',2026-11-03
+C22,R3,UNH05,240.0,n,site da rede (https://unidades.unhascariocas.com.br/rbp); item 'Alongamento De Fibra De Vidro',2026-11-03
+C22,R3,UNH05,265.0,n,site da rede (https://unidades.unhascariocas.com.br/rbp); item 'Alongamento Gel Moldado',2026-11-03
+C22,R3,UNH04,100.0,n,site da rede (https://unidades.unhascariocas.com.br/rbp); item 'Esmaltação Em Gel Mãos (Com Cutilagem)',2026-11-03
+C22,R3,UNH03,79.0,n,site da rede (https://unidades.unhascariocas.com.br/rbp); item 'Pé + Mão',2026-11-03
+C22,R3,UNH02,50.0,n,site da rede (https://unidades.unhascariocas.com.br/rbp); item 'Pedicure Tradicional',2026-11-03
+C22,R3,UNH06,80.0,n,site da rede (https://unidades.unhascariocas.com.br/rbp); item 'Spa Dos Pés',2026-11-03
+C22,R3,UNH06,100.0,n,site da rede (https://unidades.unhascariocas.com.br/rbp); item 'Spa Dos Pés Plus',2026-11-03
+C23,R1,CAB02,95,n,"Booksy (S19): Fernanda Araújo Studio, R. Dep. Soares Filho 34, Tijuca — 'Corte de cabelo com escova' R$ 95 (combina CAB01+CAB02; fora do raio de 800 m)",2026-11-03
+REF-S18,capitais,UNH01,35,n,"referência: mediana 6 capitais (Irrivio/Booksy, set/2026), P25–P75 R$ 30–40",2026-11-03
+REF-S18,capitais,UNH02,35,n,"referência: mediana 6 capitais, P25–P75 R$ 30–43",2026-11-03
+REF-S18,capitais,UNH03,60,n,"referência: mediana 6 capitais, P25–P75 R$ 43–70",2026-11-03
+REF-S18,capitais,UNH04,70,n,"referência: mediana 6 capitais, P25–P75 R$ 50–88",2026-11-03
+REF-S18,capitais,UNH05,155,n,"referência: mediana 6 capitais, P25–P75 R$ 120–180",2026-11-03
+REF-S25,RJ,EST01,75,n,"referência: Wiñk Brasil (RJ, bairro não informado), design com linha; sem data",2026-11-03
+REF-S25,RJ,EST03,310,n,"referência: Wiñk Brasil (RJ), extensão volume russo; sem data",2026-11-03

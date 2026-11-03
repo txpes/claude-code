@@ -1,0 +1,79 @@
+id,titulo,url,orgao_ou_site,tipo,data_acesso,usado_em
+S01,Censo Demográfico 2022 - Setores (camada IPP/Data.Rio),https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Hosted/Mapa_Rio_Camada_Censo_Demogr%C3%A1fico_Setores/FeatureServer/0,"IPP / Data.Rio (Prefeitura do Rio), dados IBGE",oficial,2026-11-03,F1
+S02,"População residente por sexo e faixa etária, segundo os bairros (Censo 2022)",https://www.data.rio/datasets/c454220b5dfb4cbaba9b7489333a8c09,IPP / Data.Rio,oficial,2026-11-03,F1
+S03,"Média e mediana do rendimento nominal médio mensal dos responsáveis, por bairro (Censo 2022)",https://www.data.rio/datasets/bbfbc40a1f164ccc8fef9f71fdd2d026,IPP / Data.Rio,oficial,2026-11-03,F1
+S04,"POF 2017-2018, Tabela 6715 (despesa média mensal familiar; itens 2.1.10.1 Cabeleireiro e 2.1.10.2 Manicuro e pedicuro; UF RJ)","https://apisidra.ibge.gov.br/values/t/6715/n3/33/v/all/p/all/c12190/103600,103601",IBGE / SIDRA,oficial,2026-11-03,F1
+S05,"IPCA mensal, série SGS 433 (fev/2018 a set/2026)",https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json,Banco Central do Brasil,oficial,2026-11-03,F1
+S06,Coordenadas de estações e endereços (Nominatim),https://nominatim.openstreetmap.org/,OpenStreetMap,mercado,2026-11-03,"F1,F2,mapa"
+S07,Índice FipeZAP Comercial — informes 2026,https://downloads.fipe.org.br/indices/fipezap/fipezap-202606-comercial.pdf,FIPE / DataZAP,mercado,2026-11-03,"F3,F10"
+S08,"FipeZAP Comercial agosto/2026: aluguel sobe 11,21% (Rio R$ 57,51/m²)",https://www.imobibrasil.com.br/blog/fipezap-comercial-agosto-2026-aluguel-sobe-venda-para/,ImobiBrasil,noticia,2026-11-03,F3
+S09,"Aluguel comercial sobe 9,31% em 2026 (Rio +15,92% jan–set)",https://portas.com.br/noticias/aluguel-comercial-sobe-931-em-2026-fipezap/,Portas,noticia,2026-11-03,F3
+S10,Lojas e pontos para alugar na Rua Conde de Bonfim (trecho de busca),https://www.zapimoveis.com.br/aluguel/loja-salao/rj+rio-de-janeiro/rua-conde-de-bonfim/,ZAP Imóveis,anuncio,2026-11-03,F3
+S11,Salas comerciais para alugar na Rua Conde de Bonfim (trecho de busca),https://www.vivareal.com.br/aluguel/rj/rio-de-janeiro/zona-norte/tijuca/rua-conde-de-bonfim/sala_comercial/,Viva Real,anuncio,2026-11-03,F3
+S12,Salas comerciais para alugar na Tijuca (trecho de busca),https://www.lopes.com.br/busca/aluguel/br/rj/rio-de-janeiro/tijuca/tipo/salas-comerciais,Lopes,anuncio,2026-11-03,F3
+S13,Conjuntos/salas para alugar em Copacabana (trecho de busca),https://www.imovelweb.com.br/comerciais-conjunto-comercial-sala-aluguel-copacabana-rio-de-janeiro.html,Imovelweb,anuncio,2026-11-03,F3
+S14,Pontos comerciais na Av. N. Sra. de Copacabana (trecho de busca),https://www.vivareal.com.br/aluguel/rj/rio-de-janeiro/zona-sul/copacabana/avenida-nossa-senhora-de-copacabana/ponto-comercial_comercial/,Viva Real,anuncio,2026-11-03,F3
+S15,Unhas Cariocas Tijuca Conde de Bonfim — vitrine de serviços e preços,https://unidades.unhascariocas.com.br/rtb,Unhas Cariocas,mercado,2026-11-03,F2
+S16,Unhas Cariocas Shopping Tijuca — vitrine de serviços e preços,https://unidades.unhascariocas.com.br/str,Unhas Cariocas,mercado,2026-11-03,F2
+S17,Unhas Cariocas Botafogo Praia Shopping — vitrine de serviços e preços,https://unidades.unhascariocas.com.br/rbp,Unhas Cariocas,mercado,2026-11-03,F2
+S18,"Tabela de preços de manicure 2026 (mediana de 6 capitais, dados Booksy, set/2026)",https://irrivio.com/blog/tabela-de-precos-manicure-unhas-gel-brasil,Irrivio,mercado,2026-11-03,"F2,F12"
+S19,"Booksy — salões no Rio de Janeiro (Fernanda Araújo Studio, Tijuca: corte com escova R$ 95)",https://booksy.com/pt-br/s/saloes-de-beleza/723335_rio-de-janeiro,Booksy,mercado,2026-11-03,F2
+S20,Trinks — vitrines públicas de estabelecimentos (sitemap),https://www.trinks.com/Home/Sitemap,Trinks,mercado,2026-11-03,F2
+S21,Trinks — Dhu Lopes Beauty Studio,https://www.trinks.com/dhulopesbeautystudio,Trinks,mercado,2026-11-03,F2
+S22,Trinks — Espaço DT,https://www.trinks.com/espacodt,Trinks,mercado,2026-11-03,F2
+S23,Espaço Beleza Estrela Mágica,https://espacobelezaestrelamagica.com.br/,site do salão,mercado,2026-11-03,F2
+S24,Salão Sotto Hair — Conde de Bonfim 711,https://www.condedebonfim.com.br/salaosottohair,guia local,mercado,2026-11-03,F2
+S25,Wiñk Brasil — tabela de preços (RJ),https://www.winkbrasil.com.br/prices.html,Wiñk Brasil,mercado,2026-11-03,F2
+S26,Tabela de preços de salão 2026 (faixas nacionais),https://visioai.app/pt-br/precos/,Visio AI,mercado,2026-11-03,F2 (pista)
+S27,Convenção Coletiva de Trabalho 2025/2026 SEMPRIBEL-RJ e SINBEL-RJ (município do Rio),http://www.sinbel.com.br/hotsite/wp-content/uploads/2026/01/CCT-2025-2026-REGISTRADA-SEMPRIBEL-RJ-E-SINBEL-RJ.pdf,SINBEL-RJ / SEMPRIBEL-RJ,oficial,2026-11-03,"F4,F8,F10,F11"
+S28,Alvará – Consulta Prévia de Local,https://carioca.rio/servicos/consulta-previa-de-local/,Prefeitura do Rio (carioca.rio),oficial,2026-11-03,F4
+S29,Concessão de alvará de licença de estabelecimento pela internet,https://carioca.rio/?p=69572,Prefeitura do Rio (carioca.rio),oficial,2026-11-03,F4
+S30,Decreto Municipal 23.915/2004 (licenciamento sanitário de salões) — portal negou acesso automático; conteúdo via busca,https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2023/05/DecretoMunicipaln23915.pdf,Vigilância Sanitária do Rio,oficial,2026-11-03,F4
+S31,NT 1-07 Atividades econômicas de baixo risco,https://cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-07-Atividades-economicas-de-baixo-risco-2020.pdf,CBMERJ,oficial,2026-11-03,F4
+S32,NT 1-01 Parte 1 (alterada pela Portaria 1317/2025),https://www.cbmerj.rj.gov.br/wp-content/uploads/2026/01/NT_1-01_Parte1_alterada_Portaria_1317_2025.pdf,CBMERJ,oficial,2026-11-03,F4
+S33,Cartilha de licenciamento CBMERJ/Sebrae-RJ (2021),https://miracema.rj.gov.br/tributacao/cartilhacbmerjlicenciamento2021.pdf,CBMERJ / Sebrae-RJ,oficial,2026-11-03,F4
+S34,Quais estabelecimentos com música ambiente precisam pagar o Ecad?,https://www4.ecad.org.br/?p=12273,ECAD,oficial,2026-11-03,"F4,F10"
+S35,"Resolução CGSN 137/2017 (salão-parceiro, cota-parte fora da receita bruta)",https://www.normasbrasil.com.br/norma/resolucao-137-2017_353304.html,CGSN (compilação Normas Brasil),oficial,2026-11-03,F11
+S36,Resolução CGSN 140/2018 consolidada (alterada até 2026),https://guiatributario.net/wp-content/uploads/2026/08/resolucao140.pdf,CGSN (compilação Guia Tributário),oficial,2026-11-03,F11
+S37,Anexo III do Simples Nacional 2026,https://triviumcontabil.com.br/anexo-iii-simples-nacional/,Trivium Contábil,mercado,2026-11-03,F11
+S38,Tabela atualizada dos anexos do Simples Nacional 2026,https://agilize.com.br/artigos/tabela-anexos-simples-nacional-2026/,Agilize,mercado,2026-11-03,F11
+S39,MEI terá limite de faturamento de R$ 110 mil a partir de 2027,https://www.contabeis.com.br/noticias/80257/mei-tera-limite-de-faturamento-de-r-110-mil-a-partir-de-2027/,Contábeis,noticia,2026-11-03,F11
+S40,MEI mantém teto de R$ 81 mil em 2026 e PLP 186/2026 aguarda sanção (28/10/2026),https://www.mixvale.com.br/2026/10/28/mei-mantem-teto-de-r-81-mil-em-2026-e-plp-186-2026-aguarda-sancao/,Mix Vale,noticia,2026-11-03,F11
+S41,Reforma tributária e Simples Nacional (LC 214/2025),https://www.crc-ce.org.br/crcnovo/files/RTASN.pdf,CRC-CE,oficial,2026-11-03,F11
+S42,Simples Nacional: efeitos da participação societária e faturamento,https://www.contabeis.com.br/noticias/14904/simples-nacional-efeitos-da-participacao-societaria-e-faturamento/,Contábeis,mercado,2026-11-03,F11
+S43,Dois anos da lei que simplificou quóruns das limitadas (Lei 14.451/2022),https://www.mattosfilho.com.br/unico/lei-quoruns-deliberacao-sociedades-limitadas/,Mattos Filho,mercado,2026-11-03,F11
+S44,TRF1 mantém anulação de resolução do CFBM sobre toxina botulínica (mar/2026),https://edicao.correiobraziliense.com.br/correiobraziliense/2026/03/24/144519/pdf/A33-CID-2403-DIG.pdf,Correio Braziliense,noticia,2026-11-03,F11
+S45,"Esteticista não pode aplicar botox e fazer microagulhamento, decide TJDFT",https://www.conjur.com.br/2025-jul-17/esteticista-nao-pode-aplicar-botox-e-fazer-microagulhamento-decide-tj-df/,Conjur,noticia,2026-11-03,F11
+S46,"Taxa maquininha julho de 2026: Ton, MP, PagBank, InfinitePay, SumUp",https://www.maquinatop.com.br/taxa-maquininha,Maquinatop,mercado,2026-11-03,F9
+S47,"Melhor maquininha 2026 (taxas InfinitePay por faixa de faturamento, out/2026)",https://www.calculadoradetaxas.com.br/blog/melhor-maquininha-para-mei-2026,Calculadora de Taxas,mercado,2026-11-03,F9
+S48,Planos Avec,https://avec.app/negocios/planos,Avec,mercado,2026-11-03,F9
+S49,Sistema de agendamento para esteticista 2026 (preços Trinks em 30/09/2026),https://agendiva.com.br/blog/sistema-de-agendamento-para-esteticista,Agendiva,mercado,2026-11-03,F9
+S50,Booksy Biz — recursos e preço,https://biz.booksy.com/features,Booksy,mercado,2026-11-03,F9
+S51,Aprovado o reajuste tarifário anual da Light (2026),https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aprovado-o-reajuste-tarifario-anual-da-light,ANEEL,oficial,2026-11-03,F10
+S52,"Decisão judicial eleva o reajuste tarifário da Light para 16,69% (B3 +15,12%)",https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/decisao-judicial-eleva-o-reajuste-tarifario-da-light-para-16-69-em-media,ANEEL,oficial,2026-11-03,F10
+S53,"Ranking de tarifas por distribuidora 2026 (Light R$ 0,8806/kWh B1 sem impostos)",https://comparesolar.com.br/ranking-tarifas-energia/,Compare Solar,mercado,2026-11-03,F10
+S54,Cadeira hidráulica reclinável — listagem,https://lista.mercadolivre.com.br/cadeira-hidraulica,Mercado Livre,anuncio,2026-11-03,F5
+S55,Kits salão (cadeira + lavatório) — listagem,https://www.magazineluiza.com.br/busca/salao/,Magazine Luiza,anuncio,2026-11-03,F5
+S56,Autoclave Cristófoli Vitale 12 L — oferta,https://ispsaude.com.br/autoclave-vitale-12l-cristofoli-p-04376A,ISP Saúde / Cliquefarma / Magalu,anuncio,2026-11-03,F5
+S57,Ar-condicionado split inverter 24.000 BTUs — comparador,https://www.buscape.com.br/ar-condicionado/ar-condicionado-split-hw-g-diamond-auto-inverter-wi-fi-gree-24-000-btus-quente-frio-220v,Buscapé,anuncio,2026-11-03,F5
+S58,SINAPI 05/2026 — split hi-wall inverter 24.000 BTUs (insumo),https://orcamentor.com/insumo/45677/,SINAPI via Orçamentor,oficial,2026-11-03,"F5,F6"
+S59,Carrinho auxiliar e maca de estética — listagens,https://www.magazineluiza.com.br/marcas/for-ty/,Magazine Luiza,anuncio,2026-11-03,F5
+S60,Igora Royal 60 g — listagem,https://www.magazineluiza.com.br/marcas/schwarzkopf,Magazine Luiza,anuncio,2026-11-03,F7
+S61,Wella Welloxon Perfect 12% 1000 ml,https://www.drogasil.com.br/wella-professionals-welloxon-perfect-12-40-volumes-1000ml-672852.html,Drogasil,anuncio,2026-11-03,F7
+S62,Keune So Pure Color — listagem,https://www.buscape.com.br/busca/tinta+keune+so+pure+castanho+claro,Buscapé,anuncio,2026-11-03,F7
+S63,Ideia de negócio: salão de beleza,https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/IDEIAS_DE_NEGOCIO/PDFS/ideia-de-negocio_salao-de-beleza.pdf,Sebrae,oficial,2026-11-03,F12
+S64,Ticket médio do salão de beleza (metas de ocupação e retorno),https://pandami.com.br/blog/ticket-medio-salao-de-beleza,Pandami,mercado,2026-11-03,F12 (pista)
+S65,Vale a pena abrir um salão de beleza em 2026? (margens),https://faculdadedoempreendedor.com.br/blog/vale-a-pena-abrir-salao-de-beleza/,Faculdade do Empreendedor,mercado,2026-11-03,F12 (pista)
+S66,Quanto custa anunciar no Facebook e Instagram (CPL Brasil 2026),https://trafius.com.br/blog/quanto-custa-anunciar-facebook-instagram,Trafius,mercado,2026-11-03,F13
+S67,"Meta Ads ficou 12,15% mais caro em 2026",https://viniensina.com.br/estatisticas-meta-ads-brasil-2026/,Vini Ensina,mercado,2026-11-03,F13
+S68,Quanto custa um contador em 2026,https://www.contabilidadezen.com.br/blog/quanto-custa-contador-precos-2026/,Contabilidade Zen,mercado,2026-11-03,F10
+S69,Preço de contabilidade em São Paulo em 2026,https://agilize.com.br/artigos/preco-contabilidade-sao-paulo-2026/,Agilize,mercado,2026-11-03,F10
+S70,Lei do Salão Parceiro: tudo o que você precisa saber,https://graces.com.br/blog/gestao/lei-salao-parceiro/,Graces,mercado,2026-11-03,"F8,F11"
+S71,Contrato salão-parceiro (faixas de repasse),https://modeloshub.com.br/modelo/servicos-beleza,ModelosHub,mercado,2026-11-03,F8
+S72,Portaria de Goiânia: salões-parceiros no Anexo III da Res. CGSN 140,https://www.goiania.go.gov.br/html/gabinete_civil/sileg/dados/legis/2025/dc_20250825_000002824_ane_000000002.pdf,Prefeitura de Goiânia,oficial,2026-11-03,F11
+S73,Piso salarial RJ 2026 (Lei estadual 8.315/2019),https://www.marraclt.com.br/salario/piso-salarial-rj-2026-faixas-atualizadas,Marra CLT,mercado,2026-11-03,F8
+S74,Salário mínimo 2026: R$ 1.621,https://www.serasaexperian.com.br/carreiras/blog-carreiras/qual-e-o-salario-minimo-2026/,Serasa Experian,noticia,2026-11-03,F8
+S75,Vaga: Recepcionista de salão — R$ 1.700 + comissão — Tijuca,https://riovagas.com.br/riovagas/recepcionista-salao-de-beleza-r-1-70000-comissao-tijuca/,RioVagas,anuncio,2026-11-03,F8
+S76,Recepcionista no RJ: salário médio (CAGED),https://www.salario.com.br/profissao/recepcionista-cbo-422105/rj/,Salario.com.br,mercado,2026-11-03,F8
+S77,Tributação de salão de beleza no Simples Nacional,https://www.contabilizei.com.br/contabilidade-online/tributacao-de-salao-de-beleza-como-funciona-para-empresas-do-simples-nacional/,Contabilizei,mercado,2026-11-03,F11
+S78,Ecad responde: simulador de cálculo,https://www4.ecad.org.br/?p=9915,ECAD,oficial,2026-11-03,F10

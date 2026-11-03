@@ -1,0 +1,10 @@
+indicador,valor,recorte,fonte_ids,comparacao_premissa
+Retorno do investimento em salão de beleza,12 a 24 meses,"Brasil, Sebrae (ideia de negócio)",S63,dentro (payback do plano: 14 meses; validado: 15)
+Ocupação de agenda (meta),75% a 85%,"Brasil, blog de gestão (sem fonte primária)",S64,dentro (rampa do plano chega a 90% no mês 12 — acima da meta citada)
+Retorno de clientes em 60 dias (meta),> 60%,"Brasil, blog de gestão (sem fonte primária)",S64,
+Margem líquida típica,15% a 30%,"Brasil, blog (sem fonte primária)",S65,"dentro (18,3% plano; 17,0% validado)"
+Preço pé e mão (mediana),R$ 60 (P25–P75 R$ 43–70),"6 capitais, set/2026, dados Booksy",S18,Unhas Cariocas Tijuca R$ 64 / Shopping Tijuca R$ 81
+Esmaltação em gel mãos (mediana),R$ 70 (P25–P75 R$ 50–88),"6 capitais, set/2026",S18,Unhas Cariocas Tijuca R$ 75 / Shopping Tijuca R$ 85
+Repasse mínimo à profissional parceira,20% da mão de obra,"Rio, CCT 2025/26",S27,dentro (plano paga 50–65%)
+Aluguel comercial anunciado,"R$ 57,51/m² (+20,97% em 12 meses)","Rio, salas até 200 m², ago/2026",S07;S08,"acima (plano R$ 4,2 mil total para 65–80 m²)"
+CPL de lead em Meta Ads,R$ 5 a R$ 40 por lead,"Brasil, 2026, blog",S66,sem comparação direta (plano não define CPL)

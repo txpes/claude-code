@@ -1,0 +1,288 @@
+# Premissas validadas — mesmas chaves de premissas.yaml, com valor pesquisado, fonte e confiança.
+# Gerado na consolidação (seção 6 do briefing). Ver relatorios/relatorio_final.md.
+
+horizonte_meses: 36
+postos_fase1:
+- grupo: ancoras_cabelo
+  tipo: cabelo
+  qtd: 2
+  fat_maduro: 12000
+  cota_salao: 0.43
+- grupo: cabelo
+  tipo: cabelo
+  qtd: 1
+  fat_maduro: 12000
+  cota_salao: 0.5
+- grupo: manicure
+  tipo: manicure
+  qtd: 2
+  fat_maduro: 6000
+  cota_salao: 0.45
+- grupo: estetica
+  tipo: estetica
+  qtd: 1
+  fat_maduro: 7000
+  cota_salao: 0.5
+postos_fase2:
+- grupo: cabelo_f2
+  tipo: cabelo
+  qtd: 1
+  fat_maduro: 12000
+  cota_salao: 0.5
+- grupo: manicure_f2
+  tipo: manicure
+  qtd: 1
+  fat_maduro: 6000
+  cota_salao: 0.45
+fator_preco:
+  valor: 1.08
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: 'F2 incompleta: preços de concorrentes ainda não coletados (15+/região). Mantido o valor do plano.'
+faltas:
+  valor: 0.03
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Sem benchmark público verificável (F12). Mantido.
+taxa_cartao:
+  valor: 0.016
+  fonte: 'F9: dados/maquininhas.csv (InfinitePay/Ton, tabelas jul–out/2026)'
+  confianca: media
+  justificativa: Mix 35% PIX, 25% débito, 30% crédito à vista, 10% parcelado → ~1,6% sobre o valor cobrado. Vale sobre a cota
+    do salão SÓ se o contrato descontar a taxa antes da divisão; se o salão absorver a taxa cheia, o custo vira ~3,4% da cota.
+  plano: 0.02
+produtos:
+  valor: 0.04
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Custo de backbar/descartáveis por atendimento não fechado (F7); química é descontada antes da divisão. Mantido.
+varejo_mes_maduro:
+  valor: 6500
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Sem benchmark verificável de peso do varejo (F12). Mantido.
+margem_varejo:
+  valor: 0.3
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Margem das linhas home care depende das condições das marcas (F7, a cotar). Mantido.
+horas_ociosas:
+  valor: 1000
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Preço de aluguel de espaço para cursos não coletado (F13). Mantido.
+horas_ociosas_mes_inicio: 7
+segundo_turno:
+  valor: 0.15
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Oferta de profissionais para meio período não medida (F8). Mantido.
+segundo_turno_tipos:
+- cabelo
+- manicure
+segundo_turno_custo_fixo: 300
+fixos_fase1:
+  valor: 9700
+  fonte: 'F3/F10: FipeZAP Comercial ago/2026 (Rio R$ 57,51/m²) + anúncios Tijuca/Copacabana'
+  confianca: baixa
+  justificativa: 'Aluguel+condomínio+IPTU estimado em ~R$ 5,2 mil para 65–75 m² (vs R$ 4,2 mil do plano): +R$ 1.000. Estimativa
+    até a varredura de 40 anúncios/região.'
+  plano: 8700
+fixos_fase2:
+  valor: 10100
+  fonte: idem
+  confianca: baixa
+  justificativa: Mesmo ajuste de +R$ 1.000 do aluguel.
+  plano: 9100
+fixos_extras:
+  valor: 600
+  fonte: 'F4/F8: CCT Rio cl. 18ª (homologação R$ 150 por contrato em cada sindicato, validade 1 ano)'
+  confianca: alta
+  justificativa: Plano 450 + homologação de 6 contratos × R$ 300/ano ÷ 12 = R$ 150/mês (R$ 200 com 8 postos).
+  plano: 450
+extra_ano1:
+  valor: 750
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Não detalhado no plano; mantido.
+desconto_aluguel_ano1:
+  valor: 600
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Depende de negociação (F3).
+meses_ano1: 12
+recepcao_intermitente:
+  valor: 900
+  fonte: plano (premissas.yaml)
+  confianca: media
+  justificativa: 'CCT Rio 2025/26: piso recepção R$ 1.726,81/220h = R$ 7,85/h; com encargos (~40%) ≈ R$ 11/h → R$ 900 ≈ 82
+    h/mês. Coerente com uso nos picos.'
+recepcionista_fixa:
+  valor: 2913
+  fonte: 'F8: dados/custo_recepcao.csv (CCT SEMPRIBEL-RJ/SINBEL-RJ 2025/26)'
+  confianca: alta
+  justificativa: Piso R$ 1.726,81 + FGTS + provisão de 13º/férias + VT (estimado) + auxílio-alimentação R$ 26,46/dia (CCT
+    cl. 8ª). Sem o auxílio (espaço próprio para refeição, §1º) cai para ~R$ 2.331. CPP já está no DAS (Anexo III). Nova CCT
+    vale a partir de out/2026.
+  plano: 2900
+pro_labore_minimo:
+  valor: 1650
+  fonte: plano (premissas.yaml)
+  confianca: alta
+  justificativa: Decisão do plano.
+pro_labore_cheio:
+  valor: 4000
+  fonte: plano (premissas.yaml)
+  confianca: alta
+  justificativa: Decisão do plano.
+pro_labore_minimo_ate_mes: 6
+pro_labore_minimo_ate_mes_revisao: 9
+investimento_montagem:
+  valor: 74000
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Equipamentos parcialmente cotados (F5) indicam risco de estouro pelo ar-condicionado; obra (F6) sem orçamento.
+    Mantido até as cotações.
+capital_giro:
+  valor: 26000
+  fonte: plano (premissas.yaml)
+  confianca: alta
+  justificativa: Decisão do plano.
+capex_fase2:
+  valor: 8000
+  fonte: plano (premissas.yaml)
+  confianca: baixa
+  justificativa: Fase 2 não cotada. Mantido.
+rampa_fase1:
+- 0.35
+- 0.45
+- 0.55
+- 0.6
+- 0.65
+- 0.7
+- 0.74
+- 0.78
+- 0.82
+- 0.85
+- 0.88
+- 0.9
+rampa_fase1_depois: 0.9
+rampa_fase2:
+- 0.45
+- 0.55
+- 0.65
+- 0.72
+- 0.8
+- 0.85
+rampa_fase2_depois: 0.9
+anexo_III:
+  valor:
+  - - 180000
+    - 0.06
+    - 0
+  - - 360000
+    - 0.112
+    - 9360
+  - - 720000
+    - 0.135
+    - 17640
+  - - 1800000
+    - 0.16
+    - 35640
+  fonte: plano (premissas.yaml)
+  confianca: alta
+  justificativa: 'Tabelas LC 123/2006 (redação LC 155/2016), sem alteração em 2026 (fonte: Agilize/Trivium 2026; conferir
+    no Planalto). Mudam em 2027 com a LC 214/2025.'
+anexo_I:
+  valor:
+  - - 180000
+    - 0.04
+    - 0
+  - - 360000
+    - 0.073
+    - 5940
+  - - 720000
+    - 0.095
+    - 13860
+  - - 1800000
+    - 0.107
+    - 22500
+  fonte: plano (premissas.yaml)
+  confianca: alta
+  justificativa: Idem; Anexo I confirmado faixa a faixa (Trivium 2026).
+gatilhos:
+  expansao_mes_minimo: 3
+  expansao_ocupacao_f1: 0.7
+  expansao_caixa_minimo: -85000
+  recepcao_postos_f1: 6
+  recepcao_postos_f2: 2
+  recepcao_ocupacao: 0.8
+  segundo_turno_mes_minimo: 13
+  segundo_turno_ocupacao_f1: 0.85
+  revisao_mes: 6
+  revisao_faturamento_minimo: 34000
+  parada_mes_minimo: 6
+  parada_caixa: -95000
+cenarios:
+  base: {}
+  rampa_lenta:
+    multiplicador_ocupacao: 0.8
+    teto_ocupacao: 0.9
+  fat_menor:
+    fator_preco_mult: 0.75
+  obra_cara:
+    investimento_mult: 1.2
+  tudo_junto:
+    multiplicador_ocupacao: 0.8
+    teto_ocupacao: 0.9
+    fator_preco_mult: 0.75
+    investimento_mult: 1.2
+  sem_aumento:
+    fator_preco: 1.0
+salao_maduro:
+  ocupacoes_relatorio:
+  - 0.7
+  - 0.8
+  - 0.9
+  varejo_base: 6500
+sensibilidade:
+  fat_cabeleireira_de: 8000
+  fat_cabeleireira_ate: 20000
+  fat_cabeleireira_passo: 2000
+escada_ancora:
+  faixas:
+  - - 10000
+    - 0.55
+  - - 15000
+    - 0.6
+  - - null
+    - 0.65
+  faturamentos_exemplo:
+  - 8000
+  - 10000
+  - 12000
+  - 15000
+  - 20000
+  - 25000
+alavancas:
+  segundo_turno:
+    segundo_turno: 0.0
+    segundo_turno_custo_fixo: 0
+  repasse_calibrado:
+    cotas:
+      ancoras_cabelo: 0.4
+      cabelo: 0.4
+      manicure: 0.4
+      estetica: 0.4
+      cabelo_f2: 0.4
+      manicure_f2: 0.4
+  horas_ociosas:
+    horas_ociosas: 0
+  pix_padrao:
+    taxa_cartao: 0.035
+  varejo_maior:
+    varejo_mes_maduro: 3000
+  varejo_anexo_I:
+    varejo_no_anexo_III: true
+  aluguel_escalonado:
+    desconto_aluguel_ano1: 0
