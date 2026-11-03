@@ -19,6 +19,7 @@ subtitle: "Rodada 2 · salas reais, parceiros e fluxo de caixa descontado de 5 a
 | 1 | Região | **Tijuca.** Copacabana não cabe no custo (ver acima) | agora |
 | 2 | Quais salas visitar | **T2, T1 e T7** (abaixo), nesta ordem | marcar esta semana |
 | 3 | Portão das âncoras | Não assinar aluguel sem 2 cartas e extratos de 3 meses com média ≥ R$ 10 mil/mês. **Abaixo de R$ 8,3 mil, o projeto não paga o risco** | 18/12/2026 |
+| 4a | Retirada da Manon | R$ 1.650 até o mês 6, R$ 5 mil a partir do 7º (ver seção própria) | no plano da empresa |
 | 4 | Dinheiro do Thomás | Mútuo de R$ 100 mil a CDI, com **carência de 15 meses** e 45 parcelas de ~R$ 3,3 mil (abaixo). A empresa nunca fica com menos de ~R$ 21 mil em caixa | ao abrir a empresa |
 | 5 | Taxa do cartão no contrato de parceria | **Descontar antes da divisão.** Sem isso, o equilíbrio passa de 55% | no modelo de contrato |
 | 6 | Equipamentos | Novos só cadeiras, lavatórios, ar e luz. **Usados para o resto.** Ar dimensionado para ~60 mil BTU/h | dez/2026 |
@@ -83,7 +84,29 @@ Base: premissas validadas + sala T1 (R$ 4.288). Preços constantes de 2026 (sem 
 
 Ocupação madura: com teto de 80%, TIR de 134%; com 70%, 93%; **com 60%, não paga**.
 
-**O que este fluxo não inclui** (e pode reduzir a TIR): reajuste de aluguel acima da inflação (o aluguel comercial no Rio subiu 21% em 12 meses); reposição de equipamentos depois do 3º ano; aumento de custos com a reforma tributária de 2027; e o custo de oportunidade da Manon além dos R$ 4 mil de pró-labore. **Pergunta para você: quanto a Manon ganha hoje como profissional?** Se for mais de R$ 4 mil, a diferença é custo econômico do projeto.
+**O que este fluxo não inclui** (e pode reduzir a TIR): reajuste de aluguel acima da inflação (o aluguel comercial no Rio subiu 21% em 12 meses); reposição de equipamentos depois do 3º ano; aumento de custos com a reforma tributária de 2027; e o custo de oportunidade da Manon além do pró-labore, tratado na seção seguinte.
+
+# Custo de oportunidade da Manon (ela ganha ~R$ 5 mil/mês hoje)
+
+O plano paga à Manon R$ 1.650/mês nos 6 primeiros meses e R$ 4.000 depois. Se ela deixar de atender para tocar o salão, o custo real dela é R$ 5 mil/mês. Refiz a conta de duas formas (sala T1, premissas validadas):
+
+| | Pró-labore do plano | **Retirada de R$ 1.650 até o mês 6, depois R$ 5 mil** (recomendado) | R$ 5 mil desde o mês 1 |
+|---|---|---|---|
+| TIR de caixa, 5 anos | 197% | **181%** | 147% |
+| **TIR econômica** (com os R$ 5 mil cheios como custo) | — | **152%** | 147% |
+| VPL a 25,75% | R$ 364 mil | — | R$ 307 mil |
+| Payback | mês 14 | **mês 15** | mês 17 |
+| Pior caixa | −R$ 79 mil | **−R$ 79 mil** | −R$ 90 mil |
+| Ocupação de equilíbrio (maduro) | 51,3% | 54,7% | 54,7% |
+| Lucro maduro, além do salário dela | R$ 14,2 mil/mês | R$ 13,2 mil/mês | R$ 13,2 mil/mês |
+
+**Estresses com a retirada recomendada:** rampa lenta, TIR econômica de 58% (payback no mês 24); faturamento −25%, 55% (mês 24); obra +20%, 131%; sem aumento de preço, 122%; tudo junto, negativa. Todos os estresses isolados ficam acima de −R$ 94 mil de caixa, dentro dos R$ 100 mil.
+
+**Por que não R$ 5 mil desde o mês 1:** a conta econômica é parecida, mas o caixa não aguenta. Nos estresses de rampa lenta e faturamento −25%, o rombo chega a −R$ 105 a −108 mil, acima dos R$ 100 mil do mútuo, e a regra de parada dispara no mês 6. Se a Manon precisa dos R$ 5 mil desde o início, as saídas são duas: manter parte das clientes dela atendendo no próprio salão nos primeiros meses (a cota dela entra como receita) ou aumentar o mútuo em ~R$ 20 mil.
+
+**Novo ponto de quebra (visão econômica):** a TIR cai abaixo de 25,75% com faturamento de **R$ 8,7 mil por cabeleireira** (73% do plano), contra R$ 8,3 mil antes. O portão das âncoras (R$ 10 mil verificados) continua com folga de ~15%.
+
+**Leitura:** mesmo pagando à Manon o que ela ganha hoje, o salão deixa ~R$ 13 mil/mês de lucro a partir do 2º ano. Ou seja, ela troca R$ 5 mil de renda por R$ 5 mil + a parte dela num lucro de ~R$ 158 mil/ano. O risco é o mesmo de antes: as âncoras.
 
 # Dinheiro do Thomás — estrutura sugerida
 
