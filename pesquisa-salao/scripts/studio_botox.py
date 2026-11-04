@@ -50,7 +50,7 @@ BASE = {
     "reserva_caixa": 6000,           # caixa mínimo antes de pagar o Thomás
     "pref_multiplo": 1.0,            # Thomás recebe 100% do capital antes do split...
     "pref_juros_aa": 0.1365,         # ...corrigido pelo CDI
-    "split": {"thomas": 0.40, "mae": 0.30, "manon": 0.30},
+    "split": {"thomas": 0.30, "mae": 0.35, "manon": 0.35},
     "meses": 60,
 }
 

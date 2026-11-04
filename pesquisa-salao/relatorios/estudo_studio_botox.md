@@ -10,13 +10,13 @@ subtitle: "Estudo de viabilidade e proposta de sociedade · 4 de novembro de 202
 Com as hipóteses base:
 - as duas recebem **R$ 5 mil por mês a partir do mês 8**;
 - você **recupera o capital com correção do CDI no mês 14**;
-- sua TIR em 5 anos é de **~180% ao ano**.
+- sua TIR em 5 anos é de **~155% ao ano**, com a divisão de 30% para você e 35% para cada uma.
 
 **O número que decide tudo:** o studio precisa de **~22 aplicações por mês** para pagar as duas e de **~30 para pagar você também**. Isso dá 1 a 1,5 atendimento por dia útil. O cenário base chega a ~62 por mês no 5º ano, metade da capacidade de uma profissional.
 
 **O maior risco é trazer paciente, não dinheiro.** Com metade dos pacientes novos previstos, você só recupera o capital no mês 37, e a TIR cai para 36% ao ano. Por isso o passo a passo começa testando a demanda antes de assinar aluguel.
 
-**Condição para tudo isso:** sua mãe precisa ter a **habilitação em toxina com apostilamento no CREFITO-2** (curso de pelo menos 50 horas em dermatofuncional; COFFITO, Acórdão 609/2023). Sem isso, o botox não entra, e o estudo vira um studio de dermatofuncional sem injetáveis.
+**Sua mãe já aplica toxina.** Basta manter o registro no CREFITO-2 em dia e o comprovante do apostilamento arquivado (COFFITO, Acórdão 609/2023). As horas dela acompanham a agenda: com ~62 aplicações por mês no 5º ano, são ~3 por dia útil.
 
 # 1. Abrir na Tijuca é uma boa ideia?
 
@@ -68,9 +68,9 @@ Com as hipóteses base:
 | | Ano 1 | Ano 2 | Ano 3 | Ano 4 | Ano 5 |
 |---|---|---|---|---|---|
 | Receita | 300 mil | 696 mil | 850 mil | 906 mil | 926 mil |
-| Recebido pela sua mãe | 37 mil | 105 mil | 132 mil | 140 mil | 142 mil |
-| Recebido pela Manon | 37 mil | 105 mil | 132 mil | 140 mil | 142 mil |
-| Recebido por você | 37 mil | 79 mil | 96 mil | 106 mil | 110 mil |
+| Recebido pela sua mãe | 37 mil | 113 mil | 144 mil | 153 mil | 156 mil |
+| Recebido pela Manon | 37 mil | 113 mil | 144 mil | 153 mil | 156 mil |
+| Recebido por você | 37 mil | 64 mil | 72 mil | 80 mil | 82 mil |
 
 No 5º ano o studio faz ~62 aplicações por mês. Tem lucro operacional de ~R$ 33 mil por mês antes de pagar as pessoas.
 
@@ -78,15 +78,17 @@ No 5º ano o studio faz ~62 aplicações por mês. Tem lucro operacional de ~R$ 
 
 | Cenário | TIR do Thomás (5 anos) | Thomás recupera o capital | As duas recebem R$ 5 mil a partir de |
 |---|---|---|---|
-| **Base** | **180%** | mês 14 | mês 8 |
-| Preço R$ 1.300 | 336% | mês 10 | mês 6 |
-| Custo do paciente novo R$ 400 | 151% | mês 16 | mês 9 |
-| Retorno de 40% (em vez de 60%) | 119% | mês 16 | mês 8 |
-| Toxina mais cara (R$ 9/U, 60U) | 86% | mês 22 | mês 11 |
-| Preço R$ 800 | 81% | mês 23 | mês 12 |
-| **Metade dos pacientes novos** | **36%** | **mês 37** | mês 17 |
+| **Base** | **155%** | mês 14 | mês 8 |
+| Preço R$ 1.300 | 283% | mês 10 | mês 6 |
+| Custo do paciente novo R$ 400 | 130% | mês 16 | mês 9 |
+| Retorno de 40% (em vez de 60%) | 103% | mês 16 | mês 8 |
+| Toxina mais cara (R$ 9/U, 60U) | 75% | mês 22 | mês 11 |
+| Preço R$ 800 | 70% | mês 23 | mês 12 |
+| **Metade dos pacientes novos** | **32%** | **mês 37** | mês 17 |
 
 Em nenhum cenário o caixa fica negativo, porque as retiradas só saem do que sobra. A TIR é alta porque o investimento é pequeno. **O risco real está na linha de baixo:** se a Manon não trouxer pacientes no ritmo previsto, você espera 3 anos para recuperar o dinheiro.
+
+A TIR dos cenários é a sua, com a divisão de 30/35/35.
 
 Reproduzir: `python scripts/studio_botox.py` (resultado em `dados/studio_botox.json`).
 
@@ -103,17 +105,17 @@ A ideia é boa e protege quem trabalha. **Mas tem um problema:** sem limite, voc
 |---|---|---|
 | **1º · Trabalho** | Sua mãe e Manon | Até **R$ 5 mil cada por mês**, saído do resultado operacional. Se não der, dividem o que houver. **Não acumula dívida** para os meses seguintes. |
 | **2º · Seu preferencial** | **Thomás** | Do que sobrar, guardada uma reserva mínima de R$ 6 mil em caixa, **100% vai para você até devolver os R$ 50 mil corrigidos pelo CDI.** |
-| **3º · Divisão do lucro** | Os três | Depois disso, o lucro é dividido: **Thomás 40% · mãe 30% · Manon 30%**. |
+| **3º · Divisão do lucro** | Os três | Depois disso, o lucro é dividido: **Thomás 30% · mãe 35% · Manon 35%** (definido pelo Thomás). |
 
 **Resultado (base, 5 anos):**
 
-| | Sua proposta | **Minha proposta** | Meio termo (50/25/25) |
-|---|---|---|---|
-| Thomás | R$ 988 mil (TIR 294%) | **R$ 428 mil (TIR 180%)** | R$ 521 mil (TIR 203%) |
-| Sua mãe | R$ 277 mil | **R$ 557 mil** (~R$ 9,3 mil/mês em média) | R$ 511 mil |
-| Manon | R$ 277 mil | **R$ 557 mil** | R$ 511 mil |
+| | Proposta original (tudo acima de R$ 10 mil para o Thomás) | **Proposta final (30/35/35)** |
+|---|---|---|
+| Thomás | R$ 988 mil (TIR 294%) | **R$ 335 mil (TIR 155%)** |
+| Sua mãe | R$ 277 mil | **R$ 604 mil** (~R$ 10 mil/mês em média) |
+| Manon | R$ 277 mil | **R$ 604 mil** |
 
-Você continua preferencial: recebe antes de qualquer lucro e recupera tudo no mês 14. Depois, os três ganham juntos quando o studio cresce. **Se você quiser mais, o meio termo de 50/25/25 é defensável.** Abaixo de 25% para cada uma, eu não iria.
+Você continua preferencial: recebe antes de qualquer lucro e recupera tudo no mês 14. Depois, fica com 30% do lucro: ~R$ 6–7 mil por mês a partir do 3º ano, sem trabalhar no dia a dia. A maior parte vai para quem faz o studio crescer, o que mantém as duas motivadas.
 
 ## Como formalizar (levar ao advogado e ao contador)
 1. **Sociedade limitada com os três sócios.** A distribuição desigual de lucros pode estar no contrato social (Código Civil, art. 1.007). Também é possível usar **cotas preferenciais** para você (IN DREI 81/2020). Um **acordo de sócios** detalha a cascata.
@@ -127,7 +129,7 @@ Você continua preferencial: recebe antes de qualquer lucro e recupera tudo no m
 
 | Quando | O quê | Quem |
 |---|---|---|
-| **Semana 1–2** | Confirmar habilitação da sua mãe (curso 50h + apostilamento no CREFITO-2). Se faltar, matricular já. Os três batem o martelo na divisão | mãe, você |
+| **Semana 1–2** | Conferir registro no CREFITO-2 e apostilamento da sua mãe. Os três fecham a divisão 30/35/35 | mãe, você |
 | **Semana 1–4** | Manon cria o Instagram e a ficha no Google do studio. Sua mãe grava conteúdo educativo (o que é, quem pode, cuidados). **Lista de espera com WhatsApp** | Manon |
 | **Mês 1–3 · teste** | **Sua mãe atende em sala alugada por hora** (Espaço Zanama, Saens Peña: R$ 45–65 por hora). Primeiros pacientes vêm da rede dela + lista de espera. Manon mede: contatos, agendamentos, custo por paciente, retorno | mãe, Manon |
 | **Mês 2** | Advogado: contrato social + acordo de sócios. Contador: abertura da limitada no Simples e registro no CREFITO-2 | você |
@@ -145,8 +147,7 @@ Você continua preferencial: recebe antes de qualquer lucro e recupera tudo no m
 - **Toxina original:** comprar só de distribuidor autorizado, com nota fiscal, e anotar lote e validade no prontuário. Nunca "dividir frasco" entre pacientes sem controle.
 
 # 6. O que preciso de vocês para fechar com números reais
-1. Sua mãe **já tem** o curso de toxina e o apostilamento?
-2. **Quantos pacientes** ela atende hoje e **quanto cobra**?
-3. **Quantas horas por semana** ela quer atender?
-4. Onde ela mora ou atende hoje (bairro)?
-5. A Manon tem quantas horas por semana para o studio, mantendo a Taco?
+1. **Quantos pacientes** sua mãe atende hoje e **quanto cobra** por aplicação?
+2. **Que marca de toxina** ela usa e de quem compra (custo real por frasco)?
+3. Onde ela mora ou atende hoje (bairro)?
+4. A Manon tem quantas horas por semana para o studio, mantendo a Taco?
