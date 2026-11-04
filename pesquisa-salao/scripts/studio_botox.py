@@ -49,8 +49,8 @@ BASE = {
     "capital_giro": 20000,
     "reserva_caixa": 6000,           # caixa mínimo antes de pagar o Thomás
     "pref_multiplo": 1.0,            # mútuo do Thomás: 100% do excedente até quitar...
-    "pref_juros_aa": 0.1865,         # ...a CDI (13,65%) + 5% a.a.
-    "split": {"thomas": 0.0, "mae": 0.50, "manon": 0.50},
+    "pref_juros_aa": 0.1365,         # ...a CDI (13,65% a.a.)
+    "split": {"thomas": 0.20, "mae": 0.40, "manon": 0.40},
     "meses": 60,
 }
 
