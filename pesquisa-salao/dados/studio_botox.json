@@ -1,0 +1,357 @@
+{
+ "base": {
+  "tir_projeto_aa": 3.487880952945485,
+  "tir_thomas_aa": 1.8014952827850963,
+  "mes_thomas_recupera": 14,
+  "mes_remuneracao_cheia": 8,
+  "atend_mes60": 62.0,
+  "receita_mes60": 77539.23392,
+  "operacional_mes60": 33042.29244725147,
+  "pior_caixa": 6000.0,
+  "pago_5a": {
+   "thomas": 428088,
+   "mae": 557125,
+   "manon": 557125
+  },
+  "thomas_ano": [
+   36525,
+   79092,
+   96374,
+   106252,
+   109846
+  ],
+  "mae_ano": [
+   37397,
+   105374,
+   132280,
+   139689,
+   142385
+  ],
+  "manon_ano": [
+   37397,
+   105374,
+   132280,
+   139689,
+   142385
+  ],
+  "receita_ano": [
+   299500,
+   695820,
+   850495,
+   906178,
+   926224
+  ]
+ },
+ "preço R$ 800": {
+  "tir_projeto_aa": 1.4194448323750115,
+  "tir_thomas_aa": 0.8105387313435113,
+  "mes_thomas_recupera": 23,
+  "mes_remuneracao_cheia": 12,
+  "atend_mes60": 62.0,
+  "receita_mes60": 62031.387136000005,
+  "operacional_mes60": 20946.17195573148,
+  "pior_caixa": 4500.0,
+  "pago_5a": {
+   "thomas": 206422,
+   "mae": 375741,
+   "manon": 375741
+  },
+  "thomas_ano": [
+   12050,
+   50372,
+   42372,
+   49578,
+   52050
+  ],
+  "mae_ano": [
+   25000,
+   62741,
+   91779,
+   97183,
+   99037
+  ],
+  "manon_ano": [
+   25000,
+   62741,
+   91779,
+   97183,
+   99037
+  ],
+  "receita_ano": [
+   239600,
+   556656,
+   680396,
+   724943,
+   740979
+  ]
+ },
+ "preço R$ 1.300": {
+  "tir_projeto_aa": 7.427307533796034,
+  "tir_thomas_aa": 3.3576036076822495,
+  "mes_thomas_recupera": 10,
+  "mes_remuneracao_cheia": 6,
+  "atend_mes60": 62.0,
+  "receita_mes60": 100801.00409599999,
+  "operacional_mes60": 51186.47318453147,
+  "pior_caixa": 6000.0,
+  "pago_5a": {
+   "thomas": 766729,
+   "mae": 822623,
+   "manon": 822623
+  },
+  "thomas_ano": [
+   68573,
+   134561,
+   175984,
+   191070,
+   196541
+  ],
+  "mae_ano": [
+   59006,
+   160921,
+   191988,
+   203302,
+   207406
+  ],
+  "manon_ano": [
+   59006,
+   160921,
+   191988,
+   203302,
+   207406
+  ],
+  "receita_ano": [
+   389350,
+   904566,
+   1105644,
+   1178032,
+   1204091
+  ]
+ },
+ "metade dos pacientes novos": {
+  "tir_projeto_aa": 0.6107548772828699,
+  "tir_thomas_aa": 0.3637749161604795,
+  "mes_thomas_recupera": 37,
+  "mes_remuneracao_cheia": 17,
+  "atend_mes60": 31.0,
+  "receita_mes60": 38759.11936,
+  "operacional_mes60": 15294.8372231789,
+  "pior_caixa": 2240.0,
+  "pago_5a": {
+   "thomas": 112265,
+   "mae": 288522,
+   "manon": 288522
+  },
+  "thomas_ano": [
+   11510,
+   7271,
+   44610,
+   23843,
+   25031
+  ],
+  "mae_ano": [
+   14843,
+   57934,
+   60000,
+   76972,
+   78774
+  ],
+  "manon_ano": [
+   14843,
+   57934,
+   60000,
+   76972,
+   78774
+  ],
+  "receita_ano": [
+   148500,
+   346710,
+   424816,
+   452934,
+   463056
+  ]
+ },
+ "retorno de 40%": {
+  "tir_projeto_aa": 2.2810211952850694,
+  "tir_thomas_aa": 1.1914510841741,
+  "mes_thomas_recupera": 16,
+  "mes_remuneracao_cheia": 8,
+  "atend_mes60": 41.7,
+  "receita_mes60": 52074.92288000001,
+  "operacional_mes60": 20709.90336853403,
+  "pior_caixa": 6000.0,
+  "pago_5a": {
+   "thomas": 237412,
+   "mae": 413255,
+   "manon": 413255
+  },
+  "thomas_ano": [
+   28398,
+   56888,
+   49612,
+   51134,
+   51379
+  ],
+  "mae_ano": [
+   36976,
+   82185,
+   97209,
+   98351,
+   98534
+  ],
+  "manon_ano": [
+   36976,
+   82185,
+   97209,
+   98351,
+   98534
+  ],
+  "receita_ano": [
+   283000,
+   562280,
+   614965,
+   623394,
+   624743
+  ]
+ },
+ "CAC R$ 400": {
+  "tir_projeto_aa": 2.8155085399430524,
+  "tir_thomas_aa": 1.5083885596163822,
+  "mes_thomas_recupera": 16,
+  "mes_remuneracao_cheia": 9,
+  "atend_mes60": 62.0,
+  "receita_mes60": 77539.23392,
+  "operacional_mes60": 30542.29244725147,
+  "pior_caixa": 5810.0,
+  "pago_5a": {
+   "thomas": 375916,
+   "mae": 513211,
+   "manon": 513211
+  },
+  "thomas_ano": [
+   24864,
+   74580,
+   84374,
+   94252,
+   97846
+  ],
+  "mae_ano": [
+   33228,
+   92630,
+   123280,
+   130689,
+   133385
+  ],
+  "manon_ano": [
+   33228,
+   92630,
+   123280,
+   130689,
+   133385
+  ],
+  "receita_ano": [
+   299500,
+   695820,
+   850495,
+   906178,
+   926224
+  ]
+ },
+ "toxina R$ 9/U e 60U": {
+  "tir_projeto_aa": 1.529479809315358,
+  "tir_thomas_aa": 0.8633002019334401,
+  "mes_thomas_recupera": 22,
+  "mes_remuneracao_cheia": 11,
+  "atend_mes60": 62.0,
+  "receita_mes60": 77539.23392,
+  "operacional_mes60": 21256.328891411482,
+  "pior_caixa": 5040.0,
+  "pago_5a": {
+   "thomas": 214719,
+   "mae": 384265,
+   "manon": 384265
+  },
+  "thomas_ano": [
+   12230,
+   53137,
+   44663,
+   51156,
+   53532
+  ],
+  "mae_ano": [
+   26928,
+   65324,
+   93498,
+   98367,
+   100149
+  ],
+  "manon_ano": [
+   26928,
+   65324,
+   93498,
+   98367,
+   100149
+  ],
+  "receita_ano": [
+   299500,
+   695820,
+   850495,
+   906178,
+   926224
+  ]
+ },
+ "ponto_equilibrio_atend_mes": 21.908396946564885,
+ "ponto_equilibrio_com_5k_thomas": 29.541984732824428,
+ "investimento_detalhe": [
+  [
+   "Reforma leve (pintura, ponto de água na sala, piso vinílico, iluminação)",
+   8000,
+   "hipótese — pedir orçamento"
+  ],
+  [
+   "Maca elétrica/estética",
+   2500,
+   "maca 8 em 1 R$ 817 (Maxibel); elétrica a cotar"
+  ],
+  [
+   "Mocho + cadeira de apoio",
+   800,
+   "mocho R$ 387 (Maxibel)"
+  ],
+  [
+   "Frigobar com termômetro (toxina 2–8 °C)",
+   1200,
+   "hipótese"
+  ],
+  [
+   "Recepção (balcão + 2 cadeiras) e armário",
+   1500,
+   "balcão R$ 413 (Pedrosa) + hipótese"
+  ],
+  [
+   "Computador/tablet + luminária com lupa",
+   3000,
+   "hipótese"
+  ],
+  [
+   "Legalização (CREFITO PJ R$ 406, alvará, licença sanitária, contador)",
+   2000,
+   "CREFITO-2 real; resto hipótese"
+  ],
+  [
+   "Marca, fotos, site e conteúdo pré-lançamento",
+   3000,
+   "hipótese"
+  ],
+  [
+   "Estoque inicial (3 frascos + descartáveis)",
+   2500,
+   "frasco R$ 595–785"
+  ],
+  [
+   "Garantia do aluguel (seguro-fiança) e custos antes de abrir",
+   5500,
+   "hipótese ~2 meses de aluguel"
+  ]
+ ]
+}
