@@ -9,12 +9,11 @@ subtitle: "Estudo de viabilidade e proposta de sociedade · 4 de novembro de 202
 
 Com as hipóteses base:
 - as duas recebem **R$ 5 mil por mês a partir do mês 8**;
-- você **recupera o capital com correção do CDI no mês 14**;
-- sua TIR em 5 anos é de **~155% ao ano**, com a divisão de 30% para você e 35% para cada uma.
+- seu empréstimo de R$ 50 mil, a CDI + 5% ao ano, **fica quitado no mês 15** (R$ 57 mil no total).
 
 **O número que decide tudo:** o studio precisa de **~22 aplicações por mês** para pagar as duas e de **~30 para pagar você também**. Isso dá 1 a 1,5 atendimento por dia útil. O cenário base chega a ~62 por mês no 5º ano, metade da capacidade de uma profissional.
 
-**O maior risco é trazer paciente, não dinheiro.** Com metade dos pacientes novos previstos, você só recupera o capital no mês 37, e a TIR cai para 36% ao ano. Por isso o passo a passo começa testando a demanda antes de assinar aluguel.
+**O maior risco é trazer paciente, não dinheiro.** Com metade dos pacientes novos previstos, seu empréstimo só fica quitado no mês 38. Por isso o passo a passo começa testando a demanda antes de assinar aluguel.
 
 **Sua mãe já aplica toxina.** Basta manter o registro no CREFITO-2 em dia e o comprovante do apostilamento arquivado (COFFITO, Acórdão 609/2023). As horas dela acompanham a agenda: com ~62 aplicações por mês no 5º ano, são ~3 por dia útil.
 
@@ -68,68 +67,75 @@ Com as hipóteses base:
 | | Ano 1 | Ano 2 | Ano 3 | Ano 4 | Ano 5 |
 |---|---|---|---|---|---|
 | Receita | 300 mil | 696 mil | 850 mil | 906 mil | 926 mil |
-| Recebido pela sua mãe | 37 mil | 113 mil | 144 mil | 153 mil | 156 mil |
-| Recebido pela Manon | 37 mil | 113 mil | 144 mil | 153 mil | 156 mil |
-| Recebido por você | 37 mil | 64 mil | 72 mil | 80 mil | 82 mil |
+| Recebido pela sua mãe (50/50) | 37 mil | 135 mil | 180 mil | 193 mil | 197 mil |
+| Recebido pela Manon (50/50) | 37 mil | 135 mil | 180 mil | 193 mil | 197 mil |
+| Pago a você (empréstimo) | 37 mil | 20 mil | — | — | — |
 
 No 5º ano o studio faz ~62 aplicações por mês. Tem lucro operacional de ~R$ 33 mil por mês antes de pagar as pessoas.
 
 ## Cenários
 
-| Cenário | TIR do Thomás (5 anos) | Thomás recupera o capital | As duas recebem R$ 5 mil a partir de |
+| Cenário | Empréstimo do Thomás quitado no mês | As duas recebem R$ 5 mil a partir de | Cada sócia, 5 anos (50/50) |
 |---|---|---|---|
-| **Base** | **155%** | mês 14 | mês 8 |
-| Preço R$ 1.300 | 283% | mês 10 | mês 6 |
-| Custo do paciente novo R$ 400 | 130% | mês 16 | mês 9 |
-| Retorno de 40% (em vez de 60%) | 103% | mês 16 | mês 8 |
-| Toxina mais cara (R$ 9/U, 60U) | 75% | mês 22 | mês 11 |
-| Preço R$ 800 | 70% | mês 23 | mês 12 |
-| **Metade dos pacientes novos** | **32%** | **mês 37** | mês 17 |
+| **Base** | **15** | mês 8 | R$ 743 mil |
+| Preço R$ 1.300 | 10 | mês 6 | R$ 1,18 milhão |
+| Custo do paciente novo R$ 400 | 16 | mês 9 | R$ 672 mil |
+| Retorno de 40% (em vez de 60%) | 17 | mês 8 | R$ 503 mil |
+| Toxina mais cara (R$ 9/U, 60U) | 23 | mês 11 | R$ 461 mil |
+| Preço R$ 800 | 24 | mês 12 | R$ 448 mil |
+| **Metade dos pacientes novos** | **38** | mês 17 | R$ 309 mil |
 
-Em nenhum cenário o caixa fica negativo, porque as retiradas só saem do que sobra. A TIR é alta porque o investimento é pequeno. **O risco real está na linha de baixo:** se a Manon não trouxer pacientes no ritmo previsto, você espera 3 anos para recuperar o dinheiro.
-
-A TIR dos cenários é a sua, com a divisão de 30/35/35.
+Em nenhum cenário o caixa fica negativo, porque as retiradas só saem do que sobra. **O risco real está na linha de baixo:** se a Manon não trouxer pacientes no ritmo previsto, seu empréstimo demora 3 anos para voltar.
 
 Reproduzir: `python scripts/studio_botox.py` (resultado em `dados/studio_botox.json`).
 
-# 3. Proposta de sociedade
+# 3. Sociedade e empréstimo (versão final)
 
-## O que você propôs
-"Elas recebem R$ 5 mil cada primeiro. O que sobrar acima de R$ 10 mil é meu. Se não sobrar, só elas recebem."
+## Como fica
+- **Thomás não é sócio. Empresta R$ 50 mil à empresa** (mútuo), a **CDI + 5% ao ano** (hoje 13,65% + 5% = 18,65% ao ano).
+- **Sócias: sua mãe e a Manon.**
+- Ordem dos pagamentos, todo mês:
+  1. **Trabalho:** até R$ 5 mil para cada uma, saído do resultado operacional. Se não der, dividem o que houver, sem acumular dívida.
+  2. **Empréstimo do Thomás:** tudo o que sobrar, guardada uma reserva de R$ 6 mil em caixa, vai para quitar o mútuo, até zerar.
+  3. **Lucro das sócias:** depois de quitado, o lucro é dividido entre elas na proporção das cotas.
 
-A ideia é boa e protege quem trabalha. **Mas tem um problema:** sem limite, você fica para sempre com tudo acima de R$ 10 mil. No cenário base, isso dá **R$ 988 mil para você e R$ 277 mil para cada uma em 5 anos**. Elas ficam com teto de R$ 5 mil enquanto o studio cresce por causa delas. Em 1 ou 2 anos, a Manon e sua mãe perdem o motivo para crescer, ou saem.
-
-## O que eu proponho: cascata em 3 camadas
-
-| Ordem | Quem recebe | Regra |
+## Você
+| Cenário | Quita no mês | Total recebido |
 |---|---|---|
-| **1º · Trabalho** | Sua mãe e Manon | Até **R$ 5 mil cada por mês**, saído do resultado operacional. Se não der, dividem o que houver. **Não acumula dívida** para os meses seguintes. |
-| **2º · Seu preferencial** | **Thomás** | Do que sobrar, guardada uma reserva mínima de R$ 6 mil em caixa, **100% vai para você até devolver os R$ 50 mil corrigidos pelo CDI.** |
-| **3º · Divisão do lucro** | Os três | Depois disso, o lucro é dividido: **Thomás 30% · mãe 35% · Manon 35%** (definido pelo Thomás). |
+| Base | **15** | **R$ 57 mil** (R$ 50 mil + R$ 7 mil de juros) |
+| Preço R$ 800 | 24 | R$ 62 mil |
+| Metade dos pacientes novos | 38 | R$ 71 mil |
 
-**Resultado (base, 5 anos):**
+Sair do quadro societário tem uma vantagem: **some o risco do Simples** ligado à sua participação em outra empresa (LC 123, art. 3º, §4º).
 
-| | Proposta original (tudo acima de R$ 10 mil para o Thomás) | **Proposta final (30/35/35)** |
+**Minha opinião sobre os juros:** CDI + 5% é barato para um empréstimo sem garantia a um negócio que está começando. Faz sentido porque é família e o risco é baixo, mas **você fica com todo o risco de perder e quase nenhum ganho se der muito certo**. Duas proteções que não pesam para elas:
+- **Pagamento mínimo** de R$ 1.500 por mês a partir do mês 13, mesmo que o mês seja fraco. Isso evita que a dívida fique para depois.
+- **Cláusula de aceleração:** se as sócias venderem o studio ou distribuírem lucro antes de quitar, o saldo vence na hora.
+
+## 50/50 ou 60/40 para a Manon?
+**Eu faria 50/50**, por três motivos:
+1. **As duas trazem algo de que o studio não sobrevive sem.** A Manon traz os pacientes. Sua mãe traz a habilitação, a técnica, a confiança, as horas de atendimento todos os dias e **a responsabilidade técnica e legal**: se der complicação num paciente, o nome no CREFITO é o dela.
+2. **No começo, a Manon trabalha em meio período** (mantém a Taco) e sua mãe em tempo integral. Dar mais cotas a quem trabalha menos horas gera atrito em família.
+3. **Os pacientes da Manon já estão pagos no fixo dela.** Se o mérito dela é captar, recompense captação: **bônus de R$ 50 por paciente novo que pagar** (no cenário base, ~R$ 1.250 por mês na fase madura). Assim, quem trouxer mais ganha mais, sem mexer no quadro societário.
+
+| 5 anos (base) | 50/50 | Manon 60 / mãe 40 |
 |---|---|---|
-| Thomás | R$ 988 mil (TIR 294%) | **R$ 335 mil (TIR 155%)** |
-| Sua mãe | R$ 277 mil | **R$ 604 mil** (~R$ 10 mil/mês em média) |
-| Manon | R$ 277 mil | **R$ 604 mil** |
+| Sua mãe | **R$ 743 mil** (~R$ 16 mil/mês no ano 5) | R$ 650 mil (~R$ 14 mil/mês no ano 5) |
+| Manon | **R$ 743 mil** (~R$ 16 mil/mês no ano 5) | R$ 836 mil (~R$ 19 mil/mês no ano 5) |
 
-Você continua preferencial: recebe antes de qualquer lucro e recupera tudo no mês 14. Depois, fica com 30% do lucro: ~R$ 6–7 mil por mês a partir do 3º ano, sem trabalhar no dia a dia. A maior parte vai para quem faz o studio crescer, o que mantém as duas motivadas.
+Em qualquer caso: **vesting para as duas** (cotas liberadas ao longo de 4 anos, com 1 ano mínimo) e **revisão da divisão em 12 meses**, com os números reais de quem trouxe o quê.
 
-## Como formalizar (levar ao advogado e ao contador)
-1. **Sociedade limitada com os três sócios.** A distribuição desigual de lucros pode estar no contrato social (Código Civil, art. 1.007). Também é possível usar **cotas preferenciais** para você (IN DREI 81/2020). Um **acordo de sócios** detalha a cascata.
-2. **Sua mãe é a responsável técnica** no CREFITO-2. A empresa é registrada como fisioterapia (CNAE 8650-0/04), no Simples, Anexo III.
-3. **As remunerações da camada 1 saem como pró-labore** (com INSS de 11% sobre cada uma). Os lucros das camadas 2 e 3 são isentos de imposto de renda para quem recebe (o contador confirma o limite de 2026).
-4. **Vesting para a Manon:** as cotas dela são liberadas ao longo de 3 a 4 anos, com 1 ano mínimo antes de liberar a primeira parte. Se ela sair antes, devolve parte das cotas. O mesmo vale para sua mãe, se ela quiser parar.
-5. **Saída e morte:** o que acontece se sua mãe não puder mais atender? Recomprar a parte dela pelo valor contábil, e trazer outra profissional.
-6. **Uma checagem antes de entrar como sócio:** você tem participação em outra empresa? Se a receita somada passar de R$ 4,8 milhões, o studio sai do Simples (LC 123, art. 3º, §4º). O contador precisa checar isso antes.
+## Formalização (advogado e contador)
+1. **Sociedade limitada** com as duas sócias, no Simples, Anexo III, CNAE 8650-0/04. Sua mãe é a responsável técnica no CREFITO-2.
+2. **Contrato de mútuo** entre você e a empresa: valor, juros de CDI + 5%, ordem de pagamento, pagamento mínimo e aceleração. Recolhimento de IOF sobre o mútuo (o contador calcula).
+3. **Acordo de sócias:** cascata de pagamentos, vesting, saída, morte ou invalidez (recompra das cotas) e não concorrência.
+4. **Remuneração do trabalho como pró-labore**, com INSS de 11%. Os lucros saem isentos de imposto de renda para elas, dentro do limite de 2026 (o contador confirma).
 
 # 4. Passo a passo até abrir: sim, divulga antes
 
 | Quando | O quê | Quem |
 |---|---|---|
-| **Semana 1–2** | Conferir registro no CREFITO-2 e apostilamento da sua mãe. Os três fecham a divisão 30/35/35 | mãe, você |
+| **Semana 1–2** | Conferir registro no CREFITO-2 e apostilamento da sua mãe. Fechar sociedade 50/50 e o mútuo a CDI + 5% | mãe, Manon, você |
 | **Semana 1–4** | Manon cria o Instagram e a ficha no Google do studio. Sua mãe grava conteúdo educativo (o que é, quem pode, cuidados). **Lista de espera com WhatsApp** | Manon |
 | **Mês 1–3 · teste** | **Sua mãe atende em sala alugada por hora** (Espaço Zanama, Saens Peña: R$ 45–65 por hora). Primeiros pacientes vêm da rede dela + lista de espera. Manon mede: contatos, agendamentos, custo por paciente, retorno | mãe, Manon |
 | **Mês 2** | Advogado: contrato social + acordo de sócios. Contador: abertura da limitada no Simples e registro no CREFITO-2 | você |
