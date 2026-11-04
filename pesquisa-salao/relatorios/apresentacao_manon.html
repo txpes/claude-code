@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Salão da Manon — Estudo</title>
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  :root{ --ink:#1d2433; --muted:#5d6678; --brand:#1f4e9c; --brand-soft:#eaf0fa; --ok:#2f7a4f; --ok-soft:#e7f3ec; --warn:#a8641a; --warn-soft:#fbf1e3; --bad:#a3372a; --bad-soft:#f8e8e5; --line:#dfe3ea; --bg:#ffffff; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; background:var(--bg); color:var(--ink); font-family:"DejaVu Sans","Helvetica Neue",Arial,sans-serif; }
+  .s{ width:1280px; height:720px; padding:56px 72px 48px; position:relative; page-break-after:always; overflow:hidden; }
+  .s:last-child{ page-break-after:auto; }
+  .kicker{ font-size:15px; letter-spacing:.08em; text-transform:uppercase; color:var(--brand); font-weight:700; margin-bottom:10px; }
+  h1{ font-size:44px; line-height:1.12; margin:0 0 18px; font-weight:700; }
+  h2{ font-size:34px; line-height:1.15; margin:0 0 22px; font-weight:700; }
+  p,li{ font-size:20px; line-height:1.45; }
+  .muted{ color:var(--muted); }
+  .foot{ position:absolute; left:72px; right:72px; bottom:22px; font-size:12px; color:var(--muted); display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:8px; }
+  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .grid4{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .card{ border:1px solid var(--line); border-radius:12px; padding:20px 22px; background:#fff; }
+  .card.brand{ background:var(--brand-soft); border-color:#c9d7ef; }
+  .card.ok{ background:var(--ok-soft); border-color:#c6e2d2; }
+  .card.warn{ background:var(--warn-soft); border-color:#efd9b8; }
+  .card.bad{ background:var(--bad-soft); border-color:#ecc9c3; }
+  .big{ font-size:46px; font-weight:700; line-height:1; margin:4px 0 8px; }
+  .lbl{ font-size:15px; color:var(--muted); line-height:1.35; }
+  table{ border-collapse:collapse; width:100%; font-size:17px; }
+  th{ text-align:left; color:var(--muted); font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:.04em; border-bottom:2px solid var(--line); padding:8px 10px; }
+  td{ border-bottom:1px solid var(--line); padding:9px 10px; vertical-align:top; }
+  td.n{ text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .tag{ display:inline-block; font-size:13px; font-weight:700; padding:3px 9px; border-radius:20px; }
+  .tag.ok{ background:var(--ok-soft); color:var(--ok); } .tag.warn{ background:var(--warn-soft); color:var(--warn); } .tag.bad{ background:var(--bad-soft); color:var(--bad); }
+  ul{ margin:0; padding-left:24px; } li{ margin:6px 0; }
+  .cover{ background:linear-gradient(135deg,#17386f 0%,#1f4e9c 60%,#3a6fc4 100%); color:#fff; }
+  .cover h1{ font-size:64px; margin-top:150px; } .cover p{ font-size:24px; color:#dbe6f7; }
+  .cover .foot{ color:#c5d4ee; border-top-color:rgba(255,255,255,.25); }
+  .funnel{ display:flex; gap:14px; align-items:center; margin-top:10px; }
+  .funnel .st{ flex:1; text-align:center; border-radius:10px; padding:14px 8px; background:var(--brand-soft); }
+  .funnel .st b{ display:block; font-size:34px; color:var(--brand); }
+  .arrow{ font-size:28px; color:var(--muted); }
+  img.chart{ width:100%; border:1px solid var(--line); border-radius:10px; }
+  .steps td:first-child{ white-space:nowrap; font-weight:700; color:var(--brand); }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="s cover">
+  <div class="kicker" style="color:#c5d4ee">Estudo de viabilidade · novembro de 2026</div>
+  <h1>Salão da Manon</h1>
+  <p>Vale a pena? Onde, quanto custa, quanto rende, o que pode dar errado e como começar sem colocar o seu emprego em risco.</p>
+  <div class="foot"><span>Preparado para Manon e Thomás</span><span>Números em reais de 2026 · fontes no repositório do estudo</span></div>
+</section>
+
+<!-- 2 -->
+<section class="s">
+  <div class="kicker">Em uma página</div>
+  <h2>Vale a pena, se começarmos pelas cabeleireiras, e não pela sala</h2>
+  <div class="grid4" style="margin-bottom:26px">
+    <div class="card ok"><div class="lbl">Retorno em 5 anos (TIR)</div><div class="big">180%</div><div class="lbl">ao ano, no cenário base</div></div>
+    <div class="card brand"><div class="lbl">Investimento se paga em</div><div class="big">14</div><div class="lbl">meses</div></div>
+    <div class="card brand"><div class="lbl">Lucro do salão a partir do 2º ano</div><div class="big">~R$ 14 mil</div><div class="lbl">por mês, já pagando R$ 5 mil para você</div></div>
+    <div class="card warn"><div class="lbl">Dinheiro necessário</div><div class="big">R$ 120 mil</div><div class="lbl">empréstimo do Thomás (R$ 87 mil de montagem + reserva)</div></div>
+  </div>
+  <ul>
+    <li><b>Você não sai da Taco</b> para abrir. O salão abre com recepcionista e você assume de vez quando ele estiver dando lucro.</li>
+    <li><b>O projeto inteiro depende de 2 cabeleireiras âncora</b> com clientela comprovada. Sem elas, não assinamos nada.</li>
+    <li>Se elas aparecerem, o pior cenário isolado ainda paga o investimento em 2 a 2,5 anos.</li>
+  </ul>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>2</span></div>
+</section>
+
+<!-- 3 -->
+<section class="s">
+  <div class="kicker">A ideia</div>
+  <h2>Um salão-parceiro de 6 postos, que cresce para 8</h2>
+  <div class="grid2">
+    <div>
+      <ul>
+        <li><b>Modelo salão-parceiro</b> (Lei 13.352/2016): as profissionais têm CNPJ próprio, o salão recebe tudo e repassa a parte delas toda semana.</li>
+        <li><b>Abertura com 6 postos:</b> 3 de cabelo (2 âncoras), 2 de manicure e pedicure, 1 de estética (sobrancelha, cílios, depilação).</li>
+        <li><b>Fase 2 (~mês 8):</b> mais 1 cabelo e 1 manicure, pagos pelo caixa do próprio salão.</li>
+        <li>Empresa no Simples Nacional. Toxina botulínica fica fora (é serviço de saúde).</li>
+      </ul>
+    </div>
+    <div>
+      <table>
+        <tr><th>Quem</th><th>Fica com a profissional</th></tr>
+        <tr><td>Cabeleireira âncora</td><td>55% até R$ 10 mil/mês · 60% até R$ 15 mil · 65% acima</td></tr>
+        <tr><td>Outras cabeleireiras e estética</td><td>50%</td></tr>
+        <tr><td>Manicure</td><td>50%</td></tr>
+        <tr><td colspan="2" class="muted" style="font-size:15px">Mercado real (vagas de out/2026): manicure em Flamengo recebe 40%; cabeleireira em Copacabana, 50%. A nossa escada paga mais para atrair quem já tem clientes.</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>3</span></div>
+</section>
+
+<!-- 4 -->
+<section class="s">
+  <div class="kicker">Onde</div>
+  <h2>Tijuca. Copacabana não cabe no bolso</h2>
+  <div class="grid2" style="grid-template-columns:1.25fr 1fr">
+    <div>
+      <table>
+        <tr><th>Sala real (anúncio de nov/2026)</th><th>m²</th><th>Custo/mês</th><th></th></tr>
+        <tr><td><b>T2</b> · Barão de Mesquita, perto do Shopping Tijuca · <b>já montada como salão</b></td><td class="n">60</td><td class="n">R$ 3.900 + cond./IPTU</td><td><span class="tag ok">1ª opção</span></td></tr>
+        <tr><td><b>T1</b> · Rua Afonso Pena 101, a pé do metrô</td><td class="n">62</td><td class="n">R$ 4.288</td><td><span class="tag ok">base do estudo</span></td></tr>
+        <tr><td><b>T7</b> · Barão de Mesquita, 2 ambientes</td><td class="n">65</td><td class="n">~R$ 4.200</td><td><span class="tag ok">visitar</span></td></tr>
+        <tr><td>Copacabana · Siqueira Campos</td><td class="n">76</td><td class="n">R$ 9.542</td><td><span class="tag bad">fora</span></td></tr>
+      </table>
+      <p class="muted" style="font-size:15px;margin-top:10px">Lemos todos os anúncios comerciais de 45–110 m² em Copacabana: nenhum de 60–85 m² sai por menos de ~R$ 8 mil/mês.</p>
+    </div>
+    <div class="card brand">
+      <div class="lbl">Público a 800 m do metrô Afonso Pena (Censo 2022)</div>
+      <div class="big">20 mil</div><div class="lbl">mulheres de 20 a 69 anos · renda média do responsável R$ 8,3 mil</div>
+      <p style="font-size:17px;margin-top:16px">Para faturar o planejado, o salão precisa de <b>2,8% a 5,3%</b> do que esse público já gasta com cabelo e unhas, sem contar quem trabalha ou passa pelo bairro.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>4</span></div>
+</section>
+
+<!-- 5 -->
+<section class="s">
+  <div class="kicker">Quanto custa abrir</div>
+  <h2>R$ 87 mil de montagem, com cotações reais</h2>
+  <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+    <table>
+      <tr><th>Item</th><th>Plano</th><th>Realista</th></tr>
+      <tr><td>Obra e adequação</td><td class="n">20.000</td><td class="n">25.000</td></tr>
+      <tr><td>Móveis e equipamentos</td><td class="n">28.000</td><td class="n">~37.000</td></tr>
+      <tr><td>Licenças, projeto, homologação</td><td class="n">4.000</td><td class="n">4.000</td></tr>
+      <tr><td>Marca, fotos e lançamento</td><td class="n">4.000</td><td class="n">4.000</td></tr>
+      <tr><td>Estoque inicial</td><td class="n">6.000</td><td class="n">6.000</td></tr>
+      <tr><td>Garantia do aluguel, custos antes de abrir, reserva</td><td class="n">12.000</td><td class="n">11.000</td></tr>
+      <tr><td><b>Montagem</b></td><td class="n"><b>74.000</b></td><td class="n"><b>87.000</b></td></tr>
+    </table>
+    <div>
+      <div class="card"><div class="lbl">Já cotado em loja (11 itens)</div><div class="big">R$ 28,7 mil</div><div class="lbl">3 cadeiras, 2 lavatórios de porcelana, 3 consoles, autoclave 21 L com registro Anvisa, ar-condicionado…</div></div>
+      <div class="card warn" style="margin-top:16px"><div class="lbl">Financiamento</div><p style="font-size:18px;margin:6px 0 0">Empréstimo do Thomás de <b>R$ 120 mil</b> a CDI. 15 meses sem pagar, depois 45 parcelas de <b>~R$ 3.961</b>. Ele fica fora do contrato social.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>5</span></div>
+</section>
+
+<!-- 6 -->
+<section class="s">
+  <div class="kicker">Quanto rende</div>
+  <h2>O caixa volta ao zero no mês 14 e depois sobe ~R$ 160 mil por ano</h2>
+  <img class="chart" src="apresentacao_caixa.png" alt="Caixa acumulado do salão em 5 anos, por cenário" style="height:420px;object-fit:contain">
+  <p class="muted" style="font-size:14px;margin-top:6px">Inclui: sua retirada de R$ 5 mil a partir do mês 13, recepcionista fixa desde o início, aluguel subindo 5% ao ano acima da inflação, reposição de equipamentos no mês 42. Não inclui venda do negócio no fim.</p>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>6</span></div>
+</section>
+
+<!-- 7 -->
+<section class="s">
+  <div class="kicker">E se der errado?</div>
+  <h2>Os cenários ruins isolados ainda pagam. O ponto fraco é o faturamento</h2>
+  <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+    <table>
+      <tr><th>Cenário</th><th>Retorno 5 anos</th><th>Se paga em</th></tr>
+      <tr><td>Base</td><td class="n">180% a.a.</td><td class="n">14 meses</td></tr>
+      <tr><td>Obra 20% mais cara</td><td class="n">143% a.a.</td><td class="n">16 meses</td></tr>
+      <tr><td>Sem aumento de preço</td><td class="n">146% a.a.</td><td class="n">16 meses</td></tr>
+      <tr><td>Faturamento 25% menor</td><td class="n">62% a.a.</td><td class="n">26 meses</td></tr>
+      <tr><td>Ocupação sobe devagar</td><td class="n">50% a.a.</td><td class="n">29 meses</td></tr>
+      <tr><td>Tudo isso junto</td><td class="n"><span class="tag bad">prejuízo</span></td><td class="n">não paga</td></tr>
+    </table>
+    <div>
+      <div class="card bad"><div class="lbl">Onde quebra</div><p style="font-size:18px;margin:6px 0 0">Se cada cabeleireira faturar <b>menos de ~R$ 8,7 mil/mês</b> (o plano conta com R$ 12 mil), o salão deixa de compensar o risco.</p></div>
+      <div class="card" style="margin-top:16px"><div class="lbl">Regra de parada</div><p style="font-size:18px;margin:6px 0 0">Se no mês 6 o caixa estiver em −R$ 95 mil e o mês der prejuízo, paramos. No pior caso, a perda do empréstimo fica em ~R$ 130 mil, menos a revenda dos equipamentos.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>7</span></div>
+</section>
+
+<!-- 8 -->
+<section class="s">
+  <div class="kicker">O seu risco</div>
+  <h2>Você não larga a Taco para abrir o salão</h2>
+  <div class="grid3">
+    <div class="card brand"><div class="lbl">Ano 1</div><p style="font-size:18px;margin:8px 0 0">Você continua na Taco. O salão abre com <b>recepcionista fixa</b> (R$ 2.913/mês) e uma âncora como coordenadora. Você cuida de CRM, agenda, marketing e números à noite e no sábado.</p></div>
+    <div class="card ok"><div class="lbl">Quando sair da Taco</div><p style="font-size:18px;margin:8px 0 0">Só com <b>3 meses seguidos de lucro</b> e ocupação acima de ~70%, por volta do mês 10–12. Aí passa a retirar <b>R$ 5 mil</b>, o que ganha hoje.</p></div>
+    <div class="card warn"><div class="lbl">Se a Taco não permitir</div><p style="font-size:18px;margin:8px 0 0">Abrir só com <b>6 a 12 meses dos seus gastos pessoais</b> guardados, fora do caixa do salão. Sem essa reserva, não abrir.</p></div>
+  </div>
+  <p style="margin-top:26px">E ainda: <b>nada no seu nome pessoal.</b> Aluguel com seguro-fiança (sem fiador) e empréstimo sem aval seu. A dívida fica na empresa.</p>
+  <p class="muted" style="font-size:16px">Mantendo a Taco no primeiro ano, o retorno é o mesmo (180% a.a.) e o seu risco de ficar sem renda some.</p>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>8</span></div>
+</section>
+
+<!-- 9 -->
+<section class="s">
+  <div class="kicker">A tarefa nº 1</div>
+  <h2>Achar 2 cabeleireiras âncora com clientela comprovada</h2>
+  <div class="grid2" style="grid-template-columns:1.25fr 1fr">
+    <ol style="margin:0;padding-left:24px">
+      <li><b>Quem já paga o próprio espaço:</b> estúdios em sala na Conde de Bonfim. Oferta: sem aluguel, com recepção e sistema, e 55–65% para ela.</li>
+      <li><b>Quem está em rede e quer ganhar mais</b> (salões de shopping pagam ~40–50%).</li>
+      <li><b>Quem conhece as melhores:</b> vendedores das lojas de produto do bairro e educadores das marcas.</li>
+      <li><b>Sua rede:</b> "quem faz seu cabelo e você não troca?".</li>
+      <li><b>A equipe que estava na sala T2</b>, que já foi salão.</li>
+      <li><b>Anúncio:</b> RioVagas, OLX e grupos de Facebook ("salão parceiro Rio").</li>
+      <li><b>Instagram do bairro</b> (Tijuca, Saens Peña, Afonso Pena).</li>
+    </ol>
+    <div>
+      <div class="funnel"><div class="st"><b>40</b>abordagens</div><div class="arrow">→</div><div class="st"><b>10</b>conversas</div><div class="arrow">→</div><div class="st"><b>2–3</b>âncoras</div></div>
+      <div class="card" style="margin-top:18px"><div class="lbl">O que pedir a cada uma</div><ul style="font-size:17px"><li>Extratos de recebimento dos últimos 3 meses</li><li>Agenda das últimas 4 semanas (só contagem)</li><li>Nº de clientes atendidas em 90 dias</li><li>Critério: <b>média ≥ R$ 10 mil/mês</b></li></ul></div>
+    </div>
+  </div>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>9</span></div>
+</section>
+
+<!-- 10 -->
+<section class="s">
+  <div class="kicker">Decisões do estudo</div>
+  <h2>O que já está decidido</h2>
+  <table>
+    <tr><th>Tema</th><th>Decisão</th></tr>
+    <tr><td>Região e sala</td><td>Tijuca. Visitar T2, T1 e T7. T2 é a preferida se condomínio + IPTU ≤ R$ 800</td></tr>
+    <tr><td>Seu emprego</td><td>Fica na Taco até o salão dar 3 meses de lucro; depois R$ 5 mil/mês de retirada</td></tr>
+    <tr><td>Contrato com as parceiras</td><td>Escada da âncora 55/60/65%; demais 50%; <b>taxa do cartão e produto de química descontados antes da divisão</b></td></tr>
+    <tr><td>Equipamentos</td><td>Novos: cadeiras, lavatórios, autoclave, ar (~60 mil BTU). Usados: carrinhos, recepção, espera</td></tr>
+    <tr><td>Maquininha e sistema</td><td>InfinitePay (~1,5–2,1%, D+1, PIX grátis); Trinks ou Avec</td></tr>
+    <tr><td>Dinheiro</td><td>Empréstimo do Thomás, R$ 120 mil a CDI, 15 meses sem pagar</td></tr>
+    <tr><td>Condição para assinar</td><td><b>2 âncoras comprovadas + obra até R$ 30 mil + sala até R$ 4,5 mil</b></td></tr>
+  </table>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>10</span></div>
+</section>
+
+<!-- 11 -->
+<section class="s">
+  <div class="kicker">Próximos passos</div>
+  <h2>Primeiro as pessoas, depois a sala</h2>
+  <table class="steps">
+    <tr><th>Quando</th><th>O quê</th><th>Quem</th></tr>
+    <tr><td>nov–dez/2026</td><td>Abordar ~40 profissionais e conversar com ~10; pedir os extratos</td><td>Manon</td></tr>
+    <tr><td>nov/2026</td><td>Preço de 10–15 salões do bairro por WhatsApp; questionário com 50 clientes</td><td>Manon</td></tr>
+    <tr><td>nov/2026</td><td>Condomínio/IPTU de T2 e T7; visitar as 3 salas; conta de luz; 3 contadores</td><td>Thomás</td></tr>
+    <tr><td>com 2 âncoras</td><td>3 orçamentos de obra na sala escolhida; fechar o estudo com os números reais</td><td>Thomás + analista</td></tr>
+    <tr><td>até fev/2027</td><td><b>Go/no-go:</b> 2 âncoras + obra ≤ R$ 30 mil + sala ≤ R$ 4,5 mil</td><td>Manon e Thomás</td></tr>
+    <tr><td>~3 meses depois</td><td>Empresa, aluguel (5 anos, carência), contratos homologados, obra, licenças, abertura</td><td>todos</td></tr>
+  </table>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>11</span></div>
+</section>
+
+<!-- 12 -->
+<section class="s">
+  <div class="kicker">Para decidir juntos</div>
+  <h2>Três perguntas para a Manon</h2>
+  <div class="grid3">
+    <div class="card brand"><div class="big" style="font-size:34px">1</div><p style="font-size:19px;margin:6px 0 0">A Taco permite você tocar o salão à noite e no sábado durante o primeiro ano?</p></div>
+    <div class="card brand"><div class="big" style="font-size:34px">2</div><p style="font-size:19px;margin:6px 0 0">Você topa passar dezembro e janeiro abordando profissionais até achar as 2 âncoras?</p></div>
+    <div class="card brand"><div class="big" style="font-size:34px">3</div><p style="font-size:19px;margin:6px 0 0">Se as âncoras não aparecerem até fevereiro, combinamos de não abrir?</p></div>
+  </div>
+  <p style="margin-top:30px">Com três "sim", o salão é um bom negócio com risco controlado: no pior caso, você mantém o emprego e o investimento tem regra de parada.</p>
+  <div class="foot"><span>Salão da Manon · Estudo</span><span>12</span></div>
+</section>
+
+</body>
+</html>
