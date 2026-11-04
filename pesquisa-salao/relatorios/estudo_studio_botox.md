@@ -116,7 +116,7 @@ Reproduzir: `python scripts/studio_botox.py` (resultado em `dados/studio_botox.j
 
 ## Formalização (advogado e contador)
 1. **Sociedade limitada com os três sócios**, no Simples, Anexo III, CNAE 8650-0/04. Sua mãe é a responsável técnica no CREFITO-2.
-2. **Antes de você entrar como sócio:** o contador checa sua participação em outra empresa. Se a receita somada passar de R$ 4,8 milhões, o studio sai do Simples (LC 123, art. 3º, §4º). Se isso acontecer, você fica como credor e recebe os 20% por contrato de participação nos lucros, sem cotas.
+2. **Simples Nacional confirmado:** o Thomás informou que a receita somada com a outra empresa dele fica abaixo de R$ 4,8 milhões (LC 123, art. 3º, §4º). O contador só registra isso na abertura.
 3. **Contrato de mútuo** entre você e a empresa: valor, juros a CDI, ordem de pagamento e vencimento antecipado se o studio for vendido. O contador calcula o IOF.
 4. **Acordo de sócios:** cascata de pagamentos, decisões que exigem o voto da sua mãe, vesting (cotas da Manon e da sua mãe liberadas ao longo de 4 anos, com 1 ano mínimo), saída, morte ou invalidez (recompra das cotas) e não concorrência.
 5. **Remuneração do trabalho como pró-labore**, com INSS de 11%. Os lucros saem isentos de imposto de renda para os três, dentro do limite de 2026 (o contador confirma).
