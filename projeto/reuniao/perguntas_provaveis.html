@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Perguntas prováveis — reunião</title>
+<style>
+@page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+:root { --ink:#1d2433; --muted:#5b6472; --rule:#d9d4c7; --accent:#b3471a; --band:#f3efe6; }
+body { font-family: "Liberation Serif", "Times New Roman", serif; color: var(--ink); font-size: 10.4pt; line-height: 1.36; margin: 0; background:#fff; }
+h1 { font-size: 17pt; margin: 0 0 2pt; font-weight: 700; }
+.sub { color: var(--muted); font-size: 9.5pt; margin-bottom: 9pt; }
+h2 { font-family: "Liberation Sans", Arial, sans-serif; font-size: 10pt; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin: 11pt 0 3pt; border-bottom: 1px solid var(--rule); padding-bottom: 2pt; }
+.q { break-inside: avoid; margin: 0 0 6.5pt; }
+.q b.p { display:block; font-family: "Liberation Sans", Arial, sans-serif; font-size: 9.6pt; font-weight: 700; margin-bottom: 1pt; }
+.q p { margin: 0; }
+.onde { color: var(--muted); font-style: italic; font-size: 9.2pt; }
+.box { background: var(--band); border-left: 3px solid var(--accent); padding: 6pt 8pt; margin: 4pt 0 8pt; break-inside: avoid; }
+table { border-collapse: collapse; width: 100%; font-size: 9.4pt; margin: 3pt 0 6pt; break-inside: avoid; }
+th, td { border-bottom: 1px solid var(--rule); padding: 2.5pt 4pt; text-align: left; vertical-align: top; }
+th { font-family: "Liberation Sans", Arial, sans-serif; font-size: 8.8pt; }
+td.n, th.n { text-align: right; white-space: nowrap; }
+</style></head><body>
+
+<h1>Perguntas prováveis e respostas</h1>
+<div class="sub">Reunião com o orientador · artigo v5 · números fora da amostra, atribuição de referência, salvo indicação</div>
+
+<div class="box"><b>Mensagem central em uma frase.</b> No agregado, o escore por componentes principais perde para as melhores razões isoladas (0,763 contra 0,894 da cobertura de juros). A desvantagem fica numa só das três rotas de deterioração, o prejuízo operacional, e é consistente com a composição do escore, que mede sobretudo estrutura patrimonial.</div>
+
+<table>
+<tr><th>Rota (entradas puras)</th><th class="n">Entradas 1 ano</th><th class="n">F</th><th class="n">Cobertura − F [IC 95%]</th><th class="n">Entradas 2 anos</th><th class="n">F</th><th class="n">Cobertura − F [IC 95%]</th></tr>
+<tr><td>Prejuízo operacional</td><td class="n">66</td><td class="n">0,647</td><td class="n">+0,327 [+0,249; +0,410]</td><td class="n">52</td><td class="n">0,377</td><td class="n">+0,145 [+0,060; +0,230]</td></tr>
+<tr><td>Patrimônio negativo</td><td class="n">51</td><td class="n">0,816</td><td class="n">−0,029 [−0,096; +0,035]</td><td class="n">46</td><td class="n">0,795</td><td class="n">−0,004 [−0,068; +0,067]</td></tr>
+<tr><td>Recuperação judicial</td><td class="n">11</td><td class="n">0,828</td><td class="n">+0,012 [−0,089; +0,110]</td><td class="n">9</td><td class="n">0,801</td><td class="n">−0,088 [−0,242; +0,066]</td></tr>
+</table>
+
+<h2>1. Contribuição e desenho</h2>
+<div class="q"><b class="p">Se o PCA perde, qual é a contribuição?</b><p>A contribuição não é o método: PCA e PLS não são novos. Ela está na comparação controlada, com os mesmos oito indicadores, a mesma amostra e a mesma avaliação fora da amostra, e na decomposição do resultado. A desvantagem não é uniforme: fica na rota do prejuízo operacional. Com os três indicadores de maior poder discriminante, o mesmo PCA chega a 0,895, contra 0,894 da cobertura (diferença −0,001 [−0,015; +0,015]). O problema está no que se agrega, não em agregar.</p><p class="onde">§3.4, §6.5 e §6.6</p></div>
+<div class="q"><b class="p">A comparação entre PCA e PLS é justa, se as técnicas têm objetivos diferentes?</b><p>Justamente por isso ela é informativa. Com tudo o mais fixo, a diferença entre os dois escores mede quanto vale, na ponderação, a informação contida no desfecho. A comparação não diz qual técnica é melhor em abstrato.</p><p class="onde">§3.4</p></div>
+<div class="q"><b class="p">Por que não usar mais componentes, se H1 rejeita a unidimensionalidade?</b><p>Por quatro razões. O escore foi definido antes como a primeira direção principal. Os demais componentes não têm orientação teórica de sinal. Combiná-los exige um critério de ponderação que o método não dá. E, se esse critério usar o desfecho, a análise vira H4. Somar ou subtrair o CP2 reduz a AUC de 0,763 para 0,707 ou 0,661.</p><p class="onde">§6.1 e §6.8</p></div>
+
+<h2>2. Decomposição por rota</h2>
+<div class="q"><b class="p">A decomposição é post hoc.</b><p>Sim, e está declarada assim desde o resumo: é análise diagnóstica posterior, com os três subconjuntos reportados, cada um com o número de entradas, e sem correção por multiplicidade, por ser descritiva. A hipótese agregada, H2, foi formulada antes e é rejeitada.</p><p class="onde">§4.5, §6.5 e Tabela 12</p></div>
+<div class="q"><b class="p">A rota do prejuízo operacional não é mecânica?</b><p>Em um ano, em boa parte é: o critério exige EBITDA negativo também em t. As 66 entradas já têm EBITDA negativo em t, contra 4,6% dos não eventos, e a margem EBITDA sozinha chega a 0,978. Restrita a EBITDA negativo em t, a cobertura cai para 0,592. Em dois anos a condição já não está observada no momento da previsão, e mesmo assim F fica em 0,377, abaixo de 0,500.</p><p class="onde">§6.5</p></div>
+<div class="q"><b class="p">Qual é a evidência de composição?</b><p>Perfil no momento da previsão (horizonte de dois anos), quem entra por prejuízo operacional contra quem não entra:</p><ul style="margin:2pt 0 0 14pt;padding:0"><li>alavancagem de 0,213 contra 0,326;</li><li>liquidez corrente de 1,998 contra 1,429;</li><li>capital de giro sobre ativo de 0,176 contra 0,084.</li></ul><p>Três das quatro maiores cargas do CP1 são de estrutura patrimonial: capital de giro (0,530), alavancagem (0,415) e liquidez (0,379). O ROA é a 2ª maior (0,483). O texto diz "consistente com", e não "causa".</p><p class="onde">§6.5, §6.6, Tabelas 8 e 13</p></div>
+<div class="q"><b class="p">Com 11 entradas não dá para concluir nada sobre recuperação judicial.</b><p>Concordo, e o texto diz isso. O intervalo da diferença contra a cobertura tem amplitude de 0,116, de modo que a ausência de diferença é compatível tanto com equivalência quanto com diferença moderada.</p><p class="onde">§6.5 e §7</p></div>
+<div class="q"><b class="p">E sem as entradas por prejuízo operacional?</b><p>Nas 83 entradas restantes (um ano), o escore tem 0,856, o PLS 0,857 e as árvores 0,856, sem diferença distinguível. A vantagem da agregação supervisionada some.</p><p class="onde">§6.5</p></div>
+<div class="box"><b>Ponto que ele pode achar sozinho.</b> Na Tabela 12, em patrimônio negativo no horizonte de dois anos (46 entradas), o PLS fica atrás do escore com intervalo que exclui o zero: PLS − F = −0,083 [−0,141; −0,023]. O texto não comenta esse número. Resposta: "Está na tabela e eu não comentei no texto. Vou incluir. Reforça a leitura de que, na rota patrimonial, o escore não supervisionado não perde, e pode até ganhar, da agregação supervisionada."</div>
+
+<h2>3. Vazamento e inferência</h2>
+<div class="q"><b class="p">O PCA ainda usa informação de teste?</b><p>Não. Médias, desvios, correlação e autovetor são estimados só nas firmas de treino. O mesmo vale para a winsorização de Brito e Assaf Neto e para o número de componentes do PLS, este por validação cruzada aninhada. A calibração usa predições fora de partições internas ao treino.</p><p class="onde">§4.4</p></div>
+<div class="q"><b class="p">Como é feita a inferência?</b><p>Por bootstrap agrupado por firma, com 2.000 reamostragens, e Bonferroni para as seis comparações de cada horizonte. O DeLong fica só como referência. Em um ano, todas as derrotas do escore resistem a Bonferroni. Em dois anos, contra a cobertura, o p ajustado é 0,090.</p><p class="onde">§4.4 e Tabela 9</p></div>
+<div class="q"><b class="p">E a avaliação no tempo, e não só entre firmas?</b><p>No esquema temporal, o treino usa desfechos até 2021 e o teste vai de 2022 a 2025, com 40 entradas em um ano e 34 em dois. Em um ano, ele reproduz o resultado da validação cruzada. Em dois anos, nenhuma diferença é significativa. Brito e Assaf Neto supera o escore no esquema temporal (0,789 contra 0,744), mas é o modelo mais sensível à atribuição das firmas (de 0,706 a 0,740).</p><p class="onde">§6.3 e Tabela A.3</p></div>
+<div class="q"><b class="p">0,730 ou 0,735?</b><p>A convenção é única: a atribuição de referência. As médias sobre dez atribuições aparecem só onde a nota da tabela indica. Para o escore, a média é 0,762, com desvio-padrão de 0,002.</p><p class="onde">§4.4 e §6.3</p></div>
+
+<h2>4. Calendário, saídas e amostra</h2>
+<div class="q"><b class="p">Calendário informacional</b><p>A previsão é por exercício contábil. Só a recuperação judicial divulgada no início de t+1 pode antecipar artificialmente, o que atinge 11 entradas. Sem elas, o escore fica em 0,758 e a cobertura em 0,899. Com a recuperação antecipada em um ano para 22 firmas, o escore fica em 0,764 e a cobertura em 0,888. O horizonte de dois anos não está exposto.</p><p class="onde">§4.6, §6.8 e §6.9</p></div>
+<div class="q"><b class="p">Saída do painel</b><p>São 200 saídas: 119 fechamentos voluntários, 28 recuperações judiciais, 22 incorporações, 12 falências ou liquidações, 7 por outros motivos e 12 sem motivo. Na última observação, 32,0% estavam em vulnerabilidade, contra 14,4% das que permanecem. O texto trata isso como censura informativa e risco competitivo, e as duas classificações das saídas levam à mesma conclusão.</p><p class="onde">§6.8 e Tabela A.5</p></div>
+<div class="q"><b class="p">Múltiplas entradas</b><p>Das 171 firmas com entrada, 149 têm uma e 22 têm duas ou mais. Só com a primeira entrada, o escore fica em 0,788 e a cobertura em 0,907.</p><p class="onde">§5.3 e Tabela A.5</p></div>
+<div class="q"><b class="p">O evento é construído com as mesmas demonstrações dos preditores.</b><p>Sim, e o texto testa isso. Sem as entradas mecânicas, nenhuma diferença contra o escore é distinguível. Sob a definição restritiva, só com patrimônio negativo e recuperação judicial, o escore volta a perder para o ROA e para os escores supervisionados, mas não para a cobertura.</p><p class="onde">§6.8 e Tabela A.4</p></div>
+<div class="q"><b class="p">Por que não winsorizar?</b><p>Para manter as razões isoladas na escala original. Winsorizando a 1% e 99%, o CP1 passa a explicar 31,65% da variância, contra 27,04%, o escore chega a 0,799 e as conclusões não mudam.</p><p class="onde">§5.1 e §6.8</p></div>
+
+<h2>5. Métricas e utilidade</h2>
+<div class="q"><b class="p">Calibração e uso prático</b><p>A calibração é feita sobre o posto do escore. Sobre os valores brutos, três dos seis modelos ficariam piores que a previsão constante no Brier. As inclinações vão de 0,991 a 1,097. Para captar 80% das entradas, o escore sinaliza 44,3% dos firma-anos, contra 18,7% da cobertura, com VPP de 0,053 contra 0,124.</p><p>No decil de maior risco, o escore concentra 46,3% das entradas, contra 62,4% da cobertura (+0,161 [+0,057; +0,263]), e subestima o risco: prevê 0,094 e observa 0,135. Em dois anos, as métricas ficam perto da previsão constante.</p><p class="onde">§6.7, Tabela 15 e Figura 5</p></div>
+
+<h2>6. Hipóteses</h2>
+<table>
+<tr><th>Hipótese</th><th>Veredito no texto</th><th>Número-chave</th></tr>
+<tr><td>H1 eixo comum e unidimensionalidade</td><td>Parcialmente sustentada (eixo) e rejeitada (unidimensionalidade)</td><td>O CP1 explica 27,04%; Kaiser e Horn retêm 3 componentes (56,84%)</td></tr>
+<tr><td>H2 superioridade preditiva</td><td>Rejeitada no agregado</td><td>0,763 contra 0,894 da cobertura, com Bonferroni</td></tr>
+<tr><td>H3 antecipação</td><td>Sustentada</td><td>β de 0,342 em 1 ano e 0,214 em 2 anos, com p &lt; 0,001</td></tr>
+<tr><td>H4 diagnóstico</td><td>Evidência consistente, em análise diagnóstica posterior</td><td>Decomposição por rota e escore com três indicadores</td></tr>
+</table>
+
+<h2>7. Dados e próximos passos</h2>
+<div class="q"><b class="p">Por que os números mudaram desde a versão que ele leu?</b><p>O painel foi conferido com os arquivos da CVM. Saíram três emissores estrangeiros, quatro firma-anos foram refeitos e o painel ficou com 7.403 firma-anos e 727 companhias. A divisão das firmas entre partições foi mantida. As mudanças aparecem na terceira casa, as 596 células das tabelas conferem com o código e nenhuma conclusão muda.</p></div>
+<div class="q"><b class="p">Onde submeter, e o tamanho?</b><p>Proposta: Revista Contabilidade &amp; Finanças, que aceita submissão em português, publica em inglês com tradução depois da aprovação, tem limite de 8.000 palavras sem referências, usa APA e não cobra taxa. O texto tem cerca de 15.600 palavras. A versão longa vira base da dissertação, e a curta vai à submissão em até duas semanas, mantendo inteiras a comparação, a decomposição e o diagnóstico. A alternativa é a Brazilian Business Review.</p></div>
+
+</body></html>
