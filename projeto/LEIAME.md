@@ -59,6 +59,10 @@ distinguível das alternativas; recuperação judicial 0,828, também sem difere
 
 A mensagem de encaminhamento ao orientador está em `CARTA_EDUARDO.md`.
 
+## Versão 6 (06/11/2026)
+
+A versão em uso é `envio/Artigo_Fragilidade_Financeira_v6.docx`. É a v5 com o resumo e o abstract reescritos para leitores de fora da área, a pedido do coorientador (áudio de 06/11, em `coorientacao/`). Para regenerar: `python revisao/alteracoes_v6.py` e `python revisao/aplicar_v3.py envio/Artigo_Fragilidade_Financeira_v5.docx revisao/alteracoes_v6.json <saída>`.
+
 ## Versão 5 (20/10/2026)
 
 A versão em uso é `envio/Artigo_Fragilidade_Financeira_v5.docx`, com o PDF em `artigo/`. Em relação à v4, ela acrescenta:

@@ -1,0 +1,43 @@
+"""Monta alteracoes_v6.json: resumo e abstract reescritos para leitor não especialista (pedido do coorientador,
+áudio de 06/11/2026): cenário brasileiro nas primeiras linhas, o que se faz e como, dados em termos gerais, resultado
+sem números técnicos e conclusão curta. Aplicado sobre a v5."""
+import json, os
+RESUMO = (
+    'Entre 2010 e 2025, em média quatro em cada dez companhias abertas não financeiras brasileiras não geraram, a cada ano, '
+    'resultado operacional suficiente para cobrir suas despesas financeiras, e 72 delas recorreram à recuperação judicial ou '
+    'extrajudicial. Antecipar quais empresas caminham para essa situação interessa a credores, investidores e reguladores. '
+    'Investiga-se se reunir vários indicadores contábeis em um único índice de fragilidade financeira antecipa essas '
+    'dificuldades melhor do que os melhores indicadores tomados isoladamente. O índice é construído por componentes principais, '
+    'sem usar a informação sobre quais empresas entraram em dificuldade, e comparado, sempre fora da amostra, a indicadores '
+    'isolados e a modelos que aprendem com esses desfechos. Uma análise exploratória, conduzida depois do teste principal, separa '
+    'as dificuldades em três rotas de deterioração: prejuízo operacional persistente, patrimônio líquido negativo e recuperação '
+    'judicial. Os dados cobrem 727 companhias registradas na Comissão de Valores Mobiliários, com demonstrações anuais de 2010 a '
+    '2025. O índice não supera os melhores indicadores isolados, como a cobertura de juros, e a análise por rota mostra onde está '
+    'a diferença. Ela se concentra nas empresas que caminham para o prejuízo operacional, em parte por construção do próprio '
+    'critério, e é consistente com a composição do índice: por terem pouca dívida e boa liquidez, essas empresas parecem sólidas '
+    'a um índice dominado pela estrutura do balanço. Nas rotas do patrimônio negativo e da recuperação judicial, o índice não se '
+    'distingue dos indicadores isolados, e, restrito aos três indicadores mais informativos, o mesmo procedimento acompanha o '
+    'melhor deles. O valor de agregar indicadores depende, portanto, da rota de deterioração que se quer antecipar e de quais '
+    'indicadores entram no índice.')
+ABSTRACT = (
+    'Between 2010 and 2025, on average four in ten Brazilian non-financial listed companies did not generate, in a given year, '
+    'enough operating income to cover their financial expenses, and 72 of them filed for judicial or out-of-court '
+    'reorganization. Anticipating which firms are heading toward this situation matters to creditors, investors and regulators. '
+    'We investigate whether combining several accounting indicators into a single financial fragility index anticipates these '
+    'difficulties better than the best indicators taken individually. The index is built by principal components, without using '
+    'information on which firms ran into difficulty, and compared, always out of sample, with individual indicators and with '
+    'models that learn from those outcomes. An exploratory analysis, carried out after the main test, separates the difficulties '
+    'into three deterioration routes: persistent operating losses, negative equity and judicial reorganization. The data cover '
+    '727 companies registered with the Brazilian Securities and Exchange Commission, with annual statements from 2010 to 2025. '
+    'The index does not outperform the best individual indicators, such as interest coverage, and the route analysis shows '
+    'where the gap lies. It is concentrated among firms heading toward operating losses, partly by construction of the '
+    'criterion itself, and is consistent with the composition of the index: with little debt and good liquidity, these firms '
+    'look sound to an index dominated by balance-sheet structure. For the negative equity and judicial reorganization routes, '
+    'the index is indistinguishable from the individual indicators, and, restricted to the three most informative indicators, '
+    'the same procedure matches the best of them. The value of aggregating indicators therefore depends on the deterioration '
+    'route one seeks to anticipate and on which indicators enter the index.')
+A = [dict(op='paragrafo', inicio='Examina-se se a agregação de indicadores contábeis', novo=RESUMO),
+     dict(op='paragrafo', inicio='This paper examines whether aggregating', novo=ABSTRACT)]
+json.dump(A, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'alteracoes_v6.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print(len(RESUMO.split()), 'palavras no resumo;', len(ABSTRACT.split()), 'no abstract')

@@ -1,6 +1,6 @@
 # Resposta ao orientador, item a item (versão para revisão do Carlos)
 
-*Pedido do coorientador (áudio de 13/10): responder o e-mail do Eduardo item a item, com a localização de cada mudança, e mandar primeiro ao Carlos. Os números de seção, tabela e figura são os da v5 (`Artigo_Fragilidade_Financeira_v5.docx`).*
+*Pedido do coorientador (áudio de 13/10): responder o e-mail do Eduardo item a item, com a localização de cada mudança, e mandar primeiro ao Carlos. Os números de seção, tabela e figura são os da v6 (`Artigo_Fragilidade_Financeira_v6.docx`), iguais aos da v5.*
 
 ---
 

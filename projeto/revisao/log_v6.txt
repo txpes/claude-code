@@ -1,0 +1,4 @@
+OK     paragrafo reescrito: 'Examina-se se a agregação de indicadores contábeis'
+OK     paragrafo reescrito: 'This paper examines whether aggregating'
+OK     tabelas e figuras renumeradas: 61 mencoes; mudancas {}
+3 operacoes, 0 falhas -> ../envio/Artigo_Fragilidade_Financeira_v6.docx
