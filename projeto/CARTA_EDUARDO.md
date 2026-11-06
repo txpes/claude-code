@@ -8,7 +8,7 @@
 
 Eduardo, bom dia!
 
-Obrigado pelas observações. Segue a versão revisada do artigo e, abaixo, o que foi feito em cada ponto, com a indicação de onde está no texto.
+Obrigado pelas observações. Segue a versão revisada do artigo (anexo) e, abaixo, o que foi feito em cada ponto, com a indicação de onde está no texto.
 
 **Parte I**
 
@@ -57,13 +57,14 @@ Obrigado pelas observações. Segue a versão revisada do artigo e, abaixo, o qu
 
 **Outras mudanças desde a versão que você leu**
 - **Panorama:** nova seção 2, com o panorama da dificuldade financeira das companhias abertas brasileiras de 2010 a 2025 (Figura 1 e Tabela 1).
-- **Literatura:** a revisão foi reorganizada em dois pilares, não supervisionado e supervisionado (seção 3), e ganhou trabalhos recentes.
+- **Literatura:** a revisão foi reorganizada em dois pilares, não supervisionado e supervisionado (seção 3), e ganhou trabalhos recentes: 13 das 60 referências são de 2020 em diante.
 - **Equações:** passaram para o editor de fórmulas.
 - **Escore com três indicadores:** um escore só com os três indicadores de maior poder discriminante acompanha o melhor indicador isolado, sem superá-lo, o que reforça a leitura de composição (§6.6).
 - **Dados conferidos com a CVM:** conferi o painel contra os arquivos originais da CVM e corrigi três emissores estrangeiros que deveriam ter sido excluídos e quatro firma-anos com valores errados. Nenhuma conclusão muda, e todas as tabelas conferem com o código.
 - **Estrutura:** as tabelas de validação e robustez foram para o Apêndice A.
+- **Resumo:** reescrito para ser acessível a quem não é da área, sem perder o registro de que a decomposição é análise exploratória posterior.
 
-Fico à disposição para apresentar o trabalho na reunião.
+Quando você tiver lido, podemos marcar uma conversa, se der na semana que vem, para eu apresentar o trabalho e ouvir suas considerações.
 
 Abraço,
 Thomas
