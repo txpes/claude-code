@@ -231,11 +231,13 @@ Transcrição automática (Whisper, modelo medium), sem revisão manual; nomes e
 
 ### Pedidos extraídos do áudio 3
 
-Leitura do Claude, a conferir pelo autor.
+Leitura do Claude, a conferir pelo autor. O próprio coorientador diz que pede "uma coisa" (01:30): o resumo. Os demais itens são observações ou fluxo.
 
-| # | Pedido (tempo) | Situação |
-|---|---|---|
-| 1 | Reescrever o resumo para um leitor que não é de finanças: duas linhas de cenário brasileiro, o que se faz e como, dados em termos gerais, resultado e conclusão curta; tirar a parte técnica e os números de resultado (02:02–04:20) | Feito na v6 (`revisao/alteracoes_v6.json`); abstract em inglês acompanha |
-| 2 | Mandar o resumo pelo WhatsApp; depois do ok, enviar o material ao Eduardo (03:26, 04:27) | A fazer pelo autor |
-| 3 | Reunião talvez desnecessária agora: o Eduardo lê, comenta e marca para a semana seguinte (01:34–02:02, 04:31) | A combinar |
-| 4 | Ajustes para a revista ficam para depois do retorno do Eduardo (01:41–01:48, 04:38) | Registrado |
+| # | Comentário (tempo) | Tipo | Situação |
+|---|---|---|---|
+| 1 | O trabalho evoluiu e ficou mais denso (00:14) | Observação | — |
+| 2 | Os resultados não foram tão bons; o interessante é a análise exploratória (00:24–01:00) | Ênfase | Resumo destaca a análise exploratória e o perfil por caminho |
+| 3 | A seção 2 deixa o texto menos cansativo; o tema exige números (01:05–01:30) | Observação | — |
+| 4 | Resumo para leitor de fora: cenário brasileiro curto e importância; o que faz e como, caprichando na metodologia; dados (período e características); resultado sem números técnicos; conclusão curta (02:02–04:27) | Pedido | Feito na v6 (`revisao/alteracoes_v6.json`), inclusive as características dos dados (oito indicadores); abstract em inglês acompanha |
+| 5 | Mandar pelo WhatsApp; com o ok, enviar ao Eduardo; o Eduardo lê e marca reunião para a semana seguinte (01:34–02:02, 03:26–03:32, 04:27–04:35) | Fluxo | A fazer pelo autor; e-mail ao Eduardo pronto em `CARTA_EDUARDO.md` |
+| 6 | Ajustes para a revista depois do retorno do Eduardo (01:41–01:48, 04:38–04:43) | Adiar | Registrado |

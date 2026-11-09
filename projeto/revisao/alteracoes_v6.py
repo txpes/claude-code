@@ -12,8 +12,8 @@ RESUMO = (
     'indicadores isolados e a modelos que aprendem com essas ocorrências, sempre em empresas que não participaram da estimação. '
     'Uma análise exploratória, feita depois desse teste, separa as dificuldades segundo o caminho que levou a elas: prejuízo '
     'operacional persistente, patrimônio líquido negativo ou recuperação judicial, e compara o perfil das empresas em cada '
-    'caminho. Os dados cobrem 727 companhias registradas na Comissão de Valores Mobiliários, com demonstrações anuais de 2010 a '
-    '2025. O índice não supera os melhores indicadores isolados, e a análise exploratória mostra que a diferença se concentra nas '
+    'caminho. Os dados reúnem as demonstrações anuais de 727 companhias registradas na Comissão de Valores Mobiliários, de 2010 '
+    'a 2025, e oito indicadores de liquidez, estrutura de capital, rentabilidade e capacidade de pagamento. O índice não supera os melhores indicadores isolados, e a análise exploratória mostra que a diferença se concentra nas '
     'empresas que caminham para o prejuízo operacional: por terem pouca dívida e boa liquidez, elas tendem a parecer sólidas a um '
     'índice dominado pela estrutura do balanço. Nos outros dois caminhos, o índice não se distingue dos indicadores isolados. A '
     'utilidade de agregar indicadores depende, portanto, do tipo de deterioração que se quer antecipar.')
@@ -27,8 +27,8 @@ ABSTRACT = (
     'individual indicators and with models that learn from those occurrences, always on firms not used in estimation. An '
     'exploratory analysis, carried out after this test, separates the difficulties by the path that led to them: persistent '
     'operating losses, negative equity or judicial reorganization, and compares the profile of firms on each path. The data '
-    'cover 727 companies registered with the Brazilian Securities and Exchange Commission, with annual statements from 2010 to '
-    '2025. The index does not outperform the best individual indicators, and the exploratory analysis shows that the gap is '
+    'comprise the annual statements of 727 companies registered with the Brazilian Securities and Exchange Commission, from 2010 '
+    'to 2025, and eight indicators of liquidity, capital structure, profitability and debt-service capacity. The index does not outperform the best individual indicators, and the exploratory analysis shows that the gap is '
     'concentrated among firms heading toward operating losses: with little debt and good liquidity, they tend to look sound to '
     'an index dominated by balance-sheet structure. On the other two paths, the index is indistinguishable from the individual '
     'indicators. The value of aggregating indicators therefore depends on the kind of deterioration one seeks to anticipate.')
