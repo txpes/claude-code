@@ -241,3 +241,14 @@ Leitura do Claude, a conferir pelo autor. O próprio coorientador diz que pede "
 | 4 | Resumo para leitor de fora: cenário brasileiro curto e importância; o que faz e como, caprichando na metodologia; dados (período e características); resultado sem números técnicos; conclusão curta (02:02–04:27) | Pedido | Feito na v6 (`revisao/alteracoes_v6.json`), inclusive as características dos dados (oito indicadores); abstract em inglês acompanha |
 | 5 | Mandar pelo WhatsApp; com o ok, enviar ao Eduardo; o Eduardo lê e marca reunião para a semana seguinte (01:34–02:02, 03:26–03:32, 04:27–04:35) | Fluxo | A fazer pelo autor; e-mail ao Eduardo pronto em `CARTA_EDUARDO.md` |
 | 6 | Ajustes para a revista depois do retorno do Eduardo (01:41–01:48, 04:38–04:43) | Adiar | Registrado |
+
+Decisões tomadas para fechar o pedido do áudio 3 sem nova rodada (13/11/2026):
+
+- **Abertura:** uma frase de cenário e uma de importância, 45 palavras ao todo.
+- **Tamanho:** 248 palavras, dentro do limite usual de 250 para resumo de artigo.
+- **Números:** ficam só os de cenário e de dados (quatro em cada dez, 72 recuperações, 727 companhias, oito indicadores); nenhum número de resultado.
+- **Termos técnicos:** fica "componentes principais", explicado na própria frase; saem AUC, validação cruzada e sobreposição mecânica.
+- **Análise exploratória:** descrita como feita depois do teste principal, o que preserva o ponto 8 do orientador.
+- **Abstract em inglês:** acompanha o resumo.
+- **Densidade do texto (01:16–01:30):** tratada na versão curta para a revista, depois do retorno do orientador.
+- **Restante do artigo:** inalterado; tabelas idênticas às da v5.

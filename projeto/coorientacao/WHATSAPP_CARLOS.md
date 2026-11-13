@@ -9,8 +9,18 @@ Também respondi o e-mail do Eduardo item a item, com a localização de cada mu
 
 ---
 
-## 06/11/2026: resumo ajustado (resposta ao áudio de 06/11)
+## Rascunho de resposta ao áudio de 06/11 (versão de 13/11/2026)
 
-Carlos, ajustei o resumo como você falou: cenário do Brasil no começo, depois o que faço e como, os dados e o resultado, sem a parte técnica. Segue abaixo. Se estiver ok, já mando o artigo para o Eduardo hoje, com a resposta item a item. E a reunião que tínhamos marcado para hoje: mantemos ou deixo ele ler primeiro e marcamos para a semana que vem, como você sugeriu?
+Rascunho para o autor enviar pelo WhatsApp; nada foi enviado por aqui.
 
-[resumo da v6]
+Carlos, desculpe a demora. Ajustei o resumo como você pediu no áudio:
+- abre com duas linhas do cenário brasileiro;
+- depois vem o que faço e como, com destaque para a análise exploratória;
+- os dados de forma geral;
+- o resultado e a conclusão, sem a parte técnica e sem os números de resultado.
+
+O abstract em inglês acompanha o resumo. No restante do texto não mexi. Segue o resumo abaixo e o artigo em anexo.
+
+Se estiver ok, mando hoje ao Eduardo o artigo com a resposta item a item, para ele ler e a gente marcar a apresentação na semana que vem. Os ajustes para a revista ficam para depois do retorno dele, como você falou.
+
+Resumo: o texto do parágrafo "Resumo" de `envio/Artigo_Fragilidade_Financeira_v6.docx`.
