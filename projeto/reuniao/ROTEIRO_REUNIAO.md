@@ -1,6 +1,6 @@
 # Roteiro para a reunião com o Eduardo
 
-Números e localizações da v5 do artigo.
+Números e localizações da v6 do artigo, iguais aos da v5.
 
 ## 1. Enquanto ele fala
 
@@ -8,7 +8,7 @@ Números e localizações da v5 do artigo.
 - Responda na ordem dele, não na sua.
 - Para cada ponto, use a mesma estrutura: **o que mudou → onde está → o número**. Exemplo: "Isso entrou na §4.6; sem as 11 entradas expostas, o escore fica em 0,758 e a cobertura em 0,899."
 - Se ele pedir algo que já está feito, mostre onde está, sem corrigir ele: "Acho que isso ficou pouco visível no texto. Está na §6.8, posso trazer para mais perto do resultado principal."
-- Se ele pedir algo novo e grande, não negocie na hora: "Faz sentido. Anoto e trago na próxima versão, junto com a versão curta."
+- Se ele pedir algo novo e grande, não negocie na hora: "Faz sentido. Anoto e trago na próxima versão."
 
 ## 2. Fala de abertura (cerca de 2 minutos, quando ele passar a palavra)
 
@@ -24,7 +24,7 @@ Números e localizações da v5 do artigo.
 >
 > Todos os seus pontos foram atendidos. Os principais foram o PCA estimado dentro da partição, o bootstrap agrupado como inferência principal, o calendário informacional, a saída do painel como censura informativa e as métricas além da AUC. Também conferi os dados com a CVM; os números mudaram na terceira casa e as conclusões não mudaram.
 >
-> Queria sair daqui com três definições: se a estrutura atual funciona, o periódico, e o plano para chegar à versão curta.
+> Queria sair daqui com duas definições: se a estrutura atual funciona e o que falta para fechar o texto.
 
 ## 3. Se ele perguntar "o que mudou desde a versão que eu li?"
 
@@ -45,8 +45,7 @@ Peça as decisões de forma explícita, uma por vez, e anote a resposta:
 
 1. "A divisão entre o corpo e o Apêndice A funciona para o senhor?"
 2. "Os dois horizontes lado a lado: mantenho assim?"
-3. "Periódico: proponho a Revista Contabilidade & Finanças. O limite é de 8.000 palavras e o texto tem cerca de 15.600. A versão longa vira base da dissertação e a curta vai à submissão. Concorda?"
-4. "Prazo: trago a versão curta, com o que o senhor pedir hoje, em até duas semanas. Pode ser?"
+3. "Prazo: trago a versão com o que o senhor pedir hoje em até duas semanas. Pode ser?"
 
 Encerre com:
 

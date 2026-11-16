@@ -110,7 +110,7 @@ Prazo do Carlos: sexta, 16/10, para os itens do áudio 1. Reunião com o Eduardo
 
 - **Apresentação ao Eduardo (item 6), semana de 19/10:** slides com o que foi feito e como cada comentário foi respondido. Faço se você quiser.
 - **Pontos do e-mail que o Carlos disse que mandaria:** cada um entra como tarefa nova.
-- **Formato de artigo e submissão (item 7):** depois da reunião.
+- **Item 7 do áudio (passos depois da reunião):** a definir com os orientadores.
 
 ## Riscos e como ficam cobertos
 

@@ -75,7 +75,7 @@ Os casos conhecidos estão na base, com o ano do primeiro documento:
 ## Recomendação
 
 1. **Agora:** usar o painel no panorama. A fonte confere em 99,96% das comparações, e os casos divergentes não afetam a amostra de estimação.
-2. **Antes da submissão:**
+2. **Antes da versão final:**
    - excluir os três emissores estrangeiros;
    - corrigir os 4 firma-anos (Águas do Rio 2021, Equatorial Pará 2025 e COSERN 2010);
    - rodar de novo todo o código.

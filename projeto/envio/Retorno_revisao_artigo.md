@@ -14,7 +14,7 @@ Este documento reúne, num só lugar, os pedidos do coorientador, a resposta ao 
 | 4 | Renumerar as seções | Seções e remissões renumeradas; todas as remissões conferidas automaticamente | Todo o texto |
 | 5 | Responder o orientador item a item, com localização | Resposta completa na parte 3 deste documento | Parte 3 |
 | 6 | Apresentação ao orientador | 15 slides para 20 minutos, com notas | Apresentação anexa (link) |
-| 7 | Formato de artigo e submissão depois da reunião | Periódico-alvo escolhido e plano de corte definido | Parte 4, itens c e d |
+| 7 | Passos depois da reunião com o orientador | Ficam para depois do retorno do orientador | — |
 | 8 | Literatura em dois pilares | 3.1 conceitos; 3.2 pilar não supervisionado (medir); 3.3 pilar supervisionado (prever); 3.4 o que a comparação mede | Seção 3 |
 | 9 | Deixar claro que a contribuição não é o método | Texto explícito: PCA e PLS não são novos; a contribuição é a comparação controlada e a decomposição por rota | §3.4 |
 | 10 | Comparabilidade entre as duas técnicas | O texto explica o que difere entre elas (objetivo e uso do desfecho) e o que fica fixo (indicadores, amostra, avaliação) | §3.4 |
@@ -109,36 +109,14 @@ Outras medidas, como KS e Gini, não acrescentam informação: são transformaç
 
 *Onde: §6.6.*
 
-**c. Periódico-alvo: Revista Contabilidade & Finanças (USP).** É a revista com melhor encaixe: indicadores contábeis de companhias abertas brasileiras, e o modelo de Brito e Assaf Neto, usado como referência, foi publicado nela. Pelas instruções aos autores na página da revista no SciELO:
+**c. Formatação.** O artigo já segue a ABNT: A4, margens de 3 e 2 cm, Times New Roman 12, espaçamento 1,5, referências em ABNT e páginas numeradas. A dissertação seguirá o modelo do programa.
 
-- aceita submissão em português e publica em inglês, com tradução a cargo dos autores depois da aprovação;
-- limite de 8.000 palavras sem as referências e resumo de 250 a 300 palavras;
-- citações em APA, avaliação triplo-cega e nenhuma taxa.
-
-A página antiga da revista no portal da USP diz que não aceita submissões, mas foi atualizada pela última vez em 2023; a página do SciELO aponta para o sistema de submissão em uso. Isso será confirmado no momento da submissão. Se a RC&F não estiver aberta, a alternativa é a Brazilian Business Review.
-
-**d. Formato de artigo: duas versões do mesmo trabalho.** O corpo do texto atual tem cerca de 15.600 palavras, quase o dobro do limite. A decisão é manter a versão longa como base da dissertação e derivar dela uma versão curta para submissão. Orçamento de palavras da versão curta:
-
-| Parte | Hoje | Versão curta | Como |
-|---|---|---|---|
-| Resumo, introdução e panorama | 2.500 | 1.200 | Panorama reduzido a uma figura e um parágrafo |
-| Literatura (seção 3) | 2.400 | 1.300 | Manter os dois pilares e a §3.4; resumir os estudos citados |
-| Metodologia e dados (seções 4 e 5) | 4.300 | 1.900 | Calendário e detalhes do painel para o apêndice |
-| Resultados (6.1 a 6.7) | 4.400 | 2.600 | 6.2 e 6.4 para o apêndice; manter 6.3, 6.5 e 6.6 inteiras |
-| Robustez, limitações e conclusão | 2.000 | 1.000 | Robustez em tabela única no apêndice |
-| **Total** | **15.600** | **8.000** | |
-
-A versão curta é feita depois da reunião com o orientador, para incorporar o que ele pedir. A tradução para o inglês só é necessária depois da aprovação.
-
-**e. Formatação.** A v5 já segue a ABNT: A4, margens de 3 e 2 cm, Times New Roman 12, espaçamento 1,5, referências em ABNT e páginas numeradas. A versão de submissão será convertida para as normas da revista: margens de 2,5 cm, espaçamento duplo, APA, sem notas de rodapé e sem identificação de autoria. A dissertação seguirá o modelo do programa.
-
-**f. Nota de decisões.** Não será enviada à parte; o conteúdo dela está consolidado neste documento.
+**d. Nota de decisões.** Não será enviada à parte; o conteúdo dela está consolidado neste documento.
 
 ## 5. Próximos passos
 
-1. Reunião com o orientador: apresentação do que foi feito e definição da versão curta.
-2. Em até duas semanas depois da reunião: versão curta, nas normas da revista, para revisão dos dois.
-3. Submissão, com tradução para o inglês depois da aprovação.
-4. Dissertação a partir da versão longa: cada item da agenda (§7.2) vira um capítulo.
+1. Leitura do orientador e reunião de apresentação do que foi feito.
+2. Incorporar as considerações dele ao texto.
+3. Dissertação: cada item da agenda (§7.2) vira um capítulo.
 
 Fica pendente um único ponto, que depende de terceiros: o e-mail com pontos específicos que o coorientador mencionou ainda não chegou. Quando chegar, cada ponto será tratado no artigo.

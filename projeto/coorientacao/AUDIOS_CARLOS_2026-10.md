@@ -250,5 +250,5 @@ Decisões tomadas para fechar o pedido do áudio 3 sem nova rodada (13/11/2026):
 - **Termos técnicos:** fica "componentes principais", explicado na própria frase; saem AUC, validação cruzada e sobreposição mecânica.
 - **Análise exploratória:** descrita como feita depois do teste principal, o que preserva o ponto 8 do orientador.
 - **Abstract em inglês:** acompanha o resumo.
-- **Densidade do texto (01:16–01:30):** tratada na versão curta para a revista, depois do retorno do orientador.
+- **Densidade do texto (01:16–01:30):** sem ação agora; o coorientador aceita que o tema exige números.
 - **Restante do artigo:** inalterado; tabelas idênticas às da v5.

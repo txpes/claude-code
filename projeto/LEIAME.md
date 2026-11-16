@@ -69,7 +69,7 @@ A versão em uso é `envio/Artigo_Fragilidade_Financeira_v5.docx`, com o PDF em 
 - o gráfico de calibração por decis (Figura 5) e a taxa de captura no decil de maior risco (§4.4 e §6.7), do script `codigo/18_calibracao_captura.py`;
 - as páginas de Rolim et al. (2021).
 
-O material de retorno aos orientadores está em `envio/Retorno_revisao_artigo.docx`, gerado de `envio/Retorno_revisao_artigo.md` por `revisao/md_para_docx.py`. Ele traz os pedidos e onde foram atendidos, a resposta ao orientador e as decisões sobre avaliação, periódico, formato e formatação.
+O material de retorno aos orientadores está em `envio/Retorno_revisao_artigo.docx`, gerado de `envio/Retorno_revisao_artigo.md` por `revisao/md_para_docx.py`. Ele traz os pedidos e onde foram atendidos, a resposta ao orientador e as decisões sobre avaliação e formatação.
 
 Para regenerar: os mesmos passos da v4, com `python codigo/18_calibracao_captura.py` (incluído no `executar.sh`), `python revisao/alteracoes_v5.py <pasta do executar.sh>` e `revisao/alteracoes_v5.json` acrescentado ao fim da lista do `aplicar_v3.py`.
 
@@ -125,10 +125,10 @@ A correspondência completa está na aba `Numeracao_final` da planilha.
 
 ## O que permanece em aberto
 
-As decisões que estavam em aberto foram tomadas e estão registradas em `envio/Retorno_revisao_artigo.md`: técnicas de avaliação, periódico-alvo, formato e formatação. Restam:
+As decisões sobre técnicas de avaliação e formatação estão registradas em `envio/Retorno_revisao_artigo.md`. Não há proposta de revista nem plano de submissão: isso só será tratado se os orientadores levantarem o assunto. Restam:
 
-1. **Retorno do orientador na reunião** e, depois dele, a versão curta para submissão (limite de 8.000 palavras), conforme o plano de corte.
-2. **E-mail com pontos específicos do coorientador**, ainda não recebido.
+1. **Retorno do orientador** sobre a v6, enviada com `envio/Resposta_aos_comentarios.pdf`, e a reunião de apresentação.
+2. **Pontos do coorientador:** vieram no áudio de 06/11 e foram atendidos na v6.
 3. **Título de Predebom et al. (2025):** conferir no navegador; a página recusa acesso automatizado.
 4. **Modelo de formatação do programa**, para a dissertação.
 

@@ -99,7 +99,7 @@
 4. Os comentários dele, agrupados em quatro blocos (vazamento e inferência, calendário e saídas, métricas, moderação), com o que mudou e onde está.
 5. Decomposição por rota e escore com três indicadores.
 6. Robustez.
-7. Próximos passos: formato de artigo e submissão, como o Carlos sugeriu.
+7. Próximos passos: a definir com os orientadores.
 
 **Formato:** apresentação que baixa como PowerPoint e PDF. Figuras e números saem do mesmo código do artigo.
 
